@@ -112,6 +112,7 @@ public class How2Forgert implements Serializable {
                 m.store(e1);
                 System.out.println("updates");
                 isSearch=false;
+                isSearchCombine=false;
                 break;
             }
         }
@@ -308,6 +309,7 @@ public class How2Forgert implements Serializable {
                 }
             }
         }
+        count =0;
     }
 
     private void displaysearchtaskscombine() {
@@ -348,6 +350,7 @@ public class How2Forgert implements Serializable {
                 System.out.println("delet the " + e.getQuestion());
                 if(isSearch==false)reloadTAskandrestartPopThread();
                 isSearch=false;
+                isSearchCombine=false;
             }
         }
     }
@@ -460,6 +463,7 @@ public class How2Forgert implements Serializable {
         }
         count=1;
         isSearch = true;
+        isSearchCombine=false;
         if (null != searchtasks ) {
             textArea.setText("");
             Collections.sort(searchtasks, new Task());
@@ -528,6 +532,7 @@ public class How2Forgert implements Serializable {
     public void inster(String word, String answer) throws IOException {
         addWord(word, answer);
         isSearch=false;
+        isSearchCombine=false;
     }
 
     private void reloadTAskandrestartPopThread() {
