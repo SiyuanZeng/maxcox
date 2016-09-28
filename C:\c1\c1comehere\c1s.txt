@@ -1,0 +1,15 @@
+#Tue Sep 27 22:41:57 PDT 2016
+supplier\ center\ staged=https\://supplier.stg.walmart.com/
+local\ solr=http\://localhost\:8983/solr/\#/
+intellij\ shortcut=https\://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
+my\ work\ space=https\://confluence.walmart.com/display/~vn0xrjh/My+work+space
+CCC=CCC
+ccm=https\://admin.ccm.stg.walmart.com
+my\ glossary=https\://confluence.walmart.com/display/PGMPMNMW/My+Glossary
+Linux%20commands%20that%20save%20your%20life%20and%20things%20do%20you%20love%20-%20PG%20MP%20-%20Next-Gen%20Merchant%20Workbench%20-%20GEC%20Confluence=https\://confluence.walmart.com/display/PGMPMNMW/Linux+commands+that+save+your+life+and+things+do+you+love
+My\ links\ walmart\ links\ sc\ links\ -\ PG\ MP\ -\ Next-Gen\ Merchant\ Workbench\ -\ GEC\ Confluence=https\://confluence.walmart.com/display/PGMPMNMW/My+links+walmart+links+sc+links
+bug\ bash\ sheet=https\://docs.google.com/spreadsheets/d/1iyd_ZM_eoNGdD1x03rGVZjfT_zoexVf0KfKe7ClnJxs/edit\#gid\=0
+stage\ solr=http\://10.227.64.87\:8983/solr/\#/gesc_stg.staged_item/query
+github\ cheatsheet=https\://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
+ccc=ccc
+vv=vvv

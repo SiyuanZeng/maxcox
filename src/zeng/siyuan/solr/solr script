@@ -1,0 +1,36 @@
+C:\Developer\solr-6.2.0\bin
+
+
+
+
+solr create -c jcg -d basic_configs
+
+
+
+solr stop -all
+
+
+
+solr start
+
+
+
+java -jar post.jar -h
+
+
+
+java -Dtype=text/csv -Durl=http://localhost:8983/solr/jcg/update -jar post.jar  books.csv
+
+
+
+http://localhost:8080/solrautocomplete/search.html
+
+
+
+
+csv
+C:\Developer\solr-6.2.0\example\exampledocs
+
+
+most common words
+http://localhost:8983/solr/#/coolection/select?facet.field=name&facet=on&indent=on&q=*:*&wt=json

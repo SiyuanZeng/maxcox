@@ -1,0 +1,4 @@
+m-C02RN1YAG8WM:dsc-cassandra-2.1.14 vn0xrjh$ bin/cqlsh localhost
+Connection error: ('Unable to connect to any servers', {'localhost': error(61, "Tried connecting to [('::1', 9042, 0, 0), ('127.0.0.1', 9042)]. Last error: Connection refused")})
+m-C02RN1YAG8WM:dsc-cassandra-2.1.14 vn0xrjh$ cd bin
+m-C02RN1YAG8WM:bin vn0xrjh$ sudo ./cassandra

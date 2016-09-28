@@ -1,0 +1,14 @@
+0,supplier center staged,https://supplier.stg.walmart.com/
+1,local solr,http://localhost:8983/solr/#/
+2,intellij shortcut,https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
+3,my work space,https://confluence.walmart.com/display/~vn0xrjh/My+work+space
+4,CCC,CCC
+5,ccm,https://admin.ccm.stg.walmart.com
+6,my glossary,https://confluence.walmart.com/display/PGMPMNMW/My+Glossary
+7,Linux commands that save your life and things do you love - PG MP - Next-Gen Merchant Workbench - GEC Confluence,https://confluence.walmart.com/display/PGMPMNMW/Linux+commands+that+save+your+life+and+things+do+you+love
+8,My links walmart links sc links - PG MP - Next-Gen Merchant Workbench - GEC Confluence,https://confluence.walmart.com/display/PGMPMNMW/My+links+walmart+links+sc+links
+9,bug bash sheet,https://docs.google.com/spreadsheets/d/1iyd_ZM_eoNGdD1x03rGVZjfT_zoexVf0KfKe7ClnJxs/edit#gid=0
+10,stage solr,http://10.227.64.87:8983/solr/#/gesc_stg.staged_item/query
+11,github cheatsheet,https://services.github.com/kit/downloads/github-git-cheat-sheet.pdf
+12,ccc,ccc
+13,vv,vvv
