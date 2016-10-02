@@ -134,12 +134,12 @@
       <file leaf-file-name="solr.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+            <state relative-caret-position="150">
+              <caret line="24" column="152" selection-start-line="24" selection-start-column="152" selection-end-line="24" selection-end-column="152" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3741#3749#0" expanded="true" />
-                <element signature="e#6521#6529#0" expanded="true" />
+                <element signature="e#3897#3905#0" expanded="true" />
+                <element signature="e#6677#6685#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -1561,7 +1561,7 @@
       <workItem from="1475034115123" duration="7002000" />
       <workItem from="1475074592016" duration="9100000" />
       <workItem from="1475272253676" duration="924000" />
-      <workItem from="1475286709675" duration="20323000" />
+      <workItem from="1475286709675" duration="20371000" />
     </task>
     <task id="LOCAL-00001" summary="refactor search engine">
       <created>1472094513325</created>
@@ -1679,7 +1679,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="511764000" />
+    <option name="totallyTimeSpent" value="511812000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1982,7 +1982,7 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java</url>
-          <line>117</line>
+          <line>121</line>
           <properties />
           <option name="timeStamp" value="227" />
         </line-breakpoint>
@@ -2012,13 +2012,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java</url>
-          <line>161</line>
+          <line>165</line>
           <properties />
           <option name="timeStamp" value="232" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java</url>
-          <line>132</line>
+          <line>136</line>
           <properties />
           <option name="timeStamp" value="233" />
         </line-breakpoint>
@@ -2489,12 +2489,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="28" column="78" selection-start-line="28" selection-start-column="78" selection-end-line="28" selection-end-column="78" />
+        <state relative-caret-position="150">
+          <caret line="24" column="152" selection-start-line="24" selection-start-column="152" selection-end-line="24" selection-end-column="152" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3741#3749#0" expanded="true" />
-            <element signature="e#6521#6529#0" expanded="true" />
+            <element signature="e#3897#3905#0" expanded="true" />
+            <element signature="e#6677#6685#0" expanded="true" />
           </folding>
         </state>
       </provider>
