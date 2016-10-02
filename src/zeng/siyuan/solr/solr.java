@@ -20,7 +20,22 @@ import java.util.List;
 /**
  * Created by SiyuanZeng's on 9/4/2016.
  */
+// don't worry i won't hurt you
+    // don't worry i won't hurt you
+    // i am just plakidding just playing you
+    // i am just playing
+    // i am just palying
+    // they don't want to see you stealing they want to you to have it and they don't want to know that
+    // they don't want to protecting you anmad make them lose their principles
+    // they don't wan tto to do that
+    // nobody they don't want to be good prole
+    // they wan tto functional that is all they wan tto
+    // they wan tot do that
 
+   // i write everythign here and leave it here
+    // this is the fiertydies code i have ever wirttiner
+    // and peolwe know that to watdo with tit they will funnali 0 that the hell si tis just maek as much errors ac you wan can and you can be ther best programmer in the worlds
+    // that is the problems
 public class solr {
     // lazy thing si easy to do
     // i love to be lazy, it is love there if i can be lazy if wreally love to do it it feel so smar t and lovelyli love to be lazy that is just so awesome it is just a kiss away it is jasut lsetter arway
