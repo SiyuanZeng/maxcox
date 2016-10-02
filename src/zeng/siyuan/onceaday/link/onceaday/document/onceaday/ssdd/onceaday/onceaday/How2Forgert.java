@@ -3,6 +3,8 @@ package zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.oncea
 import zeng.siyuan.C1comehere.C1comehere;
 
 import javax.swing.*;
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
@@ -105,6 +107,7 @@ public class How2Forgert implements Serializable {
                                             m.deleteTask(e.getJavauid());
                                             e = new person_question(e.getText(),"ssdd", null);
                                             m.store(e);
+                                Desktop.getDesktop().open(new File(e.getText()));
                                     textArea.setText(inntuitive);
                                             break;
                                 }
@@ -123,6 +126,7 @@ public class How2Forgert implements Serializable {
                                     m.deleteTask(e.getJavauid());
                                             e = new person_question(e.getText(),"ssdd", null);
                                             m.store(e);
+                                    Desktop.getDesktop().open(new File(e.getText()));
                             textArea.setText(inntuitive);
                                             break;
                                 }
@@ -143,6 +147,7 @@ public class How2Forgert implements Serializable {
                                         m.deleteTask(e.getJavauid());
                                         e = new person_question(e.getText(),"ssdd", null);
                                         m.store(e);
+                                Desktop.getDesktop().open(new File(e.getText()));
                                         textArea.setText(inntuitive);
                                         break;
                             }
@@ -174,6 +179,11 @@ public class How2Forgert implements Serializable {
                 if (e.getJavauid().toString().equalsIgnoreCase(currentTaskSearch.getJavauuid().toString())) {
                     String inntuitive = "";
                     inntuitive += e.text;
+                    try {
+                        Desktop.getDesktop().open(new File(e.getText()));
+                    } catch (IOException e1) {
+                        e1.printStackTrace();
+                    }
                     textArea.setText(inntuitive);
                     while (!textArea.getText().trim().equalsIgnoreCase("")) {
                         try {
