@@ -22,7 +22,8 @@ import java.util.List;
  */
 
 public class solr {
-    // lazy thing si easy to do 
+    // lazy thing si easy to do
+    // i love to be lazy, it is love there if i can be lazy if wreally love to do it it feel so smar t and lovelyli love to be lazy that is just so awesome it is just a kiss away it is jasut lsetter arway
 
     private final String USER_AGENT = "Mozilla/5.0";
 
