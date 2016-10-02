@@ -46,6 +46,22 @@ public class How2Forgert implements Serializable {
         }
     }
 
+
+
+
+    private void openUrlInBrowser(String url) {
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println(url);
+        String[] args = { "osascript", "-e", "open location \"" + url + "\"" };
+        try {
+            Process process = runtime.exec(args);
+        }
+        catch (IOException e) {
+            // do what you want with this
+        }
+    }
+
+
     public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
         this.c1comehere = c1comehere;
         this.textArea = textArea;
@@ -108,6 +124,7 @@ public class How2Forgert implements Serializable {
                                 }
                             }
                             textArea.setText(inntuitive);
+                            openUrlInBrowser(inntuitive);
                         } else {
                             String buttonSelected = getString();
                             boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Lufgt") || buttonSelected.equalsIgnoreCase("Ldeldiary");
@@ -137,6 +154,7 @@ public class How2Forgert implements Serializable {
                                 }
                             }
                             textArea.setText(inntuitive);
+                            openUrlInBrowser(inntuitive);
                             Thread.sleep(10000);
                         }
                     } else if (!t.getIsDone() && t.getDate().before(new Date())) {
@@ -169,6 +187,7 @@ public class How2Forgert implements Serializable {
                             }
                         }
                         textArea.setText(inntuitive);
+                        openUrlInBrowser(inntuitive);
                     }
                 }
             }

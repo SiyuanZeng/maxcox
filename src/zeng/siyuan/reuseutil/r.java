@@ -1,5 +1,7 @@
 package zeng.siyuan.reuseutil;
 
+import java.io.IOException;
+
 /**
  * Created by SiyuanZeng's on 9/14/2016.
  */
@@ -8,6 +10,22 @@ public class r {
     public final static String INTEXT_HYPHEN = "intext:";
     public static final String PLUGS = "+";
     public static final String SPACE = " ";
+
+
+
+
+    public static void openUrlInBrowser(String url) {
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println(url);
+        String[] args = { "osascript", "-e", "open location \"" + url + "\"" };
+        try {
+            Process process = runtime.exec(args);
+        }
+        catch (IOException e) {
+            // do what you want with this
+        }
+    }
+
 
     public static void resetfiles() {
         String inntuitive = "";
