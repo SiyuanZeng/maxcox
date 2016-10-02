@@ -5,6 +5,7 @@ import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;
 import zeng.siyuan.C1comehere.C1comehere;
 import zeng.siyuan.mappingmanager.mappingmanager;
+import zeng.siyuan.solr.solr;
 
 import javax.swing.*;
 import java.io.FileWriter;
@@ -392,9 +393,26 @@ public class How2Forgert implements Serializable {
 
     loadolr loadolr;
 
+// they give me uselfss things to cheat on me and make me learn a lot fo things
+    // they ask me to do things
+    // a person can save the world and he has the same power fto ruin the world
 
     public void loadTask() {
-        ebbinghauses = m.get();
+
+        solr solr = new solr();
+
+        try {
+// i lie to myself
+            // i don't see
+            // i don't see
+            // i am dead
+            // i talk to myself
+            (solr.sendGet_comec("", null)).forEach(a -> ebbinghauses.add(new Ebbinghaus(a,"")));
+
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
 
         if (null == loadolr) {
             loadolr = new loadolr(ebbinghauses);

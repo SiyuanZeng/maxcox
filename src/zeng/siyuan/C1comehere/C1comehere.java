@@ -404,6 +404,12 @@ public class C1comehere implements Serializable {
                         Search DSsearclhDf = null;
 
 
+
+
+                        boolean SDisShowDColmmdandf = buttonSelected.equalsIgnoreCase("saercdhdiaryallf");// shw
+
+
+
                         boolean googleo = buttonSelected.startsWith("DsLDg");// shw
 
 
@@ -739,6 +745,14 @@ public class C1comehere implements Serializable {
                             search.setURI(searchTrs);
                             Desktop.getDesktop().browse(search.getURI());
                             logDictionary(search.searchName, search.keywords, search.getURIString());
+                            textArea.setText("");
+                        }  else if (SDisShowDColmmdandf ) {
+                            System.out.println("SDisShowDColmmdandf");
+                            System.out.println("Dsaerchdliary");
+                            dhow2ForgDertls.displayTask();
+
+
+
                             textArea.setText("");
                         }
 

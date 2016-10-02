@@ -33,6 +33,7 @@ public class untoggle {
     public static JToggleButton btn9 = new JToggleButton("codeja");
     public static JToggleButton btn10 = new JToggleButton("saerchdiary");
     public static JToggleButton btn101 = new JToggleButton("saerchdiaryall");
+    public static JToggleButton btn10d112 = new JToggleButton("saerchdiarydallq");
 
     public static JToggleButton btnD1 = new JToggleButton("Ddelete");
     public static JToggleButton btnD3 = new JToggleButton("Dfgt");
@@ -45,6 +46,7 @@ public class untoggle {
     public static JToggleButton btnD9 = new JToggleButton("Dcodeja");
     public static JToggleButton btnD10 = new JToggleButton("Dsaerchdiary");
     public static JToggleButton btn1011 = new JToggleButton("saerchdiaryall");
+    public static JToggleButton btn10112 = new JToggleButton("saerchdiaryallq");
 
 
     public static JToggleButton LbtnD1 = new JToggleButton("LDdelete");
@@ -58,6 +60,7 @@ public class untoggle {
     public static JToggleButton bLtnD9 = new JToggleButton("DcodeLja");
     public static JToggleButton bLtnD10 = new JToggleButton("DsaerLchdiary");
     public static JToggleButton btn10111 = new JToggleButton("saerchdiaryall");
+    public static JToggleButton btn10111q = new JToggleButton("saerchdiaryall2");
 
 
     public static JToggleButton DLbtnD1 = new JToggleButton("DLDdelete");
@@ -71,6 +74,7 @@ public class untoggle {
     public static JToggleButton bLDtnD9 = new JToggleButton("DcodeLDja");
     public static JToggleButton bLtDnD10 = new JToggleButton("DsaerDLchdiary");
     public static JToggleButton btn101111 = new JToggleButton("saerchdiaryall");
+    public static JToggleButton btn1011d11 = new JToggleButton("saerchddiaryall");
 
 
     public static JToggleButton SDLbtnD1 = new JToggleButton("DLDdSelete");
@@ -84,6 +88,7 @@ public class untoggle {
     public static JToggleButton bLDtSnD9 = new JToggleButton("DcodeLSDja");
     public static JToggleButton bLtSDnD10 = new JToggleButton("DsaeSrDLchdiary");
     public static JToggleButton btn1011111 = new JToggleButton("saerchdiaryall");
+    public static JToggleButton btn1011d111 = new JToggleButton("saerchddiaryall");
 
 
     public static JToggleButton SDLbtnD1f = new JToggleButton("DLDdSeletef");
@@ -97,6 +102,7 @@ public class untoggle {
     public static JToggleButton bLDtSnD9f = new JToggleButton("DcodeLSDjaf");
     public static JToggleButton bLtSDnD10f = new JToggleButton("DsaeSrDLchdiaryf");
     public static JToggleButton btn1011111af = new JToggleButton("saerchdiaryallf");
+    public static JToggleButton btn1011111adf = new JToggleButton("saercdhdiaryallf");
 
 
     public static void main(String[] args) {
@@ -308,6 +314,21 @@ public class untoggle {
 
 
 
+
+
+
+
+
+
+                bg.add(btn10d112 );
+                bg.add(btn10112 );
+                bg.add(btn10111q );
+                bg.add(btn1011d11 );
+                bg.add(btn1011d111 );
+                bg.add(btn1011111adf );
+
+
+
                 Container contentPane = frame.getContentPane();
 
 
@@ -332,6 +353,7 @@ public class untoggle {
                                         .addComponent(btn9)
                                         .addComponent(btn10)
                                         .addComponent(btn101)
+                                .addComponent(btn10d112 )
                         )
                         .addGroup(groupLayout.createParallelGroup(TRAILING)
                                         .addComponent(btnD1)
@@ -345,6 +367,9 @@ public class untoggle {
                                         .addComponent(btnD9)
                                         .addComponent(btnD10)
                                         .addComponent(btn1011)
+
+                        .addComponent(btn10112 )
+
                         )
                         .addGroup(groupLayout.createParallelGroup(TRAILING)
                                         .addComponent(LbtnD3)
@@ -358,22 +383,34 @@ public class untoggle {
                                         .addComponent(bLtnD10)
                                         .addComponent(LbtnD1)
                                         .addComponent(btn10111)
+
+                        .addComponent(btn10111q )
+
                         )
                         .addGroup(groupLayout.createParallelGroup(TRAILING)
                                         .addComponent(DLbtnD1).addComponent(LDbtnD3).addComponent(LbDtnD2).addComponent(LbtDnD4).addComponent(LbtnDD5).addComponent(bLtnDD6).addComponent(DbLtnD7).addComponent(bDLtnD8).addComponent(bLDtnD9).addComponent(bLtDnD10)                                        .addComponent(btn101111)
 
-                        )
+                        .addComponent(btn1011d11 )
+                )
                         .addGroup(groupLayout.createParallelGroup(TRAILING)
                                         .addComponent(SDLbtnD1).addComponent(LSDbtnD3).addComponent(LbSDtnD2).addComponent(LbtSDnD4).addComponent(LbtnSDD5).addComponent(bLtnDSSD6).addComponent(DbLtnDS7).addComponent(bDLtSnD8).addComponent(bLDtSnD9).addComponent(bLtSDnD10)                                        .addComponent(btn1011111)
-                        )
+
+
+                        .addComponent(btn1011d111 )
+
+                )
                         .addGroup(groupLayout.createParallelGroup(TRAILING)
                                         .addComponent(SDLbtnD1f).addComponent(LSDbtnD3f).addComponent(LbSDtnD2f).addComponent(LbtSDnD4f).addComponent(LbtnSDD5f).addComponent(bLtnDSSD6f).addComponent(DbLtnDS7f).addComponent(bDLtSnD8f).addComponent(bLDtSnD9f).addComponent(bLtSDnD10f)                                        .addComponent(btn1011111af)
-                        )
+
+
+                        .addComponent(btn1011111adf )
+                )
                         .addGroup(groupLayout.createParallelGroup(TRAILING).addComponent(panel)));
 
                 groupLayout.setVerticalGroup(groupLayout
                         .createSequentialGroup()
                         .addGroup(groupLayout.createParallelGroup(BASELINE).addComponent(label))
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn1).
                                         addComponent(btnD1)
@@ -389,60 +426,78 @@ public class untoggle {
                                         .addComponent(LSDbtnD3f)
 
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn3).addComponent(LbDtnD2).addComponent(LSDbtnD3)
                                         .addComponent(LbtnD3).
                                                 addComponent(btnD3)
                                         .addComponent(LbSDtnD2f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn4).
                                         addComponent(btnD4).addComponent(LbtDnD4).addComponent(LbSDtnD2)
                                         .addComponent(LbtnD4)
                                         .addComponent(LbtSDnD4f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn5).
                                         addComponent(btnD5).addComponent(LbtnDD5)
                                         .addComponent(LbtnD5).addComponent(LbtSDnD4)
                                         .addComponent(LbtnSDD5f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn6).
                                         addComponent(btnD6).addComponent(bLtnDD6)
                                         .addComponent(bLtnD6).addComponent(LbtnSDD5)
                                         .addComponent(bLtnDSSD6f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn7).addComponent(DbLtnD7)
                                         .addComponent(bLtnD7).
                                                 addComponent(btnD7).addComponent(bLtnDSSD6)
                                         .addComponent(DbLtnDS7f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn8).addComponent(bDLtnD8).addComponent(DbLtnDS7)
                                         .addComponent(bLtnD8).
                                                 addComponent(btnD8)
                                         .addComponent(bDLtSnD8f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn9).
                                         addComponent(btnD9).addComponent(bLDtnD9).addComponent(bDLtSnD8)
                                         .addComponent(bLtnD9)
                                         .addComponent(bLDtSnD9f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn10).
                                         addComponent(btnD10).addComponent(bLtDnD10)
                                         .addComponent(bLtnD10).addComponent(bLtSDnD10)
                                         .addComponent(bLtSDnD10f)
                         )
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).
                                         addComponent(btn101).
                                         addComponent(btn1011).addComponent(btn10111)
                                         .addComponent(btn101111).addComponent(btn1011111)
                                         .addComponent(btn1011111af)
                         )
+                        .addGroup(groupLayout.createParallelGroup(BASELINE).
+                                        addComponent(btn10d112).
+                                        addComponent(btn10112).addComponent(btn10111q)
+                                        .addComponent(btn1011d11).addComponent(btn1011d111)
+                                        .addComponent(btn1011111adf)
+                        )
+
+
+
                         .addGroup(groupLayout.createParallelGroup(BASELINE).addComponent(panel)));
 
                 frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);

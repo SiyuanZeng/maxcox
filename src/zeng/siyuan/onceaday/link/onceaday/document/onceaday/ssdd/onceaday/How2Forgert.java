@@ -209,6 +209,7 @@ public class How2Forgert implements Serializable {
     }
 
     public void loadTask() {
+
         ebbinghauses = (ArrayList<person_question>) m.getlatest();
         tasks = new ArrayList<Task>();
         for (person_question e : ebbinghauses) {
