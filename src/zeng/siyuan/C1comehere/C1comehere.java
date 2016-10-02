@@ -39,7 +39,6 @@ public class C1comehere implements Serializable {
     public static transient Properties prop;
     public transient static Map<String, Search> searchEngines = new HashMap<String, Search>();
 
-
     public static void main(String[] args) throws Exception {
 
         try
@@ -1045,6 +1044,7 @@ public class C1comehere implements Serializable {
 
     private void openUrlInBrowser(String url) {
         Runtime runtime = Runtime.getRuntime();
+        System.out.println(url);
         String[] args = { "osascript", "-e", "open location \"" + url + "\"" };
         try {
             Process process = runtime.exec(args);
