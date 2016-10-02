@@ -22,6 +22,7 @@ import java.util.List;
  */
 
 public class solr {
+    // lazy thing si easy to do 
 
     private final String USER_AGENT = "Mozilla/5.0";
 
