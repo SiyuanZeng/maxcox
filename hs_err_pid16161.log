@@ -1,0 +1,1249 @@
+#
+# A fatal error has been detected by the Java Runtime Environment:
+#
+#  SIGSEGV (0xb) at pc=0x00000001270adcdd, pid=16161, tid=0x000000000000d607
+#
+# JRE version: Java(TM) SE Runtime Environment (8.0_102-b14) (build 1.8.0_102-b14)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (25.102-b14 mixed mode bsd-amd64 compressed oops)
+# Problematic frame:
+# C  [libawt_lwawt.dylib+0x1acdd]  OGLSD_SetScratchSurface+0x49
+#
+# Failed to write core dump. Core dumps have been disabled. To enable core dumping, try "ulimit -c unlimited" before starting Java again
+#
+# If you would like to submit a bug report, please visit:
+#   http://bugreport.java.com/bugreport/crash.jsp
+# The crash happened outside the Java Virtual Machine in native code.
+# See problematic frame for where to report the bug.
+#
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x00007ffe1c12e000):  JavaThread "Java2D Queue Flusher" daemon [_thread_in_native, id=54791, stack(0x0000700001b1f000,0x0000700001c1f000)]
+
+siginfo: si_signo: 11 (SIGSEGV), si_code: 1 (SEGV_MAPERR), si_addr: 0x0000000000000002
+
+Registers:
+RAX=0x00000000ffffffff, RBX=0x0000000000000002, RCX=0x0000000000000047, RDX=0x00000001270ce844
+RSP=0x0000700001c1e810, RBP=0x0000700001c1e830, RSI=0x00007ffe21746ae0, RDI=0x00007ffe1c12e1f8
+R8 =0x0000000000000001, R9 =0x00000000d8015eb7, R10=0x000000010a959ab8, R11=0x0000000000000020
+R12=0x0000000000000000, R13=0x00000006c001cf98, R14=0x00007ffe1c12e1f8, R15=0x00007ffe1c12e000
+RIP=0x00000001270adcdd, EFLAGS=0x0000000000010202, ERR=0x0000000000000004
+  TRAPNO=0x000000000000000e
+
+Top of Stack: (sp=0x0000700001c1e810)
+0x0000700001c1e810:   00007ffe21746ae0 0000000000000000
+0x0000700001c1e820:   00007ffe1c176210 00007ffe1c12e000
+0x0000700001c1e830:   0000700001c1e8b0 00000001270ce322
+0x0000700001c1e840:   0000000000000064 00007ffe1b141488
+0x0000700001c1e850:   0000700001c1e8b0 000000010954f084
+0x0000700001c1e860:   0000000000000005 00007ffe1c12e000
+0x0000700001c1e870:   00000006c001cf01 00007ffe1c176220
+0x0000700001c1e880:   0000700000c1e800 00007ffe1c12e1f8
+0x0000700001c1e890:   0000000000000000 0000000000000000
+0x0000700001c1e8a0:   0000700001c1e960 00007ffe1c12e000
+0x0000700001c1e8b0:   0000700001c1e900 000000010a959b2a
+0x0000700001c1e8c0:   00000006c00af5a0 0000000107f6d000
+0x0000700001c1e8d0:   0000000000000001 000000010ac8d060
+0x0000700001c1e8e0:   0000000000000000 00000006c001cf98
+0x0000700001c1e8f0:   0000700001c1e960 00007ffe1c12e000
+0x0000700001c1e900:   00000000d8015eb4 000000010b1ce474
+0x0000700001c1e910:   00000006c00af5a0 00000006c001cf98
+0x0000700001c1e920:   0000000100000000 00000006c001cf98
+0x0000700001c1e930:   0000700001c1e960 0000700001c1e9d0
+0x0000700001c1e940:   0000000000000001 0000000000000000
+0x0000700001c1e950:   0000700001c1e9d0 000000010a1d67a7
+0x0000700001c1e960:   00000006c001cf98 00000006c001cf98
+0x0000700001c1e970:   0000700000001fa0 000000000000000a
+0x0000700001c1e980:   00007ffe1c12e000 0000000000000001
+0x0000700001c1e990:   000000010a1d671f 00000001230ea5a0
+0x0000700001c1e9a0:   0000700001c1ea68 0000700001c1ed00
+0x0000700001c1e9b0:   000000010000000a 00000001230ea5a0
+0x0000700001c1e9c0:   000000010a1e9120 0000700001c1ec70
+0x0000700001c1e9d0:   0000700001c1eb80 00000001094ed5e2
+0x0000700001c1e9e0:   0000700000000001 00007ffe1c12e000
+0x0000700001c1e9f0:   00007ffe1c12e000 0000700001c1ed00
+0x0000700001c1ea00:   00007ffe1b141480 000000010a1e9120 
+
+Instructions: (pc=0x00000001270adcdd)
+0x00000001270adcbd:   c0 e9 82 00 00 00 48 8b 5e 10 48 85 db 75 0e bf
+0x00000001270adccd:   01 00 00 00 48 8d 15 ef 76 03 00 eb d6 49 89 fe
+0x00000001270adcdd:   4c 8b 3b 30 c0 e8 83 a3 02 00 49 8b 3f 49 89 c4
+0x00000001270adced:   48 8b 35 34 f9 05 00 30 c0 e8 cb a4 02 00 48 85 
+
+Register to memory mapping:
+
+RAX=0x00000000ffffffff is an unknown value
+RBX=0x0000000000000002 is an unknown value
+RCX=0x0000000000000047 is an unknown value
+RDX=0x00000001270ce844: Java_sun_java2d_opengl_OGLRenderQueue_flushBuffer+0xb5c in /Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libawt_lwawt.dylib at 0x0000000127093000
+RSP=0x0000700001c1e810 is pointing into the stack for thread: 0x00007ffe1c12e000
+RBP=0x0000700001c1e830 is pointing into the stack for thread: 0x00007ffe1c12e000
+RSI=0x00007ffe21746ae0 is an unknown value
+RDI=0x00007ffe1c12e1f8 is an unknown value
+R8 =0x0000000000000001 is an unknown value
+R9 =0x00000000d8015eb7 is an unknown value
+R10=0x000000010a959ab8 is at entry_point+56 in (nmethod*)0x000000010a959910
+R11=0x0000000000000020 is an unknown value
+R12=0x0000000000000000 is an unknown value
+R13=0x00000006c001cf98 is an oop
+sun.java2d.opengl.OGLRenderQueue$QueueFlusher 
+ - klass: 'sun/java2d/opengl/OGLRenderQueue$QueueFlusher'
+R14=0x00007ffe1c12e1f8 is an unknown value
+R15=0x00007ffe1c12e000 is a thread
+
+
+Stack: [0x0000700001b1f000,0x0000700001c1f000],  sp=0x0000700001c1e810,  free space=1022k
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+C  [libawt_lwawt.dylib+0x1acdd]  OGLSD_SetScratchSurface+0x49
+C  [libawt_lwawt.dylib+0x3b322]  Java_sun_java2d_opengl_OGLRenderQueue_flushBuffer+0x63a
+J 2604  sun.java2d.opengl.OGLRenderQueue.flushBuffer(JI)V (0 bytes) @ 0x000000010a959b2a [0x000000010a959a80+0xaa]
+J 6435% C2 sun.java2d.opengl.OGLRenderQueue$QueueFlusher.run()V (234 bytes) @ 0x000000010b1ce474 [0x000000010b1ce200+0x274]
+v  ~StubRoutines::call_stub
+V  [libjvm.dylib+0x2ed5e2]  JavaCalls::call_helper(JavaValue*, methodHandle*, JavaCallArguments*, Thread*)+0x6ae
+V  [libjvm.dylib+0x2edd70]  JavaCalls::call_virtual(JavaValue*, KlassHandle, Symbol*, Symbol*, JavaCallArguments*, Thread*)+0x164
+V  [libjvm.dylib+0x2edf1c]  JavaCalls::call_virtual(JavaValue*, Handle, KlassHandle, Symbol*, Symbol*, Thread*)+0x4a
+V  [libjvm.dylib+0x348691]  thread_entry(JavaThread*, Thread*)+0x7c
+V  [libjvm.dylib+0x56a4db]  JavaThread::thread_main_inner()+0x9b
+V  [libjvm.dylib+0x56bbc8]  JavaThread::run()+0x1c2
+V  [libjvm.dylib+0x489ed2]  java_start(Thread*)+0xf6
+C  [libsystem_pthread.dylib+0x3c13]  _pthread_body+0x83
+C  [libsystem_pthread.dylib+0x3b90]  _pthread_body+0x0
+C  [libsystem_pthread.dylib+0x1375]  thread_start+0xd
+C  0x0000000000000000
+
+Java frames: (J=compiled Java code, j=interpreted, Vv=VM code)
+J 2604  sun.java2d.opengl.OGLRenderQueue.flushBuffer(JI)V (0 bytes) @ 0x000000010a959ab8 [0x000000010a959a80+0x38]
+J 6435% C2 sun.java2d.opengl.OGLRenderQueue$QueueFlusher.run()V (234 bytes) @ 0x000000010b1ce474 [0x000000010b1ce200+0x274]
+v  ~StubRoutines::call_stub
+
+---------------  P R O C E S S  ---------------
+
+Java Threads: ( => current thread )
+  0x00007ffe1b9a0000 JavaThread "Thread-455" [_thread_blocked, id=403391, stack(0x000070002968d000,0x000070002978d000)]
+  0x00007ffe220a6000 JavaThread "Thread-453" [_thread_blocked, id=407367, stack(0x000070002958a000,0x000070002968a000)]
+  0x00007ffe22210800 JavaThread "cluster88-worker-0" [_thread_blocked, id=399499, stack(0x0000700029487000,0x0000700029587000)]
+  0x00007ffe195d9000 JavaThread "cluster88-nio-worker-1" [_thread_in_native, id=408543, stack(0x0000700029384000,0x0000700029484000)]
+  0x00007ffe1a436000 JavaThread "cluster88-timeouter-0" [_thread_blocked, id=197615, stack(0x0000700029281000,0x0000700029381000)]
+  0x00007ffe1c5f8000 JavaThread "cluster88-nio-worker-0" [_thread_in_native, id=408127, stack(0x000070002917e000,0x000070002927e000)]
+  0x00007ffe24aa4000 JavaThread "cluster88-scheduled-task-worker-0" [_thread_blocked, id=405571, stack(0x000070002907b000,0x000070002917b000)]
+  0x00007ffe1c536800 JavaThread "cluster88-connection-reaper-0" [_thread_blocked, id=407627, stack(0x0000700028f78000,0x0000700029078000)]
+  0x00007ffe244db800 JavaThread "Thread-450" [_thread_blocked, id=402803, stack(0x0000700028e75000,0x0000700028f75000)]
+  0x00007ffe24a2f000 JavaThread "Thread-448" [_thread_blocked, id=406875, stack(0x0000700028d72000,0x0000700028e72000)]
+  0x00007ffe24a1c000 JavaThread "cluster87-nio-worker-1" [_thread_in_native, id=401667, stack(0x0000700028c6f000,0x0000700028d6f000)]
+  0x00007ffe22325800 JavaThread "cluster87-timeouter-0" [_thread_blocked, id=394423, stack(0x0000700028b6c000,0x0000700028c6c000)]
+  0x00007ffe24a1e800 JavaThread "cluster87-nio-worker-0" [_thread_in_native, id=399931, stack(0x0000700028a69000,0x0000700028b69000)]
+  0x00007ffe240d7000 JavaThread "cluster87-scheduled-task-worker-0" [_thread_blocked, id=400191, stack(0x0000700028966000,0x0000700028a66000)]
+  0x00007ffe242f2800 JavaThread "cluster87-connection-reaper-0" [_thread_blocked, id=398859, stack(0x0000700028863000,0x0000700028963000)]
+  0x00007ffe1be46000 JavaThread "Thread-445" [_thread_blocked, id=396103, stack(0x0000700028760000,0x0000700028860000)]
+  0x00007ffe1c535000 JavaThread "Thread-443" [_thread_blocked, id=400559, stack(0x000070002865d000,0x000070002875d000)]
+  0x00007ffe1c5fa000 JavaThread "cluster86-nio-worker-1" [_thread_in_native, id=397827, stack(0x000070002855a000,0x000070002865a000)]
+  0x00007ffe24a18800 JavaThread "cluster86-timeouter-0" [_thread_blocked, id=396719, stack(0x0000700028457000,0x0000700028557000)]
+  0x00007ffe22467000 JavaThread "cluster86-nio-worker-0" [_thread_in_native, id=395575, stack(0x0000700028354000,0x0000700028454000)]
+  0x00007ffe1a42c000 JavaThread "cluster86-scheduled-task-worker-0" [_thread_blocked, id=394795, stack(0x0000700028251000,0x0000700028351000)]
+  0x00007ffe1bf1c800 JavaThread "cluster86-connection-reaper-0" [_thread_blocked, id=395407, stack(0x000070002814e000,0x000070002824e000)]
+  0x00007ffe25046000 JavaThread "Thread-440" [_thread_blocked, id=397075, stack(0x000070002804b000,0x000070002814b000)]
+  0x00007ffe1c537000 JavaThread "Thread-438" [_thread_blocked, id=396983, stack(0x0000700027f48000,0x0000700028048000)]
+  0x00007ffe1c531000 JavaThread "cluster85-nio-worker-1" [_thread_in_native, id=393427, stack(0x0000700027e45000,0x0000700027f45000)]
+  0x00007ffe24540000 JavaThread "cluster85-timeouter-0" [_thread_blocked, id=390983, stack(0x0000700027d42000,0x0000700027e42000)]
+  0x00007ffe242cf000 JavaThread "cluster85-nio-worker-0" [_thread_in_native, id=391255, stack(0x0000700027c3f000,0x0000700027d3f000)]
+  0x00007ffe24477800 JavaThread "cluster85-scheduled-task-worker-0" [_thread_blocked, id=391743, stack(0x0000700027b3c000,0x0000700027c3c000)]
+  0x00007ffe1bfbf000 JavaThread "cluster85-connection-reaper-0" [_thread_blocked, id=392995, stack(0x0000700027a39000,0x0000700027b39000)]
+  0x00007ffe24a35800 JavaThread "Thread-435" [_thread_blocked, id=384519, stack(0x0000700027936000,0x0000700027a36000)]
+  0x00007ffe1c601000 JavaThread "Thread-433" [_thread_blocked, id=392235, stack(0x0000700027833000,0x0000700027933000)]
+  0x00007ffe24a9f000 JavaThread "cluster84-nio-worker-1" [_thread_in_native, id=390147, stack(0x0000700027730000,0x0000700027830000)]
+  0x00007ffe1befa000 JavaThread "cluster84-timeouter-0" [_thread_blocked, id=388811, stack(0x000070002762d000,0x000070002772d000)]
+  0x00007ffe1c5fe800 JavaThread "cluster84-nio-worker-0" [_thread_in_native, id=384183, stack(0x000070002752a000,0x000070002762a000)]
+  0x00007ffe1c53a800 JavaThread "cluster84-scheduled-task-worker-0" [_thread_blocked, id=388215, stack(0x0000700027427000,0x0000700027527000)]
+  0x00007ffe24aa3000 JavaThread "cluster84-connection-reaper-0" [_thread_blocked, id=385979, stack(0x0000700027324000,0x0000700027424000)]
+  0x00007ffe1bde0800 JavaThread "Thread-430" [_thread_blocked, id=389239, stack(0x0000700027221000,0x0000700027321000)]
+  0x00007ffe240fa800 JavaThread "Thread-428" [_thread_blocked, id=381587, stack(0x000070002711e000,0x000070002721e000)]
+  0x00007ffe24aa2000 JavaThread "cluster83-nio-worker-1" [_thread_in_native, id=387331, stack(0x000070002701b000,0x000070002711b000)]
+  0x00007ffe24580800 JavaThread "cluster83-timeouter-0" [_thread_blocked, id=386739, stack(0x0000700026f18000,0x0000700027018000)]
+  0x00007ffe24a9e000 JavaThread "cluster83-nio-worker-0" [_thread_in_native, id=385147, stack(0x0000700026e15000,0x0000700026f15000)]
+  0x00007ffe1c7e9000 JavaThread "cluster83-scheduled-task-worker-0" [_thread_blocked, id=385323, stack(0x0000700026d12000,0x0000700026e12000)]
+  0x00007ffe2466b800 JavaThread "cluster83-connection-reaper-0" [_thread_blocked, id=381979, stack(0x0000700026c0f000,0x0000700026d0f000)]
+  0x00007ffe2264a000 JavaThread "Thread-425" [_thread_blocked, id=386323, stack(0x0000700026b0c000,0x0000700026c0c000)]
+  0x00007ffe24a13000 JavaThread "Thread-423" [_thread_blocked, id=383947, stack(0x0000700026a09000,0x0000700026b09000)]
+  0x00007ffe24232000 JavaThread "cluster82-nio-worker-1" [_thread_in_native, id=382979, stack(0x0000700026883000,0x0000700026983000)]
+  0x00007ffe190f5000 JavaThread "cluster82-timeouter-0" [_thread_blocked, id=382467, stack(0x0000700026780000,0x0000700026880000)]
+  0x00007ffe1b9b7800 JavaThread "cluster82-nio-worker-0" [_thread_in_native, id=381707, stack(0x000070002667d000,0x000070002677d000)]
+  0x00007ffe2491a800 JavaThread "cluster82-scheduled-task-worker-0" [_thread_blocked, id=380471, stack(0x000070002657a000,0x000070002667a000)]
+  0x00007ffe2491e000 JavaThread "cluster82-connection-reaper-0" [_thread_blocked, id=379427, stack(0x0000700026477000,0x0000700026577000)]
+  0x00007ffe227ef800 JavaThread "Thread-420" [_thread_blocked, id=381299, stack(0x0000700026374000,0x0000700026474000)]
+  0x00007ffe1948a800 JavaThread "Thread-418" [_thread_blocked, id=374871, stack(0x0000700026271000,0x0000700026371000)]
+  0x00007ffe23162000 JavaThread "Thread-415" [_thread_blocked, id=375395, stack(0x000070002616e000,0x000070002626e000)]
+  0x00007ffe24565000 JavaThread "Thread-413" [_thread_blocked, id=379943, stack(0x000070002606b000,0x000070002616b000)]
+  0x00007ffe23847000 JavaThread "Thread-410" [_thread_blocked, id=378971, stack(0x0000700025f68000,0x0000700026068000)]
+  0x00007ffe1bcfa000 JavaThread "Thread-408" [_thread_blocked, id=372091, stack(0x0000700025e65000,0x0000700025f65000)]
+  0x00007ffe23a3e000 JavaThread "Thread-405" [_thread_blocked, id=378219, stack(0x0000700025d62000,0x0000700025e62000)]
+  0x00007ffe19676000 JavaThread "Thread-403" [_thread_blocked, id=378039, stack(0x0000700025c5f000,0x0000700025d5f000)]
+  0x00007ffe23842000 JavaThread "cluster81-nio-worker-1" [_thread_in_native, id=376323, stack(0x0000700025b5c000,0x0000700025c5c000)]
+  0x00007ffe1c8e3000 JavaThread "cluster81-timeouter-0" [_thread_blocked, id=375811, stack(0x0000700025a59000,0x0000700025b59000)]
+  0x00007ffe1bf52000 JavaThread "cluster81-nio-worker-0" [_thread_in_native, id=375559, stack(0x0000700025956000,0x0000700025a56000)]
+  0x00007ffe19771000 JavaThread "cluster81-scheduled-task-worker-0" [_thread_blocked, id=374759, stack(0x0000700025853000,0x0000700025953000)]
+  0x00007ffe1a42d000 JavaThread "cluster81-connection-reaper-0" [_thread_blocked, id=374283, stack(0x0000700025750000,0x0000700025850000)]
+  0x00007ffe239bf000 JavaThread "Thread-400" [_thread_blocked, id=371883, stack(0x000070002564d000,0x000070002574d000)]
+  0x00007ffe1bddb800 JavaThread "Thread-398" [_thread_blocked, id=370291, stack(0x000070002554a000,0x000070002564a000)]
+  0x00007ffe242eb000 JavaThread "cluster80-nio-worker-1" [_thread_in_native, id=372931, stack(0x0000700025447000,0x0000700025547000)]
+  0x00007ffe1a8bb800 JavaThread "cluster80-timeouter-0" [_thread_blocked, id=373031, stack(0x0000700025344000,0x0000700025444000)]
+  0x00007ffe226ab000 JavaThread "cluster80-nio-worker-0" [_thread_in_native, id=366115, stack(0x0000700025241000,0x0000700025341000)]
+  0x00007ffe1c5ae000 JavaThread "cluster80-scheduled-task-worker-0" [_thread_blocked, id=357635, stack(0x000070002513e000,0x000070002523e000)]
+  0x00007ffe24566000 JavaThread "cluster80-connection-reaper-0" [_thread_blocked, id=372535, stack(0x000070002503b000,0x000070002513b000)]
+  0x00007ffe240d2800 JavaThread "Thread-395" [_thread_blocked, id=370131, stack(0x0000700024f38000,0x0000700025038000)]
+  0x00007ffe22214800 JavaThread "Thread-393" [_thread_blocked, id=354843, stack(0x0000700024e35000,0x0000700024f35000)]
+  0x00007ffe240d1800 JavaThread "cluster79-nio-worker-1" [_thread_in_native, id=369411, stack(0x0000700024d32000,0x0000700024e32000)]
+  0x00007ffe22565800 JavaThread "cluster79-timeouter-0" [_thread_blocked, id=368899, stack(0x0000700024c2f000,0x0000700024d2f000)]
+  0x00007ffe242f6800 JavaThread "cluster79-nio-worker-0" [_thread_in_native, id=368139, stack(0x0000700024b2c000,0x0000700024c2c000)]
+  0x00007ffe242ea800 JavaThread "cluster79-scheduled-task-worker-0" [_thread_blocked, id=367115, stack(0x0000700024a29000,0x0000700024b29000)]
+  0x00007ffe226b6000 JavaThread "cluster79-connection-reaper-0" [_thread_blocked, id=367371, stack(0x0000700024926000,0x0000700024a26000)]
+  0x00007ffe1a42f800 JavaThread "Thread-390" [_thread_blocked, id=363639, stack(0x0000700024823000,0x0000700024923000)]
+  0x00007ffe195ee800 JavaThread "Thread-388" [_thread_blocked, id=364271, stack(0x0000700024720000,0x0000700024820000)]
+  0x00007ffe242e0000 JavaThread "cluster78-nio-worker-1" [_thread_in_native, id=365571, stack(0x000070002461d000,0x000070002471d000)]
+  0x00007ffe1ba4f800 JavaThread "cluster78-timeouter-0" [_thread_blocked, id=365059, stack(0x000070002451a000,0x000070002461a000)]
+  0x00007ffe23629000 JavaThread "cluster78-nio-worker-0" [_thread_in_native, id=364815, stack(0x0000700024417000,0x0000700024517000)]
+  0x00007ffe2465b800 JavaThread "cluster78-scheduled-task-worker-0" [_thread_blocked, id=363783, stack(0x0000700024314000,0x0000700024414000)]
+  0x00007ffe242ed000 JavaThread "cluster78-connection-reaper-0" [_thread_blocked, id=358987, stack(0x0000700024211000,0x0000700024311000)]
+  0x00007ffe19593000 JavaThread "Thread-385" [_thread_blocked, id=354647, stack(0x000070002410e000,0x000070002420e000)]
+  0x00007ffe226b5000 JavaThread "Thread-383" [_thread_blocked, id=362987, stack(0x000070002400b000,0x000070002410b000)]
+  0x00007ffe242ec000 JavaThread "cluster77-nio-worker-1" [_thread_in_native, id=361987, stack(0x0000700023f08000,0x0000700024008000)]
+  0x00007ffe2200b000 JavaThread "cluster77-timeouter-0" [_thread_blocked, id=361899, stack(0x0000700023e05000,0x0000700023f05000)]
+  0x00007ffe2200a000 JavaThread "cluster77-nio-worker-0" [_thread_in_native, id=357067, stack(0x0000700023d02000,0x0000700023e02000)]
+  0x00007ffe22660000 JavaThread "cluster77-scheduled-task-worker-0" [_thread_blocked, id=356719, stack(0x0000700023bff000,0x0000700023cff000)]
+  0x00007ffe224b9000 JavaThread "cluster77-connection-reaper-0" [_thread_blocked, id=354155, stack(0x0000700023afc000,0x0000700023bfc000)]
+  0x00007ffe1a42b000 JavaThread "Thread-380" [_thread_blocked, id=360499, stack(0x00007000239f9000,0x0000700023af9000)]
+  0x00007ffe1a437000 JavaThread "Thread-378" [_thread_blocked, id=220599, stack(0x00007000238f6000,0x00007000239f6000)]
+  0x00007ffe233e0800 JavaThread "cluster76-nio-worker-1" [_thread_in_native, id=359939, stack(0x00007000237f3000,0x00007000238f3000)]
+  0x00007ffe1bac6000 JavaThread "cluster76-timeouter-0" [_thread_blocked, id=359427, stack(0x00007000236f0000,0x00007000237f0000)]
+  0x00007ffe224fa800 JavaThread "cluster76-nio-worker-0" [_thread_in_native, id=358667, stack(0x00007000235ed000,0x00007000236ed000)]
+  0x00007ffe196d9000 JavaThread "cluster76-scheduled-task-worker-0" [_thread_blocked, id=358567, stack(0x00007000234ea000,0x00007000235ea000)]
+  0x00007ffe1bf51000 JavaThread "cluster76-connection-reaper-0" [_thread_blocked, id=343743, stack(0x00007000233e7000,0x00007000234e7000)]
+  0x00007ffe1c1f7800 JavaThread "Thread-375" [_thread_blocked, id=357371, stack(0x00007000232e4000,0x00007000233e4000)]
+  0x00007ffe24641000 JavaThread "Thread-373" [_thread_blocked, id=351527, stack(0x00007000231e1000,0x00007000232e1000)]
+  0x00007ffe1a438000 JavaThread "cluster75-nio-worker-1" [_thread_in_native, id=353027, stack(0x00007000230de000,0x00007000231de000)]
+  0x00007ffe196d8000 JavaThread "cluster75-timeouter-0" [_thread_blocked, id=352515, stack(0x0000700022fdb000,0x00007000230db000)]
+  0x00007ffe1bfdc800 JavaThread "cluster75-nio-worker-0" [_thread_in_native, id=351755, stack(0x0000700022ed8000,0x0000700022fd8000)]
+  0x00007ffe2254a000 JavaThread "cluster75-scheduled-task-worker-0" [_thread_blocked, id=351287, stack(0x0000700022dd5000,0x0000700022ed5000)]
+  0x00007ffe2237a000 JavaThread "cluster75-connection-reaper-0" [_thread_blocked, id=348671, stack(0x0000700022cd2000,0x0000700022dd2000)]
+  0x00007ffe1ba58800 JavaThread "Thread-370" [_thread_blocked, id=350899, stack(0x0000700022bcf000,0x0000700022ccf000)]
+  0x00007ffe23160800 JavaThread "Thread-368" [_thread_blocked, id=347191, stack(0x0000700022acc000,0x0000700022bcc000)]
+  0x00007ffe1a264800 JavaThread "cluster74-nio-worker-1" [_thread_in_native, id=350211, stack(0x00007000229c9000,0x0000700022ac9000)]
+  0x00007ffe226be800 JavaThread "cluster74-timeouter-0" [_thread_blocked, id=349699, stack(0x00007000228c6000,0x00007000229c6000)]
+  0x00007ffe225ea000 JavaThread "cluster74-nio-worker-0" [_thread_in_native, id=348939, stack(0x00007000227c3000,0x00007000228c3000)]
+  0x00007ffe1c613000 JavaThread "cluster74-scheduled-task-worker-0" [_thread_blocked, id=348683, stack(0x00007000226c0000,0x00007000227c0000)]
+  0x00007ffe1c620000 JavaThread "cluster74-connection-reaper-0" [_thread_blocked, id=347663, stack(0x00007000225bd000,0x00007000226bd000)]
+  0x00007ffe247ec800 JavaThread "Thread-365" [_thread_blocked, id=250539, stack(0x0000700022437000,0x0000700022537000)]
+  0x00007ffe247ec000 JavaThread "Thread-363" [_thread_blocked, id=345311, stack(0x0000700021c1c000,0x0000700021d1c000)]
+  0x00007ffe1a7f7800 JavaThread "cluster73-nio-worker-1" [_thread_in_native, id=346115, stack(0x0000700022334000,0x0000700022434000)]
+  0x00007ffe1a7f6800 JavaThread "cluster73-timeouter-0" [_thread_blocked, id=345603, stack(0x0000700022231000,0x0000700022331000)]
+  0x00007ffe2463d800 JavaThread "cluster73-nio-worker-0" [_thread_in_native, id=344843, stack(0x000070002212e000,0x000070002222e000)]
+  0x00007ffe2463d000 JavaThread "cluster73-scheduled-task-worker-0" [_thread_blocked, id=344219, stack(0x000070002202b000,0x000070002212b000)]
+  0x00007ffe247eb000 JavaThread "cluster73-connection-reaper-0" [_thread_blocked, id=344619, stack(0x0000700021f28000,0x0000700022028000)]
+  0x00007ffe247ea800 JavaThread "Thread-360" [_thread_blocked, id=338535, stack(0x0000700021e25000,0x0000700021f25000)]
+  0x00007ffe1c731800 JavaThread "Thread-358" [_thread_blocked, id=342959, stack(0x0000700021d22000,0x0000700021e22000)]
+  0x00007ffe1a7f6000 JavaThread "cluster72-nio-worker-1" [_thread_in_native, id=342019, stack(0x0000700021b19000,0x0000700021c19000)]
+  0x00007ffe247e9800 JavaThread "cluster72-timeouter-0" [_thread_blocked, id=341507, stack(0x0000700021a16000,0x0000700021b16000)]
+  0x00007ffe247e9000 JavaThread "cluster72-nio-worker-0" [_thread_in_native, id=341263, stack(0x0000700021913000,0x0000700021a13000)]
+  0x00007ffe243fd800 JavaThread "cluster72-scheduled-task-worker-0" [_thread_blocked, id=340231, stack(0x0000700021810000,0x0000700021910000)]
+  0x00007ffe24472800 JavaThread "cluster72-connection-reaper-0" [_thread_blocked, id=339747, stack(0x000070002170d000,0x000070002180d000)]
+  0x00007ffe1a433000 JavaThread "Thread-355" [_thread_blocked, id=335287, stack(0x000070002160a000,0x000070002170a000)]
+  0x00007ffe247cc800 JavaThread "Thread-353" [_thread_blocked, id=339371, stack(0x0000700021507000,0x0000700021607000)]
+  0x00007ffe1bfee800 JavaThread "cluster71-nio-worker-1" [_thread_in_native, id=337923, stack(0x0000700021404000,0x0000700021504000)]
+  0x00007ffe1c0fe800 JavaThread "cluster71-timeouter-0" [_thread_blocked, id=337411, stack(0x0000700021301000,0x0000700021401000)]
+  0x00007ffe1c616000 JavaThread "cluster71-nio-worker-0" [_thread_in_native, id=337167, stack(0x00007000211fe000,0x00007000212fe000)]
+  0x00007ffe1c621000 JavaThread "cluster71-scheduled-task-worker-0" [_thread_blocked, id=336135, stack(0x00007000210fb000,0x00007000211fb000)]
+  0x00007ffe2231c000 JavaThread "cluster71-connection-reaper-0" [_thread_blocked, id=336035, stack(0x0000700020ff8000,0x00007000210f8000)]
+  0x00007ffe1a219800 JavaThread "Thread-350" [_thread_blocked, id=331059, stack(0x0000700020ef5000,0x0000700020ff5000)]
+  0x00007ffe2446f800 JavaThread "Thread-348" [_thread_blocked, id=331363, stack(0x0000700020df2000,0x0000700020ef2000)]
+  0x00007ffe1a34d000 JavaThread "cluster70-nio-worker-1" [_thread_in_native, id=334083, stack(0x0000700020cef000,0x0000700020def000)]
+  0x00007ffe1bf4e000 JavaThread "cluster70-timeouter-0" [_thread_blocked, id=333571, stack(0x0000700020bec000,0x0000700020cec000)]
+  0x00007ffe1bf4d000 JavaThread "cluster70-nio-worker-0" [_thread_in_native, id=333319, stack(0x0000700020ae9000,0x0000700020be9000)]
+  0x00007ffe2300c000 JavaThread "cluster70-scheduled-task-worker-0" [_thread_blocked, id=332807, stack(0x00007000209e6000,0x0000700020ae6000)]
+  0x00007ffe1ba2b800 JavaThread "cluster70-connection-reaper-0" [_thread_blocked, id=332343, stack(0x00007000208e3000,0x00007000209e3000)]
+  0x00007ffe24106800 JavaThread "Thread-345" [_thread_blocked, id=330543, stack(0x00007000207e0000,0x00007000208e0000)]
+  0x00007ffe1ba2a800 JavaThread "Thread-343" [_thread_blocked, id=331571, stack(0x00007000206dd000,0x00007000207dd000)]
+  0x00007ffe1ba71000 JavaThread "cluster69-nio-worker-1" [_thread_in_native, id=329987, stack(0x00007000205da000,0x00007000206da000)]
+  0x00007ffe1ba70000 JavaThread "cluster69-timeouter-0" [_thread_blocked, id=329511, stack(0x00007000204d7000,0x00007000205d7000)]
+  0x00007ffe1ba6f800 JavaThread "cluster69-nio-worker-0" [_thread_in_native, id=327779, stack(0x00007000203d4000,0x00007000204d4000)]
+  0x00007ffe1ba37000 JavaThread "cluster69-scheduled-task-worker-0" [_thread_blocked, id=328711, stack(0x00007000202d1000,0x00007000203d1000)]
+  0x00007ffe2241b800 JavaThread "cluster69-connection-reaper-0" [_thread_blocked, id=328039, stack(0x00007000201ce000,0x00007000202ce000)]
+  0x00007ffe24209000 JavaThread "Thread-340" [_thread_blocked, id=325535, stack(0x00007000200cb000,0x00007000201cb000)]
+  0x00007ffe240e6000 JavaThread "Thread-338" [_thread_blocked, id=321671, stack(0x000070001ffc8000,0x00007000200c8000)]
+  0x00007ffe1ba29800 JavaThread "cluster68-nio-worker-1" [_thread_in_native, id=326915, stack(0x000070001fec5000,0x000070001ffc5000)]
+  0x00007ffe192f8000 JavaThread "cluster68-timeouter-0" [_thread_blocked, id=326403, stack(0x000070001fdc2000,0x000070001fec2000)]
+  0x00007ffe22548000 JavaThread "cluster68-nio-worker-0" [_thread_in_native, id=317531, stack(0x000070001fcbf000,0x000070001fdbf000)]
+  0x00007ffe22547800 JavaThread "cluster68-scheduled-task-worker-0" [_thread_blocked, id=321195, stack(0x000070001fbbc000,0x000070001fcbc000)]
+  0x00007ffe236c9000 JavaThread "cluster68-connection-reaper-0" [_thread_blocked, id=325327, stack(0x000070001fab9000,0x000070001fbb9000)]
+  0x00007ffe22546800 JavaThread "Thread-335" [_thread_blocked, id=325067, stack(0x000070001f9b6000,0x000070001fab6000)]
+  0x00007ffe22546000 JavaThread "Thread-333" [_thread_blocked, id=325999, stack(0x000070001f2a1000,0x000070001f3a1000)]
+  0x00007ffe192f7000 JavaThread "cluster67-nio-worker-1" [_thread_in_native, id=324355, stack(0x000070001f8b3000,0x000070001f9b3000)]
+  0x00007ffe23460800 JavaThread "cluster67-timeouter-0" [_thread_blocked, id=323843, stack(0x000070001f7b0000,0x000070001f8b0000)]
+  0x00007ffe2466b000 JavaThread "cluster67-nio-worker-0" [_thread_in_native, id=323339, stack(0x000070001f6ad000,0x000070001f7ad000)]
+  0x00007ffe2420b800 JavaThread "cluster67-scheduled-task-worker-0" [_thread_blocked, id=323079, stack(0x000070001f5aa000,0x000070001f6aa000)]
+  0x00007ffe1bee2000 JavaThread "cluster67-connection-reaper-0" [_thread_blocked, id=322319, stack(0x000070001f4a7000,0x000070001f5a7000)]
+  0x00007ffe1bc3a000 JavaThread "Thread-330" [_thread_blocked, id=321311, stack(0x000070001f3a4000,0x000070001f4a4000)]
+  0x00007ffe240e7000 JavaThread "Thread-328" [_thread_blocked, id=316359, stack(0x000070001ea89000,0x000070001eb89000)]
+  0x00007ffe23514000 JavaThread "cluster66-nio-worker-1" [_thread_in_native, id=320259, stack(0x000070001f19e000,0x000070001f29e000)]
+  0x00007ffe2231f000 JavaThread "cluster66-timeouter-0" [_thread_blocked, id=319747, stack(0x000070001f09b000,0x000070001f19b000)]
+  0x00007ffe1bee4000 JavaThread "cluster66-nio-worker-0" [_thread_in_native, id=318991, stack(0x000070001ef98000,0x000070001f098000)]
+  0x00007ffe1bee3000 JavaThread "cluster66-scheduled-task-worker-0" [_thread_blocked, id=316759, stack(0x000070001ee95000,0x000070001ef95000)]
+  0x00007ffe1bde2000 JavaThread "cluster66-connection-reaper-0" [_thread_blocked, id=319243, stack(0x000070001ec8f000,0x000070001ed8f000)]
+  0x00007ffe1a298000 JavaThread "Thread-325" [_thread_blocked, id=317183, stack(0x000070001ed92000,0x000070001ee92000)]
+  0x00007ffe190c3000 JavaThread "Thread-323" [_thread_blocked, id=317227, stack(0x000070001eb8c000,0x000070001ec8c000)]
+  0x00007ffe1988f000 JavaThread "cluster65-nio-worker-1" [_thread_in_native, id=315651, stack(0x000070001e986000,0x000070001ea86000)]
+  0x00007ffe18823000 JavaThread "cluster65-timeouter-0" [_thread_blocked, id=314887, stack(0x000070001e883000,0x000070001e983000)]
+  0x00007ffe2309f000 JavaThread "cluster65-nio-worker-0" [_thread_in_native, id=310867, stack(0x000070001e780000,0x000070001e880000)]
+  0x00007ffe236a8800 JavaThread "cluster65-scheduled-task-worker-0" [_thread_blocked, id=314407, stack(0x000070001e67d000,0x000070001e77d000)]
+  0x00007ffe1a37f000 JavaThread "cluster65-connection-reaper-0" [_thread_blocked, id=315235, stack(0x000070001e57a000,0x000070001e67a000)]
+  0x00007ffe2231e800 JavaThread "Thread-320" [_thread_blocked, id=306611, stack(0x000070001e477000,0x000070001e577000)]
+  0x00007ffe2231d800 JavaThread "Thread-318" [_thread_blocked, id=303315, stack(0x000070001e374000,0x000070001e474000)]
+  0x00007ffe236c5800 JavaThread "cluster64-nio-worker-1" [_thread_in_native, id=313859, stack(0x000070001e271000,0x000070001e371000)]
+  0x00007ffe239be000 JavaThread "cluster64-timeouter-0" [_thread_blocked, id=313347, stack(0x000070001e16e000,0x000070001e26e000)]
+  0x00007ffe23843000 JavaThread "cluster64-nio-worker-0" [_thread_in_native, id=313095, stack(0x000070001e06b000,0x000070001e16b000)]
+  0x00007ffe2438d800 JavaThread "cluster64-scheduled-task-worker-0" [_thread_blocked, id=312583, stack(0x000070001df68000,0x000070001e068000)]
+  0x00007ffe1bac2800 JavaThread "cluster64-connection-reaper-0" [_thread_blocked, id=312327, stack(0x000070001de65000,0x000070001df65000)]
+  0x00007ffe22326800 JavaThread "Thread-315" [_thread_blocked, id=307251, stack(0x000070001d64d000,0x000070001d74d000)]
+  0x00007ffe245e3800 JavaThread "Thread-313" [_thread_blocked, id=311427, stack(0x000070001ce35000,0x000070001cf35000)]
+  0x00007ffe236c6800 JavaThread "cluster63-nio-worker-1" [_thread_in_native, id=310275, stack(0x000070001dd62000,0x000070001de62000)]
+  0x00007ffe224e0800 JavaThread "cluster63-timeouter-0" [_thread_blocked, id=309763, stack(0x000070001dc5f000,0x000070001dd5f000)]
+  0x00007ffe22432000 JavaThread "cluster63-nio-worker-0" [_thread_in_native, id=309259, stack(0x000070001db5c000,0x000070001dc5c000)]
+  0x00007ffe196cc000 JavaThread "cluster63-scheduled-task-worker-0" [_thread_blocked, id=309003, stack(0x000070001da59000,0x000070001db59000)]
+  0x00007ffe240de000 JavaThread "cluster63-connection-reaper-0" [_thread_blocked, id=308235, stack(0x000070001d956000,0x000070001da56000)]
+  0x00007ffe19766000 JavaThread "Thread-310" [_thread_blocked, id=307719, stack(0x000070001d853000,0x000070001d953000)]
+  0x00007ffe24474800 JavaThread "Thread-308" [_thread_blocked, id=307559, stack(0x000070001d750000,0x000070001d850000)]
+  0x00007ffe1a26f800 JavaThread "cluster62-nio-worker-1" [_thread_in_native, id=305667, stack(0x000070001d54a000,0x000070001d64a000)]
+  0x00007ffe23655800 JavaThread "cluster62-timeouter-0" [_thread_blocked, id=305155, stack(0x000070001d447000,0x000070001d547000)]
+  0x00007ffe2445e000 JavaThread "cluster62-nio-worker-0" [_thread_in_native, id=304903, stack(0x000070001d344000,0x000070001d444000)]
+  0x00007ffe224eb000 JavaThread "cluster62-scheduled-task-worker-0" [_thread_blocked, id=304391, stack(0x000070001d241000,0x000070001d341000)]
+  0x00007ffe1c731000 JavaThread "cluster62-connection-reaper-0" [_thread_blocked, id=303863, stack(0x000070001d13e000,0x000070001d23e000)]
+  0x00007ffe1bcdc800 JavaThread "Thread-305" [_thread_blocked, id=292911, stack(0x000070001d03b000,0x000070001d13b000)]
+  0x00007ffe196ce000 JavaThread "Thread-303" [_thread_blocked, id=300195, stack(0x000070001cf38000,0x000070001d038000)]
+  0x00007ffe196cd000 JavaThread "cluster61-nio-worker-1" [_thread_in_native, id=302083, stack(0x000070001cd32000,0x000070001ce32000)]
+  0x00007ffe2472b000 JavaThread "cluster61-timeouter-0" [_thread_blocked, id=301571, stack(0x000070001cc2f000,0x000070001cd2f000)]
+  0x00007ffe19695800 JavaThread "cluster61-nio-worker-0" [_thread_in_native, id=301319, stack(0x000070001cb2c000,0x000070001cc2c000)]
+  0x00007ffe19694800 JavaThread "cluster61-scheduled-task-worker-0" [_thread_blocked, id=290959, stack(0x000070001ca29000,0x000070001cb29000)]
+  0x00007ffe1bddd800 JavaThread "cluster61-connection-reaper-0" [_thread_blocked, id=300591, stack(0x000070001c926000,0x000070001ca26000)]
+  0x00007ffe22433000 JavaThread "Thread-300" [_thread_blocked, id=295703, stack(0x000070001c823000,0x000070001c923000)]
+  0x00007ffe1bddc800 JavaThread "Thread-298" [_thread_blocked, id=292539, stack(0x000070001c00b000,0x000070001c10b000)]
+  0x00007ffe240f6800 JavaThread "cluster60-nio-worker-1" [_thread_in_native, id=299783, stack(0x000070001c720000,0x000070001c820000)]
+  0x00007ffe236c5000 JavaThread "cluster60-timeouter-0" [_thread_blocked, id=299011, stack(0x000070001c61d000,0x000070001c71d000)]
+  0x00007ffe1bde9000 JavaThread "cluster60-nio-worker-0" [_thread_in_native, id=298759, stack(0x000070001c51a000,0x000070001c61a000)]
+  0x00007ffe1911c000 JavaThread "cluster60-scheduled-task-worker-0" [_thread_blocked, id=297739, stack(0x000070001c417000,0x000070001c517000)]
+  0x00007ffe2472c000 JavaThread "cluster60-connection-reaper-0" [_thread_blocked, id=297995, stack(0x000070001c314000,0x000070001c414000)]
+  0x00007ffe236c4000 JavaThread "Thread-295" [_thread_blocked, id=296967, stack(0x000070001c211000,0x000070001c311000)]
+  0x00007ffe2241b000 JavaThread "Thread-293" [_thread_blocked, id=296695, stack(0x000070001c10e000,0x000070001c20e000)]
+  0x00007ffe1c6d3000 JavaThread "cluster59-nio-worker-1" [_thread_in_native, id=295171, stack(0x000070001bf08000,0x000070001c008000)]
+  0x00007ffe1bca6000 JavaThread "cluster59-timeouter-0" [_thread_blocked, id=294659, stack(0x000070001be05000,0x000070001bf05000)]
+  0x00007ffe1bca5800 JavaThread "cluster59-nio-worker-0" [_thread_in_native, id=294407, stack(0x000070001bd02000,0x000070001be02000)]
+  0x00007ffe24731800 JavaThread "cluster59-scheduled-task-worker-0" [_thread_blocked, id=293387, stack(0x000070001bbff000,0x000070001bcff000)]
+  0x00007ffe2472e800 JavaThread "cluster59-connection-reaper-0" [_thread_blocked, id=293643, stack(0x000070001bafc000,0x000070001bbfc000)]
+  0x00007ffe2472e000 JavaThread "Thread-290" [_thread_blocked, id=292115, stack(0x000070001b9f9000,0x000070001baf9000)]
+  0x00007ffe2472d000 JavaThread "Thread-288" [_thread_blocked, id=292715, stack(0x000070001b8f6000,0x000070001b9f6000)]
+  0x00007ffe1a212800 JavaThread "Thread-285" [_thread_blocked, id=287491, stack(0x000070001b7f3000,0x000070001b8f3000)]
+  0x00007ffe24738000 JavaThread "Thread-283" [_thread_blocked, id=283131, stack(0x000070001b6f0000,0x000070001b7f0000)]
+  0x00007ffe224b8000 JavaThread "cluster58-nio-worker-1" [_thread_in_native, id=290307, stack(0x000070001b5ed000,0x000070001b6ed000)]
+  0x00007ffe244c6800 JavaThread "cluster58-timeouter-0" [_thread_blocked, id=289795, stack(0x000070001b4ea000,0x000070001b5ea000)]
+  0x00007ffe1c63a800 JavaThread "cluster58-nio-worker-0" [_thread_in_native, id=289543, stack(0x000070001b3e7000,0x000070001b4e7000)]
+  0x00007ffe1c604000 JavaThread "cluster58-scheduled-task-worker-0" [_thread_blocked, id=289031, stack(0x000070001b2e4000,0x000070001b3e4000)]
+  0x00007ffe1c603000 JavaThread "cluster58-connection-reaper-0" [_thread_blocked, id=288527, stack(0x000070001b1e1000,0x000070001b2e1000)]
+  0x00007ffe1c608000 JavaThread "Thread-280" [_thread_blocked, id=279755, stack(0x000070001b0de000,0x000070001b1de000)]
+  0x00007ffe24479000 JavaThread "Thread-278" [_thread_blocked, id=287359, stack(0x000070001afdb000,0x000070001b0db000)]
+  0x00007ffe224de000 JavaThread "cluster57-nio-worker-1" [_thread_in_native, id=286723, stack(0x000070001aed8000,0x000070001afd8000)]
+  0x00007ffe194eb800 JavaThread "cluster57-timeouter-0" [_thread_blocked, id=286211, stack(0x000070001add5000,0x000070001aed5000)]
+  0x00007ffe24490000 JavaThread "cluster57-nio-worker-0" [_thread_in_native, id=285707, stack(0x000070001acd2000,0x000070001add2000)]
+  0x00007ffe2448f000 JavaThread "cluster57-scheduled-task-worker-0" [_thread_blocked, id=284939, stack(0x000070001abcf000,0x000070001accf000)]
+  0x00007ffe2412e800 JavaThread "cluster57-connection-reaper-0" [_thread_blocked, id=285195, stack(0x000070001aacc000,0x000070001abcc000)]
+  0x00007ffe2412e000 JavaThread "Thread-275" [_thread_blocked, id=284167, stack(0x000070001a9c9000,0x000070001aac9000)]
+  0x00007ffe1c59e800 JavaThread "Thread-273" [_thread_blocked, id=284031, stack(0x000070001a8c6000,0x000070001a9c6000)]
+  0x00007ffe236c2800 JavaThread "cluster56-nio-worker-1" [_thread_in_native, id=282371, stack(0x000070001a7c3000,0x000070001a8c3000)]
+  0x00007ffe194dd800 JavaThread "cluster56-timeouter-0" [_thread_blocked, id=281859, stack(0x000070001a6c0000,0x000070001a7c0000)]
+  0x00007ffe194dc800 JavaThread "cluster56-nio-worker-0" [_thread_in_native, id=281355, stack(0x000070001a5bd000,0x000070001a6bd000)]
+  0x00007ffe1bf1e000 JavaThread "cluster56-scheduled-task-worker-0" [_thread_blocked, id=280859, stack(0x000070001a4ba000,0x000070001a5ba000)]
+  0x00007ffe1bf1d000 JavaThread "cluster56-connection-reaper-0" [_thread_blocked, id=279851, stack(0x000070001a3b7000,0x000070001a4b7000)]
+  0x00007ffe188be000 JavaThread "Thread-270" [_thread_blocked, id=280603, stack(0x0000700019b9f000,0x0000700019c9f000)]
+  0x00007ffe24690800 JavaThread "Thread-268" [_thread_blocked, id=272035, stack(0x0000700019387000,0x0000700019487000)]
+  0x00007ffe1bef8800 JavaThread "cluster55-nio-worker-1" [_thread_in_native, id=279043, stack(0x000070001a2b4000,0x000070001a3b4000)]
+  0x00007ffe1c8f6000 JavaThread "cluster55-timeouter-0" [_thread_blocked, id=278531, stack(0x000070001a1b1000,0x000070001a2b1000)]
+  0x00007ffe1bef8000 JavaThread "cluster55-nio-worker-0" [_thread_in_native, id=278027, stack(0x000070001a0ae000,0x000070001a1ae000)]
+  0x00007ffe1bef4000 JavaThread "cluster55-scheduled-task-worker-0" [_thread_blocked, id=277767, stack(0x0000700019fab000,0x000070001a0ab000)]
+  0x00007ffe1a803000 JavaThread "cluster55-connection-reaper-0" [_thread_blocked, id=277263, stack(0x0000700019ea8000,0x0000700019fa8000)]
+  0x00007ffe224e2000 JavaThread "Thread-265" [_thread_blocked, id=276987, stack(0x0000700019da5000,0x0000700019ea5000)]
+  0x00007ffe1c6a2000 JavaThread "Thread-263" [_thread_blocked, id=269387, stack(0x0000700019ca2000,0x0000700019da2000)]
+  0x00007ffe1bef5000 JavaThread "cluster54-nio-worker-1" [_thread_in_native, id=275715, stack(0x0000700019a9c000,0x0000700019b9c000)]
+  0x00007ffe245e2000 JavaThread "cluster54-timeouter-0" [_thread_blocked, id=275203, stack(0x0000700019999000,0x0000700019a99000)]
+  0x00007ffe23264000 JavaThread "cluster54-nio-worker-0" [_thread_in_native, id=274699, stack(0x0000700019896000,0x0000700019996000)]
+  0x00007ffe1a0a3000 JavaThread "cluster54-scheduled-task-worker-0" [_thread_blocked, id=273931, stack(0x0000700019793000,0x0000700019893000)]
+  0x00007ffe1bef3800 JavaThread "cluster54-connection-reaper-0" [_thread_blocked, id=274187, stack(0x0000700019690000,0x0000700019790000)]
+  0x00007ffe224e0000 JavaThread "Thread-260" [_thread_blocked, id=273159, stack(0x000070001958d000,0x000070001968d000)]
+  0x00007ffe224df000 JavaThread "Thread-258" [_thread_blocked, id=273095, stack(0x000070001948a000,0x000070001958a000)]
+  0x00007ffe1bef2800 JavaThread "cluster53-nio-worker-1" [_thread_in_native, id=271363, stack(0x0000700019284000,0x0000700019384000)]
+  0x00007ffe240fb800 JavaThread "cluster53-timeouter-0" [_thread_blocked, id=271111, stack(0x0000700019181000,0x0000700019281000)]
+  0x00007ffe1bef2000 JavaThread "cluster53-nio-worker-0" [_thread_in_native, id=138571, stack(0x000070001907e000,0x000070001917e000)]
+  0x00007ffe1bfef000 JavaThread "cluster53-scheduled-task-worker-0" [_thread_blocked, id=267307, stack(0x0000700018f7b000,0x000070001907b000)]
+  0x00007ffe19772000 JavaThread "cluster53-connection-reaper-0" [_thread_blocked, id=266147, stack(0x0000700018e78000,0x0000700018f78000)]
+  0x00007ffe1987e800 JavaThread "Thread-255" [_thread_blocked, id=269971, stack(0x0000700018d75000,0x0000700018e75000)]
+  0x00007ffe224e7800 JavaThread "Thread-253" [_thread_blocked, id=269119, stack(0x0000700018c72000,0x0000700018d72000)]
+  0x00007ffe196e0000 JavaThread "cluster52-nio-worker-1" [_thread_in_native, id=268291, stack(0x0000700018b6f000,0x0000700018c6f000)]
+  0x00007ffe196d7000 JavaThread "cluster52-timeouter-0" [_thread_blocked, id=267779, stack(0x0000700018a6c000,0x0000700018b6c000)]
+  0x00007ffe24066000 JavaThread "cluster52-nio-worker-0" [_thread_in_native, id=267019, stack(0x0000700018969000,0x0000700018a69000)]
+  0x00007ffe245dc800 JavaThread "cluster52-scheduled-task-worker-0" [_thread_blocked, id=266507, stack(0x0000700018866000,0x0000700018966000)]
+  0x00007ffe24107800 JavaThread "cluster52-connection-reaper-0" [_thread_blocked, id=263839, stack(0x0000700018763000,0x0000700018863000)]
+  0x00007ffe236cd000 JavaThread "Thread-250" [_thread_blocked, id=258283, stack(0x0000700018660000,0x0000700018760000)]
+  0x00007ffe24077800 JavaThread "Thread-248" [_thread_blocked, id=265399, stack(0x000070001855d000,0x000070001865d000)]
+  0x00007ffe2410a800 JavaThread "cluster51-nio-worker-1" [_thread_in_native, id=264707, stack(0x000070001845a000,0x000070001855a000)]
+  0x00007ffe1bfe7800 JavaThread "cluster51-timeouter-0" [_thread_blocked, id=264195, stack(0x0000700018357000,0x0000700018457000)]
+  0x00007ffe22323800 JavaThread "cluster51-nio-worker-0" [_thread_in_native, id=263951, stack(0x0000700018254000,0x0000700018354000)]
+  0x00007ffe22088000 JavaThread "cluster51-scheduled-task-worker-0" [_thread_blocked, id=262719, stack(0x0000700018151000,0x0000700018251000)]
+  0x00007ffe22323000 JavaThread "cluster51-connection-reaper-0" [_thread_blocked, id=259035, stack(0x0000700017f4b000,0x000070001804b000)]
+  0x00007ffe1a330000 JavaThread "Thread-245" [_thread_blocked, id=261287, stack(0x000070001804e000,0x000070001814e000)]
+  0x00007ffe241b5000 JavaThread "Thread-243" [_thread_blocked, id=263131, stack(0x0000700017e48000,0x0000700017f48000)]
+  0x00007ffe1bce4000 JavaThread "cluster50-nio-worker-1" [_thread_in_native, id=262147, stack(0x0000700017d45000,0x0000700017e45000)]
+  0x00007ffe1a120800 JavaThread "cluster50-timeouter-0" [_thread_blocked, id=261635, stack(0x0000700017c42000,0x0000700017d42000)]
+  0x00007ffe22417000 JavaThread "cluster50-nio-worker-0" [_thread_in_native, id=261383, stack(0x0000700017b3f000,0x0000700017c3f000)]
+  0x00007ffe22212800 JavaThread "cluster50-scheduled-task-worker-0" [_thread_blocked, id=260367, stack(0x0000700017a3c000,0x0000700017b3c000)]
+  0x00007ffe196dd000 JavaThread "cluster50-connection-reaper-0" [_thread_blocked, id=259859, stack(0x0000700017939000,0x0000700017a39000)]
+  0x00007ffe1a332000 JavaThread "Thread-240" [_thread_blocked, id=257855, stack(0x00007000177b3000,0x00007000178b3000)]
+  0x00007ffe196df000 JavaThread "Thread-238" [_thread_blocked, id=256395, stack(0x00007000176b0000,0x00007000177b0000)]
+  0x00007ffe22650000 JavaThread "Thread-235" [_thread_blocked, id=253559, stack(0x00007000175ad000,0x00007000176ad000)]
+  0x00007ffe2240d000 JavaThread "Thread-233" [_thread_blocked, id=249563, stack(0x00007000174aa000,0x00007000175aa000)]
+  0x00007ffe1a215800 JavaThread "cluster49-nio-worker-1" [_thread_in_native, id=257283, stack(0x00007000173a7000,0x00007000174a7000)]
+  0x00007ffe195d6800 JavaThread "cluster49-timeouter-0" [_thread_blocked, id=256771, stack(0x00007000172a4000,0x00007000173a4000)]
+  0x00007ffe24686800 JavaThread "cluster49-nio-worker-0" [_thread_in_native, id=256527, stack(0x00007000171a1000,0x00007000172a1000)]
+  0x00007ffe2468b000 JavaThread "cluster49-scheduled-task-worker-0" [_thread_blocked, id=255567, stack(0x000070001709e000,0x000070001719e000)]
+  0x00007ffe24689800 JavaThread "cluster49-connection-reaper-0" [_thread_blocked, id=250171, stack(0x0000700016f9b000,0x000070001709b000)]
+  0x00007ffe1a124000 JavaThread "Thread-230" [_thread_blocked, id=239003, stack(0x0000700016e15000,0x0000700016f15000)]
+  0x00007ffe19778800 JavaThread "Thread-228" [_thread_blocked, id=253791, stack(0x0000700016d12000,0x0000700016e12000)]
+  0x00007ffe1a21d800 JavaThread "cluster48-nio-worker-1" [_thread_in_native, id=252455, stack(0x0000700016c0f000,0x0000700016d0f000)]
+  0x00007ffe1c533000 JavaThread "cluster48-timeouter-0" [_thread_blocked, id=218323, stack(0x0000700016b0c000,0x0000700016c0c000)]
+  0x00007ffe1a154000 JavaThread "cluster48-nio-worker-0" [_thread_in_native, id=247087, stack(0x0000700016a09000,0x0000700016b09000)]
+  0x00007ffe1a158800 JavaThread "cluster48-scheduled-task-worker-0" [_thread_blocked, id=245895, stack(0x0000700016906000,0x0000700016a06000)]
+  0x00007ffe1a294800 JavaThread "cluster48-connection-reaper-0" [_thread_blocked, id=93287, stack(0x0000700016803000,0x0000700016903000)]
+  0x00007ffe1c5a4800 JavaThread "Thread-225" [_thread_blocked, id=251031, stack(0x0000700016700000,0x0000700016800000)]
+  0x00007ffe1a380800 JavaThread "Thread-223" [_thread_blocked, id=236847, stack(0x00007000165fd000,0x00007000166fd000)]
+  0x00007ffe195d5800 JavaThread "cluster47-nio-worker-1" [_thread_in_native, id=248835, stack(0x00007000164fa000,0x00007000165fa000)]
+  0x00007ffe1c69b000 JavaThread "cluster47-timeouter-0" [_thread_blocked, id=248323, stack(0x00007000163f7000,0x00007000164f7000)]
+  0x00007ffe2362b000 JavaThread "cluster47-nio-worker-0" [_thread_in_native, id=248071, stack(0x00007000162f4000,0x00007000163f4000)]
+  0x00007ffe23660000 JavaThread "cluster47-scheduled-task-worker-0" [_thread_blocked, id=247559, stack(0x00007000161f1000,0x00007000162f1000)]
+  0x00007ffe1c6a8800 JavaThread "cluster47-connection-reaper-0" [_thread_blocked, id=246867, stack(0x00007000160ee000,0x00007000161ee000)]
+  0x00007ffe19468000 JavaThread "Thread-220" [_thread_blocked, id=243871, stack(0x0000700015feb000,0x00007000160eb000)]
+  0x00007ffe1947c800 JavaThread "Thread-218" [_thread_blocked, id=245711, stack(0x0000700015ee8000,0x0000700015fe8000)]
+  0x00007ffe236d0000 JavaThread "cluster46-nio-worker-1" [_thread_in_native, id=245255, stack(0x0000700015de5000,0x0000700015ee5000)]
+  0x00007ffe231c3000 JavaThread "cluster46-timeouter-0" [_thread_blocked, id=244975, stack(0x0000700015ce2000,0x0000700015de2000)]
+  0x00007ffe1c5a3000 JavaThread "cluster46-nio-worker-0" [_thread_in_native, id=243463, stack(0x0000700015bdf000,0x0000700015cdf000)]
+  0x00007ffe24574800 JavaThread "cluster46-scheduled-task-worker-0" [_thread_blocked, id=242839, stack(0x0000700015adc000,0x0000700015bdc000)]
+  0x00007ffe24573800 JavaThread "cluster46-connection-reaper-0" [_thread_blocked, id=244243, stack(0x00007000159d9000,0x0000700015ad9000)]
+  0x00007ffe244cb800 JavaThread "Thread-215" [_thread_blocked, id=242967, stack(0x00007000158d6000,0x00007000159d6000)]
+  0x00007ffe2300f800 JavaThread "Thread-213" [_thread_blocked, id=244083, stack(0x00007000157d3000,0x00007000158d3000)]
+  0x00007ffe1c532800 JavaThread "cluster45-nio-worker-1" [_thread_in_native, id=241923, stack(0x00007000156d0000,0x00007000157d0000)]
+  0x00007ffe1c5a7800 JavaThread "cluster45-timeouter-0" [_thread_blocked, id=241411, stack(0x00007000155cd000,0x00007000156cd000)]
+  0x00007ffe1c69a000 JavaThread "cluster45-nio-worker-0" [_thread_in_native, id=241159, stack(0x00007000154ca000,0x00007000155ca000)]
+  0x00007ffe24064000 JavaThread "cluster45-scheduled-task-worker-0" [_thread_blocked, id=240647, stack(0x00007000153c7000,0x00007000154c7000)]
+  0x00007ffe230d3800 JavaThread "cluster45-connection-reaper-0" [_thread_blocked, id=240395, stack(0x00007000152c4000,0x00007000153c4000)]
+  0x00007ffe22070800 JavaThread "Thread-210" [_thread_blocked, id=239531, stack(0x00007000151c1000,0x00007000152c1000)]
+  0x00007ffe1c5a2800 JavaThread "Thread-208" [_thread_blocked, id=224999, stack(0x00007000150be000,0x00007000151be000)]
+  0x00007ffe2421c000 JavaThread "cluster44-nio-worker-1" [_thread_in_native, id=238083, stack(0x0000700014fbb000,0x00007000150bb000)]
+  0x00007ffe23009000 JavaThread "cluster44-timeouter-0" [_thread_blocked, id=237571, stack(0x0000700014eb8000,0x0000700014fb8000)]
+  0x00007ffe2423b000 JavaThread "cluster44-nio-worker-0" [_thread_in_native, id=237319, stack(0x0000700014db5000,0x0000700014eb5000)]
+  0x00007ffe24467800 JavaThread "cluster44-scheduled-task-worker-0" [_thread_blocked, id=237067, stack(0x0000700014cb2000,0x0000700014db2000)]
+  0x00007ffe2423a000 JavaThread "cluster44-connection-reaper-0" [_thread_blocked, id=228887, stack(0x000070001449a000,0x000070001459a000)]
+  0x00007ffe1bd17800 JavaThread "Thread-205" [_thread_blocked, id=229155, stack(0x0000700013c82000,0x0000700013d82000)]
+  0x00007ffe230d1800 JavaThread "Thread-203" [_thread_blocked, id=236659, stack(0x000070001346a000,0x000070001356a000)]
+  0x00007ffe24239800 JavaThread "cluster43-nio-worker-1" [_thread_in_native, id=236035, stack(0x0000700014baf000,0x0000700014caf000)]
+  0x00007ffe190c2000 JavaThread "cluster43-timeouter-0" [_thread_blocked, id=235523, stack(0x0000700014aac000,0x0000700014bac000)]
+  0x00007ffe19127000 JavaThread "cluster43-nio-worker-0" [_thread_in_native, id=235019, stack(0x00007000149a9000,0x0000700014aa9000)]
+  0x00007ffe19473000 JavaThread "cluster43-scheduled-task-worker-0" [_thread_blocked, id=234251, stack(0x00007000148a6000,0x00007000149a6000)]
+  0x00007ffe194a3800 JavaThread "cluster43-connection-reaper-0" [_thread_blocked, id=234507, stack(0x00007000147a3000,0x00007000148a3000)]
+  0x00007ffe2422d000 JavaThread "Thread-200" [_thread_blocked, id=233591, stack(0x00007000146a0000,0x00007000147a0000)]
+  0x00007ffe1c008800 JavaThread "Thread-198" [_thread_blocked, id=224579, stack(0x000070001459d000,0x000070001469d000)]
+  0x00007ffe1b912000 JavaThread "cluster42-nio-worker-1" [_thread_in_native, id=232451, stack(0x0000700014397000,0x0000700014497000)]
+  0x00007ffe1bd16000 JavaThread "cluster42-timeouter-0" [_thread_blocked, id=231939, stack(0x0000700014294000,0x0000700014394000)]
+  0x00007ffe23739000 JavaThread "cluster42-nio-worker-0" [_thread_in_native, id=231435, stack(0x0000700014191000,0x0000700014291000)]
+  0x00007ffe23738800 JavaThread "cluster42-scheduled-task-worker-0" [_thread_blocked, id=231175, stack(0x000070001408e000,0x000070001418e000)]
+  0x00007ffe236d4800 JavaThread "cluster42-connection-reaper-0" [_thread_blocked, id=230415, stack(0x0000700013f8b000,0x000070001408b000)]
+  0x00007ffe24463000 JavaThread "Thread-195" [_thread_blocked, id=229895, stack(0x0000700013e88000,0x0000700013f88000)]
+  0x00007ffe1977d000 JavaThread "Thread-193" [_thread_blocked, id=229751, stack(0x0000700013d85000,0x0000700013e85000)]
+  0x00007ffe1c398000 JavaThread "cluster41-nio-worker-1" [_thread_in_native, id=228099, stack(0x0000700013b7f000,0x0000700013c7f000)]
+  0x00007ffe1c397800 JavaThread "cluster41-timeouter-0" [_thread_blocked, id=227587, stack(0x0000700013a7c000,0x0000700013b7c000)]
+  0x00007ffe2362d000 JavaThread "cluster41-nio-worker-0" [_thread_in_native, id=227335, stack(0x0000700013979000,0x0000700013a79000)]
+  0x00007ffe22378000 JavaThread "cluster41-scheduled-task-worker-0" [_thread_blocked, id=226823, stack(0x0000700013876000,0x0000700013976000)]
+  0x00007ffe1c5a6800 JavaThread "cluster41-connection-reaper-0" [_thread_blocked, id=226571, stack(0x0000700013773000,0x0000700013873000)]
+  0x00007ffe19354000 JavaThread "Thread-190" [_thread_blocked, id=225543, stack(0x0000700013670000,0x0000700013770000)]
+  0x00007ffe224f1000 JavaThread "Thread-188" [_thread_blocked, id=225407, stack(0x000070001356d000,0x000070001366d000)]
+  0x00007ffe2421d000 JavaThread "cluster40-nio-worker-1" [_thread_in_native, id=223495, stack(0x0000700013367000,0x0000700013467000)]
+  0x00007ffe2362a000 JavaThread "cluster40-timeouter-0" [_thread_blocked, id=222983, stack(0x0000700013264000,0x0000700013364000)]
+  0x00007ffe224f0000 JavaThread "cluster40-nio-worker-0" [_thread_in_native, id=220199, stack(0x0000700013161000,0x0000700013261000)]
+  0x00007ffe1c476800 JavaThread "cluster40-scheduled-task-worker-0" [_thread_blocked, id=222739, stack(0x000070001305e000,0x000070001315e000)]
+  0x00007ffe224ec000 JavaThread "cluster40-connection-reaper-0" [_thread_blocked, id=221459, stack(0x0000700012f5b000,0x000070001305b000)]
+  0x00007ffe1bd17000 JavaThread "Thread-185" [_thread_blocked, id=209379, stack(0x0000700012e58000,0x0000700012f58000)]
+  0x00007ffe1946a800 JavaThread "Thread-183" [_thread_blocked, id=87827, stack(0x0000700012d55000,0x0000700012e55000)]
+  0x00007ffe1c69d000 JavaThread "cluster39-nio-worker-1" [_thread_in_native, id=212507, stack(0x0000700012c52000,0x0000700012d52000)]
+  0x00007ffe23628000 JavaThread "cluster39-timeouter-0" [_thread_blocked, id=218443, stack(0x0000700012b4f000,0x0000700012c4f000)]
+  0x00007ffe235d8000 JavaThread "cluster39-nio-worker-0" [_thread_in_native, id=213079, stack(0x0000700012a4c000,0x0000700012b4c000)]
+  0x00007ffe235d7800 JavaThread "cluster39-scheduled-task-worker-0" [_thread_blocked, id=215727, stack(0x0000700012949000,0x0000700012a49000)]
+  0x00007ffe235d6800 JavaThread "cluster39-connection-reaper-0" [_thread_blocked, id=217543, stack(0x0000700012846000,0x0000700012946000)]
+  0x00007ffe1c69c000 JavaThread "Thread-180" [_thread_blocked, id=214639, stack(0x000070001253a000,0x000070001263a000)]
+  0x00007ffe23163000 JavaThread "Thread-178" [_thread_blocked, id=217623, stack(0x0000700011f25000,0x0000700012025000)]
+  0x00007ffe2407e800 JavaThread "Thread-175" [_thread_blocked, id=218927, stack(0x0000700012743000,0x0000700012843000)]
+  0x00007ffe224fb000 JavaThread "Thread-173" [_thread_blocked, id=219163, stack(0x0000700012640000,0x0000700012740000)]
+  0x00007ffe24692000 JavaThread "cluster38-nio-worker-1" [_thread_in_native, id=216835, stack(0x0000700012437000,0x0000700012537000)]
+  0x00007ffe19441800 JavaThread "cluster38-timeouter-0" [_thread_blocked, id=216603, stack(0x0000700012334000,0x0000700012434000)]
+  0x00007ffe1915f800 JavaThread "cluster38-nio-worker-0" [_thread_in_native, id=215847, stack(0x0000700012231000,0x0000700012331000)]
+  0x00007ffe2315b000 JavaThread "cluster38-scheduled-task-worker-0" [_thread_blocked, id=216543, stack(0x000070001212e000,0x000070001222e000)]
+  0x00007ffe2316a800 JavaThread "cluster38-connection-reaper-0" [_thread_blocked, id=118775, stack(0x000070001202b000,0x000070001212b000)]
+  0x00007ffe1c0f1000 JavaThread "Thread-170" [_thread_blocked, id=207995, stack(0x0000700011e22000,0x0000700011f22000)]
+  0x00007ffe24549800 JavaThread "Thread-168" [_thread_blocked, id=212479, stack(0x0000700011d1f000,0x0000700011e1f000)]
+  0x00007ffe1c0ee800 JavaThread "cluster37-nio-worker-1" [_thread_in_native, id=206851, stack(0x0000700011c1c000,0x0000700011d1c000)]
+  0x00007ffe19802000 JavaThread "cluster37-timeouter-0" [_thread_blocked, id=206339, stack(0x0000700011b19000,0x0000700011c19000)]
+  0x00007ffe24080800 JavaThread "cluster37-nio-worker-0" [_thread_in_native, id=206099, stack(0x0000700011a16000,0x0000700011b16000)]
+  0x00007ffe1935d800 JavaThread "cluster37-scheduled-task-worker-0" [_thread_blocked, id=204843, stack(0x0000700011913000,0x0000700011a13000)]
+  0x00007ffe1943f800 JavaThread "cluster37-connection-reaper-0" [_thread_blocked, id=205927, stack(0x0000700011810000,0x0000700011910000)]
+  0x00007ffe1c13f800 JavaThread "Thread-165" [_thread_blocked, id=204491, stack(0x000070001170d000,0x000070001180d000)]
+  0x00007ffe24073000 JavaThread "Thread-163" [_thread_blocked, id=204739, stack(0x000070001160a000,0x000070001170a000)]
+  0x00007ffe195e6000 JavaThread "cluster36-nio-worker-1" [_thread_in_native, id=203779, stack(0x0000700011507000,0x0000700011607000)]
+  0x00007ffe1c8d2000 JavaThread "cluster36-timeouter-0" [_thread_blocked, id=203267, stack(0x0000700011404000,0x0000700011504000)]
+  0x00007ffe1c734800 JavaThread "cluster36-nio-worker-0" [_thread_in_native, id=203015, stack(0x0000700011301000,0x0000700011401000)]
+  0x00007ffe1c734000 JavaThread "cluster36-scheduled-task-worker-0" [_thread_blocked, id=202503, stack(0x00007000111fe000,0x00007000112fe000)]
+  0x00007ffe244ce800 JavaThread "cluster36-connection-reaper-0" [_thread_blocked, id=201743, stack(0x00007000110fb000,0x00007000111fb000)]
+  0x00007ffe244cd800 JavaThread "Thread-160" [_thread_blocked, id=201223, stack(0x0000700010ff8000,0x00007000110f8000)]
+  0x00007ffe244d5800 JavaThread "Thread-158" [_thread_blocked, id=200883, stack(0x00007000108e3000,0x00007000109e3000)]
+  0x00007ffe2456f000 JavaThread "cluster35-nio-worker-1" [_thread_in_native, id=200195, stack(0x0000700010ef5000,0x0000700010ff5000)]
+  0x00007ffe2317f000 JavaThread "cluster35-timeouter-0" [_thread_blocked, id=199683, stack(0x0000700010df2000,0x0000700010ef2000)]
+  0x00007ffe1935d000 JavaThread "cluster35-nio-worker-0" [_thread_in_native, id=199179, stack(0x0000700010cef000,0x0000700010def000)]
+  0x00007ffe23152000 JavaThread "cluster35-scheduled-task-worker-0" [_thread_blocked, id=198411, stack(0x0000700010bec000,0x0000700010cec000)]
+  0x00007ffe1c53b800 JavaThread "cluster35-connection-reaper-0" [_thread_blocked, id=198667, stack(0x0000700010ae9000,0x0000700010be9000)]
+  0x00007ffe220b2800 JavaThread "Thread-155" [_thread_blocked, id=197639, stack(0x00007000109e6000,0x0000700010ae6000)]
+  0x00007ffe2456e000 JavaThread "Thread-153" [_thread_blocked, id=194267, stack(0x00007000101ce000,0x00007000102ce000)]
+  0x00007ffe1943f000 JavaThread "cluster34-nio-worker-1" [_thread_in_native, id=196611, stack(0x00007000107e0000,0x00007000108e0000)]
+  0x00007ffe235da000 JavaThread "cluster34-timeouter-0" [_thread_blocked, id=196099, stack(0x00007000106dd000,0x00007000107dd000)]
+  0x00007ffe235d9800 JavaThread "cluster34-nio-worker-0" [_thread_in_native, id=195847, stack(0x00007000105da000,0x00007000106da000)]
+  0x00007ffe23702000 JavaThread "cluster34-scheduled-task-worker-0" [_thread_blocked, id=194835, stack(0x00007000104d7000,0x00007000105d7000)]
+  0x00007ffe24542800 JavaThread "cluster34-connection-reaper-0" [_thread_blocked, id=194575, stack(0x00007000103d4000,0x00007000104d4000)]
+  0x00007ffe23701000 JavaThread "Thread-150" [_thread_blocked, id=190443, stack(0x00007000102d1000,0x00007000103d1000)]
+  0x00007ffe1c737000 JavaThread "Thread-148" [_thread_blocked, id=190079, stack(0x000070000f9b6000,0x000070000fab6000)]
+  0x00007ffe2457c800 JavaThread "cluster33-nio-worker-1" [_thread_in_native, id=193283, stack(0x00007000100cb000,0x00007000101cb000)]
+  0x00007ffe2457c000 JavaThread "cluster33-timeouter-0" [_thread_blocked, id=192771, stack(0x000070000ffc8000,0x00007000100c8000)]
+  0x00007ffe236c0800 JavaThread "cluster33-nio-worker-0" [_thread_in_native, id=192267, stack(0x000070000fec5000,0x000070000ffc5000)]
+  0x00007ffe236bf800 JavaThread "cluster33-scheduled-task-worker-0" [_thread_blocked, id=192007, stack(0x000070000fdc2000,0x000070000fec2000)]
+  0x00007ffe23715000 JavaThread "cluster33-connection-reaper-0" [_thread_blocked, id=191247, stack(0x000070000fcbf000,0x000070000fdbf000)]
+  0x00007ffe23714000 JavaThread "Thread-145" [_thread_blocked, id=190527, stack(0x000070000fbbc000,0x000070000fcbc000)]
+  0x00007ffe23700800 JavaThread "Thread-143" [_thread_blocked, id=183519, stack(0x000070000fab9000,0x000070000fbb9000)]
+  0x00007ffe236ff800 JavaThread "cluster32-nio-worker-1" [_thread_in_native, id=189443, stack(0x000070000f8b3000,0x000070000f9b3000)]
+  0x00007ffe2457a000 JavaThread "cluster32-timeouter-0" [_thread_blocked, id=188931, stack(0x000070000f7b0000,0x000070000f8b0000)]
+  0x00007ffe1baea000 JavaThread "cluster32-nio-worker-0" [_thread_in_native, id=188427, stack(0x000070000f6ad000,0x000070000f7ad000)]
+  0x00007ffe1b930000 JavaThread "cluster32-scheduled-task-worker-0" [_thread_blocked, id=188167, stack(0x000070000f5aa000,0x000070000f6aa000)]
+  0x00007ffe1947c000 JavaThread "cluster32-connection-reaper-0" [_thread_blocked, id=186919, stack(0x000070000f4a7000,0x000070000f5a7000)]
+  0x00007ffe220f2800 JavaThread "Thread-140" [_thread_blocked, id=183055, stack(0x000070000f3a4000,0x000070000f4a4000)]
+  0x00007ffe24579000 JavaThread "Thread-138" [_thread_blocked, id=186827, stack(0x000070000eb8c000,0x000070000ec8c000)]
+  0x00007ffe24578000 JavaThread "cluster31-nio-worker-1" [_thread_in_native, id=185859, stack(0x000070000f2a1000,0x000070000f3a1000)]
+  0x00007ffe1baef000 JavaThread "cluster31-timeouter-0" [_thread_blocked, id=185347, stack(0x000070000f19e000,0x000070000f29e000)]
+  0x00007ffe1baec000 JavaThread "cluster31-nio-worker-0" [_thread_in_native, id=184843, stack(0x000070000f09b000,0x000070000f19b000)]
+  0x00007ffe231c7800 JavaThread "cluster31-scheduled-task-worker-0" [_thread_blocked, id=184583, stack(0x000070000ef98000,0x000070000f098000)]
+  0x00007ffe24576000 JavaThread "cluster31-connection-reaper-0" [_thread_blocked, id=183919, stack(0x000070000ee95000,0x000070000ef95000)]
+  0x00007ffe24575000 JavaThread "Thread-135" [_thread_blocked, id=171395, stack(0x000070000ed92000,0x000070000ee92000)]
+  0x00007ffe1bcfb000 JavaThread "Thread-133" [_thread_blocked, id=172423, stack(0x000070000ec8f000,0x000070000ed8f000)]
+  0x00007ffe231c8800 JavaThread "cluster30-nio-worker-1" [_thread_in_native, id=182531, stack(0x000070000ea89000,0x000070000eb89000)]
+  0x00007ffe24582000 JavaThread "cluster30-timeouter-0" [_thread_blocked, id=182019, stack(0x000070000e986000,0x000070000ea86000)]
+  0x00007ffe22470000 JavaThread "cluster30-nio-worker-0" [_thread_in_native, id=181767, stack(0x000070000e883000,0x000070000e983000)]
+  0x00007ffe2224a000 JavaThread "cluster30-scheduled-task-worker-0" [_thread_blocked, id=181255, stack(0x000070000e780000,0x000070000e880000)]
+  0x00007ffe24567000 JavaThread "cluster30-connection-reaper-0" [_thread_blocked, id=180495, stack(0x000070000e67d000,0x000070000e77d000)]
+  0x00007ffe231c7000 JavaThread "Thread-130" [_thread_blocked, id=180243, stack(0x000070000e57a000,0x000070000e67a000)]
+  0x00007ffe23153800 JavaThread "Thread-128" [_thread_blocked, id=179687, stack(0x000070000e477000,0x000070000e577000)]
+  0x00007ffe23155000 JavaThread "cluster29-nio-worker-1" [_thread_in_native, id=178691, stack(0x000070000e374000,0x000070000e474000)]
+  0x00007ffe24569800 JavaThread "cluster29-timeouter-0" [_thread_blocked, id=178179, stack(0x000070000e271000,0x000070000e371000)]
+  0x00007ffe231cf000 JavaThread "cluster29-nio-worker-0" [_thread_in_native, id=177675, stack(0x000070000e16e000,0x000070000e26e000)]
+  0x00007ffe22210000 JavaThread "cluster29-scheduled-task-worker-0" [_thread_blocked, id=177415, stack(0x000070000e06b000,0x000070000e16b000)]
+  0x00007ffe1c697000 JavaThread "cluster29-connection-reaper-0" [_thread_blocked, id=176911, stack(0x000070000df68000,0x000070000e068000)]
+  0x00007ffe24567800 JavaThread "Thread-125" [_thread_blocked, id=176691, stack(0x000070000de65000,0x000070000df65000)]
+  0x00007ffe245f0000 JavaThread "Thread-123" [_thread_blocked, id=172583, stack(0x000070000dd62000,0x000070000de62000)]
+  0x00007ffe1bcf9800 JavaThread "cluster28-nio-worker-1" [_thread_in_native, id=175875, stack(0x000070000dc5f000,0x000070000dd5f000)]
+  0x00007ffe19814800 JavaThread "cluster28-timeouter-0" [_thread_blocked, id=175363, stack(0x000070000db5c000,0x000070000dc5c000)]
+  0x00007ffe22249000 JavaThread "cluster28-nio-worker-0" [_thread_in_native, id=175111, stack(0x000070000da59000,0x000070000db59000)]
+  0x00007ffe1c7f7000 JavaThread "cluster28-scheduled-task-worker-0" [_thread_blocked, id=174091, stack(0x000070000d956000,0x000070000da56000)]
+  0x00007ffe245f0800 JavaThread "cluster28-connection-reaper-0" [_thread_blocked, id=173839, stack(0x000070000d853000,0x000070000d953000)]
+  0x00007ffe231c6000 JavaThread "Thread-120" [_thread_blocked, id=173319, stack(0x000070000d750000,0x000070000d850000)]
+  0x00007ffe245ee800 JavaThread "Thread-118" [_thread_blocked, id=173271, stack(0x000070000d64d000,0x000070000d74d000)]
+  0x00007ffe2224c000 JavaThread "cluster27-nio-worker-1" [_thread_in_native, id=170499, stack(0x000070000d54a000,0x000070000d64a000)]
+  0x00007ffe1bcf8000 JavaThread "cluster27-timeouter-0" [_thread_blocked, id=169987, stack(0x000070000d447000,0x000070000d547000)]
+  0x00007ffe1bcf7000 JavaThread "cluster27-nio-worker-0" [_thread_in_native, id=169483, stack(0x000070000d344000,0x000070000d444000)]
+  0x00007ffe23538000 JavaThread "cluster27-scheduled-task-worker-0" [_thread_blocked, id=169223, stack(0x000070000d241000,0x000070000d341000)]
+  0x00007ffe23534800 JavaThread "cluster27-connection-reaper-0" [_thread_blocked, id=168463, stack(0x000070000d13e000,0x000070000d23e000)]
+  0x00007ffe23532000 JavaThread "Thread-115" [_thread_blocked, id=164879, stack(0x000070000d03b000,0x000070000d13b000)]
+  0x00007ffe1c730000 JavaThread "Thread-113" [_thread_blocked, id=168023, stack(0x000070000c926000,0x000070000ca26000)]
+  0x00007ffe23533800 JavaThread "cluster26-nio-worker-1" [_thread_in_native, id=167427, stack(0x000070000cf38000,0x000070000d038000)]
+  0x00007ffe23533000 JavaThread "cluster26-timeouter-0" [_thread_blocked, id=166915, stack(0x000070000ce35000,0x000070000cf35000)]
+  0x00007ffe1c70c000 JavaThread "cluster26-nio-worker-0" [_thread_in_native, id=166411, stack(0x000070000cd32000,0x000070000ce32000)]
+  0x00007ffe1c6eb000 JavaThread "cluster26-scheduled-task-worker-0" [_thread_blocked, id=165643, stack(0x000070000cc2f000,0x000070000cd2f000)]
+  0x00007ffe1c5d8000 JavaThread "cluster26-connection-reaper-0" [_thread_blocked, id=165899, stack(0x000070000cb2c000,0x000070000cc2c000)]
+  0x00007ffe1a84f800 JavaThread "Thread-110" [_thread_blocked, id=162327, stack(0x000070000ca29000,0x000070000cb29000)]
+  0x00007ffe23003800 JavaThread "Thread-108" [_thread_blocked, id=161455, stack(0x000070000c314000,0x000070000c414000)]
+  0x00007ffe1bbb4000 JavaThread "cluster25-nio-worker-1" [_thread_in_native, id=164355, stack(0x000070000c823000,0x000070000c923000)]
+  0x00007ffe234a7000 JavaThread "cluster25-timeouter-0" [_thread_blocked, id=163843, stack(0x000070000c720000,0x000070000c820000)]
+  0x00007ffe1c5ce000 JavaThread "cluster25-nio-worker-0" [_thread_in_native, id=162067, stack(0x000070000c61d000,0x000070000c71d000)]
+  0x00007ffe1c5cd000 JavaThread "cluster25-scheduled-task-worker-0" [_thread_blocked, id=163363, stack(0x000070000c51a000,0x000070000c61a000)]
+  0x00007ffe223ae800 JavaThread "cluster25-connection-reaper-0" [_thread_blocked, id=163103, stack(0x000070000c417000,0x000070000c517000)]
+  0x00007ffe245e9000 JavaThread "Thread-105" [_thread_blocked, id=154187, stack(0x000070000bbff000,0x000070000bcff000)]
+  0x00007ffe2224d000 JavaThread "Thread-103" [_thread_blocked, id=157743, stack(0x000070000b3e7000,0x000070000b4e7000)]
+  0x00007ffe23311800 JavaThread "cluster24-nio-worker-1" [_thread_in_native, id=160771, stack(0x000070000c211000,0x000070000c311000)]
+  0x00007ffe23311000 JavaThread "cluster24-timeouter-0" [_thread_blocked, id=160259, stack(0x000070000c10e000,0x000070000c20e000)]
+  0x00007ffe2352c800 JavaThread "cluster24-nio-worker-0" [_thread_in_native, id=159755, stack(0x000070000c00b000,0x000070000c10b000)]
+  0x00007ffe2352b800 JavaThread "cluster24-scheduled-task-worker-0" [_thread_blocked, id=159495, stack(0x000070000bf08000,0x000070000c008000)]
+  0x00007ffe2347f000 JavaThread "cluster24-connection-reaper-0" [_thread_blocked, id=158735, stack(0x000070000be05000,0x000070000bf05000)]
+  0x00007ffe1a86d000 JavaThread "Thread-100" [_thread_blocked, id=158291, stack(0x000070000bd02000,0x000070000be02000)]
+  0x00007ffe2224b000 JavaThread "Thread-98" [_thread_blocked, id=150059, stack(0x000070000abcf000,0x000070000accf000)]
+  0x00007ffe22070000 JavaThread "cluster23-nio-worker-1" [_thread_in_native, id=157187, stack(0x000070000bafc000,0x000070000bbfc000)]
+  0x00007ffe2453e800 JavaThread "cluster23-timeouter-0" [_thread_blocked, id=156675, stack(0x000070000b9f9000,0x000070000baf9000)]
+  0x00007ffe192f1800 JavaThread "cluster23-nio-worker-0" [_thread_in_native, id=156171, stack(0x000070000b8f6000,0x000070000b9f6000)]
+  0x00007ffe192f0800 JavaThread "cluster23-scheduled-task-worker-0" [_thread_blocked, id=155403, stack(0x000070000b7f3000,0x000070000b8f3000)]
+  0x00007ffe19159000 JavaThread "cluster23-connection-reaper-0" [_thread_blocked, id=155659, stack(0x000070000b6f0000,0x000070000b7f0000)]
+  0x00007ffe1c50a800 JavaThread "Thread-95" [_thread_blocked, id=154655, stack(0x000070000b5ed000,0x000070000b6ed000)]
+  0x00007ffe2347d000 JavaThread "Thread-93" [_thread_blocked, id=147035, stack(0x000070000b4ea000,0x000070000b5ea000)]
+  0x00007ffe245e7800 JavaThread "cluster22-nio-worker-1" [_thread_in_native, id=153603, stack(0x000070000b2e4000,0x000070000b3e4000)]
+  0x00007ffe1914b800 JavaThread "cluster22-timeouter-0" [_thread_blocked, id=153091, stack(0x000070000b1e1000,0x000070000b2e1000)]
+  0x00007ffe1914a800 JavaThread "cluster22-nio-worker-0" [_thread_in_native, id=152839, stack(0x000070000b0de000,0x000070000b1de000)]
+  0x00007ffe1b8b6800 JavaThread "cluster22-scheduled-task-worker-0" [_thread_blocked, id=152327, stack(0x000070000afdb000,0x000070000b0db000)]
+  0x00007ffe1948c000 JavaThread "cluster22-connection-reaper-0" [_thread_blocked, id=152075, stack(0x000070000aed8000,0x000070000afd8000)]
+  0x00007ffe1948b800 JavaThread "Thread-90" [_thread_blocked, id=151047, stack(0x000070000add5000,0x000070000aed5000)]
+  0x00007ffe2347a000 JavaThread "Thread-88" [_thread_blocked, id=150799, stack(0x000070000acd2000,0x000070000add2000)]
+  0x00007ffe19489800 JavaThread "cluster21-nio-worker-1" [_thread_in_native, id=149251, stack(0x000070000aacc000,0x000070000abcc000)]
+  0x00007ffe234a6800 JavaThread "cluster21-timeouter-0" [_thread_blocked, id=148739, stack(0x000070000a9c9000,0x000070000aac9000)]
+  0x00007ffe2206d000 JavaThread "cluster21-nio-worker-0" [_thread_in_native, id=148495, stack(0x000070000a8c6000,0x000070000a9c6000)]
+  0x00007ffe22418000 JavaThread "cluster21-scheduled-task-worker-0" [_thread_blocked, id=147239, stack(0x000070000a7c3000,0x000070000a8c3000)]
+  0x00007ffe2237b000 JavaThread "cluster21-connection-reaper-0" [_thread_blocked, id=142771, stack(0x000070000a6c0000,0x000070000a7c0000)]
+  0x00007ffe24230800 JavaThread "Thread-85" [_thread_blocked, id=143251, stack(0x000070000a5bd000,0x000070000a6bd000)]
+  0x00007ffe19488000 JavaThread "Thread-83" [_thread_blocked, id=143687, stack(0x0000700009da5000,0x0000700009ea5000)]
+  0x00007ffe2422e800 JavaThread "cluster20-nio-worker-1" [_thread_in_native, id=146435, stack(0x000070000a4ba000,0x000070000a5ba000)]
+  0x00007ffe1b8af800 JavaThread "cluster20-timeouter-0" [_thread_blocked, id=145923, stack(0x000070000a3b7000,0x000070000a4b7000)]
+  0x00007ffe1b8d3000 JavaThread "cluster20-nio-worker-0" [_thread_in_native, id=145671, stack(0x000070000a2b4000,0x000070000a3b4000)]
+  0x00007ffe1b8d5000 JavaThread "cluster20-scheduled-task-worker-0" [_thread_blocked, id=145159, stack(0x000070000a1b1000,0x000070000a2b1000)]
+  0x00007ffe234a9000 JavaThread "cluster20-connection-reaper-0" [_thread_blocked, id=144907, stack(0x000070000a0ae000,0x000070000a1ae000)]
+  0x00007ffe2422e000 JavaThread "Thread-80" [_thread_blocked, id=143891, stack(0x0000700009fab000,0x000070000a0ab000)]
+  0x00007ffe234a8800 JavaThread "Thread-78" [_thread_blocked, id=139703, stack(0x0000700009ea8000,0x0000700009fa8000)]
+  0x00007ffe1b8d4000 JavaThread "cluster19-nio-worker-1" [_thread_in_native, id=142083, stack(0x0000700009ca2000,0x0000700009da2000)]
+  0x00007ffe19895000 JavaThread "cluster19-timeouter-0" [_thread_blocked, id=141571, stack(0x0000700009b9f000,0x0000700009c9f000)]
+  0x00007ffe22299800 JavaThread "cluster19-nio-worker-0" [_thread_in_native, id=141067, stack(0x0000700009a9c000,0x0000700009b9c000)]
+  0x00007ffe22298800 JavaThread "cluster19-scheduled-task-worker-0" [_thread_blocked, id=140807, stack(0x0000700009999000,0x0000700009a99000)]
+  0x00007ffe1c0e7000 JavaThread "cluster19-connection-reaper-0" [_thread_blocked, id=90899, stack(0x0000700009896000,0x0000700009996000)]
+  0x00007ffe1a870000 JavaThread "Thread-75" [_thread_blocked, id=134383, stack(0x0000700009793000,0x0000700009893000)]
+  0x00007ffe244dc800 JavaThread "Thread-73" [_thread_blocked, id=139811, stack(0x0000700009690000,0x0000700009790000)]
+  0x00007ffe244d9800 JavaThread "cluster18-nio-worker-1" [_thread_in_native, id=138783, stack(0x000070000958d000,0x000070000968d000)]
+  0x00007ffe244d8800 JavaThread "cluster18-timeouter-0" [_thread_blocked, id=136203, stack(0x000070000948a000,0x000070000958a000)]
+  0x00007ffe1b8ce000 JavaThread "cluster18-nio-worker-0" [_thread_in_native, id=136715, stack(0x0000700009387000,0x0000700009487000)]
+  0x00007ffe234b7800 JavaThread "cluster18-scheduled-task-worker-0" [_thread_blocked, id=90499, stack(0x0000700009284000,0x0000700009384000)]
+  0x00007ffe234af000 JavaThread "cluster18-connection-reaper-0" [_thread_blocked, id=137763, stack(0x0000700009181000,0x0000700009281000)]
+  0x00007ffe2240c800 JavaThread "Thread-70" [_thread_blocked, id=136507, stack(0x000070000907e000,0x000070000917e000)]
+  0x00007ffe2352e000 JavaThread "Thread-68" [_thread_blocked, id=135703, stack(0x0000700008f7b000,0x000070000907b000)]
+  0x00007ffe1c53e000 JavaThread "cluster17-nio-worker-1" [_thread_in_native, id=135171, stack(0x0000700008e78000,0x0000700008f78000)]
+  0x00007ffe1c8c0800 JavaThread "cluster17-timeouter-0" [_thread_blocked, id=134659, stack(0x0000700008d75000,0x0000700008e75000)]
+  0x00007ffe246a5000 JavaThread "cluster17-nio-worker-0" [_thread_in_native, id=134415, stack(0x0000700008c72000,0x0000700008d72000)]
+  0x00007ffe24237000 JavaThread "cluster17-scheduled-task-worker-0" [_thread_blocked, id=133383, stack(0x0000700008b6f000,0x0000700008c6f000)]
+  0x00007ffe24542000 JavaThread "cluster17-connection-reaper-0" [_thread_blocked, id=131343, stack(0x0000700008a6c000,0x0000700008b6c000)]
+  0x00007ffe19475800 JavaThread "Thread-65" [_thread_blocked, id=129083, stack(0x0000700008969000,0x0000700008a69000)]
+  0x00007ffe2240e000 JavaThread "Thread-63" [_thread_blocked, id=133163, stack(0x0000700008866000,0x0000700008966000)]
+  0x00007ffe2240b800 JavaThread "cluster16-nio-worker-1" [_thread_in_native, id=132355, stack(0x0000700008763000,0x0000700008863000)]
+  0x00007ffe2240b000 JavaThread "cluster16-timeouter-0" [_thread_blocked, id=131843, stack(0x0000700008660000,0x0000700008760000)]
+  0x00007ffe24231800 JavaThread "cluster16-nio-worker-0" [_thread_in_native, id=131599, stack(0x000070000855d000,0x000070000865d000)]
+  0x00007ffe22217000 JavaThread "cluster16-scheduled-task-worker-0" [_thread_blocked, id=129623, stack(0x000070000845a000,0x000070000855a000)]
+  0x00007ffe22216000 JavaThread "cluster16-connection-reaper-0" [_thread_blocked, id=130315, stack(0x0000700008357000,0x0000700008457000)]
+  0x00007ffe234b9000 JavaThread "Thread-60" [_thread_blocked, id=128819, stack(0x00007000081d1000,0x00007000082d1000)]
+  0x00007ffe234b8800 JavaThread "Thread-58" [_thread_blocked, id=125415, stack(0x00007000080ce000,0x00007000081ce000)]
+  0x00007ffe1b8c8000 JavaThread "cluster15-nio-worker-1" [_thread_in_native, id=128259, stack(0x0000700007fcb000,0x00007000080cb000)]
+  0x00007ffe234ad000 JavaThread "cluster15-timeouter-0" [_thread_blocked, id=127747, stack(0x0000700007ec8000,0x0000700007fc8000)]
+  0x00007ffe234ac000 JavaThread "cluster15-nio-worker-0" [_thread_in_native, id=127495, stack(0x0000700007dc5000,0x0000700007ec5000)]
+  0x00007ffe234ab000 JavaThread "cluster15-scheduled-task-worker-0" [_thread_blocked, id=126479, stack(0x0000700007cc2000,0x0000700007dc2000)]
+  0x00007ffe1c534000 JavaThread "cluster15-connection-reaper-0" [_thread_blocked, id=125967, stack(0x0000700007bbf000,0x0000700007cbf000)]
+  0x00007ffe22072800 JavaThread "Thread-55" [_thread_blocked, id=122251, stack(0x0000700007abc000,0x0000700007bbc000)]
+  0x00007ffe23267800 JavaThread "Thread-53" [_thread_blocked, id=125895, stack(0x00007000079b9000,0x0000700007ab9000)]
+  0x00007ffe24331800 JavaThread "cluster14-nio-worker-1" [_thread_in_native, id=124419, stack(0x00007000078b6000,0x00007000079b6000)]
+  0x00007ffe1c69f800 JavaThread "cluster14-timeouter-0" [_thread_blocked, id=123907, stack(0x00007000077b3000,0x00007000078b3000)]
+  0x00007ffe2326d000 JavaThread "cluster14-nio-worker-0" [_thread_in_native, id=123495, stack(0x00007000076b0000,0x00007000077b0000)]
+  0x00007ffe2326c000 JavaThread "cluster14-scheduled-task-worker-0" [_thread_blocked, id=119439, stack(0x00007000075ad000,0x00007000076ad000)]
+  0x00007ffe23266800 JavaThread "cluster14-connection-reaper-0" [_thread_blocked, id=118411, stack(0x00007000074aa000,0x00007000075aa000)]
+  0x00007ffe24331000 JavaThread "Thread-50" [_thread_blocked, id=123331, stack(0x00007000073a7000,0x00007000074a7000)]
+  0x00007ffe1bbd4000 JavaThread "Thread-48" [_thread_blocked, id=121875, stack(0x00007000072a4000,0x00007000073a4000)]
+  0x00007ffe1bbd5000 JavaThread "cluster13-nio-worker-1" [_thread_in_native, id=120835, stack(0x00007000071a1000,0x00007000072a1000)]
+  0x00007ffe1c69d800 JavaThread "cluster13-timeouter-0" [_thread_blocked, id=120323, stack(0x000070000709e000,0x000070000719e000)]
+  0x00007ffe232d3000 JavaThread "cluster13-nio-worker-0" [_thread_in_native, id=119579, stack(0x0000700006f9b000,0x000070000709b000)]
+  0x00007ffe23020800 JavaThread "cluster13-scheduled-task-worker-0" [_thread_blocked, id=112687, stack(0x0000700006e98000,0x0000700006f98000)]
+  0x00007ffe2301e000 JavaThread "cluster13-connection-reaper-0" [_thread_blocked, id=119035, stack(0x0000700006d95000,0x0000700006e95000)]
+  0x00007ffe23002000 JavaThread "Thread-45" [_thread_blocked, id=117779, stack(0x0000700006c92000,0x0000700006d92000)]
+  0x00007ffe23006000 JavaThread "Thread-43" [_thread_blocked, id=116367, stack(0x0000700006b8f000,0x0000700006c8f000)]
+  0x00007ffe2310c000 JavaThread "cluster12-nio-worker-1" [_thread_in_native, id=117251, stack(0x0000700006a8c000,0x0000700006b8c000)]
+  0x00007ffe242fc800 JavaThread "cluster12-timeouter-0" [_thread_blocked, id=116739, stack(0x0000700006989000,0x0000700006a89000)]
+  0x00007ffe1c0f5000 JavaThread "cluster12-nio-worker-0" [_thread_in_native, id=116495, stack(0x0000700006886000,0x0000700006986000)]
+  0x00007ffe1c52b000 JavaThread "cluster12-scheduled-task-worker-0" [_thread_blocked, id=115463, stack(0x0000700006783000,0x0000700006883000)]
+  0x00007ffe1bbe9800 JavaThread "cluster12-connection-reaper-0" [_thread_blocked, id=114703, stack(0x0000700006680000,0x0000700006780000)]
+  0x00007ffe1905a000 JavaThread "Thread-40" [_thread_blocked, id=111927, stack(0x000070000657d000,0x000070000667d000)]
+  0x00007ffe19125800 JavaThread "Thread-38" [_thread_blocked, id=114311, stack(0x000070000647a000,0x000070000657a000)]
+  0x00007ffe24334800 JavaThread "cluster11-nio-worker-1" [_thread_in_native, id=113667, stack(0x0000700006377000,0x0000700006477000)]
+  0x00007ffe24284000 JavaThread "cluster11-timeouter-0" [_thread_blocked, id=113155, stack(0x0000700006274000,0x0000700006374000)]
+  0x00007ffe24283000 JavaThread "cluster11-nio-worker-0" [_thread_in_native, id=112911, stack(0x0000700006171000,0x0000700006271000)]
+  0x00007ffe24258000 JavaThread "cluster11-scheduled-task-worker-0" [_thread_blocked, id=111391, stack(0x000070000606e000,0x000070000616e000)]
+  0x00007ffe24238000 JavaThread "cluster11-connection-reaper-0" [_thread_blocked, id=111263, stack(0x0000700005f6b000,0x000070000606b000)]
+  0x00007ffe1bbe1800 JavaThread "Thread-35" [_thread_blocked, id=104507, stack(0x0000700005e68000,0x0000700005f68000)]
+  0x00007ffe2423f000 JavaThread "Thread-33" [_thread_blocked, id=110899, stack(0x0000700005d65000,0x0000700005e65000)]
+  0x00007ffe23b41000 JavaThread "cluster10-nio-worker-1" [_thread_in_native, id=110339, stack(0x0000700005c62000,0x0000700005d62000)]
+  0x00007ffe1912b000 JavaThread "cluster10-timeouter-0" [_thread_blocked, id=109827, stack(0x0000700005b5f000,0x0000700005c5f000)]
+  0x00007ffe238e5000 JavaThread "cluster10-nio-worker-0" [_thread_in_native, id=109067, stack(0x0000700005a5c000,0x0000700005b5c000)]
+  0x00007ffe239c5000 JavaThread "cluster10-scheduled-task-worker-0" [_thread_blocked, id=108811, stack(0x0000700005959000,0x0000700005a59000)]
+  0x00007ffe1a0ab800 JavaThread "cluster10-connection-reaper-0" [_thread_blocked, id=103987, stack(0x0000700005856000,0x0000700005956000)]
+  0x00007ffe22421000 JavaThread "Thread-30" [_thread_blocked, id=105739, stack(0x0000700005753000,0x0000700005853000)]
+  0x00007ffe19126000 JavaThread "Thread-28" [_thread_blocked, id=108075, stack(0x0000700004f3b000,0x000070000503b000)]
+  0x00007ffe19056800 JavaThread "cluster9-nio-worker-1" [_thread_in_native, id=107267, stack(0x0000700005650000,0x0000700005750000)]
+  0x00007ffe23265000 JavaThread "cluster9-timeouter-0" [_thread_blocked, id=106755, stack(0x000070000554d000,0x000070000564d000)]
+  0x00007ffe23105800 JavaThread "cluster9-nio-worker-0" [_thread_in_native, id=106511, stack(0x000070000544a000,0x000070000554a000)]
+  0x00007ffe223ae000 JavaThread "cluster9-scheduled-task-worker-0" [_thread_blocked, id=105479, stack(0x0000700005347000,0x0000700005447000)]
+  0x00007ffe1c104800 JavaThread "cluster9-connection-reaper-0" [_thread_blocked, id=104815, stack(0x0000700005244000,0x0000700005344000)]
+  0x00007ffe19056000 JavaThread "Thread-25" [_thread_blocked, id=101767, stack(0x0000700005141000,0x0000700005241000)]
+  0x00007ffe239c0800 JavaThread "Thread-23" [_thread_blocked, id=100995, stack(0x000070000503e000,0x000070000513e000)]
+  0x00007ffe1944d800 JavaThread "cluster8-nio-worker-1" [_thread_in_native, id=103171, stack(0x0000700004e38000,0x0000700004f38000)]
+  0x00007ffe230ff800 JavaThread "cluster8-timeouter-0" [_thread_blocked, id=102659, stack(0x0000700004d35000,0x0000700004e35000)]
+  0x00007ffe23027800 JavaThread "cluster8-nio-worker-0" [_thread_in_native, id=102175, stack(0x0000700004c32000,0x0000700004d32000)]
+  0x00007ffe23105000 JavaThread "cluster8-scheduled-task-worker-0" [_thread_blocked, id=102467, stack(0x0000700004b2f000,0x0000700004c2f000)]
+  0x00007ffe230fe000 JavaThread "cluster8-connection-reaper-0" [_thread_blocked, id=101343, stack(0x0000700004a2c000,0x0000700004b2c000)]
+  0x00007ffe1905a800 JavaThread "Thread-20" [_thread_blocked, id=97555, stack(0x0000700004929000,0x0000700004a29000)]
+  0x00007ffe2300d000 JavaThread "Thread-18" [_thread_blocked, id=97979, stack(0x0000700000d3e000,0x0000700000e3e000)]
+  0x00007ffe1bbb5000 JavaThread "cluster7-nio-worker-1" [_thread_in_native, id=100099, stack(0x0000700004826000,0x0000700004926000)]
+  0x00007ffe1c6aa800 JavaThread "cluster7-timeouter-0" [_thread_blocked, id=99587, stack(0x0000700004723000,0x0000700004823000)]
+  0x00007ffe1b887800 JavaThread "cluster7-nio-worker-0" [_thread_in_native, id=98827, stack(0x0000700004620000,0x0000700004720000)]
+  0x00007ffe1b88e800 JavaThread "cluster7-scheduled-task-worker-0" [_thread_blocked, id=98571, stack(0x000070000451d000,0x000070000461d000)]
+  0x00007ffe230cd000 JavaThread "cluster7-connection-reaper-0" [_thread_blocked, id=98087, stack(0x000070000441a000,0x000070000451a000)]
+  0x00007ffe1c6a7800 JavaThread "Thread-15" [_thread_blocked, id=60387, stack(0x0000700004317000,0x0000700004417000)]
+  0x00007ffe1c8c0000 JavaThread "Thread-13" [_thread_blocked, id=47707, stack(0x0000700004214000,0x0000700004314000)]
+  0x00007ffe1b8bf000 JavaThread "cluster6-nio-worker-1" [_thread_in_native, id=97027, stack(0x0000700004111000,0x0000700004211000)]
+  0x00007ffe194a0800 JavaThread "cluster6-timeouter-0" [_thread_blocked, id=96515, stack(0x000070000400e000,0x000070000410e000)]
+  0x00007ffe1a07d000 JavaThread "cluster6-nio-worker-0" [_thread_in_native, id=96263, stack(0x0000700003f0b000,0x000070000400b000)]
+  0x00007ffe1a3c6000 JavaThread "cluster6-scheduled-task-worker-0" [_thread_blocked, id=95759, stack(0x0000700003e08000,0x0000700003f08000)]
+  0x00007ffe1a393800 JavaThread "cluster6-connection-reaper-0" [_thread_blocked, id=94983, stack(0x0000700003d05000,0x0000700003e05000)]
+  0x00007ffe1a3c5800 JavaThread "Java Sound Event Dispatcher" daemon [_thread_blocked, id=94339, stack(0x0000700003c02000,0x0000700003d02000)]
+  0x00007ffe1947a800 JavaThread "Thread-9" [_thread_blocked, id=42023, stack(0x0000700003aff000,0x0000700003bff000)]
+  0x00007ffe1b93c000 JavaThread "Thread-7" [_thread_blocked, id=42983, stack(0x0000700001968000,0x0000700001a68000)]
+  0x00007ffe1a368000 JavaThread "TimerQueue" daemon [_thread_blocked, id=41923, stack(0x0000700001865000,0x0000700001965000)]
+  0x00007ffe1bc6b000 JavaThread "DestroyJavaVM" [_thread_blocked, id=5891, stack(0x000070000011a000,0x000070000021a000)]
+  0x00007ffe1c543800 JavaThread "cluster5-nio-worker-1" [_thread_in_native, id=83459, stack(0x00007000039fc000,0x0000700003afc000)]
+  0x00007ffe1947d800 JavaThread "cluster5-timeouter-0" [_thread_blocked, id=82947, stack(0x00007000038f9000,0x00007000039f9000)]
+  0x00007ffe1a3c8800 JavaThread "cluster5-nio-worker-0" [_thread_in_native, id=82435, stack(0x00007000037f6000,0x00007000038f6000)]
+  0x00007ffe1a3c8000 JavaThread "cluster5-scheduled-task-worker-0" [_thread_blocked, id=81923, stack(0x00007000036f3000,0x00007000037f3000)]
+  0x00007ffe1c542000 JavaThread "cluster5-connection-reaper-0" [_thread_blocked, id=81415, stack(0x00007000035f0000,0x00007000036f0000)]
+  0x00007ffe1c540000 JavaThread "cluster4-nio-worker-1" [_thread_in_native, id=80899, stack(0x00007000034ed000,0x00007000035ed000)]
+  0x00007ffe1bc3f000 JavaThread "cluster4-timeouter-0" [_thread_blocked, id=80387, stack(0x00007000033ea000,0x00007000034ea000)]
+  0x00007ffe1bc43800 JavaThread "cluster4-nio-worker-0" [_thread_in_native, id=79875, stack(0x00007000032e7000,0x00007000033e7000)]
+  0x00007ffe1a3be000 JavaThread "cluster4-scheduled-task-worker-0" [_thread_blocked, id=79363, stack(0x00007000031e4000,0x00007000032e4000)]
+  0x00007ffe1a329800 JavaThread "cluster4-connection-reaper-0" [_thread_blocked, id=78851, stack(0x00007000030e1000,0x00007000031e1000)]
+  0x00007ffe1949c000 JavaThread "Thread-4" [_thread_blocked, id=78339, stack(0x0000700002fde000,0x00007000030de000)]
+  0x00007ffe1bc44800 JavaThread "cluster3-nio-worker-1" [_thread_in_native, id=77827, stack(0x0000700002edb000,0x0000700002fdb000)]
+  0x00007ffe1bc41800 JavaThread "cluster3-timeouter-0" [_thread_blocked, id=77315, stack(0x0000700002dd8000,0x0000700002ed8000)]
+  0x00007ffe1a306000 JavaThread "cluster3-nio-worker-0" [_thread_in_native, id=76803, stack(0x0000700002cd5000,0x0000700002dd5000)]
+  0x00007ffe1bc41000 JavaThread "cluster3-scheduled-task-worker-0" [_thread_blocked, id=76291, stack(0x0000700002bd2000,0x0000700002cd2000)]
+  0x00007ffe1bc40000 JavaThread "cluster3-connection-reaper-0" [_thread_blocked, id=75783, stack(0x0000700002acf000,0x0000700002bcf000)]
+  0x00007ffe1a305800 JavaThread "cluster2-nio-worker-1" [_thread_in_native, id=75267, stack(0x00007000029cc000,0x0000700002acc000)]
+  0x00007ffe1bc3b000 JavaThread "cluster2-timeouter-0" [_thread_blocked, id=74755, stack(0x00007000028c9000,0x00007000029c9000)]
+  0x00007ffe1a304800 JavaThread "cluster2-nio-worker-0" [_thread_in_native, id=74243, stack(0x00007000027c6000,0x00007000028c6000)]
+  0x00007ffe1a304000 JavaThread "cluster2-scheduled-task-worker-0" [_thread_blocked, id=73731, stack(0x00007000026c3000,0x00007000027c3000)]
+  0x00007ffe194cc000 JavaThread "cluster2-connection-reaper-0" [_thread_blocked, id=73219, stack(0x00007000025c0000,0x00007000026c0000)]
+  0x00007ffe1bbdd800 JavaThread "Thread-2" [_thread_blocked, id=58895, stack(0x00007000024bd000,0x00007000025bd000)]
+  0x00007ffe1944e800 JavaThread "cluster1-nio-worker-1" [_thread_in_native, id=72451, stack(0x00007000023ba000,0x00007000024ba000)]
+  0x00007ffe1c509800 JavaThread "threadDeathWatcher-2-1" daemon [_thread_blocked, id=71451, stack(0x00007000022b7000,0x00007000023b7000)]
+  0x00007ffe19441000 JavaThread "cluster1-timeouter-0" [_thread_blocked, id=71179, stack(0x00007000021b4000,0x00007000022b4000)]
+  0x00007ffe1a889000 JavaThread "cluster1-nio-worker-0" [_thread_in_native, id=70675, stack(0x00007000020b1000,0x00007000021b1000)]
+  0x00007ffe1a23c800 JavaThread "cluster1-scheduled-task-worker-0" [_thread_blocked, id=68867, stack(0x0000700001fae000,0x00007000020ae000)]
+  0x00007ffe1c3b0800 JavaThread "cluster1-connection-reaper-0" [_thread_blocked, id=68367, stack(0x0000700001eab000,0x0000700001fab000)]
+  0x00007ffe1a8ad000 JavaThread "AWT-EventQueue-0" [_thread_blocked, id=65539, stack(0x0000700001da8000,0x0000700001ea8000)]
+  0x00007ffe1c832800 JavaThread "Java2D Disposer" daemon [_thread_blocked, id=55051, stack(0x0000700001c22000,0x0000700001d22000)]
+=>0x00007ffe1c12e000 JavaThread "Java2D Queue Flusher" daemon [_thread_in_native, id=54791, stack(0x0000700001b1f000,0x0000700001c1f000)]
+  0x00007ffe1c828000 JavaThread "AWT-Shutdown" [_thread_blocked, id=32019, stack(0x00007000016df000,0x00007000017df000)]
+  0x00007ffe190be800 JavaThread "AppKit Thread" daemon [_thread_in_native, id=2571, stack(0x00007fff574ae000,0x00007fff57cae000)]
+  0x00007ffe1c0df800 JavaThread "Monitor Ctrl-Break" daemon [_thread_in_native, id=22275, stack(0x0000700001559000,0x0000700001659000)]
+  0x00007ffe1c801800 JavaThread "Service Thread" daemon [_thread_blocked, id=21251, stack(0x0000700001353000,0x0000700001453000)]
+  0x00007ffe18806000 JavaThread "C1 CompilerThread3" daemon [_thread_blocked, id=20739, stack(0x0000700001250000,0x0000700001350000)]
+  0x00007ffe19806000 JavaThread "C2 CompilerThread2" daemon [_thread_blocked, id=20227, stack(0x000070000114d000,0x000070000124d000)]
+  0x00007ffe19018800 JavaThread "C2 CompilerThread1" daemon [_thread_blocked, id=19715, stack(0x000070000104a000,0x000070000114a000)]
+  0x00007ffe19017000 JavaThread "C2 CompilerThread0" daemon [_thread_blocked, id=19203, stack(0x0000700000f47000,0x0000700001047000)]
+  0x00007ffe19015000 JavaThread "Signal Dispatcher" daemon [_thread_blocked, id=14863, stack(0x0000700000e44000,0x0000700000f44000)]
+  0x00007ffe1a010800 JavaThread "Finalizer" daemon [_thread_blocked, id=14339, stack(0x0000700000c3b000,0x0000700000d3b000)]
+  0x00007ffe1b812000 JavaThread "Reference Handler" daemon [_thread_blocked, id=13827, stack(0x0000700000b38000,0x0000700000c38000)]
+
+Other Threads:
+  0x00007ffe1a00e000 VMThread [stack: 0x0000700000a35000,0x0000700000b35000] [id=13315]
+  0x00007ffe1a801000 WatcherThread [stack: 0x0000700001456000,0x0000700001556000] [id=21763]
+
+VM state:not at safepoint (normal execution)
+
+VM Mutex/Monitor currently owned by a thread: None
+
+Heap:
+ PSYoungGen      total 75264K, used 36716K [0x000000076ab00000, 0x0000000771d80000, 0x00000007c0000000)
+  eden space 36352K, 3% used [0x000000076ab00000,0x000000076ac3fec8,0x000000076ce80000)
+  from space 38912K, 91% used [0x000000076ce80000,0x000000076f11b498,0x000000076f480000)
+  to   space 40448K, 0% used [0x000000076f600000,0x000000076f600000,0x0000000771d80000)
+ ParOldGen       total 124928K, used 100239K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 80% used [0x00000006c0000000,0x00000006c61e3e28,0x00000006c7a00000)
+ Metaspace       used 29921K, capacity 30296K, committed 30592K, reserved 1077248K
+  class space    used 3492K, capacity 3585K, committed 3712K, reserved 1048576K
+
+Card table byte_map: [0x0000000119596000,0x0000000119d97000] byte_map_base: 0x0000000115f96000
+
+Marking Bits: (ParMarkBitMap*) 0x0000000109aefd20
+ Begin Bits: [0x000000011a2ed000, 0x000000011e2ed000)
+ End Bits:   [0x000000011e2ed000, 0x00000001222ed000)
+
+Polling page: 0x00000001081e0000
+
+CodeCache: size=245760Kb used=20728Kb max_used=22185Kb free=225031Kb
+ bounds [0x000000010a1d6000, 0x000000010b7c6000, 0x00000001191d6000]
+ total_blobs=6744 nmethods=6096 adapters=558
+ compilation: enabled
+
+Compilation events (10 events):
+Event: 31367.293 Thread 0x00007ffe18806000 8214       3       com.apple.eawt._AppEventHandler$_NativeEvent::<init> (10 bytes)
+Event: 31367.293 Thread 0x00007ffe18806000 nmethod 8214 0x000000010a647350 code [0x000000010a6474c0, 0x000000010a647690]
+Event: 31367.294 Thread 0x00007ffe18806000 8215       1       javax.swing.plaf.synth.SynthScrollPaneUI::access$300 (5 bytes)
+Event: 31367.294 Thread 0x00007ffe18806000 nmethod 8215 0x000000010a647090 code [0x000000010a6471e0, 0x000000010a6472d0]
+Event: 31370.969 Thread 0x00007ffe19806000 8216       4       java.awt.geom.AffineTransform::setToScale (66 bytes)
+Event: 31370.969 Thread 0x00007ffe19806000 nmethod 8216 0x000000010a6e8290 code [0x000000010a6e8400, 0x000000010a6e84d8]
+Event: 31372.680 Thread 0x00007ffe19017000 8217       4       sun.java2d.SunGraphics2D::setDevClip (45 bytes)
+Event: 31372.682 Thread 0x00007ffe19017000 nmethod 8217 0x000000010b1e1410 code [0x000000010b1e1580, 0x000000010b1e1788]
+Event: 31374.823 Thread 0x00007ffe19018800 8218       4       com.codahale.metrics.LongAdder::add (108 bytes)
+Event: 31374.825 Thread 0x00007ffe19018800 nmethod 8218 0x000000010a6e7f90 code [0x000000010a6e80e0, 0x000000010a6e8198]
+
+GC Heap History (10 events):
+Event: 29651.277 GC heap before
+{Heap before GC invocations=42 (full 1):
+ PSYoungGen      total 76800K, used 59914K [0x000000076ab00000, 0x0000000771d80000, 0x00000007c0000000)
+  eden space 36352K, 96% used [0x000000076ab00000,0x000000076cd3dca0,0x000000076ce80000)
+  from space 40448K, 61% used [0x000000076f600000,0x0000000770e44eb0,0x0000000771d80000)
+  to   space 40448K, 0% used [0x000000076ce80000,0x000000076ce80000,0x000000076f600000)
+ ParOldGen       total 124928K, used 89159K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 71% used [0x00000006c0000000,0x00000006c5711d10,0x00000006c7a00000)
+ Metaspace       used 29743K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+Event: 29651.285 GC heap after
+Heap after GC invocations=42 (full 1):
+ PSYoungGen      total 60928K, used 24483K [0x000000076ab00000, 0x0000000771c80000, 0x00000007c0000000)
+  eden space 36352K, 0% used [0x000000076ab00000,0x000000076ab00000,0x000000076ce80000)
+  from space 24576K, 99% used [0x000000076ce80000,0x000000076e668c70,0x000000076e680000)
+  to   space 39936K, 0% used [0x000000076f580000,0x000000076f580000,0x0000000771c80000)
+ ParOldGen       total 124928K, used 91606K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 73% used [0x00000006c0000000,0x00000006c5975868,0x00000006c7a00000)
+ Metaspace       used 29743K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+}
+Event: 30124.810 GC heap before
+{Heap before GC invocations=43 (full 1):
+ PSYoungGen      total 60928K, used 60835K [0x000000076ab00000, 0x0000000771c80000, 0x00000007c0000000)
+  eden space 36352K, 100% used [0x000000076ab00000,0x000000076ce80000,0x000000076ce80000)
+  from space 24576K, 99% used [0x000000076ce80000,0x000000076e668c70,0x000000076e680000)
+  to   space 39936K, 0% used [0x000000076f580000,0x000000076f580000,0x0000000771c80000)
+ ParOldGen       total 124928K, used 91606K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 73% used [0x00000006c0000000,0x00000006c5975868,0x00000006c7a00000)
+ Metaspace       used 29747K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+Event: 30124.820 GC heap after
+Heap after GC invocations=43 (full 1):
+ PSYoungGen      total 76288K, used 22595K [0x000000076ab00000, 0x0000000771c80000, 0x00000007c0000000)
+  eden space 36352K, 0% used [0x000000076ab00000,0x000000076ab00000,0x000000076ce80000)
+  from space 39936K, 56% used [0x000000076f580000,0x0000000770b90fc0,0x0000000771c80000)
+  to   space 39936K, 0% used [0x000000076ce80000,0x000000076ce80000,0x000000076f580000)
+ ParOldGen       total 124928K, used 94072K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 75% used [0x00000006c0000000,0x00000006c5bde300,0x00000006c7a00000)
+ Metaspace       used 29747K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+}
+Event: 30322.156 GC heap before
+{Heap before GC invocations=44 (full 1):
+ PSYoungGen      total 76288K, used 58947K [0x000000076ab00000, 0x0000000771c80000, 0x00000007c0000000)
+  eden space 36352K, 100% used [0x000000076ab00000,0x000000076ce80000,0x000000076ce80000)
+  from space 39936K, 56% used [0x000000076f580000,0x0000000770b90fc0,0x0000000771c80000)
+  to   space 39936K, 0% used [0x000000076ce80000,0x000000076ce80000,0x000000076f580000)
+ ParOldGen       total 124928K, used 94072K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 75% used [0x00000006c0000000,0x00000006c5bde300,0x00000006c7a00000)
+ Metaspace       used 29769K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+Event: 30322.165 GC heap after
+Heap after GC invocations=44 (full 1):
+ PSYoungGen      total 59904K, used 23396K [0x000000076ab00000, 0x0000000771b80000, 0x00000007c0000000)
+  eden space 36352K, 0% used [0x000000076ab00000,0x000000076ab00000,0x000000076ce80000)
+  from space 23552K, 99% used [0x000000076ce80000,0x000000076e559330,0x000000076e580000)
+  to   space 39424K, 0% used [0x000000076f500000,0x000000076f500000,0x0000000771b80000)
+ ParOldGen       total 124928K, used 96503K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 77% used [0x00000006c0000000,0x00000006c5e3ddf8,0x00000006c7a00000)
+ Metaspace       used 29769K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+}
+Event: 31032.337 GC heap before
+{Heap before GC invocations=45 (full 1):
+ PSYoungGen      total 59904K, used 59298K [0x000000076ab00000, 0x0000000771b80000, 0x00000007c0000000)
+  eden space 36352K, 98% used [0x000000076ab00000,0x000000076ce0f720,0x000000076ce80000)
+  from space 23552K, 99% used [0x000000076ce80000,0x000000076e559330,0x000000076e580000)
+  to   space 39424K, 0% used [0x000000076f500000,0x000000076f500000,0x0000000771b80000)
+ ParOldGen       total 124928K, used 96503K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 77% used [0x00000006c0000000,0x00000006c5e3ddf8,0x00000006c7a00000)
+ Metaspace       used 29773K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+Event: 31032.346 GC heap after
+Heap after GC invocations=45 (full 1):
+ PSYoungGen      total 74752K, used 24851K [0x000000076ab00000, 0x0000000771a80000, 0x00000007c0000000)
+  eden space 36352K, 0% used [0x000000076ab00000,0x000000076ab00000,0x000000076ce80000)
+  from space 38400K, 64% used [0x000000076f500000,0x0000000770d44ec0,0x0000000771a80000)
+  to   space 38912K, 0% used [0x000000076ce80000,0x000000076ce80000,0x000000076f480000)
+ ParOldGen       total 124928K, used 98882K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 79% used [0x00000006c0000000,0x00000006c60908b8,0x00000006c7a00000)
+ Metaspace       used 29773K, capacity 30168K, committed 30592K, reserved 1077248K
+  class space    used 3478K, capacity 3585K, committed 3712K, reserved 1048576K
+}
+Event: 31374.756 GC heap before
+{Heap before GC invocations=46 (full 1):
+ PSYoungGen      total 74752K, used 61203K [0x000000076ab00000, 0x0000000771a80000, 0x00000007c0000000)
+  eden space 36352K, 100% used [0x000000076ab00000,0x000000076ce80000,0x000000076ce80000)
+  from space 38400K, 64% used [0x000000076f500000,0x0000000770d44ec0,0x0000000771a80000)
+  to   space 38912K, 0% used [0x000000076ce80000,0x000000076ce80000,0x000000076f480000)
+ ParOldGen       total 124928K, used 98882K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 79% used [0x00000006c0000000,0x00000006c60908b8,0x00000006c7a00000)
+ Metaspace       used 29921K, capacity 30296K, committed 30592K, reserved 1077248K
+  class space    used 3492K, capacity 3585K, committed 3712K, reserved 1048576K
+Event: 31374.816 GC heap after
+Heap after GC invocations=46 (full 1):
+ PSYoungGen      total 75264K, used 35437K [0x000000076ab00000, 0x0000000771d80000, 0x00000007c0000000)
+  eden space 36352K, 0% used [0x000000076ab00000,0x000000076ab00000,0x000000076ce80000)
+  from space 38912K, 91% used [0x000000076ce80000,0x000000076f11b498,0x000000076f480000)
+  to   space 40448K, 0% used [0x000000076f600000,0x000000076f600000,0x0000000771d80000)
+ ParOldGen       total 124928K, used 100239K [0x00000006c0000000, 0x00000006c7a00000, 0x000000076ab00000)
+  object space 124928K, 80% used [0x00000006c0000000,0x00000006c61e3e28,0x00000006c7a00000)
+ Metaspace       used 29921K, capacity 30296K, committed 30592K, reserved 1077248K
+  class space    used 3492K, capacity 3585K, committed 3712K, reserved 1048576K
+}
+
+Deoptimization events (10 events):
+Event: 31131.559 Thread 0x00007ffe190be800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010b0a9438 method=sun.java2d.opengl.OGLSurfaceData.validatePipe(Lsun/java2d/SunGraphics2D;)V @ 279
+Event: 31131.559 Thread 0x00007ffe190be800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000000010b67c0c0 method=sun.java2d.pipe.ValidatePipe.fillRect(Lsun/java2d/SunGraphics2D;IIII)V @ 19
+Event: 31131.559 Thread 0x00007ffe190be800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000000010ae39120 method=sun.java2d.opengl.OGLRenderer.validateContext(Lsun/java2d/SunGraphics2D;)V @ 4
+Event: 31131.559 Thread 0x00007ffe190be800 Uncommon trap: reason=null_check action=make_not_entrant pc=0x000000010ae483ac method=java.awt.geom.AffineTransform.equals(Ljava/lang/Object;)Z @ 1
+Event: 31131.566 Thread 0x00007ffe190be800 Uncommon trap: reason=bimorphic action=maybe_recompile pc=0x000000010b67c0c0 method=sun.java2d.pipe.ValidatePipe.fillRect(Lsun/java2d/SunGraphics2D;IIII)V @ 19
+Event: 31318.073 Thread 0x00007ffe1a8ad000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010ab064f4 method=sun.awt.image.VolatileSurfaceManager.validate(Ljava/awt/GraphicsConfiguration;)I @ 36
+Event: 31318.075 Thread 0x00007ffe1a8ad000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010adfeae0 method=java.awt.MultipleGradientPaint.<init>([F[Ljava/awt/Color;Ljava/awt/MultipleGradientPaint$CycleMethod;Ljava/awt/MultipleGradientPaint$ColorSpaceType;Ljava/awt/geom/AffineTran
+Event: 31318.076 Thread 0x00007ffe1a8ad000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010a76ef30 method=javax.swing.plaf.nimbus.AbstractRegionPainter.prepare(FF)V @ 371
+Event: 31318.076 Thread 0x00007ffe1a8ad000 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010ae0afd0 method=javax.swing.plaf.nimbus.AbstractRegionPainter.decodeX(F)F @ 28
+Event: 31368.572 Thread 0x00007ffe190be800 Uncommon trap: reason=unstable_if action=reinterpret pc=0x000000010b7bb318 method=sun.lwawt.LWWindowPeer.notifyMouseEvent(IJIIIIIIIZ[B)V @ 44
+
+Internal exceptions (10 events):
+Event: 30321.805 Thread 0x00007ffe1a8ad000 Exception <a 'java/lang/NullPointerException'> (0x000000076c2fc7f8) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 30321.807 Thread 0x00007ffe1c537000 Exception <a 'java/lang/NullPointerException'> (0x000000076c3ba5f0) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31031.989 Thread 0x00007ffe1a8ad000 Exception <a 'java/lang/NullPointerException'> (0x000000076bf32328) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31031.991 Thread 0x00007ffe1c535000 Exception <a 'java/lang/NullPointerException'> (0x000000076bffc5d8) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31131.559 Thread 0x00007ffe190be800 Implicit null exception at 0x000000010ae47499 to 0x000000010ae48381
+Event: 31318.073 Thread 0x00007ffe1a8ad000 Implicit null exception at 0x000000010ab063ae to 0x000000010ab064dd
+Event: 31350.081 Thread 0x00007ffe1a8ad000 Exception <a 'java/lang/NullPointerException'> (0x000000076bc64410) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31350.086 Thread 0x00007ffe24a2f000 Exception <a 'java/lang/NullPointerException'> (0x000000076bd8f700) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31374.752 Thread 0x00007ffe1a8ad000 Exception <a 'java/lang/NullPointerException'> (0x000000076ce063d0) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+Event: 31374.820 Thread 0x00007ffe220a6000 Exception <a 'java/lang/NullPointerException'> (0x000000076ab71e78) thrown at [/Users/java_re/workspace/8-2-build-macosx-x86_64/jdk8u102/7268/hotspot/src/share/vm/runtime/sharedRuntime.cpp, line 1085]
+
+Events (10 events):
+Event: 31374.822 Thread 0x00007ffe24a2c800 Thread exited: 0x00007ffe24a2c800
+Event: 31374.823 Thread 0x00007ffe1b9a0000 Thread added: 0x00007ffe1b9a0000
+Event: 31374.823 Thread 0x00007ffe1977a000 Thread added: 0x00007ffe1977a000
+Event: 31374.824 Executing VM operation: RevokeBias
+Event: 31374.824 Executing VM operation: RevokeBias done
+Event: 31374.825 Thread 0x00007ffe1977a000 Thread exited: 0x00007ffe1977a000
+Event: 31374.825 Thread 0x00007ffe1977a000 Thread added: 0x00007ffe1977a000
+Event: 31374.826 Executing VM operation: RevokeBias
+Event: 31374.827 Executing VM operation: RevokeBias done
+Event: 31374.827 Thread 0x00007ffe1977a000 Thread exited: 0x00007ffe1977a000
+
+
+Dynamic libraries:
+0x0000000009498000 	/System/Library/Frameworks/Cocoa.framework/Versions/A/Cocoa
+0x0000000009498000 	/System/Library/Frameworks/Security.framework/Versions/A/Security
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/ApplicationServices
+0x0000000009498000 	/usr/lib/libz.1.dylib
+0x0000000009498000 	/usr/lib/libSystem.B.dylib
+0x0000000009498000 	/usr/lib/libobjc.A.dylib
+0x0000000009498000 	/System/Library/Frameworks/CoreFoundation.framework/Versions/A/CoreFoundation
+0x0000000009498000 	/System/Library/Frameworks/Foundation.framework/Versions/C/Foundation
+0x0000000009498000 	/System/Library/Frameworks/AppKit.framework/Versions/C/AppKit
+0x0000000009498000 	/System/Library/Frameworks/CoreData.framework/Versions/A/CoreData
+0x0000000009498000 	/System/Library/PrivateFrameworks/RemoteViewServices.framework/Versions/A/RemoteViewServices
+0x0000000009498000 	/System/Library/PrivateFrameworks/UIFoundation.framework/Versions/A/UIFoundation
+0x0000000009498000 	/usr/lib/libScreenReader.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Accelerate
+0x0000000009498000 	/System/Library/Frameworks/IOSurface.framework/Versions/A/IOSurface
+0x0000000009498000 	/System/Library/Frameworks/AudioToolbox.framework/Versions/A/AudioToolbox
+0x0000000009498000 	/System/Library/Frameworks/AudioUnit.framework/Versions/A/AudioUnit
+0x0000000009498000 	/System/Library/PrivateFrameworks/DataDetectorsCore.framework/Versions/A/DataDetectorsCore
+0x0000000009498000 	/System/Library/PrivateFrameworks/DesktopServicesPriv.framework/Versions/A/DesktopServicesPriv
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/HIToolbox.framework/Versions/A/HIToolbox
+0x0000000009498000 	/System/Library/Frameworks/QuartzCore.framework/Versions/A/QuartzCore
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SpeechRecognition.framework/Versions/A/SpeechRecognition
+0x0000000009498000 	/usr/lib/libauto.dylib
+0x0000000009498000 	/usr/lib/libicucore.A.dylib
+0x0000000009498000 	/usr/lib/libxml2.2.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/CoreUI.framework/Versions/A/CoreUI
+0x0000000009498000 	/System/Library/Frameworks/CoreAudio.framework/Versions/A/CoreAudio
+0x0000000009498000 	/System/Library/Frameworks/DiskArbitration.framework/Versions/A/DiskArbitration
+0x0000000009498000 	/usr/lib/liblangid.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/MultitouchSupport.framework/Versions/A/MultitouchSupport
+0x0000000009498000 	/System/Library/Frameworks/IOKit.framework/Versions/A/IOKit
+0x0000000009498000 	/usr/lib/libDiagnosticMessagesClient.dylib
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/CoreServices
+0x0000000009498000 	/System/Library/PrivateFrameworks/PerformanceAnalysis.framework/Versions/A/PerformanceAnalysis
+0x0000000009498000 	/System/Library/PrivateFrameworks/GenerationalStorage.framework/Versions/A/GenerationalStorage
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/OpenGL
+0x0000000009498000 	/System/Library/PrivateFrameworks/Sharing.framework/Versions/A/Sharing
+0x0000000009498000 	/System/Library/Frameworks/CoreGraphics.framework/Versions/A/CoreGraphics
+0x0000000009498000 	/System/Library/Frameworks/CoreImage.framework/Versions/A/CoreImage
+0x0000000009498000 	/System/Library/Frameworks/CoreText.framework/Versions/A/CoreText
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/ImageIO
+0x0000000009498000 	/System/Library/PrivateFrameworks/Backup.framework/Versions/A/Backup
+0x0000000009498000 	/usr/lib/libextension.dylib
+0x0000000009498000 	/usr/lib/libarchive.2.dylib
+0x0000000009498000 	/System/Library/Frameworks/CFNetwork.framework/Versions/A/CFNetwork
+0x0000000009498000 	/System/Library/Frameworks/SystemConfiguration.framework/Versions/A/SystemConfiguration
+0x0000000009498000 	/usr/lib/libCRFSuite.dylib
+0x0000000009498000 	/usr/lib/libc++.1.dylib
+0x0000000009498000 	/usr/lib/libc++abi.dylib
+0x0000000009498000 	/usr/lib/system/libcache.dylib
+0x0000000009498000 	/usr/lib/system/libcommonCrypto.dylib
+0x0000000009498000 	/usr/lib/system/libcompiler_rt.dylib
+0x0000000009498000 	/usr/lib/system/libcopyfile.dylib
+0x0000000009498000 	/usr/lib/system/libcorecrypto.dylib
+0x0000000009498000 	/usr/lib/system/libdispatch.dylib
+0x0000000009498000 	/usr/lib/system/libdyld.dylib
+0x0000000009498000 	/usr/lib/system/libkeymgr.dylib
+0x0000000009498000 	/usr/lib/system/liblaunch.dylib
+0x0000000009498000 	/usr/lib/system/libmacho.dylib
+0x0000000009498000 	/usr/lib/system/libquarantine.dylib
+0x0000000009498000 	/usr/lib/system/libremovefile.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_asl.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_blocks.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_c.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_configuration.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_coreservices.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_coretls.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_dnssd.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_info.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_kernel.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_m.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_malloc.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_network.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_networkextension.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_notify.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_platform.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_pthread.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_sandbox.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_secinit.dylib
+0x0000000009498000 	/usr/lib/system/libsystem_trace.dylib
+0x0000000009498000 	/usr/lib/system/libunc.dylib
+0x0000000009498000 	/usr/lib/system/libunwind.dylib
+0x0000000009498000 	/usr/lib/system/libxpc.dylib
+0x0000000009498000 	/usr/lib/libenergytrace.dylib
+0x0000000009498000 	/usr/lib/libbsm.0.dylib
+0x0000000009498000 	/usr/lib/system/libkxld.dylib
+0x0000000009498000 	/usr/lib/libxar.1.dylib
+0x0000000009498000 	/usr/lib/libsqlite3.dylib
+0x0000000009498000 	/usr/lib/libpam.2.dylib
+0x0000000009498000 	/usr/lib/libOpenScriptingUtil.dylib
+0x0000000009498000 	/usr/lib/libbz2.1.0.dylib
+0x0000000009498000 	/usr/lib/liblzma.5.dylib
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/FSEvents.framework/Versions/A/FSEvents
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/CarbonCore.framework/Versions/A/CarbonCore
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/Metadata.framework/Versions/A/Metadata
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/OSServices.framework/Versions/A/OSServices
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SearchKit.framework/Versions/A/SearchKit
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/AE.framework/Versions/A/AE
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/LaunchServices.framework/Versions/A/LaunchServices
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/DictionaryServices.framework/Versions/A/DictionaryServices
+0x0000000009498000 	/System/Library/Frameworks/CoreServices.framework/Versions/A/Frameworks/SharedFileList.framework/Versions/A/SharedFileList
+0x0000000009498000 	/System/Library/Frameworks/NetFS.framework/Versions/A/NetFS
+0x0000000009498000 	/System/Library/PrivateFrameworks/NetAuth.framework/Versions/A/NetAuth
+0x0000000009498000 	/System/Library/PrivateFrameworks/login.framework/Versions/A/Frameworks/loginsupport.framework/Versions/A/loginsupport
+0x0000000009498000 	/System/Library/PrivateFrameworks/TCC.framework/Versions/A/TCC
+0x0000000009498000 	/usr/lib/libmecabra.dylib
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/ATS
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ColorSync.framework/Versions/A/ColorSync
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/HIServices.framework/Versions/A/HIServices
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/LangAnalysis.framework/Versions/A/LangAnalysis
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/PrintCore.framework/Versions/A/PrintCore
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/QD.framework/Versions/A/QD
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/SpeechSynthesis.framework/Versions/A/SpeechSynthesis
+0x0000000009498000 	/System/Library/Frameworks/Metal.framework/Versions/A/Metal
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/vImage
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/vecLib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvDSP.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libvMisc.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLAPACK.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libBLAS.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libLinearAlgebra.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vecLib.framework/Versions/A/libSparseBLAS.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/GPUCompiler.framework/libmetal_timestamp.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreFSCache.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/IOAccelerator.framework/Versions/A/IOAccelerator
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontParser.dylib
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libFontRegistry.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/AppleVPA.framework/Versions/A/AppleVPA
+0x0000000009498000 	/System/Library/PrivateFrameworks/AppleJPEG.framework/Versions/A/AppleJPEG
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJPEG.dylib
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libTIFF.dylib
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libPng.dylib
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libGIF.dylib
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libJP2.dylib
+0x0000000009498000 	/System/Library/Frameworks/ImageIO.framework/Versions/A/Resources/libRadiance.dylib
+0x0000000009498000 	/System/Library/Frameworks/CoreVideo.framework/Versions/A/CoreVideo
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLU.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGFXShared.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGL.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLImage.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCVMSPluginSupport.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libCoreVMClient.dylib
+0x0000000009498000 	/usr/lib/libcups.2.dylib
+0x0000000009498000 	/System/Library/Frameworks/Kerberos.framework/Versions/A/Kerberos
+0x0000000009498000 	/System/Library/Frameworks/GSS.framework/Versions/A/GSS
+0x0000000009498000 	/usr/lib/libresolv.9.dylib
+0x0000000009498000 	/usr/lib/libiconv.2.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/Heimdal.framework/Versions/A/Heimdal
+0x0000000009498000 	/usr/lib/libheimdal-asn1.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenDirectory.framework/Versions/A/OpenDirectory
+0x0000000009498000 	/System/Library/PrivateFrameworks/CommonAuth.framework/Versions/A/CommonAuth
+0x0000000009498000 	/System/Library/Frameworks/OpenDirectory.framework/Versions/A/Frameworks/CFOpenDirectory.framework/Versions/A/CFOpenDirectory
+0x0000000009498000 	/System/Library/Frameworks/SecurityFoundation.framework/Versions/A/SecurityFoundation
+0x0000000009498000 	/System/Library/PrivateFrameworks/LanguageModeling.framework/Versions/A/LanguageModeling
+0x0000000009498000 	/usr/lib/libmarisa.dylib
+0x0000000009498000 	/usr/lib/libChineseTokenizer.dylib
+0x0000000009498000 	/usr/lib/libcmph.dylib
+0x0000000009498000 	/usr/lib/libcompression.dylib
+0x0000000009498000 	/System/Library/Frameworks/ServiceManagement.framework/Versions/A/ServiceManagement
+0x0000000009498000 	/usr/lib/libxslt.1.dylib
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Ink.framework/Versions/A/Ink
+0x0000000009498000 	/usr/lib/libFosl_dynamic.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/FaceCore.framework/Versions/A/FaceCore
+0x0000000009498000 	/System/Library/Frameworks/OpenCL.framework/Versions/A/OpenCL
+0x0000000009498000 	/System/Library/PrivateFrameworks/CrashReporterSupport.framework/Versions/A/CrashReporterSupport
+0x0000000009498000 	/System/Library/PrivateFrameworks/IconServices.framework/Versions/A/IconServices
+0x0000000009498000 	/System/Library/PrivateFrameworks/Apple80211.framework/Versions/A/Apple80211
+0x0000000009498000 	/System/Library/Frameworks/CoreWLAN.framework/Versions/A/CoreWLAN
+0x0000000009498000 	/System/Library/Frameworks/IOBluetooth.framework/Versions/A/IOBluetooth
+0x0000000009498000 	/System/Library/PrivateFrameworks/CoreWiFi.framework/Versions/A/CoreWiFi
+0x0000000009498000 	/System/Library/Frameworks/CoreBluetooth.framework/Versions/A/CoreBluetooth
+0x0000000009498000 	/System/Library/PrivateFrameworks/ChunkingLibrary.framework/Versions/A/ChunkingLibrary
+0x0000000009498000 	/System/Library/PrivateFrameworks/DebugSymbols.framework/Versions/A/DebugSymbols
+0x0000000009498000 	/System/Library/PrivateFrameworks/CoreSymbolication.framework/Versions/A/CoreSymbolication
+0x0000000009498000 	/System/Library/PrivateFrameworks/Symbolication.framework/Versions/A/Symbolication
+0x0000000009498000 	/System/Library/PrivateFrameworks/SpeechRecognitionCore.framework/Versions/A/SpeechRecognitionCore
+0x0000000109200000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/server/libjvm.dylib
+0x0000000009498000 	/usr/lib/libstdc++.6.dylib
+0x00000001081d2000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libverify.dylib
+0x000000010a1a1000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libjava.dylib
+0x00000001081ea000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libzip.dylib
+0x000000012528c000 	/System/Library/Frameworks/JavaVM.framework/Frameworks/JavaRuntimeSupport.framework/JavaRuntimeSupport
+0x00000001252a7000 	/System/Library/Frameworks/JavaVM.framework/Versions/A/Frameworks/JavaNativeFoundation.framework/Versions/A/JavaNativeFoundation
+0x00000001252bc000 	/System/Library/Frameworks/JavaVM.framework/Versions/A/JavaVM
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Carbon
+0x00000001081f4000 	/System/Library/PrivateFrameworks/JavaLaunching.framework/Versions/A/JavaLaunching
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/CommonPanels.framework/Versions/A/CommonPanels
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Help.framework/Versions/A/Help
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/ImageCapture.framework/Versions/A/ImageCapture
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/OpenScripting.framework/Versions/A/OpenScripting
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/Print.framework/Versions/A/Print
+0x0000000009498000 	/System/Library/Frameworks/Carbon.framework/Versions/A/Frameworks/SecurityHI.framework/Versions/A/SecurityHI
+0x0000000126ebd000 	/Applications/IntelliJ IDEA.app/Contents/bin/libbreakgen64.jnilib
+0x0000000126ec0000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libnet.dylib
+0x0000000126f1f000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libawt.dylib
+0x0000000126fc7000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/./libmlib_image.dylib
+0x0000000127093000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libawt_lwawt.dylib
+0x0000000127148000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/./libosxapp.dylib
+0x0000000009498000 	/System/Library/Frameworks/ExceptionHandling.framework/Versions/A/ExceptionHandling
+0x0000000009498000 	/System/Library/PrivateFrameworks/CoreServicesInternal.framework/Versions/A/CoreServicesInternal
+0x0000000009498000 	/System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libRIP.A.dylib
+0x0000000009498000 	/System/Library/Frameworks/Accelerate.framework/Versions/A/Frameworks/vImage.framework/Versions/A/Libraries/libCGInterfaces.dylib
+0x0000000009498000 	/System/Library/Frameworks/CoreGraphics.framework/Versions/A/Resources/libCGXType.A.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/libcldcpuengine.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/DiskImages.framework/Versions/A/DiskImages
+0x0000000009498000 	/System/Library/Frameworks/DiscRecording.framework/Versions/A/DiscRecording
+0x0000000009498000 	/usr/lib/libcsfde.dylib
+0x0000000009498000 	/usr/lib/libcurl.4.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/MediaKit.framework/Versions/A/MediaKit
+0x0000000009498000 	/System/Library/PrivateFrameworks/ProtectedCloudStorage.framework/Versions/A/ProtectedCloudStorage
+0x0000000009498000 	/usr/lib/libCoreStorage.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/EFILogin.framework/Versions/A/EFILogin
+0x0000000009498000 	/usr/lib/libutil.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/FindMyDevice.framework/Versions/A/FindMyDevice
+0x0000000009498000 	/System/Library/Frameworks/LDAP.framework/Versions/A/LDAP
+0x0000000009498000 	/usr/lib/libsasl2.2.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/CoreDaemon.framework/Versions/B/CoreDaemon
+0x0000000009498000 	/usr/lib/libcrypto.0.9.8.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/AppleSRP.framework/Versions/A/AppleSRP
+0x0000000009498000 	/System/Library/PrivateFrameworks/TrustEvaluationAgent.framework/Versions/A/TrustEvaluationAgent
+0x0000000128ce2000 	cl_kernels
+0x0000000009498000 	/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_bgra.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenCL.framework/Versions/A/Libraries/ImageFormats/unorm8_rgba.dylib
+0x0000000009498000 	/System/Library/PrivateFrameworks/FamilyControls.framework/Versions/A/FamilyControls
+0x0000000009498000 	/System/Library/PrivateFrameworks/CommerceKit.framework/Versions/A/Frameworks/CommerceCore.framework/Versions/A/CommerceCore
+0x0000000009498000 	/System/Library/PrivateFrameworks/SystemAdministration.framework/Versions/A/SystemAdministration
+0x0000000009498000 	/System/Library/PrivateFrameworks/AppContainer.framework/Versions/A/AppContainer
+0x0000000009498000 	/System/Library/PrivateFrameworks/SecCodeWrapper.framework/Versions/A/SecCodeWrapper
+0x0000000009498000 	/System/Library/Frameworks/DirectoryService.framework/Versions/A/DirectoryService
+0x0000000009498000 	/System/Library/PrivateFrameworks/LoginUIKit.framework/Versions/A/Frameworks/LoginUICore.framework/Versions/A/LoginUICore
+0x0000000009498000 	/usr/lib/libodfde.dylib
+0x0000000129e2b000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libfontmanager.dylib
+0x00000001280ac000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libosxui.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLEngine.bundle/GLEngine
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Libraries/libGLProgrammability.dylib
+0x000000012a8e4000 	/System/Library/Extensions/AppleIntelHD5000GraphicsGLDriver.bundle/Contents/MacOS/AppleIntelHD5000GraphicsGLDriver
+0x0000000009498000 	/System/Library/PrivateFrameworks/GPUSupport.framework/Versions/A/Libraries/libGPUSupportMercury.dylib
+0x000000012b034000 	/System/Library/Extensions/AMDRadeonX4000GLDriver.bundle/Contents/MacOS/AMDRadeonX4000GLDriver
+0x000000012b100000 	/System/Library/Extensions/AMDRadeonX4000GLDriver.bundle/Contents/MacOS/ATIRadeonX4000SCLib.dylib
+0x0000000009498000 	/System/Library/Frameworks/OpenGL.framework/Versions/A/Resources/GLRendererFloat.bundle/GLRendererFloat
+0x000000012d50b000 	/System/Library/Extensions/AMDMTLBronzeDriver.bundle/Contents/MacOS/AMDMTLBronzeDriver
+0x0000000009498000 	/System/Library/PrivateFrameworks/IOAccelMemoryInfo.framework/Versions/A/IOAccelMemoryInfo
+0x0000000130854000 	/System/Library/Extensions/AppleIntelHD5000GraphicsMTLDriver.bundle/Contents/MacOS/AppleIntelHD5000GraphicsMTLDriver
+0x000000012d6a4000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libnio.dylib
+0x000000013113e000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libmanagement.dylib
+0x0000000009498000 	/System/Library/Frameworks/ApplicationServices.framework/Versions/A/Frameworks/ATS.framework/Versions/A/Resources/libTrueTypeScaler.dylib
+0x0000000128cef000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libdcpr.dylib
+0x000000013007b000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libjsound.dylib
+0x000000013008e000 	/System/Library/Frameworks/CoreMIDI.framework/Versions/A/CoreMIDI
+0x00000001300ee000 	/usr/lib/libexpat.1.dylib
+0x0000000130111000 	/System/Library/Extensions/AppleHDA.kext/Contents/PlugIns/AppleHDAHALPlugIn.bundle/Contents/MacOS/AppleHDAHALPlugIn
+0x000000013011b000 	/System/Library/Components/CoreAudio.component/Contents/MacOS/CoreAudio
+0x00000001307a1000 	/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/libsunec.dylib
+0x0000000009498000 	/System/Library/CoreServices/RawCamera.bundle/Contents/MacOS/RawCamera
+
+VM Arguments:
+jvm_args: -Didea.launcher.port=7532 -Didea.launcher.bin.path=/Applications/IntelliJ IDEA.app/Contents/bin -Dfile.encoding=UTF-8 
+java_command: com.intellij.rt.execution.application.AppMain zeng.siyuan.C1comehere.C1comehere
+java_class_path (initial): /Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/charsets.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/deploy.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/cldrdata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/dnsns.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/jaccess.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/jfxrt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/localedata.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/nashorn.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/sunec.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/sunjce_provider.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/sunpkcs11.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/ext/zipfs.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/javaws.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jce.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfr.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jfxswt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/jsse.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/management-agent.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/plugin.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/resources.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/jre/lib/rt.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/lib/ant-javafx.jar:/Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home
+Launcher Type: SUN_STANDARD
+
+Environment Variables:
+PATH=/Users/vn0xrjh/.jenv/shims:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin
+SHELL=/bin/bash
+
+Signal Handlers:
+SIGSEGV: [libjvm.dylib+0x5b0579], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_ONSTACK|SA_RESTART|SA_SIGINFO
+SIGBUS: [libjvm.dylib+0x5b0579], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGFPE: [libjvm.dylib+0x4874e4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGPIPE: [libjvm.dylib+0x4874e4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGXFSZ: [libjvm.dylib+0x4874e4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGILL: [libjvm.dylib+0x4874e4], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGUSR1: SIG_DFL, sa_mask[0]=00000000000000000000000000000000, sa_flags=none
+SIGUSR2: [libjvm.dylib+0x487002], sa_mask[0]=00100000000000000000000000000000, sa_flags=SA_RESTART|SA_SIGINFO
+SIGHUP: [libjvm.dylib+0x4855d9], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGINT: [libjvm.dylib+0x4855d9], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGTERM: [libjvm.dylib+0x4855d9], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+SIGQUIT: [libjvm.dylib+0x4855d9], sa_mask[0]=11111111011111110111111111111111, sa_flags=SA_RESTART|SA_SIGINFO
+
+
+---------------  S Y S T E M  ---------------
+
+OS:Bsduname:Darwin 15.3.0 Darwin Kernel Version 15.3.0: Thu Dec 10 18:40:58 PST 2015; root:xnu-3248.30.4~1/RELEASE_X86_64 x86_64
+rlimit: STACK 8192k, CORE 0k, NPROC 709, NOFILE 10240, AS infinity
+load average:4.01 3.68 3.41
+
+CPU:total 8 (4 cores per cpu, 2 threads per core) family 6 model 70 stepping 1, cmov, cx8, fxsr, mmx, sse, sse2, sse3, ssse3, sse4.1, sse4.2, popcnt, avx, avx2, aes, clmul, erms, lzcnt, ht, tsc, tscinvbit, bmi1, bmi2
+
+Memory: 4k page, physical 16777216k(1208588k free)
+
+/proc/meminfo:
+
+
+vm_info: Java HotSpot(TM) 64-Bit Server VM (25.102-b14) for bsd-amd64 JRE (1.8.0_102-b14), built on Jun 22 2016 11:42:36 by "java_re" with gcc 4.2.1 (Based on Apple Inc. build 5658) (LLVM build 2336.11.00)
+
+time: Mon Oct  3 12:01:26 2016
+elapsed time: 31374 seconds (0d 8h 42m 54s)
+

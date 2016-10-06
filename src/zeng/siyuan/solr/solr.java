@@ -119,7 +119,7 @@ public class solr {
 /// the import thing is what do i hawant
 // i don't want to see you so what ever you try is subelow emm emememe
     public List<String> sendGet_comec(String types, JTextArea textArea) throws Exception {
-        String url22 = "http://localhost:8983/solr/jcg/select?q=name:%22come"+"%22OR%20name_ngram:%22"+"come"+"%22"+ "OR%20name_ngram:%22"+"%3f"+"%22" + "OR%20name_ngram:%22"+"what"+"%22" + "&wt=json";
+        String url22 = "http://localhost:8983/solr/jcg/select?q=name:%22come"+"%22OR%20name_ngram:%22"+"come"+"%22"+ "OR%20name_ngram:%22"+"%3f"+"%22" + "OR%20name_ngram:%22"+"what"+"%22" +"OR%20name_ngram:%22"+"everything"+"%22" +"OR%20name_ngram:%22"+"nothing"+"%22" + "OR%20name_ngram:%22"+"something"+"%22" + "&wt=json";
 
         String buttonSelected ="";
         for (Enumeration<AbstractButton> buttons = untoggle.bg.getElements(); buttons.hasMoreElements();) {

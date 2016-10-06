@@ -407,9 +407,41 @@ public class How2Forgert implements Serializable {
             // i don't see
             // i am dead
             // i talk to myself
-            (solr.sendGet_comec("", null)).forEach(a -> ebbinghauses.add(new Ebbinghaus(a,"")));
+            m = new mappingmanager();
+            Set<Ebbinghaus> ebbinghau = m.get();
 
+            for(Ebbinghaus s : ebbinghau) {
+                ebbinghauses.add(s);
+            }
 
+            searchebbinghauses = new ArrayList<Ebbinghaus>();
+
+            tasks = new ArrayList<Task>();
+
+                keywords="what ? come everything nothing something ".trim();
+                String[] sts="what ? come everything nothing something ".trim().split(" ");
+                if(sts.length==0)return;
+                for (Ebbinghaus e : How2Forgert.ebbinghauses) {
+                    if (e.getQuestion().replace("ufgt","").trim().isEmpty()){
+                        m.deleteTask(e.getJavauid());
+                        continue;
+                    }
+
+                    boolean flag2=false;
+                    for (String s : sts){
+                        flag2 = e.getQuestion().indexOf(s) != -1;
+                        if(flag2){
+                            break;
+                        }
+                    }
+                    if(flag2) {
+                        for (Task ct : e.getTasks()) {
+                            tasks.add(ct);
+                            searchebbinghauses.add(e);
+                            break;
+                        }
+                    }
+                }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -440,17 +472,7 @@ public class How2Forgert implements Serializable {
 */
 
 
-        tasks = new ArrayList<Task>();
-        for (Ebbinghaus e : ebbinghauses) {
-            if (e.getQuestion().replace("ufgt","").trim().isEmpty()){
-                m.deleteTask(e.getJavauid());
-            } else {
-                Set<Task> t = e.tasks;
-                for (Task task : t) {
-                    tasks.add(task);
-                }
-            }
-        }
+
         Collections.sort(tasks, new Task());
     }
 

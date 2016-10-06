@@ -247,6 +247,63 @@ public class C1comehere implements Serializable {
         textArea.setLineWrap(true);
         textArea.setFont(font);
 
+
+
+        if (null == how2Forgert) {
+            how2Forgert = new How2Forgert(c1comehere, textArea, frame);
+        }
+        how2Forgert.c1comehere = c1comehere;
+        how2Forgert.textArea = textArea;
+        how2Forgert.frame = frame;
+        try {
+            how2Forgert.init();
+        } catch (Exception e1) {
+            e1.printStackTrace();
+        }
+
+
+        if (null == dhow2Forgert) {
+            dhow2Forgert = new zeng.siyuan.onceaday.How2Forgert(c1comehere, textArea, frame);
+        }
+        dhow2Forgert.c1comehere = c1comehere;
+        dhow2Forgert.textArea = textArea;
+        dhow2Forgert.frame = frame;
+        dhow2Forgert.init();
+
+
+        if (null == dhow2Forgertl) {
+            dhow2Forgertl = new zeng.siyuan.onceaday.link.onceaday.How2Forgert(c1comehere, textArea, frame);
+        }
+        dhow2Forgertl.c1comehere = c1comehere;
+        dhow2Forgertl.textArea = textArea;
+        dhow2Forgertl.frame = frame;
+        dhow2Forgertl.init();
+
+
+
+
+        if (null == dhow2ForgDertl) {
+            dhow2ForgDertl= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.How2Forgert(c1comehere, textArea, frame);
+        }
+        dhow2ForgDertl.c1comehere = c1comehere;
+        dhow2ForgDertl.textArea = textArea;
+        dhow2ForgDertl.frame = frame;
+        dhow2ForgDertl.init();
+
+
+
+
+
+
+        if (null == dhow2ForgDertls) {
+            dhow2ForgDertls= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.How2Forgert(c1comehere, textArea, frame);
+        }
+        dhow2ForgDertls.c1comehere = c1comehere;
+        dhow2ForgDertls.textArea = textArea;
+        dhow2ForgDertls.frame = frame;
+        dhow2ForgDertls.init();
+
+
         textArea.addKeyListener(new KeyListener() {
             @Override
             public void keyTyped(KeyEvent e) {
@@ -258,59 +315,7 @@ public class C1comehere implements Serializable {
                 //change maxc os mattping to ctrl and enter button
                 if (e.getModifiers() == 2 && e.getKeyChar() == 13) {
 
-                    if (null == how2Forgert) {
-                        how2Forgert = new How2Forgert(c1comehere, textArea, frame);
-                    }
-                    how2Forgert.c1comehere = c1comehere;
-                    how2Forgert.textArea = textArea;
-                    how2Forgert.frame = frame;
-                    try {
-                        how2Forgert.init();
-                    } catch (Exception e1) {
-                        e1.printStackTrace();
-                    }
 
-
-                    if (null == dhow2Forgert) {
-                        dhow2Forgert = new zeng.siyuan.onceaday.How2Forgert(c1comehere, textArea, frame);
-                    }
-                    dhow2Forgert.c1comehere = c1comehere;
-                    dhow2Forgert.textArea = textArea;
-                    dhow2Forgert.frame = frame;
-                    dhow2Forgert.init();
-
-
-                    if (null == dhow2Forgertl) {
-                        dhow2Forgertl = new zeng.siyuan.onceaday.link.onceaday.How2Forgert(c1comehere, textArea, frame);
-                    }
-                    dhow2Forgertl.c1comehere = c1comehere;
-                    dhow2Forgertl.textArea = textArea;
-                    dhow2Forgertl.frame = frame;
-                    dhow2Forgertl.init();
-
-
-
-
-                    if (null == dhow2ForgDertl) {
-                        dhow2ForgDertl= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.How2Forgert(c1comehere, textArea, frame);
-                    }
-                    dhow2ForgDertl.c1comehere = c1comehere;
-                    dhow2ForgDertl.textArea = textArea;
-                    dhow2ForgDertl.frame = frame;
-                    dhow2ForgDertl.init();
-
-
-
-
-
-
-                    if (null == dhow2ForgDertls) {
-                        dhow2ForgDertls= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.How2Forgert(c1comehere, textArea, frame);
-                    }
-                    dhow2ForgDertls.c1comehere = c1comehere;
-                    dhow2ForgDertls.textArea = textArea;
-                    dhow2ForgDertls.frame = frame;
-                    dhow2ForgDertls.init();
 
 
                     e.consume();
