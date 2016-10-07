@@ -42,7 +42,7 @@ alias gitbc='git branch $1 && git checkout $1'
 function l() {
     git add .
     git commit -a -m "1"
-    git push
+    git push d
 }
 
 
