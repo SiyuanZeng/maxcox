@@ -1,3 +1,14 @@
+#.........................................................................................Directory......
+
+alias mc='cd /Users/vn0xrjh/projects/merchant_center'
+
+
+
+
+
+
+
+
 # copy adn fuplica thte bashrc file to my c1comehere project
 
 cp ~/.bashrc /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/bashrc
