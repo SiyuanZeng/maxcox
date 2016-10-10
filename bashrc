@@ -12,6 +12,9 @@ alias mc='cd /Users/vn0xrjh/projects/merchant_center'
 # copy adn fuplica thte bashrc file to my c1comehere project
 
 cp ~/.bashrc /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/bashrc
+cp -r  /Users/vn0xrjh/app/utils/dsc-cassandra-2.1.14/data/data /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/backupcanssandra/data
+
+
 
 
 alias killprocee='sudo kill "sudo lsof -t -i:$1"'
