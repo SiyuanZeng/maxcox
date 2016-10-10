@@ -1,6 +1,11 @@
 package zeng.siyuan.reuseutil;
 
+import javax.swing.*;
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
+import java.net.MalformedURLException;
+import java.net.URL;
 
 /**
  * Created by SiyuanZeng's on 9/14/2016.
@@ -12,7 +17,37 @@ public class r {
     public static final String SPACE = " ";
 
 
+    public static boolean isUrl(String s ) {
+        try {
+            new URL(s);
+            return true;
+        } catch (MalformedURLException e) {
+            return false;
+        }
+    }
 
+    public void waitUntilNotEmpty(JTextArea textArea) {
+        while (!textArea.getText().trim().isEmpty()) {
+            try {
+                Thread.sleep(10000);
+            } catch (InterruptedException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+
+    public static void open(String s ){
+        if(r.isUrl(s)){
+            r.openUrlInBrowser(s);
+        } else {
+            try {
+                Desktop.getDesktop().open(new File(s));
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
 
     public static void openUrlInBrowser(String url) {
         Runtime runtime = Runtime.getRuntime();

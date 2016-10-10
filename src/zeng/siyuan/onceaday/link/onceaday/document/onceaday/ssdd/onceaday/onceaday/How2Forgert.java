@@ -1,6 +1,7 @@
 package zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday;
 
 import zeng.siyuan.C1comehere.C1comehere;
+import zeng.siyuan.reuseutil.r;
 
 import javax.swing.*;
 import java.awt.*;
@@ -108,6 +109,7 @@ public class How2Forgert implements Serializable {
                                             e = new person_question(e.getText(),"ssdd", null);
                                             m.store(e);
                                 Desktop.getDesktop().open(new File(e.getText()));
+                                    r.openUrlInBrowser(e.getText());
                                     textArea.setText(inntuitive);
                                             break;
                                 }
@@ -126,7 +128,13 @@ public class How2Forgert implements Serializable {
                                     m.deleteTask(e.getJavauid());
                                             e = new person_question(e.getText(),"ssdd", null);
                                             m.store(e);
-                                    Desktop.getDesktop().open(new File(e.getText()));
+
+                                    if(r.isUrl(e.getText())){
+                                        r.openUrlInBrowser(e.getText());
+                                    } else {
+
+                                        Desktop.getDesktop().open(new File(e.getText()));
+                                    }
                             textArea.setText(inntuitive);
                                             break;
                                 }
@@ -147,7 +155,13 @@ public class How2Forgert implements Serializable {
                                         m.deleteTask(e.getJavauid());
                                         e = new person_question(e.getText(),"ssdd", null);
                                         m.store(e);
-                                Desktop.getDesktop().open(new File(e.getText()));
+
+                                if(r.isUrl(e.getText())){
+                                    r.openUrlInBrowser(e.getText());
+                                } else {
+
+                                    Desktop.getDesktop().open(new File(e.getText()));
+                                }
                                         textArea.setText(inntuitive);
                                         break;
                             }
