@@ -1,7 +1,7 @@
 #.........................................................................................Directory......
 
 alias mc='cd /Users/vn0xrjh/projects/merchant_center'
-
+alias gescrules='cd /Users/vn0xrjh/projects/gesc-rules'
 
 
 
