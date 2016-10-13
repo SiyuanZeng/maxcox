@@ -1,3 +1,11 @@
+#..............Maven
+
+alias mci='mvn clean install'
+
+
+
+
+
 #.........................................................................................Directory......
 
 alias mc='cd /Users/vn0xrjh/projects/merchant_center'
