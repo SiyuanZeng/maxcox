@@ -162,7 +162,6 @@ public class How2Forgert implements Serializable {
 
                                     Desktop.getDesktop().open(new File(e.getText()));
                                 }
-                                        textArea.setText(inntuitive);
                                         break;
                             }
                         }
