@@ -1,3 +1,4 @@
+
 #..............Maven
 
 alias mci='mvn clean install'
@@ -21,6 +22,7 @@ alias gescrules='cd /Users/vn0xrjh/projects/gesc-rules'
 
 cp ~/.bashrc /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/bashrc
 cp -r  /Users/vn0xrjh/app/utils/dsc-cassandra-2.1.14/data/data /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/backupcanssandra/data
+cp -r /Users/vn0xrjh/app/utils/solr-6.2.1/server/solr /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/solrbkpbackup
 
 
 
@@ -112,7 +114,7 @@ do
 #printf -v "${str}${line} %s\n" $str
 str=$(printf "${str}\n\n${line}" $str)
 
-#	str="${str}"$'\n'$'\n'$'\n'$'\n'"${line}"
+# str="${str}"$'\n'$'\n'$'\n'$'\n'"${line}"
 done
 
    # for i in "$@"; do 
