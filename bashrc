@@ -1,3 +1,7 @@
+#-----------------------------------------------------------------Walmart deve------------------------------
+alias port='ps -ef|grep catalina'
+
+
 
 #..............Maven
 
@@ -33,7 +37,7 @@ alias kill='sudo kill -9 $1'
 
 alias sc='cd /Users/vn0xrjh/projects/sc_automation'
 
-
+alias sc1='cd /Users/vn0xrjh/projects1/sc_automation'
 
 
 
@@ -58,10 +62,10 @@ alias gitcp='git commit -m "$1" && git push daniel'
 # git commit
 alias gitco='git commit -m "$1"'
 
-alias gitc='git checkout'
+alias c='git checkout $1'
 
 # git branch and check out
-alias gitbc='git branch $1 && git checkout $1'
+alias new='git branch $1'
 
 function l() {
     git add .
