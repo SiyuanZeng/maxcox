@@ -1,26 +1,62 @@
-#-----------------------------------------------------------------Walmart deve------------------------------
+# ..............................................................................................Walmart Deve......................................................................................
+
 alias port='ps -ef|grep catalina'
 
 
 
-#..............Maven
 
-alias mci='mvn clean install'
+alias killprocee='sudo kill "sudo lsof -t -i:$1"'
 
-
-
-
-
-#.........................................................................................Directory......
-
-alias mc='cd /Users/vn0xrjh/projects/merchant_center'
-alias gescrules='cd /Users/vn0xrjh/projects/gesc-rules'
+alias kill='sudo kill -9 $1'
 
 
 
+# ..............................................................................................Maven......................................................................................
+
+
+alias c='mvn clean'
+alias i='mvn install'
+alias ci='mvn clean install'
 
 
 
+alias c1='cd /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere && ls &&  pwd'
+
+alias gesc='cd /Users/vn0xrjh/projects/gesc-services && ls &&  pwd'
+
+
+
+
+# ..............................................................................................Directory......................................................................................
+
+alias mc='cd /Users/vn0xrjh/projects/merchant_center && ls &&  pwd'
+alias ru='cd /Users/vn0xrjh/projects/gesc-rules && ls &&  pwd'
+
+
+alias ca="cd /Users/vn0xrjh/app/utils/dsc-cassandra-3.0.8/bin && ls &&  pwd"
+alias cs='sudo /Users/vn0xrjh/app/utils/dsc-cassandra-2.1.14/bin/cassandra && ls &&  pwd'
+
+alias sc='cd /Users/vn0xrjh/projects/sc_automation && ls && pwd'
+
+alias au='cd /Users/vn0xrjh/projects1/sc_automation && ls &&  pwd'
+alias so='cd /Users/vn0xrjh/app/utils/solr-6.2.1/bin && ls &&  pwd'
+
+
+alias cdp="cd ~/projects/gesc-services && ls && pwd"
+
+alias d='open /Users/vn0xrjh/Downloads'
+
+alias doc='open /Users/vn0xrjh/Documents'
+alias de='open /Users/vn0xrjh/Desktop'
+alias p='cd /Users/vn0xrjh/Projects  && ls && pwd'
+
+# ..............................................................................................File......................................................................................
+
+alias b="sublime ~/.bashrc"
+
+
+
+# ..............................................................................................Backup......................................................................................
 
 # copy adn fuplica thte bashrc file to my c1comehere project
 
@@ -31,16 +67,6 @@ cp -r /Users/vn0xrjh/app/utils/solr-6.2.1/server/solr /Users/vn0xrjh/daniel/14_G
 
 
 
-alias killprocee='sudo kill "sudo lsof -t -i:$1"'
-
-alias kill='sudo kill -9 $1'
-
-alias sc='cd /Users/vn0xrjh/projects/sc_automation'
-
-alias sc1='cd /Users/vn0xrjh/projects1/sc_automation'
-
-
-
 
 # ..............................................................................................GIT......................................................................................
 
@@ -48,24 +74,24 @@ alias sc1='cd /Users/vn0xrjh/projects1/sc_automation'
 alias r='git reset $1'
 
 # git add
-alias ad='git add $1'
+alias a='git add $1'
 
 
 # git checkout master
-alias gitm='git checkout master'
+alias m='git checkout master'
 
 
 # git commiti and push to daneiel
-alias gitcp='git commit -m "$1" && git push daniel'
+alias cpu='git commit -m "$1" && git push daniel'
 
 
 # git commit
-alias gitco='git commit -m "$1"'
+alias co='git commit -m "$1"'
 
 alias c='git checkout $1'
 
 # git branch and check out
-alias new='git branch $1'
+alias br='git branch $1'
 
 function l() {
     git add .
@@ -74,84 +100,14 @@ function l() {
 }
 
 
+alias ck="git checkout $1"
+alias gitb="git branch"
+alias pull="git pull upstream master"
+
+alias m="git fetch daniel && git merge daniel/master"
 
 
-
-
-
-
-
-
-
-
-alias c1='cd /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere'
-
-alias gesc='cd /Users/vn0xrjh/projects/gesc-services'
-
-
-#earch subcategories
-alias find='sudo find . -print | grep -i $1'
-
-
-alias delete='sudo rm -rf $1'
-alias remove='sudo rm -rf $1'
-alias del='sudo rm rf $1'
-alias rm='sudo rm -rf $1'
-
-ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
-
-#insert a string to the file
-alias back='cd "$OLDPWD"'
-alias ..="cd .."
-
-function ida() {
-
-str=
-
-while read -r line; 
-do 
-
-#str=printf "%s\n%s\n" "$str" "$line"
-
-#printf -v "%s\n%s" "$str" "$line" $str
-
-#printf -v "${str}${line} %s\n" $str
-str=$(printf "${str}\n\n${line}" $str)
-
-# str="${str}"$'\n'$'\n'$'\n'$'\n'"${line}"
-done
-
-   # for i in "$@"; do 
-    
-#    str="$str $i"
- #   done
-
-echo ${str}$'\n'$'\n'$'\n'$'\n' | cat - todo.txt.bak > temp && mv temp todo.txt.bak
-}
-
-export -f ida
-
-#We can find files in our current directory easily by setting this alias:
-
-alias fhere="find . -name "
-
-
-#Cycle between three different prompts. Usage: dp N
-
-dp () {
-  if [[ $1 -eq "1" || $# -eq "0" ]]; then
-    PS1="\033[01;32m$\033[00m "
-  elif [[ $1 -eq "2" ]]; then
-    PS1="${debian_chroot:+($debian_chroot)}\w\033[01;32m$\033[00m "
-  elif [[ $1 -eq "3" ]]; then
-    PS1="\033[01;32m\u@\H:${debian_chroot:+($debian_chroot)}\w\033[01;32m$\033[00m "
-  fi
-  return;
-}
-
-#Use it as dp N, where N is 1, 2 or 3. 
-
-alias lsh='ls -lhXG'
+alias gits="git status"
 
  # long listing, human-readable, sort by extension, do not show group info
 
@@ -166,23 +122,12 @@ git()
 }
 
 
-#Opens current directory in a file explorer
-alias explore='open .'
 
-#Opens current directory in a file explorer with super user privileges
-alias suexplore='sudo open .'
 
-#Opens current directory in Ubuntu's Disk Usage Analyzer GUI with super user privileges in the background
-alias analyze='gksudo baobab . &'
+# ..............................................................................................Folder Navigation......................................................................................
 
-#Opens a GUI text editor in the background. Can obviously be replaced with your favorite editor
-alias text='gedit &'
-#Same as above with super user privileges
-alias sutext='gksudo gedit &'
 
-#Opens a file with whatever program would open by double clicking on it in a GUI file explorer
-#Usage: try someDocument.doc
-alias try='gnome-open'
+alias lsh='ls -lhXG'
 
 #lists contents of current directory with file permisions
 alias ll='ls -l -sort'
@@ -190,15 +135,49 @@ alias ll='ls -l -sort'
 #list all directories in current directories
 alias ldir='ls -l | grep ^d'
 
-#self explanatory
-alias ...='cd ../../'
 
-#show aliases
-alias a='echo "------------Your aliases------------";alias'
-#Apply changes to aliases
-alias sa='source ~/.bash_aliases;echo "Bash aliases sourced."'
-#Edit Aliases
-alias via='gksudo gedit ~/.bash_aliases &'
+
+#Opens current directory in a file explorer
+alias explore='open .'
+
+
+#Opens current directory in a file explorer
+alias o='open .'
+
+#Opens current directory in a file explorer with super user privileges
+alias suexplore='sudo open .'
+
+#self explanatory
+alias ...='cd ../../ && ls &&  pwd'
+
+alias ....=='cd /Users/vn0xrjh && ls &&  pwd'
+
+#earch subcategories
+alias f='sudo find . -print | grep -i $1'
+
+#earch subcategories
+alias find='sudo find . -print | grep -i $1'
+
+
+#We can find files in our current directory easily by setting this alias:
+
+alias fh="find . -name $1"
+
+alias search="ps aux | grep $1"
+alias ..="cd .."
+
+
+alias delete='sudo rm -rf $1'
+alias remove='sudo rm -rf $1'
+alias del='sudo rm -rf $1'
+alias re='sudo rm -rf $1'
+
+#insert a string to the file
+alias back='cd "$OLDPWD"'
+alias ls='ls -lh'
+
+
+# ..............................................................................................Internet......................................................................................
 
 
    function g() {
@@ -243,23 +222,102 @@ export -f fm
 
 export -f gg
 
-alias search="ps aux | grep $1"
+
+
+
+
+
+
+# ..............................................................................................Terminal......................................................................................
+
+
+
+alias s="source ~/.bashrc"
 
 alias install="sudo tar -xzf $1"
-alias solrd='cd /Users/vn0xrjh/app/utils/solr-6.2.1/bin'
+alias h="history | grep $1"
+
+
+
+
+
+
+
+
+
+function ida() {
+
+str=
+
+while read -r line; 
+do 
+
+#str=printf "%s\n%s\n" "$str" "$line"
+
+#printf -v "%s\n%s" "$str" "$line" $str
+
+#printf -v "${str}${line} %s\n" $str
+str=$(printf "${str}\n\n${line}" $str)
+
+# str="${str}"$'\n'$'\n'$'\n'$'\n'"${line}"
+done
+
+   # for i in "$@"; do 
+    
+#    str="$str $i"
+ #   done
+
+echo ${str}$'\n'$'\n'$'\n'$'\n' | cat - todo.txt.bak > temp && mv temp todo.txt.bak
+}
+
+export -f ida
+
+
+#Cycle between three different prompts. Usage: dp N
+
+dp () {
+  if [[ $1 -eq "1" || $# -eq "0" ]]; then
+    PS1="\033[01;32m$\033[00m "
+  elif [[ $1 -eq "2" ]]; then
+    PS1="${debian_chroot:+($debian_chroot)}\w\033[01;32m$\033[00m "
+  elif [[ $1 -eq "3" ]]; then
+    PS1="\033[01;32m\u@\H:${debian_chroot:+($debian_chroot)}\w\033[01;32m$\033[00m "
+  fi
+  return;
+}
+
+#Use it as dp N, where N is 1, 2 or 3. 
+
+
+#Opens current directory in Ubuntu's Disk Usage Analyzer GUI with super user privileges in the background
+alias analyze='gksudo baobab . &'
+
+#Opens a GUI text editor in the background. Can obviously be replaced with your favorite editor
+alias text='gedit &'
+#Same as above with super user privileges
+alias sutext='gksudo gedit &'
+
+#Opens a file with whatever program would open by double clicking on it in a GUI file explorer
+#Usage: try someDocument.doc
+alias try='gnome-open'
+
+#show aliases
+alias a='echo "------------Your aliases------------";alias'
+#Apply changes to aliases
+alias sa='source ~/.bash_aliases;echo "Bash aliases sourced."'
+#Edit Aliases
+alias via='gksudo gedit ~/.bash_aliases &'
+
+# ..............................................................................................C1 setup......................................................................................
 
 alias solrstart='sudo /Users/vn0xrjh/app/utils/solr-6.2.1/bin/solr start'
 
-alias cdp="cd ~/projects/gesc-services"
-alias h="history | grep $1"
-alias ck="git checkout $1"
-alias gitb="git branch"
-alias pull="git pull upstream master"
-alias gits="git status"
-alias dse="cd /Users/vn0xrjh/app/utils/dsc-cassandra-3.0.8/bin"
-alias cassandrastart='sudo /Users/vn0xrjh/app/utils/dsc-cassandra-2.1.14/bin/cassandra'
 
-alias b="vim ~/.bashrc"
-alias s="source ~/.bashrc"
+# ..............................................................................................Automatic run......................................................................................
+
 export PATH="~/dse/bin:$PATH"
 export PATH="/Users/vn0xrjh/app/utils/dse/bin/cqlsh:$PATH"
+
+ln -s "/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl" /usr/local/bin/sublime
+
+
