@@ -29,9 +29,6 @@ public class d {
         //print field names paired with their values
         for ( Field field : fields  ) {
             field.setAccessible(true);
-            if(!field.getType().isPrimitive()) {
-                getString(field.get(o));
-            }
             result.append("  ");
             try {
                 result.append( field.getName() );

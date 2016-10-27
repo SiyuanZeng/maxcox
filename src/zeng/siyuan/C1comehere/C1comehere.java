@@ -358,7 +358,7 @@ public class C1comehere implements Serializable {
                         boolean DisThoughtRecorderCommand_x = buttonSelected.startsWith("Drec");
                         boolean DisHow2ForegertCommand = buttonSelected.startsWith("Dfgt");
                         boolean DisHow2ForegertCommand_u = textArea.getText().contains(" Dufgt ");
-                        boolean Disload = buttonSelected.startsWith("startsWith");
+                        boolean Disload = buttonSelected.startsWith("Dlaod");
                         boolean Dcodja_x = buttonSelected.startsWith("Dcodeja");
                         boolean Dsaerchdiary = buttonSelected.startsWith("Dsaerchdiary");
                         boolean DisShowCommand = buttonSelected.startsWith("Dsho");// shw

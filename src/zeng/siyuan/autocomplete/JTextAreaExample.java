@@ -1,6 +1,5 @@
 package zeng.siyuan.autocomplete;
 
-import zeng.siyuan.d;
 import zeng.siyuan.solr.solr;
 
 import javax.swing.*;
@@ -10,10 +9,11 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
-import java.awt.event.*;
+import java.awt.event.ActionEvent;
+import java.awt.event.KeyEvent;
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
 import java.util.ArrayList;
-
-import static zeng.siyuan.autocomplete.JTextAreaExample.f;
 
 /**
  * @author David
