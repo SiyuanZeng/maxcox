@@ -1,5 +1,6 @@
 package zeng.siyuan.autocomplete;
 
+import zeng.siyuan.d;
 import zeng.siyuan.solr.solr;
 
 import javax.swing.*;
@@ -9,21 +10,22 @@ import javax.swing.event.DocumentListener;
 import javax.swing.text.BadLocationException;
 import javax.swing.text.JTextComponent;
 import java.awt.*;
-import java.awt.event.ActionEvent;
-import java.awt.event.KeyEvent;
-import java.awt.event.MouseAdapter;
-import java.awt.event.MouseEvent;
+import java.awt.event.*;
 import java.util.ArrayList;
 
-import static zeng.siyuan.C1comehere.C1comehere.frame;
+import static zeng.siyuan.autocomplete.JTextAreaExample.f;
 
 /**
  * @author David
  */
 public class JTextAreaExample {
+    static JFrame f;
+    static JTextArea t;
 
     public JTextAreaExample(JFrame frame, JTextArea textArea, JPanel p) {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        f = frame;
+        t = textArea;
 
         //JTextField textArea = new JTextField(10);
         //JEditorPane textArea = new JEditorPane();
@@ -53,11 +55,13 @@ class AutoSuggestor {
         @Override
         public void insertUpdate(DocumentEvent de) {
             checkForAndShowSuggestions();
+            setFocusToTextField();
         }
 
         @Override
         public void removeUpdate(DocumentEvent de) {
             checkForAndShowSuggestions();
+            setFocusToTextField();
         }
 
         @Override
@@ -159,9 +163,14 @@ class AutoSuggestor {
         container.toFront();
         container.requestFocusInWindow();
         textArea.requestFocusInWindow();
-        frame.repaint();
-        frame.toFront();
-        frame.setAlwaysOnTop(true);
+//        textArea.setCaretPosition( textArea.getCaretPosition() + 1 );
+        // Set the caret color
+        textArea.setCaretColor(Color.red);
+//        textArea.append("Some NEW TEXT is here...");
+        int len = textArea.getDocument().getLength();
+        textArea.setCaretPosition(len);
+        textArea.requestFocusInWindow();
+        textArea.grabFocus();
     }
 
     public ArrayList<SuggestionLabel> getAddedSuggestionLabels() {
@@ -282,6 +291,12 @@ class AutoSuggestor {
         autoSuggestionPopUpWindow.setMinimumSize(new Dimension(10,20));
         autoSuggestionPopUpWindow.revalidate();
         autoSuggestionPopUpWindow.repaint();
+//        try {
+//            d.toString(autoSuggestionPopUpWindow);
+//            d.toString(f);
+//        } catch (IllegalAccessException e) {
+//            e.printStackTrace();
+//        }
 
     }
 
