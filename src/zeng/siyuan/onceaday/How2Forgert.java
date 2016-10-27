@@ -129,25 +129,10 @@ public class How2Forgert implements Serializable {
                         long diff = calendar.getTimeInMillis() - Calendar.getInstance().getTimeInMillis();
                         if (diff > 0) {
                             Thread.sleep(diff);
-
-
-                            String buttonSelected = getString();
-                            boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
-
-                            while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
+                            while (!textArea.getText().trim().isEmpty()) {
                                 Thread.sleep(10000);
-                                for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
-                                    AbstractButton button = buttons.nextElement();
-
-                                    if (button.isSelected()) {
-                                        buttonSelected = button.getText();
-                                    }
-                                }
-                                isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
-
                             }
+
                             frame.repaint();
                             frame.toFront();
                             currentTask = t;
@@ -169,25 +154,12 @@ public class How2Forgert implements Serializable {
                             inntuitive += System.getProperty("line.separator");
                             textArea.setText(inntuitive);
                         } else {
-
-
-                            String buttonSelected = getString();
-                            boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
-
-                            while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
+                            while (!textArea.getText().trim().isEmpty()) {
                                 Thread.sleep(10000);
-
-                                for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
-                                    AbstractButton button = buttons.nextElement();
-
-                                    if (button.isSelected()) {
-                                        buttonSelected = button.getText();
-                                    }
-                                }
-                                isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
                             }
+
+
+
                             frame.repaint();
                             frame.toFront();
                             currentTask = t;
