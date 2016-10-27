@@ -1,13 +1,85 @@
-# ..............................................................................................Walmart Deve......................................................................................
+# ..............................................................................................One......................................................................................
+#!/bin/bash
+echo before comment
+: <<'END'
+bla bla
+blurfl
 
-alias port='ps -ef|grep catalina'
+
+
+alias a='git add $1'
+alias b="sublime ~/.bashrc"
+alias c='mvn clean'
+alias d='open /Users/vn0xrjh/Downloads'
+
+
+function g() {
+
+/usr/bin/open -a "/Applications/Google Chrome.app" "https://www.google.com/search?q=${*}"
+
+}
+
+alias h="history | grep $1"
+alias i='mvn install'
+alias k='sudo kill -9 $1'
+
+function l() {
+    git add .
+    git commit -a -m "1"
+    git push d
+}
+
+
+
+alias m="git fetch daniel && git merge daniel/master"
+
+
+
+alias r='git reset $1'
+
+alias s="source ~/.bashrc"
+
+
+
+alias o='open .'
+alias p='cd /Users/vn0xrjh/Projects  && ls && pwd'
+
+
+
+
+
+END
+echo after comment
+
+
+# ..............................................................................................2......................................................................................
+#!/bin/bash
+echo before comment
+: <<'END'
+bla bla
+blurfl
+
+
+
+
+
+END
+echo after comment
+
+
+
+
+
+# ..............................................................................................Walmart Deve......................................................................................
+# port
+alias po='ps -ef|grep catalina'
 
 
 
 
 alias killprocee='sudo kill "sudo lsof -t -i:$1"'
 
-alias kill='sudo kill -9 $1'
+alias k='sudo kill -9 $1'
 
 
 
@@ -78,7 +150,7 @@ alias a='git add $1'
 
 
 # git checkout master
-alias m='git checkout master'
+alias ma='git checkout master'
 
 
 # git commiti and push to daneiel
@@ -87,8 +159,6 @@ alias cpu='git commit -m "$1" && git push daniel'
 
 # git commit
 alias co='git commit -m "$1"'
-
-alias c='git checkout $1'
 
 # git branch and check out
 alias br='git branch $1'
@@ -100,7 +170,7 @@ function l() {
 }
 
 
-alias ck="git checkout $1"
+alias ch="git checkout $1"
 alias gitb="git branch"
 alias pull="git pull upstream master"
 
@@ -302,7 +372,7 @@ alias sutext='gksudo gedit &'
 alias try='gnome-open'
 
 #show aliases
-alias a='echo "------------Your aliases------------";alias'
+alias al='echo "------------Your aliases------------";alias'
 #Apply changes to aliases
 alias sa='source ~/.bash_aliases;echo "Bash aliases sourced."'
 #Edit Aliases

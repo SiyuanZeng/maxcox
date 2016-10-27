@@ -34,7 +34,7 @@ public class C1comehere implements Serializable {
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.How2Forgert dhow2ForgDertls;
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.How2Forgert dhow2ForgDertlsf;
     public static C1comehere c1comehere;
-    public static Font font = new Font("Serif", Font.PLAIN, 5);
+    public static Font font = new Font("Serif", Font.PLAIN, c.SIZE);
     public static untoggle untoggle;
     public static transient Properties prop;
     public transient static Map<String, Search> searchEngines = new HashMap<String, Search>();

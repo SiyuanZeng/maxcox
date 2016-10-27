@@ -15,6 +15,8 @@ import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import java.util.ArrayList;
 
+import static zeng.siyuan.C1comehere.C1comehere.frame;
+
 /**
  * @author David
  */
@@ -157,6 +159,9 @@ class AutoSuggestor {
         container.toFront();
         container.requestFocusInWindow();
         textArea.requestFocusInWindow();
+        frame.repaint();
+        frame.toFront();
+        frame.setAlwaysOnTop(true);
     }
 
     public ArrayList<SuggestionLabel> getAddedSuggestionLabels() {
@@ -246,8 +251,8 @@ class AutoSuggestor {
 
     private void showPopUpWindow() {
         autoSuggestionPopUpWindow.getContentPane().add(suggestionsPanel);
-        autoSuggestionPopUpWindow.setMinimumSize(new Dimension(textArea.getWidth(), 30));
-        autoSuggestionPopUpWindow.setSize(tW, tH);
+        autoSuggestionPopUpWindow.setMinimumSize(new Dimension(150,200));
+        autoSuggestionPopUpWindow.setSize(300,200);
         autoSuggestionPopUpWindow.setVisible(true);
 
         int windowX = 0;
@@ -274,7 +279,7 @@ class AutoSuggestor {
 
         //show the pop up
         autoSuggestionPopUpWindow.setLocation(windowX, windowY);
-        autoSuggestionPopUpWindow.setMinimumSize(new Dimension(textArea.getWidth(), 30));
+        autoSuggestionPopUpWindow.setMinimumSize(new Dimension(10,20));
         autoSuggestionPopUpWindow.revalidate();
         autoSuggestionPopUpWindow.repaint();
 
