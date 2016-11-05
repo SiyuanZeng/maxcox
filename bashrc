@@ -1,3 +1,82 @@
+
+
+# ..............................................................................................GIT......................................................................................
+
+
+# git rest restetgit
+alias st='git stash'
+
+# git rest restet
+alias pop='git stash pop'
+
+# git rest restet
+alias r='git reset $1'
+
+# git rest restet
+alias ra='git reset --hard'
+
+alias log='git log --pretty=oneline --abbrev-commit'
+
+# git add
+alias a='git add $1'
+
+
+# git add
+alias aa='git add --all'
+
+# git checkout master
+alias ma='git checkout master'
+
+
+# git commiti and push to daneiel
+alias cpu='git commit -m "$1" && git push daniel'
+
+
+
+# git commiti and push to daneiel
+alias gca='git commit -am "l"'
+
+# git commit
+alias co='git commit -m "$1"'
+
+# git branch and check out
+alias nb='git checkout -b $1'
+
+function l() {
+    git add .
+    git commit -a -m "1"
+    git push d
+}
+
+
+alias gc="git checkout $1"
+alias gb="git branch"
+alias pull="git pull upstream master"
+
+alias m="git fetch daniel && git merge daniel/master"
+
+
+alias gs="git status"
+
+ # long listing, human-readable, sort by extension, do not show group info
+
+git()
+{
+  if [ $# -gt 0 ] && [ "$1" == "diff" ] ; then
+     shift
+     /usr/bin/git diff --color "$@"
+  else
+     /usr/bin/git "$@"
+  fi
+}
+
+
+
+
+
+
+
+
 # ..............................................................................................One......................................................................................
 #!/bin/bash
 echo before comment
@@ -101,6 +180,9 @@ alias gesc='cd /Users/vn0xrjh/projects/gesc-services && ls &&  pwd'
 
 # ..............................................................................................Directory......................................................................................
 
+
+# alias cd='cd $1 && ls &&  pwd'
+
 alias mc='cd /Users/vn0xrjh/projects/merchant_center && ls &&  pwd'
 alias ru='cd /Users/vn0xrjh/projects/gesc-rules && ls &&  pwd'
 
@@ -120,7 +202,7 @@ alias d='open /Users/vn0xrjh/Downloads'
 
 alias doc='open /Users/vn0xrjh/Documents'
 alias de='open /Users/vn0xrjh/Desktop'
-alias p='cd /Users/vn0xrjh/Projects  && ls && pwd'
+alias p='cd /Users/vn0xrjh/projects  && ls && pwd'
 
 # ..............................................................................................File......................................................................................
 
@@ -136,60 +218,6 @@ cp ~/.bashrc /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/bashrc
 cp -r  /Users/vn0xrjh/app/utils/dsc-cassandra-2.1.14/data/data /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/backupcanssandra/data
 cp -r /Users/vn0xrjh/app/utils/solr-6.2.1/server/solr /Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/solrbkpbackup
 
-
-
-
-
-# ..............................................................................................GIT......................................................................................
-
-# git rest restet
-alias r='git reset $1'
-
-# git add
-alias a='git add $1'
-
-
-# git checkout master
-alias ma='git checkout master'
-
-
-# git commiti and push to daneiel
-alias cpu='git commit -m "$1" && git push daniel'
-
-
-# git commit
-alias co='git commit -m "$1"'
-
-# git branch and check out
-alias br='git branch $1'
-
-function l() {
-    git add .
-    git commit -a -m "1"
-    git push d
-}
-
-
-alias ch="git checkout $1"
-alias gitb="git branch"
-alias pull="git pull upstream master"
-
-alias m="git fetch daniel && git merge daniel/master"
-
-
-alias gits="git status"
-
- # long listing, human-readable, sort by extension, do not show group info
-
-git()
-{
-  if [ $# -gt 0 ] && [ "$1" == "diff" ] ; then
-     shift
-     /usr/bin/git diff --color "$@"
-  else
-     /usr/bin/git "$@"
-  fi
-}
 
 
 

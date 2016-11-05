@@ -182,22 +182,12 @@ public class How2Forgert implements Serializable {
                             Thread.sleep(10000);
                         }
                     } else if (!t.getIsDone() && t.getDate().before(new Date())) {
+                        for (person_question e : ebbinghauses) {
+                            if (e.getJavauid().toString().equalsIgnoreCase(t.getJavauuid().toString())) {
+                                for (Task ct : e.getTasks()) {
 
-                        String buttonSelected = getString();
-                        boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
-
-                        while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
+                        while (!textArea.getText().trim().isEmpty()) {
                             Thread.sleep(10000);
-                            for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
-                                AbstractButton button = buttons.nextElement();
-
-                                if (button.isSelected()) {
-                                    buttonSelected = button.getText();
-                                }
-                            }
-                            isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("Dufgt") || buttonSelected.equalsIgnoreCase("Ddeldiary");
-
                         }
                         frame.repaint();
                         frame.toFront();
@@ -205,19 +195,16 @@ public class How2Forgert implements Serializable {
                         String inntuitive = System.getProperty("line.separator");
                         inntuitive += (" Dufgt ");
                         inntuitive += System.getProperty("line.separator");
-                        for (person_question e : ebbinghauses) {
-                            if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
-                                for (Task ct : e.getTasks()) {
-                                    if (ct.getDate().getTime() == currentTask.getDate().getTime()) {
-                                        ct.setIsDone(true);
-                                        inntuitive += e.text;
-                                        m.store(e);
-                                    }
+                        inntuitive += System.getProperty("line.separator");
+
+                                    ct.setIsDone(true);
+                                    inntuitive += e.text;
+                                    m.store(e);
+                                    textArea.setText(inntuitive);
+                                    init();
                                 }
                             }
                         }
-                        inntuitive += System.getProperty("line.separator");
-                        textArea.setText(inntuitive);
                     }
                 }
             }
