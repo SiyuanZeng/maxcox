@@ -182,28 +182,33 @@ public class How2Forgert implements Serializable {
                             Thread.sleep(10000);
                         }
                     } else if (!t.getIsDone() && t.getDate().before(new Date())) {
+                        boolean found = false;
                         for (person_question e : ebbinghauses) {
                             if (e.getJavauid().toString().equalsIgnoreCase(t.getJavauuid().toString())) {
                                 for (Task ct : e.getTasks()) {
+                                    if (!ct.isDone) {
 
-                        while (!textArea.getText().trim().isEmpty()) {
-                            Thread.sleep(10000);
-                        }
-                        frame.repaint();
-                        frame.toFront();
-                        currentTask = t;
-                        String inntuitive = System.getProperty("line.separator");
-                        inntuitive += (" Dufgt ");
-                        inntuitive += System.getProperty("line.separator");
-                        inntuitive += System.getProperty("line.separator");
+                                        while (!textArea.getText().trim().isEmpty()) {
+                                            Thread.sleep(10000);
+                                        }
+                                        frame.repaint();
+                                        frame.toFront();
+                                        currentTask = t;
+                                        String inntuitive = System.getProperty("line.separator");
+                                        inntuitive += (" Dufgt ");
+                                        inntuitive += System.getProperty("line.separator");
+                                        inntuitive += System.getProperty("line.separator");
 
-                                    ct.setIsDone(true);
-                                    inntuitive += e.text;
-                                    m.store(e);
-                                    textArea.setText(inntuitive);
-                                    init();
+                                        ct.setIsDone(true);
+                                        inntuitive += e.text;
+                                        m.store(e);
+                                        textArea.setText(inntuitive);
+                                        found = true;
+                                    }
+                                    if (found) break;
                                 }
                             }
+                            if (found) break;
                         }
                     }
                 }
