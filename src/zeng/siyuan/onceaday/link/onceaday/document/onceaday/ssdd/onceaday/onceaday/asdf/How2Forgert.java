@@ -29,15 +29,18 @@ public class How2Forgert implements Serializable {
 
     public void d(){
         Scanner in = null;
-
+        StringBuffer stringBuffer = new StringBuffer();
         if (null != textArea && !("".equalsIgnoreCase(textArea.getText()))) {
 
             in = new Scanner(textArea.getText());
                 while (in.hasNext()) {
                     String line = in.nextLine();
+                    stringBuffer.append("\n");
+                    stringBuffer.append(line);
                     if (line.trim().equals("")) {
-                        person_question e = new person_question(line,"Person_Quesiton", getdatelastday());
+                        person_question e = new person_question(stringBuffer.toString(),"Person_Quesiton", getdatelastday());
                         m.store(e);
+                        stringBuffer=new StringBuffer();
                     } else {
                     }
                 }

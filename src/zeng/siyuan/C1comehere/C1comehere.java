@@ -351,81 +351,81 @@ public class C1comehere implements Serializable {
                             }
                         }
 
-                        boolean deleteCommand = buttonSelected.startsWith("delete");
-                        boolean deleteCommand2 = buttonSelected.startsWith("deldiary");
-                        boolean isThoughtRecorderCommand = buttonSelected.startsWith("rec");
-                        boolean isHow2ForegertCommand = buttonSelected.startsWith("fgt");
+                        boolean deleteCommand = buttonSelected.equals("delete");
+                        boolean deleteCommand2 = buttonSelected.equals("deldiary");
+                        boolean isThoughtRecorderCommand = buttonSelected.equals("rec");
+                        boolean isHow2ForegertCommand = buttonSelected.equals("fgt");
                         boolean isHow2ForegertCommand_u = textArea.getText().contains(" ufgt ");
-                        boolean isload = buttonSelected.startsWith("laod");
-                        boolean codja = buttonSelected.startsWith("codeja");
-                        boolean saerchdiary = buttonSelected.startsWith("saerchdiary") && !buttonSelected.contains("saerchdiaryall");
+                        boolean isload = buttonSelected.equals("laod");
+                        boolean codja = buttonSelected.equals("codeja");
+                        boolean saerchdiary = buttonSelected.equals("saerchdiary") && !buttonSelected.contains("saerchdiaryall");
                         boolean saerchdiaryall = buttonSelected.contains("saerchdiaryall");
-                        boolean isShowCommand = buttonSelected.startsWith("sho");// shw
+                        boolean isShowCommand = buttonSelected.equals("sho");// shw
                         Search search = null;
 
 
-                        boolean DdeleteCommand_X = buttonSelected.startsWith("Ddelete");
-                        boolean DdeleteCommand2 = buttonSelected.startsWith("Ddeldiary");
-                        boolean DisThoughtRecorderCommand_x = buttonSelected.startsWith("Drec");
-                        boolean DisHow2ForegertCommand = buttonSelected.startsWith("Dfgt");
+                        boolean DdeleteCommand_X = buttonSelected.equals("Ddelete");
+                        boolean DdeleteCommand2 = buttonSelected.equals("Ddeldiary");
+                        boolean DisThoughtRecorderCommand_x = buttonSelected.equals("Drec");
+                        boolean DisHow2ForegertCommand = buttonSelected.equals("Dfgt");
                         boolean DisHow2ForegertCommand_u = textArea.getText().contains(" Dufgt ");
-                        boolean Disload = buttonSelected.startsWith("Dlaod");
-                        boolean Dcodja_x = buttonSelected.startsWith("Dcodeja");
-                        boolean Dsaerchdiary = buttonSelected.startsWith("Dsaerchdiary");
-                        boolean DisShowCommand = buttonSelected.startsWith("Dsho");// shw
+                        boolean Disload = buttonSelected.equals("Dlaod");
+                        boolean Dcodja_x = buttonSelected.equals("Dcodeja");
+                        boolean Dsaerchdiary = buttonSelected.equals("Dsaerchdiary");
+                        boolean DisShowCommand = buttonSelected.equals("Dsho");// shw
                         Search Dsearch = null;
 
 
-                        boolean DldeleteCommand_X = buttonSelected.startsWith("LDdelete");
-                        boolean DdleleteCommand2 = buttonSelected.startsWith("DdeldLiary");
+                        boolean DldeleteCommand_X = buttonSelected.equals("LDdelete");
+                        boolean DdleleteCommand2 = buttonSelected.equals("DdeldLiary");
                         boolean DislThoughtRecorderCommand_x = buttonSelected.equalsIgnoreCase("Drec");
                         boolean DisHlow2ForegertCommand = buttonSelected.equalsIgnoreCase("DLfgt");
                         boolean DisHolw2ForegertCommand_u = textArea.getText().contains("DufLgt");
-                        boolean Disloald = buttonSelected.startsWith("DlaodL")&&(!buttonSelected.startsWith("DlaodLD"));
-                        boolean Dcodja_lx = buttonSelected.startsWith("DcodeLja");
-                        boolean Dsaerchdliary = buttonSelected.startsWith("DsaerLchdiary");
+                        boolean Disloald = buttonSelected.equals("DlaodL")&&(!buttonSelected.equals("DlaodLD"));
+                        boolean Dcodja_lx = buttonSelected.equals("DcodeLja");
+                        boolean Dsaerchdliary = buttonSelected.equals("DsaerLchdiary");
                         boolean DisShowColmmand = buttonSelected.equalsIgnoreCase("DshoL");// shw
                         Search Dsearclh = null;
 
 
 
 
-                        boolean DldeleteCommandd_X = buttonSelected.startsWith("DLDdelete");
-                        boolean DdleleteCoDmmand2 = buttonSelected.startsWith("DdeldLDiary");
+                        boolean DldeleteCommandd_X = buttonSelected.equals("DLDdelete");
+                        boolean DdleleteCoDmmand2 = buttonSelected.equals("DdeldLDiary");
                         boolean DislThoughtDRecorderCommand_x = buttonSelected.equalsIgnoreCase("Drec");
                         boolean DisHlow2ForeDgertCommand = buttonSelected.equalsIgnoreCase("DDLfgt");
                         boolean DisHolw2ForegDertCommand_u = textArea.getText().contains("DuDfLgt");
-                        boolean DislDoald = buttonSelected.startsWith("DlaodLD");
-                        boolean DcodjDa_lx = buttonSelected.startsWith("DcodeLDja");
-                        boolean DsaercDhdliary = buttonSelected.startsWith("DsaerDLchdiary");
+                        boolean DislDoald = buttonSelected.equals("DlaodLD");
+                        boolean DcodjDa_lx = buttonSelected.equals("DcodeLDja");
+                        boolean DsaercDhdliary = buttonSelected.equals("DsaerDLchdiary");
                         boolean DisShowDColmmand = buttonSelected.equalsIgnoreCase("DshoDL");// shw
                         Search DsearclhD = null;
 
 
 
 
-                        boolean SDldeleteCommandd_X = buttonSelected.startsWith("DLDdSelete");
-                        boolean DsLSDg = buttonSelected.startsWith("DsLSDg");
-                        boolean SDdleleteCoDmmand2 = buttonSelected.startsWith("DdeldSLDiary");
+                        boolean SDldeleteCommandd_X = buttonSelected.equals("DLDdSelete");
+                        boolean DsLSDg = buttonSelected.equals("DsLSDg");
+                        boolean SDdleleteCoDmmand2 = buttonSelected.equals("DdeldSLDiary");
                         boolean SDislThoughtDRecorderCommand_x = buttonSelected.equalsIgnoreCase("Drec");
                         boolean SDisHlow2ForeDgertCommand = buttonSelected.equalsIgnoreCase("DDLSfgt");
                         boolean SDisHolw2ForegDertCommand_u = textArea.getText().contains("DuSDfLgt");
-                        boolean SDislDoald = buttonSelected.startsWith("DlaoSdLD");
-                        boolean SDcodjDa_lx = buttonSelected.startsWith("DcodeLSDja");
-                        boolean SDsaercDhdliary = buttonSelected.startsWith("DsaeSrDLchdiary");
+                        boolean SDislDoald = buttonSelected.equals("DlaoSdLD");
+                        boolean SDcodjDa_lx = buttonSelected.equals("DcodeLSDja");
+                        boolean SDsaercDhdliary = buttonSelected.equals("DsaeSrDLchdiary");
                         boolean SDisShowDColmmand = buttonSelected.equalsIgnoreCase("DshSoDL");// shw
                         Search DSsearclhD = null;
 
 
-                        boolean SDldeleteCommandd_Xf = buttonSelected.startsWith("DLDdSeletef");
+                        boolean SDldeleteCommandd_Xf = buttonSelected.equals("DLDdSeletef");
                         boolean b = buttonSelected.startsWith("DsLSDgf");
-                        boolean SDdleleteCoDmmand2f = buttonSelected.startsWith("DdeldSLDiaryf");
+                        boolean SDdleleteCoDmmand2f = buttonSelected.equals("DdeldSLDiaryf");
                         boolean SDislThoughtDRecorderCommand_xf = buttonSelected.equalsIgnoreCase("Drec");
                         boolean SDisHlow2ForeDgertCommandf = buttonSelected.equalsIgnoreCase("DDLSfgtf");
                         boolean SDisHolw2ForegDertCommand_uf = textArea.getText().contains("DuSDfLgtf");
-                        boolean SDislDoaldf = buttonSelected.startsWith("DlaoSdLDf");
-                        boolean SDcodjDa_lxf = buttonSelected.startsWith("DcodeLSDjaf");
-                        boolean SDsaercDhdliaryf = buttonSelected.startsWith("DsaeSrDLchdiaryf");
+                        boolean SDislDoaldf = buttonSelected.equals("DlaoSdLDf");
+                        boolean SDcodjDa_lxf = buttonSelected.equals("DcodeLSDjaf");
+                        boolean SDsaercDhdliaryf = buttonSelected.equals("DsaeSrDLchdiaryf");
                         boolean SDisShowDColmmandf = buttonSelected.equalsIgnoreCase("DshSoDLf");// shw
                         Search DSsearclhDf = null;
 
@@ -436,7 +436,7 @@ public class C1comehere implements Serializable {
 
 
 
-                        boolean googleo = buttonSelected.startsWith("DsLDg");// shw
+                        boolean googleo = buttonSelected.equals("DsLDg");// shw
 
 
                         boolean findtheshotcut = buttonSelected.equalsIgnoreCase("DsLg");// shw
@@ -783,8 +783,8 @@ public class C1comehere implements Serializable {
 
 
                         else if (b) {
-                            System.out.println("Disloadl");
-                            dhow2ForgDertlsf.fjlasdjfl();
+                            System.out.println("d");
+                            a.d();
                         }
 
 
@@ -1057,7 +1057,7 @@ public class C1comehere implements Serializable {
                     if (!prop.containsKey(text.trim()) && !text.contains(".")) {
                         for (Object e : prop.keySet()) {
                             String tem = (String) e;
-                            if (tem.startsWith(text)) {
+                            if (tem.equals(text)) {
                                 path = (String) prop.get(tem);
                             }
                         }
@@ -1071,7 +1071,7 @@ public class C1comehere implements Serializable {
                         } catch (Exception e) {
                             e.printStackTrace();
                         }
-                    } else if ((text.contains("sd") && text.startsWith("sd")) || (text.contains("shutdown") && text.startsWith("shutdown"))) {
+                    } else if ((text.contains("sd") && text.equals("sd")) || (text.contains("shutdown") && text.equals("shutdown"))) {
                         Runtime.getRuntime().exec("shutdown.exe -s -t 0");
                         // what the fuck si the else mean?
                     } else if (null == path || path.trim().isEmpty()) {
