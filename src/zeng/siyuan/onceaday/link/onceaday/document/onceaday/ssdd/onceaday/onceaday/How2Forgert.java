@@ -44,7 +44,7 @@ public class How2Forgert implements Serializable {
 
      */
 
-    public void load() {
+    public void fjlasdjfl() {
         Scanner in = null;
 
         String str = textArea.getText();

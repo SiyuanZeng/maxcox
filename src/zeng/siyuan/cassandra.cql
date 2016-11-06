@@ -114,6 +114,7 @@ delete from keyspace1.ssdd where id=78589280-9b8f-41f2-8f4d-59964470d18e;
 
 
 
+select * from keyspace1.person_question_produ;
 
 select * from keyspace1.plany;
 
@@ -193,6 +194,19 @@ create table keyspace1.link_test (
 
 
 select * from keyspace1.person_question_produ ;
+
+
+select * from keyspace1.j ;
+create table keyspace1.j(
+	id uuid,
+	target_date timestamp,
+	txt text,
+	type text,
+	tasks list<frozen<type4>>,
+	PRIMARY KEY (id)
+
+	);
+
 
 
 create table keyspace1.person_question_produ (

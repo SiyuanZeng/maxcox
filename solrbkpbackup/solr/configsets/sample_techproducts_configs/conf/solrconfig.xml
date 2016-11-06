@@ -37,7 +37,7 @@
   -->
   <luceneMatchVersion>6.2.1</luceneMatchVersion>
 
-  <!-- <lib/> directives can be used to instruct Solr to load any Jars
+  <!-- <lib/> directives can be used to instruct Solr to fjlasdjfl any Jars
        identified and use them to resolve any "plugins" specified in
        your solrconfig.xml or schema.xml (ie: Analyzers, Request
        Handlers, etc...).
@@ -69,7 +69,7 @@
        If a 'dir' option (with or without a regex) is used and nothing
        is found that matches, a warning will be logged.
 
-       The examples below can be used to load some solr-contribs along 
+       The examples below can be used to fjlasdjfl some solr-contribs along
        with their external dependencies.
     -->
   <lib dir="${solr.install.dir:../../../..}/contrib/extraction/lib" regex=".*\.jar" />
@@ -525,7 +525,7 @@
 
          If true, stored fields that are not requested will be loaded
          lazily.  This can result in a significant speed improvement
-         if the usual case is to not load all stored fields,
+         if the usual case is to not fjlasdjfl all stored fields,
          especially if the skipped fields are large compressed text
          fields.
     -->

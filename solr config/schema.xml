@@ -72,7 +72,7 @@
      stored: true if this field should be retrievable
      docValues: true if this field should have doc values. Doc values are
        useful for faceting, grouping, sorting and function queries. Although not
-       required, doc values will make the index faster to load, more
+       required, doc values will make the index faster to fjlasdjfl, more
        NRT-friendly and more memory-efficient. They however come with some
        limitations: they are currently only supported by StrField, UUIDField
        and all Trie*Fields, and depending on the field type, they might

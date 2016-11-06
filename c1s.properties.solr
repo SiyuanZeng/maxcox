@@ -58,16 +58,16 @@
  * @author Joel Leitch
  * @since 1.3
  */
-47,sc1 todo,http://todolistme.net/
-48,allmystuffs,https://github.com/SiyuanZeng/allmystuffs
-49,git version command,git --version
-50,solr start folder,C:\Developer\solr-6.2.0\bin
-51,Cassandra Solr Spark Love Triangle Using DataStax Enterprise,http://www.slideshare.net/patrickmcfadin/a-cassandra-solr-spark-love-triangle-using-datastax-enterprise-50051760
-52,export import data in cassandra table,http://techie-matter.blogspot.com/2014/02/exportimport-data-in-cassandra-table.html
-53,gitbash,c:/developer/git/bin/sh.exe
-54,youtube,https://www.youtube.com/
-55,mindsource,http://mindsource.force.com/timesheet
-56,group display family share locker news locker,http://www.newslocker.com/en-uk/profession/fruit_vegetables/walmart-hires-brandbank-to-improve-website-images/
+47,allmystuffs,https://github.com/SiyuanZeng/allmystuffs
+48,git version command,git --version
+49,solr start folder,C:\Developer\solr-6.2.0\bin
+50,Cassandra Solr Spark Love Triangle Using DataStax Enterprise,http://www.slideshare.net/patrickmcfadin/a-cassandra-solr-spark-love-triangle-using-datastax-enterprise-50051760
+51,export import data in cassandra table,http://techie-matter.blogspot.com/2014/02/exportimport-data-in-cassandra-table.html
+52,gitbash,c:/developer/git/bin/sh.exe
+53,youtube,https://www.youtube.com/
+54,mindsource,http://mindsource.force.com/timesheet
+55,group display family share locker news locker,http://www.newslocker.com/en-uk/profession/fruit_vegetables/walmart-hires-brandbank-to-improve-website-images/
+56,sc1 todo,http://todolistme.net/
 57,restadvanced,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTY40IcG584ynNqibMc1heIa
 58,How do I replace text in Microsoft Word document using Apache POI,https://kodejava.org/how-do-i-replace-text-in-microsoft-word-document-using-apache-poi/
 59,iq_lazyloading,c:/users/siyuanzeng's/desktop/application/job hunting/interview/interviewquestions/lazy loading.docx
@@ -183,8 +183,8 @@ C:\Developer\solr-6.2.0\example\exampledocs
 138,software,c:/software
 139,ppt,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
 140,jira board,https://jira.walmart.com/secure/RapidBoard.jspa?rapidView=4706
-141,idea.exe,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
-142,solr docs,C:\Developer\solr-6.2.0\example\exampledocs
+141,solr docs,C:\Developer\solr-6.2.0\example\exampledocs
+142,idea.exe,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
 143,Google advanced search operators,https://supple.com.au/tools/google-advanced-search-operators/
 144,why kafka,https://prezi.com/jqsmaukaya0c/why-kafka/
 145,playbook,https://confluence.walmart.com/display/PGMPMNMW/Playbook
@@ -208,69 +208,70 @@ C:\Developer\solr-6.2.0\example\exampledocs
 163,m,https://mail.google.com/mail/u/0/#inbox
 164,restful basic tutorial,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
 165,Google Yahhoo Yahoo Microsoft search commands,http://www.searchcommands.com/
-166,Mac OS X Keyboard Shortcuts,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
-167,lor,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
-168,f,c:/program files (x86)/mozilla firefox/firefox.exe
-169,glossary,/Users/vn0xrjh/Downloads/01-Arhitectural/Supplier Center Glossary.doc
-170,c,c:/
-171,Mac OS X Excel Keyboard shortcuts,http://www.exceltip.com/tips/150-mac-excel-keyboard-shortcuts.html
-172,database,localhost
-173,critical thinking standards,http://www.criticalthinking.org/image/pimage/Standards-Elems-Traits.jpg
-174,Apache Kafka JAVA tutorial #1 with source code,http://khangaonkar.blogspot.com/2014/05/apache-kafka-java-tutorial.html
-175,calendar,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
-176,git,C:\programdata\microsoft\Windows\start menu\Programs\Git
-177,videos,c:/users/siyuanzeng's/videos/video
-178,word,c:/program files (x86)/microsoft office/root/office16/winword.exe
-179,solr admin,http://localhost:8983/solr/#/jcp/query
-180,My Cheatsheet,https://confluence.walmart.com/display/PGMPMNMW/My+Cheatsheet
-181,itune,c:/program files/itunes/itunes.exe
-182,Microsoft Word Macro for highlighting multiple words,http://stackoverflow.com/questions/9399655/microsoft-word-macro-for-highlighting-multiple-words
-183,snag,c:/softwareinstallation/media/techsmith/snagit/snagit32.exe
-184,googlevoice,https://www.google.com/voice#inbox
-185,multiptabexploerer,C:\Program Files\QTTabBar\Tools\ExplorerSafeMode.exe
-186,gui,C:\Development_Base\17_GUI
-187,skype,c:/program files (x86)/skype/phone/skype.exe
-188,f_interviewquestions,c:/users/siyuanzeng's/desktop/application/job hunting/interview/interviewquestions
-189,Mac OS X keyboard shorcuts makeuseof,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
-190,what time , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=5171939270459279775;onPublishedMenu=editor;onClosedMenu=editor;postNum=1;src=postname
-191,gho,https://hangouts.google.com/
-192,sticky note,c:/windows/system32/stikynot.exe
-193,all my stuffs,https://github.com/SiyuanZeng/allmystuffs
-194,c1,c:/c1
-195,friends51,c:/users/siyuanzeng's/videos/movie/friends/friends  season05/friends - s05ep01 - after ross says rachel.mkv
-196,best song ever megan,https://listenonrepeat.com/?v=Uhj0ymhgK9E#Best_Song_Ever_-_Megan_Nicole_(cover)_One_Direction
-197,whistle6,https://www.youtube.com/watch?v=nwl98zzdexo
-198,ms,http://mindsource.force.com/timesheet
-199,Zookeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
-200,programs,c:/programdata/microsoft/windows/start menu/programs
-201,whistle5,https://www.youtube.com/watch?v=nwl98zzdexo
-202,gitgui,c:/developer/git/bin/wish.exe
-203,whistle3,https://www.youtube.com/watch?v=nwl98zzdexo
-204,best song ever,ac
-205,whistle2,https://www.youtube.com/watch?v=nwl98zzdexo
-206,googlehangouts,https://hangouts.google.com/
-207,guanghuisuiyue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
-208,eclipse,c:/developer/ide/eclipse-jee-luna-sr1-win32-x86_64/eclipse/eclipse.exe
-209,what ever , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=222006497760476885;onPublishedMenu=editor;onClosedMenu=editor;postNum=0;src=postname
-210,Big data messaging with Kafka, Part 1,http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html
-211,txt,c:/windows/system32/notepad.exe
-212,git remote,https://help.github.com/articles/changing-a-remote-s-url/
-213,tcpview,C:\Developer\TCPView\Tcpview.exe
-214,Hadoop in 5 minutes,https://www.youtube.com/watch?v=xLUhZ3MO2oE
-215,walmart timesheet,https://www.fieldglass.net/time_sheet_list.do
-216,dropbox,c:\users\siyuanzeng's\appdata\roaming\dropbox\bin\dropbox.exe
-217,javabrains,https://www.youtube.com/user/koushks/playlists
-218,git credential account password store  cache, git config --global credential.helper store
-219,powerpoint,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
-220,shutdown,c:/windows/system32/shutdown.exe
-221,idea shortcuts online,https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf
-222,friends51 video , https://www.vidio.com/watch/149925-friends-season-5-episode-1
-223,OLTP-OLAP-CRUD-ACID and other acronyms,https://webcache.googleusercontent.com/search?q=cache:YDGupCDmNBgJ:https://rcbsql.wordpress.com/2013/10/30/oltp-olap/+&cd=8&hl=zh-CN&ct=clnk&gl=cn
-224,my work space,https://confluence.walmart.com/display/~vn0xrjh/My+work+space
-225,c1comehere logs,C:\c1\c1comehere\c1s.txt
-226,email,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
-227,Friends Season 1 episode 1,https://www.vidio.com/watch/126959-friends-season-1-episode-1?channel_id=273403
-228,guang hui sui yue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
-229,solr youtube,https://www.youtube.com/playlist?list=PLJbE6j2EG1pZ7YfU05bCqdv5bDkKo75nQ
-230,full screen,Command-Control-F
-231,blog,https://www.blogger.com/blogger.g?blogID=5889245863220470098#allposts
+166,Intellij shortcut,https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard_mac.pdf
+167,Mac OS X Keyboard Shortcuts,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
+168,lor,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
+169,f,c:/program files (x86)/mozilla firefox/firefox.exe
+170,glossary,/Users/vn0xrjh/Downloads/01-Arhitectural/Supplier Center Glossary.doc
+171,c,c:/
+172,Mac OS X Excel Keyboard shortcuts,http://www.exceltip.com/tips/150-mac-excel-keyboard-shortcuts.html
+173,database,localhost
+174,critical thinking standards,http://www.criticalthinking.org/image/pimage/Standards-Elems-Traits.jpg
+175,Apache Kafka JAVA tutorial #1 with source code,http://khangaonkar.blogspot.com/2014/05/apache-kafka-java-tutorial.html
+176,calendar,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
+177,git,C:\programdata\microsoft\Windows\start menu\Programs\Git
+178,videos,c:/users/siyuanzeng's/videos/video
+179,word,c:/program files (x86)/microsoft office/root/office16/winword.exe
+180,solr admin,http://localhost:8983/solr/#/jcp/query
+181,My Cheatsheet,https://confluence.walmart.com/display/PGMPMNMW/My+Cheatsheet
+182,itune,c:/program files/itunes/itunes.exe
+183,Microsoft Word Macro for highlighting multiple words,http://stackoverflow.com/questions/9399655/microsoft-word-macro-for-highlighting-multiple-words
+184,snag,c:/softwareinstallation/media/techsmith/snagit/snagit32.exe
+185,googlevoice,https://www.google.com/voice#inbox
+186,multiptabexploerer,C:\Program Files\QTTabBar\Tools\ExplorerSafeMode.exe
+187,gui,C:\Development_Base\17_GUI
+188,skype,c:/program files (x86)/skype/phone/skype.exe
+189,f_interviewquestions,c:/users/siyuanzeng's/desktop/application/job hunting/interview/interviewquestions
+190,Mac OS X keyboard shorcuts makeuseof,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
+191,what time , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=5171939270459279775;onPublishedMenu=editor;onClosedMenu=editor;postNum=1;src=postname
+192,gho,https://hangouts.google.com/
+193,sticky note,c:/windows/system32/stikynot.exe
+194,all my stuffs,https://github.com/SiyuanZeng/allmystuffs
+195,c1,c:/c1
+196,friends51,c:/users/siyuanzeng's/videos/movie/friends/friends  season05/friends - s05ep01 - after ross says rachel.mkv
+197,best song ever megan,https://listenonrepeat.com/?v=Uhj0ymhgK9E#Best_Song_Ever_-_Megan_Nicole_(cover)_One_Direction
+198,whistle6,https://www.youtube.com/watch?v=nwl98zzdexo
+199,ms,http://mindsource.force.com/timesheet
+200,Zookeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
+201,programs,c:/programdata/microsoft/windows/start menu/programs
+202,whistle5,https://www.youtube.com/watch?v=nwl98zzdexo
+203,gitgui,c:/developer/git/bin/wish.exe
+204,whistle3,https://www.youtube.com/watch?v=nwl98zzdexo
+205,best song ever,ac
+206,whistle2,https://www.youtube.com/watch?v=nwl98zzdexo
+207,googlehangouts,https://hangouts.google.com/
+208,guanghuisuiyue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
+209,eclipse,c:/developer/ide/eclipse-jee-luna-sr1-win32-x86_64/eclipse/eclipse.exe
+210,what ever , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=222006497760476885;onPublishedMenu=editor;onClosedMenu=editor;postNum=0;src=postname
+211,Big data messaging with Kafka, Part 1,http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html
+212,txt,c:/windows/system32/notepad.exe
+213,git remote,https://help.github.com/articles/changing-a-remote-s-url/
+214,tcpview,C:\Developer\TCPView\Tcpview.exe
+215,Hadoop in 5 minutes,https://www.youtube.com/watch?v=xLUhZ3MO2oE
+216,walmart timesheet,https://www.fieldglass.net/time_sheet_list.do
+217,dropbox,c:\users\siyuanzeng's\appdata\roaming\dropbox\bin\dropbox.exe
+218,javabrains,https://www.youtube.com/user/koushks/playlists
+219,git credential account password store  cache, git config --global credential.helper store
+220,powerpoint,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
+221,shutdown,c:/windows/system32/shutdown.exe
+222,idea shortcuts online,https://resources.jetbrains.com/assets/products/intellij-idea/IntelliJIDEA_ReferenceCard.pdf
+223,friends51 video , https://www.vidio.com/watch/149925-friends-season-5-episode-1
+224,OLTP-OLAP-CRUD-ACID and other acronyms,https://webcache.googleusercontent.com/search?q=cache:YDGupCDmNBgJ:https://rcbsql.wordpress.com/2013/10/30/oltp-olap/+&cd=8&hl=zh-CN&ct=clnk&gl=cn
+225,my work space,https://confluence.walmart.com/display/~vn0xrjh/My+work+space
+226,c1comehere logs,C:\c1\c1comehere\c1s.txt
+227,email,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
+228,Friends Season 1 episode 1,https://www.vidio.com/watch/126959-friends-season-1-episode-1?channel_id=273403
+229,guang hui sui yue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
+230,solr youtube,https://www.youtube.com/playlist?list=PLJbE6j2EG1pZ7YfU05bCqdv5bDkKo75nQ
+231,full screen,Command-Control-F
+232,blog,https://www.blogger.com/blogger.g?blogID=5889245863220470098#allposts
