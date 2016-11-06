@@ -168,7 +168,7 @@ class AutoSuggestor {
         textArea.setCaretColor(Color.red);
 //        textArea.append("Some NEW TEXT is here...");
         int len = textArea.getDocument().getLength();
-        textArea.setCaretPosition(len);
+//        textArea.setCaretPosition(len);
         textArea.requestFocusInWindow();
         textArea.grabFocus();
     }
