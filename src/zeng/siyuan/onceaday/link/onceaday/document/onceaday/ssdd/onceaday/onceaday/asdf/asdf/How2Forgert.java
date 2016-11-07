@@ -63,9 +63,31 @@ public class How2Forgert implements Serializable {
             if (textStr[1].equalsIgnoreCase("dd")){
                 e = new person_question(stringBuffer1.toString(), "dd", r.d(textStr[0]));
             } else
+
+
+
             if (textStr[1].equalsIgnoreCase("d")){
                 e = new person_question(stringBuffer1.toString(), "d", r.d(textStr[0]));
             } else
+
+
+
+            if (textStr[0].equalsIgnoreCase("gh")){
+                for (person_question n : ebbinghauses) {
+                    if ((n.getType().equalsIgnoreCase("gh"))){
+                        e=n;
+                    }
+                }
+                if (null !=e){
+
+                    e.setDate(r.m(new Date()));
+                    e.setText("asdfljl");
+                } else {
+                    e = new person_question("asdfkj", "gh", r.m(new Date()));
+
+                }
+            } else
+
 
             if (null != r.d(textStr[0])){
                 e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.d(textStr[0]));

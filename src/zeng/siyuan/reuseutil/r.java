@@ -40,6 +40,16 @@ public class r {
     }
 
 
+    public static Date m(Date d){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+
+        calendar.add(Calendar.DATE,22);
+        return calendar.getTime();
+    }
+
+
     public static Date k(Date d){
 
         Calendar calendar = Calendar.getInstance();
