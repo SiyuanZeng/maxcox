@@ -2,6 +2,7 @@ package zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.oncea
 
 import zeng.siyuan.C1comehere.C1comehere;
 import zeng.siyuan.onceaday.link.onceaday.DecendingTask;
+import zeng.siyuan.reuseutil.r;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -27,7 +28,7 @@ public class How2Forgert implements Serializable {
     private Task currentTaskSearch;
     private String keywords;
 
-    public void d(){
+    public void d() {
         Scanner in = null;
         StringBuffer stringBuffer = new StringBuffer();
         if (null != textArea && !("".equalsIgnoreCase(textArea.getText()))) {
@@ -35,30 +36,25 @@ public class How2Forgert implements Serializable {
             // date and time, how many munites from now
 
             // repeart or once: hour, time, wk
-                // set the time
+            // set the time
 
             // content
             // link
             // document
-                // advanced content
+            // advanced content
             // message
-                // this one can be use the existing display task
+            // this one can be use the existing display task
 
+            String textStr[] = textArea.getText().split("\\r\\n|\\n|\\r");
 
-            in = new Scanner(textArea.getText());
-                while (in.hasNext()) {
-                    String line = in.nextLine();
-                    stringBuffer.append("\n");
-                    stringBuffer.append(line);
-                    if (line.trim().equals("")) {
-                        person_question e = new person_question(stringBuffer.toString(),"Person_Quesiton", getdatelastday());
-                        m.store(e);
-                        stringBuffer=new StringBuffer();
-                    } else {
-                    }
-                }
+            StringBuffer stringBuffer1 = new StringBuffer();
+            for (int i = 1; i < textStr.length; i++) {
+                stringBuffer1.append(textStr[i]);
             }
+            person_question e = new person_question(stringBuffer.toString(), "Person_Quesiton", r.strifasld(textStr[1]));
+            m.store(e);
         }
+    }
 
     public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
         this.c1comehere = c1comehere;

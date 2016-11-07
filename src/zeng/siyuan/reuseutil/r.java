@@ -6,11 +6,24 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Calendar;
+import java.util.Date;
 
 /**
  * Created by SiyuanZeng's on 9/14/2016.
  */
 public class r {
+
+    public static Date strifasld(String dsf){
+
+        Calendar c = Calendar.getInstance();
+
+        c.add(Calendar. MINUTE, Integer.parseInt(dsf));
+        return c.getTime();
+    }
+
+
+
 
     public final static String INTEXT_HYPHEN = "intext:";
     public static final String PLUGS = "+";

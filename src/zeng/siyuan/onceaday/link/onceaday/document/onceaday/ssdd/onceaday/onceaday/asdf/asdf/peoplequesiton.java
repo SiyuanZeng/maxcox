@@ -16,7 +16,7 @@ import java.util.UUID;
  * Created by SiyuanZeng's on 9/1/2016.
  */
 public class peoplequesiton {
-    public static final String PERSON_QUESTION1 = "j";
+    public static final String PERSON_QUESTION1 = "k";
     public static final String LINK= "link";
     Cluster cluster;
     static Session session;

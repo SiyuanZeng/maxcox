@@ -6,8 +6,10 @@ import com.datastax.driver.mapping.annotations.Table;
 import com.datastax.driver.mapping.annotations.Transient;
 
 import java.io.Serializable;
-import java.text.SimpleDateFormat;
-import java.util.*;
+import java.util.Date;
+import java.util.HashSet;
+import java.util.Set;
+import java.util.UUID;
 
 
 /**
@@ -15,7 +17,7 @@ import java.util.*;
  */
 
 
-@Table(keyspace = "keyspace1", name = "j",
+@Table(keyspace = "keyspace1", name = c.a,
         readConsistency = "QUORUM",
         writeConsistency = "QUORUM",
         caseSensitiveKeyspace = false,
@@ -83,73 +85,15 @@ public class person_question implements Serializable{
         this.type=TYPE;
 
         this.javauid = UUID.randomUUID();
+        this.text = text;
 
 
         tasks = new HashSet<Task>();
 
-        StringBuilder stringBuilder = new StringBuilder();
-
-        Calendar c = Calendar.getInstance();
-
-        SimpleDateFormat format = new SimpleDateFormat("EEE, MMM d, yyyy 'at' hh:mm");
-
-        System.out.println(format.format(c.getTime()));
-
-        c.add(Calendar.HOUR_OF_DAY, 1);
-
-        Calendar d = Calendar.getInstance();
-        d.setTime(date1);
-        d.add(Calendar.DATE, 1);
-        date= new Date(d.getTimeInMillis());
-
-        System.out.println(format.format(c.getTime()));
-
-
-        int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
-
-        if (timeOfDay >= 0 && timeOfDay < 12) {
-            stringBuilder.append("Good Morning C1 world, ");
-        } else if (timeOfDay >= 12 && timeOfDay < 16) {
-            stringBuilder.append("Good Afternoon C1 world, ");
-        } else if (timeOfDay >= 16 && timeOfDay < 21) {
-            stringBuilder.append("Good Evening C1 world, ");
-        } else if (timeOfDay >= 21 && timeOfDay < 24) {
-            stringBuilder.append("Good Night C1 world, ");
-        }
-
-        stringBuilder.append(format.format(c.getTime()));
-
-        if (timeOfDay >= 0 && timeOfDay < 12) {
-            stringBuilder.append(" am");
-            stringBuilder.append(System.getProperty("line.separator"));
-            stringBuilder.append(text);
-        } else if (timeOfDay >= 12 && timeOfDay < 24) {
-            stringBuilder.append(" pm");
-            stringBuilder.append(System.getProperty("line.separator"));
-            stringBuilder.append(text);
-        }
-
-        this.text = stringBuilder.toString();
-
-        final long ONE_MINUTE_IN_MILLIS = 60000;//millisecs
-
-        long curTimeInMs = new Date().getTime();
-        first = new Task(new Date(curTimeInMs + (20 * ONE_MINUTE_IN_MILLIS)), javauid);
-        second = new Task(new Date(curTimeInMs + (60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        third = new Task(new Date(curTimeInMs + (540 * ONE_MINUTE_IN_MILLIS)), javauid);
-        fourth = new Task(new Date(curTimeInMs + (24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        fifth = new Task(new Date(curTimeInMs + (2 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        sixth = new Task(new Date(curTimeInMs + (6 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        seventh = new Task(new Date(curTimeInMs + (31 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
+        first = new Task(date1, javauid);
 
 
         tasks.add(first);
-        tasks.add(second);
-        tasks.add(third);
-        tasks.add(fourth);
-        tasks.add(fifth);
-        tasks.add(sixth);
-        tasks.add(seventh);
 
 
     }
