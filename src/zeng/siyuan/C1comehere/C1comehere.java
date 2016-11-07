@@ -34,6 +34,7 @@ public class C1comehere implements Serializable {
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.How2Forgert dhow2ForgDertls;
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.How2Forgert dhow2ForgDertlsf;
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.How2Forgert a;
+    public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.asdf.How2Forgert j;
     public static C1comehere c1comehere;
     public static Font font = new Font("Serif", Font.PLAIN, c.SIZE);
     public static untoggle untoggle;
@@ -323,6 +324,15 @@ public class C1comehere implements Serializable {
         a.textArea = textArea;
         a.frame = frame;
         a.init();
+
+
+        if (null == j) {
+            j= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.asdf.How2Forgert(c1comehere, textArea, frame);
+        }
+        j.c1comehere = c1comehere;
+        j.textArea = textArea;
+        j.frame = frame;
+        j.init();
 
 
         textArea.addKeyListener(new KeyListener() {
@@ -785,6 +795,13 @@ public class C1comehere implements Serializable {
                         else if (b) {
                             System.out.println("d");
                             a.d();
+                        }
+
+
+
+                        else if (SDcodjDa_lxf) {
+                            System.out.println("asdf");
+                            j.d();
                         }
 
 

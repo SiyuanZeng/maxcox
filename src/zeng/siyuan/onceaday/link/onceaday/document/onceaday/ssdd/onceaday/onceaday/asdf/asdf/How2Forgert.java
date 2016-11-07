@@ -27,10 +27,17 @@ public class How2Forgert implements Serializable {
     private ArrayList<Task> searchtasks;
     private Task currentTaskSearch;
     private String keywords;
+    private String[] df={"", "d", "dd", "ddd", "dddd"};
+    //once
+    //date time
+    //repeat daily
+    //repeat day
+    // e something else
+    //
+
 
     public void d() {
         Scanner in = null;
-        StringBuffer stringBuffer = new StringBuffer();
         if (null != textArea && !("".equalsIgnoreCase(textArea.getText()))) {
 
             // date and time, how many munites from now
@@ -51,8 +58,26 @@ public class How2Forgert implements Serializable {
             for (int i = 1; i < textStr.length; i++) {
                 stringBuffer1.append(textStr[i]);
             }
-            person_question e = new person_question(stringBuffer.toString(), "Person_Quesiton", r.strifasld(textStr[1]));
+            person_question e=null;
+
+            if (textStr[1].equalsIgnoreCase("dd")){
+                e = new person_question(stringBuffer1.toString(), "dd", r.d(textStr[0]));
+            } else
+            if (textStr[1].equalsIgnoreCase("d")){
+                e = new person_question(stringBuffer1.toString(), "d", r.d(textStr[0]));
+            } else
+
+            if (null != r.d(textStr[0])){
+                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.d(textStr[0]));
+
+            } else {
+                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.strifasld(textStr[0]));
+            }
+
+
             m.store(e);
+            reloadTAskandrestartPopThread();
+
         }
     }
 
@@ -150,27 +175,37 @@ public class How2Forgert implements Serializable {
                             frame.repaint();
                             frame.toFront();
                             currentTask = t;
-                            String inntuitive = System.getProperty("line.separator");
+                            String inntuitive ="";
 
-                            inntuitive += (" Dufgt ");
-                            inntuitive += System.getProperty("line.separator");
                             for (person_question e : ebbinghauses) {
                                 boolean asdf= false;
                                 if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
                                     for (Task ct : e.getTasks()) {
                                         if (ct.getDate().getTime() == currentTask.getDate().getTime()) {
                                             asdf = true;
-                                            ct.setIsDone(true);
-                                            inntuitive += e.text;
+                                            if(e.type.equalsIgnoreCase("dd")){
+                                                ct.setIsDone(false);
+                                                ct.setDate(r.k(ct.getDate()));
+                                            } else if(e.type.equalsIgnoreCase("d")) {
+                                                ct.setIsDone(false);
+                                                ct.setDate(r.l(ct.getDate()));
+                                            }
+
+
+                                                else {
+                                                    ct.setIsDone(true);
+                                                }
+                                            }
+
                                             m.store(e);
+                                            inntuitive += e.text;
                                         }
                                         if(asdf)break;
                                     }
-                                }
-                                inntuitive += System.getProperty("line.separator");
-                                textArea.setText(inntuitive);
                                 if(asdf)break;
                             }
+                        inntuitive += System.getProperty("line.separator");
+                        textArea.setText(inntuitive);
                     } else if (!t.getIsDone() && t.getDate().before(new Date())) {
                         boolean found = false;
                         for (person_question e : ebbinghauses) {
@@ -184,12 +219,20 @@ public class How2Forgert implements Serializable {
                                         frame.repaint();
                                         frame.toFront();
                                         currentTask = t;
-                                        String inntuitive = System.getProperty("line.separator");
-                                        inntuitive += (" Dufgt ");
-                                        inntuitive += System.getProperty("line.separator");
-                                        inntuitive += System.getProperty("line.separator");
+                                        String inntuitive = "";
+                                        if(e.type.equalsIgnoreCase("dd")){
+                                            ct.setIsDone(false);
+                                            ct.setDate(r.k(ct.getDate()));
+                                        } else if(e.type.equalsIgnoreCase("d")) {
+                                            ct.setIsDone(false);
+                                            ct.setDate(r.l(ct.getDate()));
+                                        }
 
-                                        ct.setIsDone(true);
+
+                                        else {
+                                            ct.setIsDone(true);
+                                        }
+
                                         inntuitive += e.text;
                                         m.store(e);
                                         textArea.setText(inntuitive);

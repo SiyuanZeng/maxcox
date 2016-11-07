@@ -6,6 +6,8 @@ import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
 
@@ -13,6 +15,40 @@ import java.util.Date;
  * Created by SiyuanZeng's on 9/14/2016.
  */
 public class r {
+
+
+    public static Date d(String dsf) {
+//        String s = "03/24/2013 21:54";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        try {
+            Date date = simpleDateFormat.parse(dsf);
+            System.out.println("date : " + simpleDateFormat.format(date));
+            return date;
+        } catch (ParseException ex) {
+            System.out.println("Exception " + ex);
+        }
+        return null;
+    }
+
+    public static Date l(Date d){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+
+        calendar.add(Calendar.DATE,1);
+        return calendar.getTime();
+    }
+
+
+    public static Date k(Date d){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+
+        calendar.add(Calendar.DATE, 7);
+        return calendar.getTime();
+    }
+
 
     public static Date strifasld(String dsf){
 
