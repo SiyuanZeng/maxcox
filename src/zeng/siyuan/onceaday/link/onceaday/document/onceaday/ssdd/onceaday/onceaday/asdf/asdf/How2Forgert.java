@@ -58,6 +58,25 @@ public class How2Forgert implements Serializable {
             person_question e=null;
 
 
+            if (textStr[0].equalsIgnoreCase("j")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
+                e = new person_question(stringBuffer1.toString(), "j", new Date());
+            } else
+
+
+            if (textStr[1].equalsIgnoreCase("j")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 2; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
+                e = new person_question(stringBuffer1.toString(), "j", r.d(textStr[0]));
+            } else
+
+
+
             if (textStr[0].equalsIgnoreCase("dd")){
                 StringBuffer stringBuffer1 = new StringBuffer();
                 for (int i = 1; i < textStr.length; i++) {
@@ -244,10 +263,21 @@ public class How2Forgert implements Serializable {
                                     for (Task ct : e.getTasks()) {
                                         if (ct.getDate().getTime() == currentTask.getDate().getTime()) {
                                             asdf = true;
-                                            if(e.type.equalsIgnoreCase("dd")){
+
+
+                                            if(e.type.equalsIgnoreCase("j")){
+                                                ct.setIsDone(false);
+                                                ct.setDate(r.h(ct.getDate()));
+                                            } else
+
+
+                                                if(e.type.equalsIgnoreCase("dd")){
                                                 ct.setIsDone(false);
                                                 ct.setDate(r.k(ct.getDate()));
-                                            } else if(e.type.equalsIgnoreCase("d")) {
+                                            } else
+
+
+                                            if(e.type.equalsIgnoreCase("d")) {
                                                 ct.setIsDone(false);
                                                 ct.setDate(r.l(ct.getDate()));
                                             }
@@ -281,10 +311,20 @@ public class How2Forgert implements Serializable {
                                         frame.toFront();
                                         currentTask = t;
                                         String inntuitive = "";
+
+                                        if(e.type.equalsIgnoreCase("j")){
+                                            ct.setIsDone(false);
+                                            ct.setDate(r.h(ct.getDate()));
+                                        } else
+
+
                                         if(e.type.equalsIgnoreCase("dd")){
                                             ct.setIsDone(false);
                                             ct.setDate(r.k(ct.getDate()));
-                                        } else if(e.type.equalsIgnoreCase("d")) {
+                                        } else
+
+
+                                        if(e.type.equalsIgnoreCase("d")) {
                                             ct.setIsDone(false);
                                             ct.setDate(r.l(ct.getDate()));
                                         }
