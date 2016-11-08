@@ -17,6 +17,22 @@ import java.util.Date;
 public class r {
 
 
+    public static Date j(String dsf) {
+//        String s = "03/24/2013 21:54";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        SimpleDateFormat i = new SimpleDateFormat("MM/dd/yyyy");
+        try {
+            String h=i.format(new Date());
+            h +=" "+dsf;
+            Date date = simpleDateFormat.parse(h);
+            System.out.println("date : " + simpleDateFormat.format(date));
+            return date;
+        } catch (ParseException ex) {
+            System.out.println("Exception " + ex);
+        }
+        return null;
+    }
+
     public static Date d(String dsf) {
 //        String s = "03/24/2013 21:54";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");

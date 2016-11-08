@@ -58,6 +58,15 @@ public class How2Forgert implements Serializable {
             person_question e=null;
 
 
+            if (textStr[0].length()==5){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
+                e = new person_question(stringBuffer1.toString(), "i", r.j(textStr[0]));
+            } else
+
+
             if (textStr[0].equalsIgnoreCase("j")){
                 StringBuffer stringBuffer1 = new StringBuffer();
                 for (int i = 1; i < textStr.length; i++) {
