@@ -54,19 +54,46 @@ public class How2Forgert implements Serializable {
 
             String textStr[] = textArea.getText().split("\\r\\n|\\n|\\r");
 
-            StringBuffer stringBuffer1 = new StringBuffer();
-            for (int i = 1; i < textStr.length; i++) {
-                stringBuffer1.append(textStr[i]);
-            }
+
             person_question e=null;
 
+
+            if (textStr[0].equalsIgnoreCase("dd")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
+                e = new person_question(stringBuffer1.toString(), "dd", new Date());
+            } else
+
+
+
+            if (textStr[0].equalsIgnoreCase("d")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
+                e = new person_question(stringBuffer1.toString(), "d", new Date());
+            } else
+
+
+
+
             if (textStr[1].equalsIgnoreCase("dd")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 2; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
                 e = new person_question(stringBuffer1.toString(), "dd", r.d(textStr[0]));
             } else
 
 
 
             if (textStr[1].equalsIgnoreCase("d")){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 2; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
                 e = new person_question(stringBuffer1.toString(), "d", r.d(textStr[0]));
             } else
 
@@ -89,10 +116,22 @@ public class How2Forgert implements Serializable {
             } else
 
 
+
+
             if (null != r.d(textStr[0])){
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
                 e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.d(textStr[0]));
 
+
+
             } else {
+                StringBuffer stringBuffer1 = new StringBuffer();
+                for (int i = 1; i < textStr.length; i++) {
+                    stringBuffer1.append(textStr[i]);
+                }
                 e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.strifasld(textStr[0]));
             }
 
