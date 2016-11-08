@@ -189,7 +189,7 @@ public class How2Forgert implements Serializable {
     }
     public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame, Properties j) {
 
-        int k = randInt(0, j.size());
+        int k = randInt(0, j.size()-1);
 
 
 

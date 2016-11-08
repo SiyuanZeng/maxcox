@@ -138,10 +138,10 @@ public class C1comehere implements Serializable {
 
             output = new FileOutputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/src/zeng/siyuan/C1comehere/l.properties");
             // set the properties value
-            prop.setProperty(c1, c1Path);
+            jk.setProperty(c1, c1Path);
 
             // save properties to project root folder
-            prop.store(output, null);
+            jk.store(output, null);
 
 
 /*
@@ -168,7 +168,6 @@ public class C1comehere implements Serializable {
             if (output != null) {
                 try {
                     output.close();
-                    output_solr.close();
                 } catch (IOException e) {
                     e.printStackTrace();
                 }
@@ -1196,7 +1195,7 @@ public class C1comehere implements Serializable {
                     for (int i = 1; i < textStr.length; i++) {
                         stringBuffer1.append(textStr[i]);
                     }
-                    d(String.valueOf(jk.size()+1), text);
+                    d(String.valueOf(jk.size()+1), stringBuffer1.toString());
 
 
                 } else if ((text.contains("http:")||text.contains("https:")) && key.trim().isEmpty()) {
