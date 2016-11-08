@@ -35,10 +35,12 @@ public class C1comehere implements Serializable {
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.How2Forgert dhow2ForgDertlsf;
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.How2Forgert a;
     public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.asdf.How2Forgert j;
+    public zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.asdf.asdf.How2Forgert jd;
     public static C1comehere c1comehere;
     public static Font font = new Font("Serif", Font.PLAIN, c.SIZE);
     public static untoggle untoggle;
     public static transient Properties prop;
+    public static transient Properties jk;
     public transient static Map<String, Search> searchEngines = new HashMap<String, Search>();
 
     public static void main(String[] args) throws Exception {
@@ -128,6 +130,52 @@ public class C1comehere implements Serializable {
         }
     }
 
+    public void d(String c1, String c1Path) {
+
+        OutputStream output = null;
+        OutputStream output_solr = null;
+        try {
+
+            output = new FileOutputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/src/zeng/siyuan/C1comehere/l.properties");
+            // set the properties value
+            prop.setProperty(c1, c1Path);
+
+            // save properties to project root folder
+            prop.store(output, null);
+
+
+/*
+            output_solr = new FileOutputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/c1s.properties.solr");
+
+            int count = 0;
+            for (Map.Entry<Object, Object> e : prop.entrySet()) {
+                String key = ((String) e.getKey()).replace("%20", " ");
+                String v = (String) e.getValue();
+                output_solr.write(String.valueOf(count).getBytes());
+                output_solr.write(',');
+                output_solr.write(key.getBytes());
+                output_solr.write(',');
+                output_solr.write(v.getBytes());
+                output_solr.write(System.getProperty("line.separator").getBytes());
+                count++;
+            }
+*/
+
+            c1ds();
+        } catch (IOException io) {
+            io.printStackTrace();
+        } finally {
+            if (output != null) {
+                try {
+                    output.close();
+                    output_solr.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
     public void c1s() {
         prop = new Properties();
         Properties temprop = new Properties();
@@ -187,11 +235,76 @@ public class C1comehere implements Serializable {
 
     }
 
+    public void c1ds() {
+        jk = new Properties();
+        Properties temprop = new Properties();
+        InputStream input = null;
+
+        try {
+            input = new FileInputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/src/zeng/siyuan/C1comehere/l.properties");
+            // fjlasdjfl a properties file
+            temprop.load(input);
+
+
+            for (Map.Entry<Object, Object> e : temprop.entrySet()) {
+                String key = ((String) e.getKey()).replace("%20", " ");
+                String v = (String) e.getValue();
+                jk.put(key, v);
+            }
+            System.out.println("Done Propertiesy loading");
+
+/*
+            SolrDataDAO solrBaseDAO = null;
+            try {
+                solrBaseDAO = new SolrDataDAO();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+
+
+            int count =1;
+            for (Map.Entry<Object, Object> e : prop.entrySet()) {
+                System.out.println(count);
+                String key = ((String) e.getKey()).replace("%20", " ");
+                String v = (String) e.getValue();
+                try {
+                    solrBaseDAO.addData(count, key,v);
+                } catch (Exception e1) {
+                    e1.printStackTrace();
+                }
+                count++;
+            }
+            System.out.println("stop");
+
+*/
+
+
+
+        } catch (IOException ex) {
+            ex.printStackTrace();
+        } finally {
+            if (input != null) {
+                try {
+                    input.close();
+                } catch (IOException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+
+    }
+
 
     // takeC1toMe
     public String takeC1toMe(String str) {
         str = str.trim();
         return prop.getProperty(str);
+    }
+
+    // takeC1toMe
+    public String takeC1dtoMe(String str) {
+        str = str.trim();
+        return jk.getProperty(str);
     }
 
     private static void configureLookAndFeel() {
@@ -844,6 +957,7 @@ public class C1comehere implements Serializable {
 
         //init
         c1s();
+        c1ds();
 
         if (null == how2Forgert) {
             how2Forgert = new How2Forgert(c1comehere, textArea, frame);
@@ -894,6 +1008,18 @@ public class C1comehere implements Serializable {
         dhow2ForgDertls.textArea = textArea;
         dhow2ForgDertls.frame = frame;
         dhow2ForgDertls.init();
+
+
+
+        if (null == jd) {
+            jd= new zeng.siyuan.onceaday.link.onceaday.document.onceaday.ssdd.onceaday.onceaday.asdf.asdf.asdf.How2Forgert(c1comehere, textArea, frame, jk);
+        }
+        jd.c1comehere = c1comehere;
+        jd.textArea = textArea;
+        jd.frame = frame;
+        jd.init();
+
+
     }
 
 
@@ -1064,6 +1190,15 @@ public class C1comehere implements Serializable {
 
                 } else if (text.contains("c:") && key.trim().isEmpty()) {
                     Desktop.getDesktop().open(new File(text.trim()));
+                } else if (textArea.getText().split("\\r\\n|\\n|\\r")[0].equalsIgnoreCase("song") && (text.contains("http:")||text.contains("https:")) && key.trim().isEmpty()) {
+                    String textStr[] = textArea.getText().split("\\r\\n|\\n|\\r");
+                    StringBuffer stringBuffer1 = new StringBuffer();
+                    for (int i = 1; i < textStr.length; i++) {
+                        stringBuffer1.append(textStr[i]);
+                    }
+                    d(String.valueOf(jk.size()+1), text);
+
+
                 } else if ((text.contains("http:")||text.contains("https:")) && key.trim().isEmpty()) {
                     try {
                         openUrlInBrowser(text);
