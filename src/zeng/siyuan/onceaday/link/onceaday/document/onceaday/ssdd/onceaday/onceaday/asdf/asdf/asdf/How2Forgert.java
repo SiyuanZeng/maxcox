@@ -36,141 +36,6 @@ public class How2Forgert implements Serializable {
     // e something else
     //
 
-
-    public void d() {
-        Scanner in = null;
-        if (null != textArea && !("".equalsIgnoreCase(textArea.getText()))) {
-
-            // date and time, how many munites from now
-
-            // repeart or once: hour, time, wk
-            // set the time
-
-            // content
-            // link
-            // document
-            // advanced content
-            // message
-            // this one can be use the existing display task
-
-            String textStr[] = textArea.getText().split("\\r\\n|\\n|\\r");
-
-
-            person_question e=null;
-
-
-            if (textStr[0].length()==5){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "i", r.j(textStr[0]));
-            } else
-
-
-            if (textStr[0].equalsIgnoreCase("j")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "j", new Date());
-            } else
-
-
-            if (textStr[1].equalsIgnoreCase("j")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 2; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "j", r.d(textStr[0]));
-            } else
-
-
-
-            if (textStr[0].equalsIgnoreCase("dd")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "dd", new Date());
-            } else
-
-
-
-            if (textStr[0].equalsIgnoreCase("d")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "d", new Date());
-            } else
-
-
-
-
-            if (textStr[1].equalsIgnoreCase("dd")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 2; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "dd", r.d(textStr[0]));
-            } else
-
-
-
-            if (textStr[1].equalsIgnoreCase("d")){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 2; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "d", r.d(textStr[0]));
-            } else
-
-
-
-            if (textStr[0].equalsIgnoreCase("gh")){
-                for (person_question n : ebbinghauses) {
-                    if ((n.getType().equalsIgnoreCase("gh"))){
-                        e=n;
-                    }
-                }
-                if (null !=e){
-
-                    e.setDate(r.m(new Date()));
-                    e.setText("asdfljl");
-                } else {
-                    e = new person_question("asdfkj", "gh", r.m(new Date()));
-
-                }
-            } else
-
-
-
-
-            if (null != r.d(textStr[0])){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.d(textStr[0]));
-
-
-
-            } else {
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.strifasld(textStr[0]));
-            }
-
-
-            m.store(e);
-            reloadTAskandrestartPopThread();
-
-        }
-    }
-
     public static int randInt(int min, int max) {
 
         // NOTE: This will (intentionally) not run as written so that folks
@@ -329,17 +194,6 @@ public class How2Forgert implements Serializable {
         }
     }
 
-    public void deltask() {
-        for (person_question e : ebbinghauses) {
-            if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
-                m.deleteTask(e.getJavauid());
-                System.out.println("delet the " + e.text);
-                if(isSearch==false)reloadTAskandrestartPopThread();
-                isSearch=false;
-            }
-        }
-    }
-
 
     public void addWord(String word, String answer) {
         person_question pq = new person_question(word, answer,getdatelastday());
@@ -413,34 +267,11 @@ public class How2Forgert implements Serializable {
         if (null != searchtasks ) {
             textArea.setText("");
             Collections.sort(searchtasks, new Task());
-            reloadandDiskplaypopup(isSearch);
         }
     }
-    public void reloadandDiskplaypopup(boolean is) {
-        textArea.setText("");
-        reloadTAskandrestartPopThread();
-    }
-
-    public void reloadandDiskplaypopup() {
-        if(!isSearch){
-            loadTask();
-        }
-        displayTask();
-    }
-
     public void inster(String word, String answer) throws IOException {
         addWord(word, answer);
         isSearch=false;
-    }
-
-    private void reloadTAskandrestartPopThread() {
-        textArea.setText("");
-        if (null != reloadandDisplayThread || reloadandDisplayThread.isAlive()) {
-            reloadandDisplayThread.interrupt();
-        }
-        d = new Display(this);
-        reloadandDisplayThread = new Thread(d);
-        reloadandDisplayThread.start();
     }
 
 

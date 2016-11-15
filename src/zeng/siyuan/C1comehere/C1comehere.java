@@ -1079,9 +1079,9 @@ public class C1comehere implements Serializable {
         String key = "";
 
         boolean isHttpCommand = textUpcase.contains("http://") || textUpcase.contains("https://");
-        boolean isShortcutButExe = text.contains("=") && !text.contains(".exe");
+        boolean isShortcutButExe = text.contains("=") && !text.contains(".exe") && !text.contains("http");
         boolean isExeShortcut = text.contains(".exe") && text.contains("=");
-        if (isHttpCommand&&text.contains("=")) {
+        if (isHttpCommand&&text.contains("=")&& text.indexOf("http") > text.indexOf("=")) {
             c1come2melater(textUpcase.split("=")[0], textUpcase.substring(textUpcase.indexOf("=") + 1));
 
 

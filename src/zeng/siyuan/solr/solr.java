@@ -137,7 +137,7 @@ public class solr {
 
 //include is better than exclude because i don't need it i only care about what i need
         if (deleteCommand) {
-//i wrote dirty code, i love sex sex is good, i should put come sexy jokes herei m a dierty i writoe dirty code
+//i wrote dirty code, i love sex sex is good, i should put come sexy jokesinandout herei m a dierty i writoe dirty code
             try {
                 DefaultHttpClient httpClient = new DefaultHttpClient();
                 HttpGet getRequest = new HttpGet(

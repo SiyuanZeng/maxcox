@@ -36,16 +36,10 @@ public class Display implements Runnable {
 
     @Override
     public void run() {
-        while (running) {
             try {
-                if (f.tasks.size()==0){
-                    running = false;
-                }
-                f.reloadandDiskplaypopup();
+                f.displayTask();
             } catch (Exception e) {
-                running = false;
             }
         }
 
     }
-}
