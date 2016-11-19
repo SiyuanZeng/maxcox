@@ -161,6 +161,22 @@ public class How2Forgert implements Serializable {
                     e = new person_question(stringBuffer1.toString(), "j", r.d(textStr[0]));
                 }
 
+                if (textStr[1].equalsIgnoreCase("dd")){
+                    StringBuffer stringBuffer1 = new StringBuffer();
+                    for (int i = 2; i < textStr.length; i++) {
+                        stringBuffer1.append(textStr[i]);
+                    }
+                    e = new person_question(stringBuffer1.toString(), "dd", new Date());
+                }
+
+                if (textStr[1].equalsIgnoreCase("d")){
+                    StringBuffer stringBuffer1 = new StringBuffer();
+                    for (int i = 2; i < textStr.length; i++) {
+                        stringBuffer1.append(textStr[i]);
+                    }
+                    e = new person_question(stringBuffer1.toString(), "d", new Date());
+                }
+
                 else {
                     StringBuffer stringBuffer1 = new StringBuffer();
                     for (int i = 1; i < textStr.length; i++) {

@@ -35,7 +35,7 @@ public class r {
     }
     public static Date j(String dsf) {
 //        String s = "03/24/2013 21:54";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
         SimpleDateFormat i = new SimpleDateFormat("MM/dd/yyyy");
         try {
             String h=i.format(new Date());
@@ -51,7 +51,7 @@ public class r {
 
     public static Date d(String dsf) {
 //        String s = "03/24/2013 21:54";
-        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
         try {
             Date date = simpleDateFormat.parse(dsf);
             System.out.println("date : " + simpleDateFormat.format(date));

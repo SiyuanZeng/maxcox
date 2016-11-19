@@ -1,5 +1,6 @@
 package zeng.siyuan.C1comehere;
 
+import loli.datepicker.DatePicker;
 import zeng.siyuan.autocomplete.JTextAreaExample;
 import zeng.siyuan.betteresearchennebetterthangoogleandfindweehtehrething.findessentioal.findthebestexample;
 import zeng.siyuan.betteresearchennebetterthangoogleandfindweehtehrething.findessentioal.findtheshortcut;
@@ -360,6 +361,7 @@ public class C1comehere implements Serializable {
         textArea = new JTextArea(8, 33);
         textArea.setLineWrap(true);
         textArea.setFont(font);
+        DatePicker.dateTimePicker(textArea);
 
 
 

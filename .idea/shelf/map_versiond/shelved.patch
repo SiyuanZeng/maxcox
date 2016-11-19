@@ -1,0 +1,3347 @@
+Index: src/zeng/siyuan/autocomplete/JTextAreaExample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/autocomplete/JTextAreaExample.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/autocomplete/JTextAreaExample.java	(revision )
+@@ -20,9 +20,9 @@
+  */
+ public class JTextAreaExample {
+     static JFrame f;
+-    static JTextArea t;
++    static JTextField t;
+ 
+-    public JTextAreaExample(JFrame frame, JTextArea textArea, JPanel p) {
++    public JTextAreaExample(JFrame frame, JTextField textArea, JPanel p) {
+         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+         f = frame;
+         t = textArea;
+@@ -44,7 +44,7 @@
+ 
+ class AutoSuggestor {
+ 
+-    private final JTextArea textArea;
++    private final JTextField textArea;
+     private final Window container;
+     private JPanel suggestionsPanel;
+     private JWindow autoSuggestionPopUpWindow;
+@@ -72,7 +72,7 @@
+     private final Color suggestionsTextColor;
+     private final Color suggestionFocusedColor;
+ 
+-    public AutoSuggestor(JTextArea textArea, Window mainWindow, ArrayList<String> words, Color popUpBackground, Color textColor, Color suggestionFocusedColor, float opacity) {
++    public AutoSuggestor(JTextField textArea, Window mainWindow, ArrayList<String> words, Color popUpBackground, Color textColor, Color suggestionFocusedColor, float opacity) {
+         this.textArea = textArea;
+         this.suggestionsTextColor = textColor;
+         this.container = mainWindow;
+@@ -267,7 +267,7 @@
+         int windowX = 0;
+         int windowY = 0;
+ 
+-        if (textArea instanceof JTextArea) {//calculate x and y for JWindow at bottom of JTextField
++        if (textArea instanceof JTextField) {//calculate x and y for JWindow at bottom of JTextField
+             windowX = container.getX() + textArea.getX() + 5;
+             if (suggestionsPanel.getHeight() > autoSuggestionPopUpWindow.getMinimumSize().height) {
+                 windowY = container.getY() + textArea.getY() + textArea.getHeight() + autoSuggestionPopUpWindow.getMinimumSize().height;
+\ No newline at end of file
+Index: src/zeng/siyuan/button/untoggle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/button/untoggle.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/button/untoggle.java	(revision )
+@@ -109,7 +109,7 @@
+ //        new untoggle();
+     }
+ 
+-    public untoggle(JFrame frame, JPanel panel, JTextArea jTextArea, JLabel label, Component scroll) {
++    public untoggle(JFrame frame, JPanel panel, JTextField jTextArea, JLabel label, Component scroll) {
+         EventQueue.invokeLater(new Runnable() {
+             @Override
+             public void run() {
+\ No newline at end of file
+Index: src/zeng/siyuan/solr/solr.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/solr/solr.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/solr/solr.java	(revision )
+@@ -59,7 +59,7 @@
+     // the method is another things that i can't delete it
+     // i have to do it
+ 
+-    public List<String> sendGet(String types, JTextArea textArea) throws Exception {
++    public List<String> sendGet(String types, JTextField textArea) throws Exception {
+         String url1 = "http://localhost:8983/solr/jcg/select?q=name:a&wt=json";
+         String url22 = "http://localhost:8983/solr/jcg/select?q=name:%22"+types+"%22OR%20name_ngram:%22"+types+"%22&wt=json";
+ 
+@@ -118,7 +118,7 @@
+ 
+ /// the import thing is what do i hawant
+ // i don't want to see you so what ever you try is subelow emm emememe
+-    public List<String> sendGet_comec(String types, JTextArea textArea) throws Exception {
++    public List<String> sendGet_comec(String types, JTextField textArea) throws Exception {
+         String url22 = "http://localhost:8983/solr/jcg/select?q=name:%22come"+"%22OR%20name_ngram:%22"+"come"+"%22"+ "OR%20name_ngram:%22"+"%3f"+"%22" + "OR%20name_ngram:%22"+"what"+"%22" +"OR%20name_ngram:%22"+"everything"+"%22" +"OR%20name_ngram:%22"+"nothing"+"%22" + "OR%20name_ngram:%22"+"something"+"%22" + "&wt=json";
+ 
+         String buttonSelected ="";
+Index: src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java	(revision )
+@@ -57,9 +57,9 @@
+ 
+     public static String predefined = "";
+ 
+-    public static JTextArea textArea;
++    public static JTextField textArea;
+ 
+-    public findtheshortcutyoutututouiral(JTextArea textArea) {
++    public findtheshortcutyoutututouiral(JTextField textArea) {
+         this.textArea = textArea;
+     }
+ 
+Index: src/loli/datepicker/TimePicker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/TimePicker.java	(revision )
++++ src/loli/datepicker/TimePicker.java	(revision )
+@@ -0,0 +1,137 @@
++package loli.datepicker;
++
++import loli.datepicker.*;
++import loli.datepicker.DateFilter;
++
++import java.awt.event.MouseAdapter;
++import java.awt.event.MouseEvent;
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++
++import javax.swing.JTextArea;
++import javax.swing.PopupFactory;
++
++public class TimePicker extends AbstractPicker {
++    {
++        format = "HH:mm:ss";
++    }
++
++    private boolean setTimeAtSetup = false;
++
++    public TimePicker(final JTextArea field, String format) {
++        if (format != null){
++            this.format = format;
++        }
++        this.field = field;
++        if (setTimeAtSetup) {
++            Calendar cal = Calendar.getInstance();
++            cal.setTime(new Date());
++            setTime(cal.get(Calendar.HOUR_OF_DAY), cal.get(Calendar.MINUTE),
++                    cal.get(Calendar.SECOND));
++        }
++
++        this.field.addMouseListener(new MouseAdapter() {
++            @Override
++            public void mouseClicked(MouseEvent event) {
++                if (popup != null) {
++                    popup.hide();
++                    popup = null;
++                    return;
++                }
++                loli.datepicker.TimePanel timePanel = new loli.datepicker.TimePanel(TimePicker.this);
++                PopupFactory factory = PopupFactory.getSharedInstance();
++                popup = factory.getPopup(field, timePanel, (int) field
++                        .getLocationOnScreen().getX(), (int) field
++                        .getLocationOnScreen().getY() + field.getHeight());
++                popup.show();
++            }
++        });
++
++    }
++
++    public void setTime(int hour, int min, int second) {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(new Date());
++        cal.set(Calendar.HOUR_OF_DAY, hour);
++        cal.set(Calendar.MINUTE, min);
++        cal.set(Calendar.SECOND, second);
++        SimpleDateFormat fmt = new SimpleDateFormat(format);
++        String str = fmt.format(cal.getTime());
++        field.setText(str);
++    }
++
++    /**
++     * Add a time picker to a text field with date format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            date format string
++     */
++    public static void timePicker(JTextArea field, String format) {
++        new TimePicker(field, format);
++    }
++
++    /**
++     * Add a time picker to a text field
++     * 
++     * @param field
++     *            the text field you want to add to
++     */
++    public static void timePicker(JTextArea field) {
++        new TimePicker(field, null);
++    }
++
++    /**
++     * Get time field with format 'HH:mm:ss'
++     * 
++     * @return text field
++     */
++    public static JTextArea getTimeField() {
++        JTextArea field = new JTextArea();
++        field.setEditable(false);
++        timePicker(field);
++        return field;
++    }
++
++    /**
++     * Get time field with format
++     * 
++     * @param format
++     *            time format
++     * @return text field with format
++     */
++    public static JTextArea getDateField(String format) {
++        JTextArea field = new JTextArea();
++        field.setEditable(false);
++        timePicker(field);
++        return field;
++    }
++
++   
++
++
++    public loli.datepicker.DateFilter getDateFilter() {
++        return new BasicDateFilter();
++    }
++
++    
++    public void set(Date date) {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(getDate());
++
++        Calendar cal2 = Calendar.getInstance();
++        cal2.setTime(date);
++
++        cal.set(Calendar.HOUR_OF_DAY, cal2.get(Calendar.HOUR_OF_DAY));
++        cal.set(Calendar.MINUTE, cal2.get(Calendar.MINUTE));
++        cal.set(Calendar.SECOND, cal2.get(Calendar.SECOND));
++
++        SimpleDateFormat fmt = new SimpleDateFormat(format);
++        String result = fmt.format(cal.getTime());
++        getField().setText(result);
++    }
++ 
++
++}
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java	(revision )
+@@ -13,7 +13,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -52,7 +52,7 @@
+ 
+         return randomNum;
+     }
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame, Properties j) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame, Properties j) {
+ 
+         int k = randInt(0, j.size()-1);
+ 
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java	(revision )
+@@ -13,7 +13,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -64,7 +64,7 @@
+         }
+     }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/DatePicker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/DatePicker.java	(revision )
++++ src/loli/datepicker/DatePicker.java	(revision )
+@@ -0,0 +1,233 @@
++package loli.datepicker;
++
++import javax.swing.*;
++import java.awt.event.MouseAdapter;
++import java.awt.event.MouseEvent;
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++
++public class DatePicker extends AbstractPicker {
++    /*
++     * Default date format
++     */
++
++    {
++        format = "yyyy-MM-dd";
++    }
++
++    private SimpleDateFormat simpleDateFormat;
++
++    private boolean setTimeAtSetup = false;
++
++    /**
++     * Get text of text field
++     * 
++     * @return text of text field
++     */
++    public String getDateText() {
++        return this.field.getText();
++    }
++
++    /**
++     * @param field
++     *            to add to
++     * @param format
++     *            date format
++     */
++    public DatePicker(final JTextArea field, String format, loli.datepicker.DateFilter filter) {
++        this.field = field;
++        if (format != null) {
++            this.format = format;
++        }
++        this.filter = filter;
++        simpleDateFormat = new SimpleDateFormat(this.format);
++        if (setTimeAtSetup)
++            this.field.setText(simpleDateFormat.format(new Date()));
++
++        this.field.addMouseListener(new MouseAdapter() {
++            @Override
++            public void mouseClicked(MouseEvent event) {
++                if (popup != null) {
++                    popup.hide();
++                    popup = null;
++                    return;
++                }
++                loli.datepicker.DatePanel timePanel = new loli.datepicker.DatePanel(DatePicker.this);
++                PopupFactory factory = PopupFactory.getSharedInstance();
++
++                popup = factory.getPopup(field, timePanel, (int) field
++                        .getLocationOnScreen().getX(), (int) field
++                        .getLocationOnScreen().getY() + field.getHeight());
++                popup.show();
++            }
++        });
++    }
++
++    public DatePicker(JTextArea field) {
++        this(field, null, new BasicDateFilter());
++    }
++
++    public static SimpleDateFormat getDateFormat(String format) {
++        return new SimpleDateFormat(format);
++    }
++
++    /**
++     * Get year val from text field
++     * 
++     * @return year val
++     */
++    public int getShowYear() {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(getDate());
++        return cal.get(Calendar.YEAR);
++    }
++
++    /**
++     * Get month val from text field
++     * 
++     * @return month val
++     */
++    public int getShowMonth() {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(getDate());
++        return cal.get(Calendar.MONDAY);
++    }
++
++    /**
++     * Set date to text field
++     * 
++     * @param year
++     *            year to set
++     * @param month
++     *            month to set
++     * @param day
++     *            day to set
++     */
++    void selectDay(int year, int month, int day) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(year, month, day);
++        Date date = cal.getTime();
++        this.field.setText(simpleDateFormat.format(date));
++        if (popup != null) {
++            popup.hide();
++            popup = null;
++        }
++    }
++
++    /**
++     * Add a date picker to a text field
++     * 
++     * @param field
++     *            the text field you want to add to
++     */
++    public static void datePicker(JTextArea field) {
++        datePicker(field, null);
++    }
++
++    /**
++     * Add a date picker to a text field with date format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            date format string
++     */
++    public static void datePicker(JTextArea field, String format) {
++        new DatePicker(field, format, new BasicDateFilter());
++    }
++
++    /**
++     * Add a date picker to a text field with date format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            date format string
++     * @param filter
++     *            filter
++     */
++    public static void datePicker(JTextArea field, String format,
++            loli.datepicker.DateFilter filter) {
++        new DatePicker(field, format, filter);
++    }
++
++    /**
++     * Add a time picker to a text field
++     * 
++     * @param field
++     *            the text field you want to add to
++     */
++    public static void timePicker(JTextArea field) {
++        timePicker(field, null);
++    }
++
++    /**
++     * Add a time picker to a text field with time format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            time format string
++     */
++    public static void timePicker(JTextArea field, String format) {
++        new TimePicker(field, format);
++    }
++
++    /**
++     * Add a date time picker to a text field
++     * 
++     * @param field
++     *            the text field you want to add to
++     */
++    public static void dateTimePicker(JTextArea field) {
++        dateTimePicker(field, null);
++    }
++
++    /**
++     * Add a date time picker to a text field with time format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            date time format string
++     */
++    public static void dateTimePicker(JTextArea field, String format) {
++        dateTimePicker(field, format, new BasicDateFilter());
++    }
++
++    /**
++     * Add a time picker to a text field with time format
++     * 
++     * @param field
++     *            the text field you want to add to
++     * @param format
++     *            time format string
++     * @param filter
++     *            to make some days unclickable
++     */
++    public static void dateTimePicker(JTextArea field, String format,
++            loli.datepicker.DateFilter filter) {
++        new DateTimePicker(field, format, filter);
++    }
++
++    public loli.datepicker.DateFilter getDateFilter() {
++        return filter;
++    }
++
++    public void set(Date date) {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(this.getDate());
++
++        Calendar cal2 = Calendar.getInstance();
++        cal2.setTime(date);
++
++        cal.set(Calendar.YEAR, cal2.get(Calendar.YEAR));
++        cal.set(Calendar.MONTH, cal2.get(Calendar.MONTH));
++        cal.set(Calendar.DAY_OF_MONTH, cal2.get(Calendar.DAY_OF_MONTH));
++
++        this.field.setText(simpleDateFormat.format(cal.getTime()));
++        close();
++    }
++
++}
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java	(revision )
+@@ -10,7 +10,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -61,7 +61,7 @@
+         }
+     }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/BasicDateFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/BasicDateFilter.java	(revision )
++++ src/loli/datepicker/BasicDateFilter.java	(revision )
+@@ -0,0 +1,16 @@
++package loli.datepicker;
++
++import java.util.Date;
++
++public class BasicDateFilter implements loli.datepicker.DateFilter {
++
++    /*
++     * (non-Javadoc)
++     * 
++     * @see io.loli.datepicker.DateFilter#filter(java.util.Date)
++     */
++    public boolean filter(Date date) {
++        return false;
++    }
++
++}
+Index: c1comehere.iml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- c1comehere.iml	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ c1comehere.iml	(revision )
+@@ -261,5 +261,16 @@
+         <SOURCES />
+       </library>
+     </orderEntry>
++    <orderEntry type="module-library" exported="">
++      <library>
++        <CLASSES>
++          <root url="jar://$MODULE_DIR$/related jar/datepicker4j-0.0.5.jar!/" />
++        </CLASSES>
++        <JAVADOC />
++        <SOURCES>
++          <root url="jar://$USER_HOME$/.ideaLibSources/datepicker4j-0.0.5-sources.jar!/" />
++        </SOURCES>
++      </library>
++    </orderEntry>
+   </component>
+ </module>
+\ No newline at end of file
+Index: src/zeng/siyuan/routine/a.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/routine/a.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/routine/a.java	(revision )
+@@ -6,9 +6,9 @@
+  * Created by SiyuanZeng's on 9/14/2016.
+  */
+ public class a {
+-    public static JTextArea textArea;
++    public static JTextField textArea;
+ 
+-    public a(JTextArea textArea) {
++    public a(JTextField textArea) {
+         this.textArea = textArea;
+     }
+ 
+Index: src/loli/datepicker/DatePanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/DatePanel.java	(revision )
++++ src/loli/datepicker/DatePanel.java	(revision )
+@@ -0,0 +1,469 @@
++package loli.datepicker;
++
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.awt.event.MouseAdapter;
++import java.awt.event.MouseEvent;
++import java.lang.reflect.Method;
++import java.util.ArrayList;
++import java.util.Calendar;
++import java.util.Date;
++import java.util.List;
++
++/**
++ * Date panel to popup
++ * 
++ * @author choco
++ *
++ */
++public class DatePanel extends JPanel {
++    private static final long serialVersionUID = 1L;
++
++    /**
++     * panel for controllers
++     */
++    private JPanel topPanel = new JPanel();
++
++    private JLabel lastYearBtn = new JLabel(" < ");
++    private JLabel nextYearBtn = new JLabel(" > ");
++    private JLabel lastMonthBtn = new JLabel(" < ");
++    private JLabel nextMonthBtn = new JLabel(" > ");
++
++    private JLabel closeBtn = new JLabel(" X ");
++
++    private JPanel daysPanel = new JPanel();
++    private JTextArea yearTextField = new JTextArea(1, 4);
++    private JTextArea monthTextField = new JTextArea(1, 2);
++
++    private loli.datepicker.Picker picker = null;
++
++    public DatePanel(final loli.datepicker.Picker picker) {
++        this.setLayout(new BorderLayout());
++        this.picker = picker;
++        add(topPanel, BorderLayout.NORTH);
++        yearTextField.setEditable(false);
++        monthTextField.setEditable(false);
++
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(picker.getDate());
++
++        yearTextField.setText(String.valueOf(cal.get(Calendar.YEAR)));
++        monthTextField.setText(String.valueOf(cal.get(Calendar.MONDAY) + 1));
++
++        topPanel.add(lastYearBtn);
++        topPanel.add(yearTextField);
++        topPanel.add(nextYearBtn);
++        topPanel.add(lastMonthBtn);
++        topPanel.add(monthTextField);
++        topPanel.add(nextMonthBtn);
++        topPanel.add(closeBtn);
++
++        lastYearBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++        nextYearBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++        lastMonthBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++        nextMonthBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++        closeBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++
++        add(daysPanel, BorderLayout.SOUTH);
++
++        refreshDayBtns();
++
++        lastYearBtn.addMouseListener(new MouseAdapter() {
++            public void mouseClicked(MouseEvent e) {
++                addYear(-1);
++                refreshDayBtns();
++            }
++
++            @Override
++            public void mousePressed(MouseEvent e) {
++                lastYearBtn.setBorder(BorderFactory.createLoweredBevelBorder());
++            }
++
++            public void mouseReleased(MouseEvent e) {
++                lastYearBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++            }
++
++        });
++        nextYearBtn.addMouseListener(new MouseAdapter() {
++
++            public void mouseClicked(MouseEvent e) {
++                addYear(1);
++                refreshDayBtns();
++            }
++
++            @Override
++            public void mousePressed(MouseEvent e) {
++                nextYearBtn.setBorder(BorderFactory.createLoweredBevelBorder());
++            }
++
++            public void mouseReleased(MouseEvent e) {
++                nextYearBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++            }
++
++        });
++
++        lastMonthBtn.addMouseListener(new MouseAdapter() {
++
++            public void mouseClicked(MouseEvent e) {
++                addMonth(-1);
++                refreshDayBtns();
++            }
++
++            @Override
++            public void mousePressed(MouseEvent e) {
++                lastMonthBtn.setBorder(BorderFactory.createLoweredBevelBorder());
++            }
++
++            public void mouseReleased(MouseEvent e) {
++                lastMonthBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++            }
++
++        });
++        nextMonthBtn.addMouseListener(new MouseAdapter() {
++
++            public void mouseClicked(MouseEvent e) {
++                addMonth(1);
++                refreshDayBtns();
++            }
++
++            @Override
++            public void mousePressed(MouseEvent e) {
++                nextMonthBtn.setBorder(BorderFactory.createLoweredBevelBorder());
++            }
++
++            public void mouseReleased(MouseEvent e) {
++                nextMonthBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++            }
++
++        });
++
++        closeBtn.addMouseListener(new MouseAdapter() {
++
++            public void mouseClicked(MouseEvent e) {
++                picker.close();
++            }
++
++            @Override
++            public void mousePressed(MouseEvent e) {
++                closeBtn.setBorder(BorderFactory.createLoweredBevelBorder());
++            }
++
++            public void mouseReleased(MouseEvent e) {
++                closeBtn.setBorder(BorderFactory.createRaisedBevelBorder());
++            }
++
++        });
++
++        setBorder(BorderFactory.createEtchedBorder());
++    }
++
++    /**
++     * Add month count to month field
++     * 
++     * @param i
++     *            month to add
++     */
++    private void addMonth(int i) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(getDisplayYear(), getDisplayMonth() - 1, 1);
++        cal.add(Calendar.MONTH, i);
++        monthTextField.setText(String.valueOf(cal.get(Calendar.MONTH) + 1));
++    }
++
++    /**
++     * Add year count to year field
++     * 
++     * @param i
++     *            year nums to add
++     */
++    private void addYear(int i) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(getDisplayYear(), 1, 1);
++        cal.add(Calendar.YEAR, i);
++        yearTextField.setText(String.valueOf(cal.get(Calendar.YEAR)));
++    }
++
++    /**
++     * Get int val of year field
++     * 
++     * @return int val of year field
++     */
++    private int getDisplayYear() {
++        return Integer.parseInt(yearTextField.getText());
++    }
++
++    /**
++     * Get month val of month field
++     * 
++     * @return int val of month field
++     */
++    private int getDisplayMonth() {
++        return Integer.parseInt(monthTextField.getText());
++    }
++
++    /**
++     * Get days of a month
++     * 
++     * @param year
++     *            value of the year
++     * @param month
++     *            value of the month
++     * @return days array of this month
++     */
++    private String[] getDays(int year, int month) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(year, month, 1);
++        int dayNum = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
++
++        String[] days = new String[dayNum];
++        for (int i = 0; i < dayNum; i++) {
++            days[i] = String.valueOf(i + 1);
++        }
++
++        return days;
++    }
++
++    /**
++     * Get DAY_OF_WEEK of a day
++     * 
++     * @param year
++     *            the year
++     * @param month
++     *            the month
++     * @param day
++     *            the day
++     * @return DAY_OF_WEEK of this day
++     */
++    private int getDayIndex(int year, int month, int day) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(year, month, day);
++        return cal.get(Calendar.DAY_OF_WEEK);
++    }
++
++    /**
++     * Get date arrays before 1st day of the month in that week
++     * 
++     * 
++     * @param year
++     *            the year
++     * @param month
++     *            the month
++     * @return date arrays before 1st day of the month in that week
++     */
++    private Date[] getBeforeDays(int year, int month) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(year, month, 1);
++        int dayNum = getDayIndex(year, month, 1) - 1;
++        Date[] date = new Date[dayNum];
++        if (dayNum > 0)
++            for (int i = 0; i < dayNum; i++) {
++                cal.add(Calendar.DAY_OF_MONTH, -1);
++                date[i] = cal.getTime();
++            }
++
++        return date;
++    }
++
++    /**
++     * Get date arrays after the last day of the month in that week
++     * 
++     * @param year
++     *            the year
++     * @param month
++     *            the month
++     * @return date arrays after 1st day of the month in that week
++     */
++    private Date[] getAfterDays(int year, int month) {
++        Calendar cal = Calendar.getInstance();
++        cal.set(Calendar.YEAR, year);
++        cal.set(Calendar.MONTH, month);
++        int dayNum = cal.getActualMaximum(Calendar.DAY_OF_MONTH);
++        cal.set(year, month, dayNum);
++        int afterDayNum = 7 - getDayIndex(year, month, dayNum);
++        Date[] date = new Date[afterDayNum];
++        if (afterDayNum > 0)
++
++            for (int i = 0; i < afterDayNum; i++) {
++                cal.add(Calendar.DAY_OF_MONTH, 1);
++                date[i] = cal.getTime();
++            }
++
++        return date;
++    }
++
++    /**
++     * Add day header to top of month btns
++     */
++    private void addDayHeadLabels() {
++        for (JLabel it : getDayHeadLabels()) {
++            it.setVerticalAlignment(JLabel.CENTER);
++            it.setHorizontalAlignment(JLabel.CENTER);
++            daysPanel.add(it);
++
++        }
++    }
++
++    private JLabel[] getDayHeadLabels() {
++        return new JLabel[] { new JLabel("SUN"), new JLabel("MON"),
++                new JLabel("TUE"), new JLabel("WED"), new JLabel("THU"),
++                new JLabel("FRI"), new JLabel("SAT") };
++    }
++
++    private List<DayBtn> dayBtns = new ArrayList<DayBtn>();
++
++    /**
++     * Refresh day btn tables
++     */
++    @SuppressWarnings("deprecation")
++    private void refreshDayBtns() {
++
++        remove(daysPanel);
++
++        daysPanel = new JPanel();
++
++        daysPanel.removeAll();
++        daysPanel.setLayout(new GridLayout(0, 7));
++
++        int displayYear = getDisplayYear();
++        int displayMonth = getDisplayMonth();
++        String[] days = getDays(displayYear, displayMonth - 1);
++
++        addDayHeadLabels();
++
++        Date d = picker.getDate();
++
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(d);
++        int currentYear = cal.get(Calendar.YEAR);
++
++        int currentMonth = cal.get(Calendar.MONTH);
++        int currentDay = cal.get(Calendar.DAY_OF_MONTH);
++        /*
++         * Add days label before 1st
++         */
++        for (Date it : getBeforeDays(displayYear, displayMonth - 1)) {
++            JLabel label = new JLabel(String.valueOf(it.getDate()));
++            label.setVerticalAlignment(JLabel.CENTER);
++            label.setHorizontalAlignment(JLabel.CENTER);
++            label.setEnabled(false);
++            daysPanel.add(label);
++        }
++
++        for (String it : days) {
++            DayBtn btn = new DayBtn(it);
++            if (displayYear == currentYear && displayMonth == currentMonth + 1
++                    && currentDay == Integer.parseInt(it)) {
++                btn.setBackground(Color.GRAY);
++            }
++
++            dayBtns.add(btn);
++            daysPanel.add(btn);
++        }
++
++        /*
++         * Add days label after last day
++         */
++        for (Date it : getAfterDays(displayYear, displayMonth - 1)) {
++            JLabel label = new JLabel(String.valueOf(it.getDate()));
++            label.setVerticalAlignment(JLabel.CENTER);
++            label.setHorizontalAlignment(JLabel.CENTER);
++            daysPanel.add(label);
++            label.setEnabled(false);
++        }
++
++        add(daysPanel);
++
++        /*
++         * Update ui
++         */
++        updateUI();
++        if (picker.getPopup() != null) {
++            Method method;
++            try {
++                method = Popup.class.getDeclaredMethod("pack");
++                method.setAccessible(true);
++                method.invoke(picker.getPopup());
++            } catch (Exception e) {
++            }
++        }
++    }
++
++    class DayBtn extends JLabel implements ActionListener {
++        private static final long serialVersionUID = 1L;
++        private String day;
++        private Date date;
++
++        private Color originColor;
++
++        boolean clicked = false;
++
++        DayBtn(String str) {
++            super(str);
++            this.day = str;
++            Calendar cal = Calendar.getInstance();
++            cal.set(getDisplayYear(), getDisplayMonth() - 1,
++                    Integer.parseInt(str));
++            date = cal.getTime();
++            // setBorder(BorderFactory.createl));
++            setVerticalAlignment(JLabel.CENTER);
++            setHorizontalAlignment(JLabel.CENTER);
++            originColor = this.getBackground();
++            setOpaque(true);
++            this.setEnabled(!picker.getDateFilter().filter(date));
++            this.setBorder(BorderFactory.createEtchedBorder());
++
++            if (this.isEnabled())
++                this.addMouseListener(new MouseAdapter() {
++                    @Override
++                    public void mouseClicked(MouseEvent e) {
++                        super.mouseClicked(e);
++
++                        Calendar cal = Calendar.getInstance();
++                        cal.setTime(picker.getDate());
++                        cal.set(getDisplayYear(), getDisplayMonth() - 1,
++                                Integer.parseInt(day));
++                        Date calDate = cal.getTime();
++                        picker.set(calDate);
++
++                        for (DayBtn btn : dayBtns) {
++                            btn.setBackground(originColor);
++                            btn.clicked = false;
++                        }
++                        setBackground(Color.GRAY);
++                        clicked = true;
++                        DatePanel.this.repaint();
++                    }
++
++                    @Override
++                    public void mouseEntered(MouseEvent e) {
++                        super.mouseEntered(e);
++                        setBackground(Color.GRAY);
++                        DatePanel.this.repaint();
++                    }
++
++                    @Override
++                    public void mouseExited(MouseEvent e) {
++                        super.mouseExited(e);
++                        if (!clicked) {
++                            setBackground(originColor);
++                        }
++                        DatePanel.this.repaint();
++                    }
++                });
++        }
++
++        public void actionPerformed(ActionEvent e) {
++            Calendar cal = Calendar.getInstance();
++            cal.set(getDisplayYear(), getDisplayMonth() - 1,
++                    Integer.parseInt(day));
++            Date calDate = cal.getTime();
++            picker.set(calDate);
++        }
++
++        public Date getDate() {
++            return date;
++        }
++    }
++}
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ .idea/workspace.xml	(revision )
+@@ -10,18 +10,64 @@
+   </component>
+   <component name="ChangeListManager">
+     <list default="true" id="5a421b49-605d-4e6f-8d52-2915556c64cd" name="Default" comment="">
+-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/AbstractPicker.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/BasicDateFilter.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/DateFilter.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/DatePanel.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/DatePicker.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/DateTimePanel.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/DateTimePicker.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/Picker.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/TimePanel.java" />
++      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/loli/datepicker/TimePicker.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere$1.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere$1.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere$2.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere$2.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/C1comehere.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/Search.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/Search.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/AutoSuggestor.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/AutoSuggestor.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/JTextAreaExample$1.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/JTextAreaExample$1.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/JTextAreaExample.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/autocomplete/JTextAreaExample.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/button/untoggle$1.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/button/untoggle$1.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/button/untoggle.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/button/untoggle.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/howt2forgert/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/howt2forgert/How2Forgert.class" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/How2Forgert.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/How2Forgert.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.class" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.class" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.class" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/peoplequesiton.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/peoplequesiton.class" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/person_question.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/person_question.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/reuseutil/r.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/reuseutil/r.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/routine/a.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/routine/a.class" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/solr/solr.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/solr/solr.class" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/C:\c1\c1comehere\ebbinghauses.txt" afterPath="$PROJECT_DIR$/C:\c1\c1comehere\ebbinghauses.txt" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c1s.properties" afterPath="$PROJECT_DIR$/c1s.properties" />
+-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c1s.properties.solr" afterPath="$PROJECT_DIR$/c1s.properties.solr" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c1comehere.iml" afterPath="$PROJECT_DIR$/c1comehere.iml" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Search.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Search.java" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/autocomplete/JTextAreaExample.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/autocomplete/JTextAreaExample.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/routine/a.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/routine/a.java" />
++      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java" />
+       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/l.properties" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/l.properties" />
+     </list>
+     <ignored path="c1comehere.iws" />
+@@ -57,101 +103,142 @@
+   </component>
+   <component name="FileEditorManager">
+     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+-      <file leaf-file-name="t.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java">
++      <file leaf-file-name="DatePicker.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DatePicker.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="135">
+-              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+-              <folding />
++            <state relative-caret-position="-2682">
++              <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
++              <folding>
++                <element signature="e#1139#1833#0" expanded="true" />
++                <element signature="e#1832#1833#0" expanded="true" />
++                <element signature="e#1882#1883#0" expanded="true" />
++                <element signature="e#1938#1939#0" expanded="true" />
++                <element signature="e#2005#2006#0" expanded="true" />
++                <element signature="e#2056#2057#0" expanded="true" />
++                <element signature="e#3258#3259#0" expanded="true" />
++                <element signature="e#3297#3298#0" expanded="true" />
++                <element signature="e#4264#4265#0" expanded="true" />
++                <element signature="e#4303#4304#0" expanded="true" />
++                <element signature="e#4584#4585#0" expanded="true" />
++                <element signature="e#4629#4630#0" expanded="true" />
++                <element signature="e#4829#4830#0" expanded="true" />
++                <element signature="e#4872#4873#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="BeepingButton.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
++      <file leaf-file-name="DateTimePanel.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateTimePanel.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="105">
+-              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++            <state relative-caret-position="60">
++              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="deletediary.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/deletediary.java">
++      <file leaf-file-name="DateTimePicker.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateTimePicker.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="75">
+-              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+-              <folding />
++            <state relative-caret-position="-12">
++              <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
++              <folding>
++                <element signature="imports" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="peoplequesiton.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
++      <file leaf-file-name="TimePicker.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/TimePicker.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="521">
+-              <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
+-              <folding />
++            <state relative-caret-position="60">
++              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
++              <folding>
++                <element signature="e#896#1589#0" expanded="true" />
++                <element signature="e#1588#1589#0" expanded="true" />
++                <element signature="e#2285#2286#0" expanded="true" />
++                <element signature="e#2330#2331#0" expanded="true" />
++                <element signature="e#2521#2522#0" expanded="true" />
++                <element signature="e#2564#2565#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java">
++      <file leaf-file-name="Picker.java" pinned="false" current-in-tab="true">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/Picker.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="-1680">
+-              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
++            <state relative-caret-position="240">
++              <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="true">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
++      <file leaf-file-name="TimePanel.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/TimePanel.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="90">
+-              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
++            <state relative-caret-position="1110">
++              <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
++      <file leaf-file-name="AbstractPicker.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/AbstractPicker.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="375">
+-              <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+-              <folding />
++            <state relative-caret-position="510">
++              <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
++              <folding>
++                <element signature="e#371#372#0" expanded="true" />
++                <element signature="e#400#401#0" expanded="true" />
++                <element signature="e#433#434#0" expanded="true" />
++                <element signature="e#462#463#0" expanded="true" />
++                <element signature="e#493#494#0" expanded="true" />
++                <element signature="e#521#522#0" expanded="true" />
++                <element signature="e#562#563#0" expanded="true" />
++                <element signature="e#596#597#0" expanded="true" />
++                <element signature="e#640#641#0" expanded="true" />
++                <element signature="e#676#677#0" expanded="true" />
++                <element signature="e#711#712#0" expanded="true" />
++                <element signature="e#739#740#0" expanded="true" />
++                <element signature="e#784#785#0" expanded="true" />
++                <element signature="e#818#819#0" expanded="true" />
++                <element signature="e#866#867#0" expanded="true" />
++                <element signature="e#902#903#0" expanded="true" />
++              </folding>
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="C1comehere.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java">
++      <file leaf-file-name="BasicDateFilter.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/BasicDateFilter.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="366">
+-              <caret line="1218" column="0" selection-start-line="1218" selection-start-column="0" selection-end-line="1231" selection-end-column="21" />
++            <state relative-caret-position="60">
++              <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/Display.java">
++      <file leaf-file-name="DateFilter.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateFilter.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="585">
+-              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
++            <state relative-caret-position="60">
++              <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+               <folding />
+             </state>
+           </provider>
+         </entry>
+       </file>
+-      <file leaf-file-name="r.java" pinned="false" current-in-tab="false">
+-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
++      <file leaf-file-name="DatePanel.java" pinned="false" current-in-tab="false">
++        <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DatePanel.java">
+           <provider selected="true" editor-type-id="text-editor">
+-            <state relative-caret-position="230">
+-              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
++            <state relative-caret-position="282">
++              <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+               <folding />
+             </state>
+           </provider>
+@@ -183,31 +270,12 @@
+   <component name="IdeDocumentHistory">
+     <option name="CHANGED_PATHS">
+       <list>
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/autohotkey/ahotkeytest.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/person_question.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/peoplequesiton.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/cassandra log" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/button/buttons.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/solr/test/param/dao/SolrBaseDAO.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/Ebbinghaus.java" />
+-        <option value="$PROJECT_DIR$/maxcassandra" />
+-        <option value="$PROJECT_DIR$/solr" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/every.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/DecendingTask.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/ohthatismynodete.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/usruprise/thereisalsothatkind.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/buzzwordnonbuzzword.java" />
+         <option value="$PROJECT_DIR$/bashrc" />
+         <option value="$PROJECT_DIR$/c1s.properties" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/autocomplete/RequestFocusListener.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/d.java" />
+         <option value="$PROJECT_DIR$/src/p" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/c.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/autocomplete/JTextAreaExample.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/peoplequesiton.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/Display.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/person_question.java" />
+@@ -215,25 +283,44 @@
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/peoplequesiton.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/person_question.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/playsongforme.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/Display.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/person_question.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/jokes.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/jokesinandout.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/a" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/t.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" />
+-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" />
+         <option value="$PROJECT_DIR$/pom.xml" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/autocomplete/JTextAreaExample.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Search.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" />
+         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/routine/a.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java" />
++        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/DatePicker.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/DateTimePicker.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/DatePanel.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/TimePicker.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/TimePanel.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/AbstractPicker.java" />
++        <option value="$PROJECT_DIR$/src/loli/datepicker/Picker.java" />
+       </list>
+     </option>
+   </component>
+@@ -393,15 +480,13 @@
+               <option name="myItemId" value="c1comehere" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="&lt; 1.8 &gt;" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+             </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+@@ -410,31 +495,17 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="&lt; 1.8 &gt;" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+             </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
++              <option name="myItemId" value="rt.jar" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -442,19 +513,19 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="&lt; 1.8 &gt;" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
++              <option name="myItemId" value="rt.jar" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="reuseutil" />
++              <option name="myItemId" value="javax" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+           </PATH>
+@@ -464,47 +535,25 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="&lt; 1.8 &gt;" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
++              <option name="myItemId" value="rt.jar" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
++              <option name="myItemId" value="javax" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-          </PATH>
+-          <PATH>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
++              <option name="myItemId" value="swing" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -512,29 +561,9 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="c1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
++              <option name="myItemId" value="External Libraries" />
++              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ExternalLibrariesNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -545,30 +574,6 @@
+               <option name="myItemId" value="c1comehere" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="src" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -583,30 +588,6 @@
+               <option name="myItemId" value="src" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -625,30 +606,6 @@
+               <option name="myItemId" value="siyuan" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="asdf" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -668,33 +625,9 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
++              <option name="myItemId" value="C1comehere" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="onceaday" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="asdf" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="asdf" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+           <PATH>
+             <PATH_ELEMENT>
+@@ -710,21 +643,17 @@
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+             <PATH_ELEMENT>
+-              <option name="myItemId" value="siyuan" />
++              <option name="myItemId" value="datepicker" />
+               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+             </PATH_ELEMENT>
+-            <PATH_ELEMENT>
+-              <option name="myItemId" value="C1comehere" />
+-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+-            </PATH_ELEMENT>
+           </PATH>
+         </subPane>
+       </pane>
+-      <pane id="PackagesPane" />
+       <pane id="Scratches">
+         <subPane />
+       </pane>
+       <pane id="Scope" />
++      <pane id="PackagesPane" />
+     </panes>
+   </component>
+   <component name="PropertiesComponent">
+@@ -735,7 +664,7 @@
+     <property name="project.structure.last.edited" value="Modules" />
+     <property name="project.structure.proportion" value="0.15" />
+     <property name="project.structure.side.proportion" value="0.2" />
+-    <property name="last_opened_file_path" value="$PROJECT_DIR$/related jar/commons-httpclient-3.1.jar!/" />
++    <property name="last_opened_file_path" value="$PROJECT_DIR$/related jar/datepicker4j-0.0.5.jar!/" />
+     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
+     <property name="settings.editor.splitter.proportion" value="0.2" />
+     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="282" />
+@@ -761,16 +690,19 @@
+     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
+   </component>
+   <component name="RecentsManager">
+-    <key name="CreateClassDialog.RecentsKey">
+-      <recent name="zeng.siyuan.autocomplete" />
++    <key name="MoveFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$/src" />
++      <recent name="C:\Development_Base\14_GUI\c1comehere" />
++      <recent name="C:\Development_Base\14_GUI\c1comehere\src\zeng\siyuan\C1comehere" />
++      <recent name="C:\Development_Base\14_GUI\c1comehere\src" />
+     </key>
+     <key name="IntroduceConstantDialog.RECENTS_KEY">
+       <recent name="zeng.siyuan.mappingmanager.peoplequesiton" />
+     </key>
+     <key name="CopyFile.RECENT_KEYS">
++      <recent name="$PROJECT_DIR$" />
+       <recent name="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf" />
+       <recent name="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf" />
+-      <recent name="$PROJECT_DIR$" />
+       <recent name="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what" />
+       <recent name="C:\Development_Base\17_GUI\c1comehere\src\zeng\siyuan\onceaday\link\onceaday\document\onceaday\ssdd\onceaday" />
+     </key>
+@@ -780,10 +712,8 @@
+       <recent name="zeng.siyuan.onceaday" />
+       <recent name="zeng.siyuan.howt2forgert" />
+     </key>
+-    <key name="MoveFile.RECENT_KEYS">
+-      <recent name="C:\Development_Base\14_GUI\c1comehere" />
+-      <recent name="C:\Development_Base\14_GUI\c1comehere\src\zeng\siyuan\C1comehere" />
+-      <recent name="C:\Development_Base\14_GUI\c1comehere\src" />
++    <key name="CreateClassDialog.RecentsKey">
++      <recent name="zeng.siyuan.autocomplete" />
+     </key>
+   </component>
+   <component name="RunManager" selected="Application.C1comehere">
+@@ -1980,7 +1910,10 @@
+       <workItem from="1479530243804" duration="487000" />
+       <workItem from="1479534006498" duration="479000" />
+       <workItem from="1479553804101" duration="558000" />
+-      <workItem from="1479556607020" duration="1278000" />
++      <workItem from="1479556607020" duration="1542000" />
++      <workItem from="1479573914359" duration="249000" />
++      <workItem from="1479577930888" duration="1689000" />
++      <workItem from="1479579837668" duration="899000" />
+     </task>
+     <task id="LOCAL-00001" summary="refactor search engine">
+       <created>1472094513325</created>
+@@ -2098,7 +2031,7 @@
+     <servers />
+   </component>
+   <component name="TimeTrackingManager">
+-    <option name="totallyTimeSpent" value="935202000" />
++    <option name="totallyTimeSpent" value="938303000" />
+   </component>
+   <component name="TodoView">
+     <todo-panel id="selected-file">
+@@ -2111,23 +2044,22 @@
+   </component>
+   <component name="ToolWindowManager">
+     <frame x="4" y="23" width="1676" height="1027" extended-state="6" />
+-    <editor active="true" />
++    <editor active="false" />
+     <layout>
+       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3286119" sideWeight="0.49811116" order="6" side_tool="false" content_ui="tabs" />
+       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766762" sideWeight="0.4851592" order="7" side_tool="false" content_ui="tabs" />
+       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1650165" sideWeight="0.7160343" order="11" side_tool="true" content_ui="tabs" />
+-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.125459" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1650165" sideWeight="0.28396574" order="2" side_tool="false" content_ui="tabs" />
+-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766762" sideWeight="0.45925525" order="9" side_tool="false" content_ui="tabs" />
++      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32673267" sideWeight="0.54283965" order="11" side_tool="true" content_ui="tabs" />
++      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12913096" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
++      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1639164" sideWeight="0.28151774" order="2" side_tool="false" content_ui="tabs" />
++      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32673267" sideWeight="0.45716035" order="9" side_tool="false" content_ui="tabs" />
+       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371105" sideWeight="0.49379385" order="10" side_tool="false" content_ui="tabs" />
+       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30966952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.49082008" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986508" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+@@ -2140,6 +2072,7 @@
+       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
++      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.31353134" sideWeight="0.4883721" order="1" side_tool="false" content_ui="tabs" />
+     </layout>
+     <layout-to-restore>
+       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+@@ -2561,381 +2494,495 @@
+     <option name="FILTER_TARGETS" value="false" />
+   </component>
+   <component name="editorHistoryManager">
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/autohotkey/AutoHotkeyTest.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/peoplequesiton.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="90">
+-          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
++        <state relative-caret-position="675">
++          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/button/togglebutton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/peoplequesiton.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="120">
+-          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
++        <state relative-caret-position="492">
++          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/peoplequesiton.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="195">
+-          <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
++        <state relative-caret-position="492">
++          <caret line="66" column="157" selection-start-line="66" selection-start-column="157" selection-end-line="66" selection-end-column="157" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/button/grouplayout.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="135">
+-          <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
++        <state relative-caret-position="150">
++          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/zeng/siyuan/fuckchorem.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/cassandra.cql">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="24">
++          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/a">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="255">
+-          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
++          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/xinxiangshicheng.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="150">
++          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/mappingmanager/mappingmanager2.java">
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="105">
+-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
++        <state relative-caret-position="10305">
++          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/BeepingButton.java">
++    <entry file="file://$PROJECT_DIR$/pom.xml">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="105">
+-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++        <state relative-caret-position="615">
++          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/deletediary.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="135">
++          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/Display.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
+       <provider selected="true" editor-type-id="text-editor">
++        <state relative-caret-position="105">
++          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++        </state>
++      </provider>
++    </entry>
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/deletediary.java">
++      <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="75">
+           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/Ebbinghaus.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="240">
+-          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+-          <folding />
++        <state relative-caret-position="750">
++          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/Display.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
+-          <folding />
++        <state relative-caret-position="585">
++          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/loadolr.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="105">
+-          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
++        <state relative-caret-position="318">
++          <caret line="294" column="18" selection-start-line="294" selection-start-column="18" selection-end-line="294" selection-end-column="18" />
++          <folding>
++            <element signature="e#6355#6356#0" expanded="false" />
++            <element signature="e#6395#6396#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/Task.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="120">
+-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
++        <state relative-caret-position="168">
++          <caret line="63" column="18" selection-start-line="63" selection-start-column="18" selection-end-line="63" selection-end-column="18" />
++          <folding>
++            <element signature="e#2255#2256#0" expanded="true" />
++            <element signature="e#2295#2296#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Search.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="465">
+-          <caret line="35" column="39" selection-start-line="35" selection-start-column="39" selection-end-line="35" selection-end-column="39" />
+-          <folding />
++        <state relative-caret-position="168">
++          <caret line="44" column="18" selection-start-line="44" selection-start-column="18" selection-end-line="44" selection-end-column="18" />
++          <folding>
++            <element signature="e#3977#3978#0" expanded="true" />
++            <element signature="e#4017#4018#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/c.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtutroial/findtheshortcutyoutututouiral.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="90">
+-          <caret line="6" column="11" selection-start-line="6" selection-start-column="11" selection-end-line="6" selection-end-column="11" />
+-          <folding />
++        <state relative-caret-position="168">
++          <caret line="59" column="18" selection-start-line="59" selection-start-column="18" selection-end-line="59" selection-end-column="18" />
++          <folding>
++            <element signature="e#2126#2127#0" expanded="true" />
++            <element signature="e#2166#2167#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Beep.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/Search.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="150">
+-          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
++          <caret line="14" column="19" selection-start-line="14" selection-start-column="19" selection-end-line="14" selection-end-column="19" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/DecendingTask.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="120">
+-          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
++        <state relative-caret-position="105">
++          <caret line="19" column="21" selection-start-line="19" selection-start-column="21" selection-end-line="19" selection-end-column="21" />
++          <folding>
++            <element signature="e#702#708#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/deletediary.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="105">
++          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
++          <folding>
++            <element signature="e#548#554#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/t.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="315">
+-          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
++        <state relative-caret-position="885">
++          <caret line="64" column="56" selection-start-line="64" selection-start-column="56" selection-end-line="64" selection-end-column="56" />
++          <folding>
++            <element signature="e#470#476#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/playsongforme.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="270">
+-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
++        <state relative-caret-position="105">
++          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
++          <folding>
++            <element signature="e#488#494#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/BeepingButton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="105">
+-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++          <caret line="12" column="21" selection-start-line="12" selection-start-column="21" selection-end-line="12" selection-end-column="21" />
++          <folding>
++            <element signature="e#502#508#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/bashrc">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="0">
+-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++        <state relative-caret-position="105">
++          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/forgeot.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="105">
++          <caret line="14" column="21" selection-start-line="14" selection-start-column="21" selection-end-line="14" selection-end-column="21" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/peoplequesiton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="363">
+-          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
++        <state relative-caret-position="105">
++          <caret line="20" column="21" selection-start-line="20" selection-start-column="21" selection-end-line="20" selection-end-column="21" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/peoplequesiton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="363">
+-          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
++        <state relative-caret-position="105">
++          <caret line="15" column="21" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="190">
+-          <caret line="40" column="88" selection-start-line="40" selection-start-column="88" selection-end-line="40" selection-end-column="88" />
++        <state relative-caret-position="2040">
++          <caret line="146" column="43" selection-start-line="146" selection-start-column="43" selection-end-line="146" selection-end-column="43" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/peoplequesiton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/routine/a.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="363">
+-          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
++        <state relative-caret-position="120">
++          <caret line="8" column="18" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
++          <folding>
++            <element signature="e#193#194#0" expanded="true" />
++            <element signature="e#233#234#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/p">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/solr/solr.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="435">
+-          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
++        <state relative-caret-position="1590">
++          <caret line="120" column="52" selection-start-line="120" selection-start-column="52" selection-end-line="120" selection-end-column="52" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/Display.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/autocomplete/JTextAreaExample.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="190">
+-          <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
++        <state relative-caret-position="165">
++          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/peoplequesiton.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/button/untoggle.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="675">
+-          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
++        <state relative-caret-position="1545">
++          <caret line="111" column="59" selection-start-line="111" selection-start-column="59" selection-end-line="111" selection-end-column="59" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/peoplequesiton.java">
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/JTextField.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="492">
+-          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
++        <state relative-caret-position="198">
++          <caret line="210" column="11" selection-start-line="210" selection-start-column="11" selection-end-line="210" selection-end-column="11" />
++          <folding>
++            <element signature="e#7494#7495#0" expanded="true" />
++            <element signature="e#7535#7536#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/peoplequesiton.java">
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/awt/TextArea.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="492">
+-          <caret line="66" column="157" selection-start-line="66" selection-start-column="157" selection-end-line="66" selection-end-column="157" />
++        <state relative-caret-position="198">
++          <caret line="194" column="11" selection-start-line="194" selection-start-column="11" selection-end-line="194" selection-end-column="11" />
++          <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java">
++    <entry file="jar://$PROJECT_DIR$/related jar/datepicker4j-0.0.5.jar!/io/loli/datepicker/DatePicker.class">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="150">
+-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
++        <state relative-caret-position="237">
++          <caret line="107" column="16" selection-start-line="107" selection-start-column="16" selection-end-line="107" selection-end-column="16" />
++          <folding>
++            <element signature="e#3307#3308#0" expanded="true" />
++            <element signature="e#3354#3355#0" expanded="true" />
++            <element signature="e#3424#3425#0" expanded="true" />
++            <element signature="e#3469#3470#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/cassandra.cql">
++    <entry file="jar://$PROJECT_DIR$/related jar/datepicker4j-0.0.5.jar!/io/loli/datepicker/TimePicker.class">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="24">
+-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+-        </state>
+-      </provider>
+-    </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java">
+-      <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-4384">
+-          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
++        <state relative-caret-position="195">
++          <caret line="26" column="28" selection-start-line="26" selection-start-column="28" selection-end-line="26" selection-end-column="28" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java">
++    <entry file="jar://$USER_HOME$/.ideaLibSources/datepicker4j-0.0.5-sources.jar!/io/loli/datepicker/DatePicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="255">
+-          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+-          <folding />
++        <state relative-caret-position="0">
++          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
++          <folding>
++            <element signature="imports" expanded="false" />
++            <element signature="e#599#600#0" expanded="false" />
++            <element signature="e#642#643#0" expanded="false" />
++            <element signature="e#1882#1883#0" expanded="false" />
++            <element signature="e#1938#1939#0" expanded="false" />
++            <element signature="e#2005#2006#0" expanded="false" />
++            <element signature="e#2056#2057#0" expanded="false" />
++            <element signature="e#3259#3260#0" expanded="false" />
++            <element signature="e#3298#3299#0" expanded="false" />
++            <element signature="e#4252#4253#0" expanded="false" />
++            <element signature="e#4291#4292#0" expanded="false" />
++            <element signature="e#4573#4574#0" expanded="false" />
++            <element signature="e#4618#4619#0" expanded="false" />
++            <element signature="e#4819#4820#0" expanded="false" />
++            <element signature="e#4862#4863#0" expanded="false" />
++            <element signature="e#5710#5711#0" expanded="false" />
++            <element signature="e#5739#5740#0" expanded="false" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties">
++    <entry file="jar://$USER_HOME$/.ideaLibSources/datepicker4j-0.0.5-sources.jar!/io/loli/datepicker/TimePicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+         <state relative-caret-position="150">
+-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
++          <caret line="17" column="0" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
++    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="10305">
+-          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+-          <folding />
++        <state relative-caret-position="285">
++          <caret line="363" column="23" selection-start-line="363" selection-start-column="23" selection-end-line="363" selection-end-column="23" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/pom.xml">
++    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/javax/swing/JTextArea.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="615">
+-          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+-          <folding />
++        <state relative-caret-position="244">
++          <caret line="138" column="4" selection-start-line="138" selection-start-column="4" selection-end-line="138" selection-end-column="4" />
++          <folding>
++            <element signature="e#4796#4797#0" expanded="true" />
++            <element signature="e#4834#4835#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/BasicDateFilter.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="135">
+-          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
++        <state relative-caret-position="60">
++          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateFilter.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="105">
+-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
++        <state relative-caret-position="60">
++          <caret line="4" column="10" selection-start-line="4" selection-start-column="10" selection-end-line="4" selection-end-column="10" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/deletediary.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DatePanel.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="75">
+-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
++        <state relative-caret-position="282">
++          <caret line="37" column="56" selection-start-line="37" selection-start-column="56" selection-end-line="37" selection-end-column="56" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateTimePanel.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="521">
+-          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
++        <state relative-caret-position="60">
++          <caret line="4" column="13" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DateTimePicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="-1680">
+-          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+-          <folding />
++        <state relative-caret-position="-12">
++          <caret line="25" column="5" selection-start-line="25" selection-start-column="5" selection-end-line="25" selection-end-column="5" />
++          <folding>
++            <element signature="imports" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/TimePanel.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="230">
+-          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
++        <state relative-caret-position="1110">
++          <caret line="87" column="35" selection-start-line="87" selection-start-column="35" selection-end-line="87" selection-end-column="35" />
+           <folding />
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/Display.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/TimePicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="585">
+-          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+-          <folding />
++        <state relative-caret-position="60">
++          <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
++          <folding>
++            <element signature="e#896#1589#0" expanded="true" />
++            <element signature="e#1588#1589#0" expanded="true" />
++            <element signature="e#2285#2286#0" expanded="true" />
++            <element signature="e#2330#2331#0" expanded="true" />
++            <element signature="e#2521#2522#0" expanded="true" />
++            <element signature="e#2564#2565#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/AbstractPicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="375">
+-          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+-          <folding />
++        <state relative-caret-position="510">
++          <caret line="36" column="13" selection-start-line="36" selection-start-column="13" selection-end-line="36" selection-end-column="13" />
++          <folding>
++            <element signature="e#371#372#0" expanded="true" />
++            <element signature="e#400#401#0" expanded="true" />
++            <element signature="e#433#434#0" expanded="true" />
++            <element signature="e#462#463#0" expanded="true" />
++            <element signature="e#493#494#0" expanded="true" />
++            <element signature="e#521#522#0" expanded="true" />
++            <element signature="e#562#563#0" expanded="true" />
++            <element signature="e#596#597#0" expanded="true" />
++            <element signature="e#640#641#0" expanded="true" />
++            <element signature="e#676#677#0" expanded="true" />
++            <element signature="e#711#712#0" expanded="true" />
++            <element signature="e#739#740#0" expanded="true" />
++            <element signature="e#784#785#0" expanded="true" />
++            <element signature="e#818#819#0" expanded="true" />
++            <element signature="e#866#867#0" expanded="true" />
++            <element signature="e#902#903#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/DatePicker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="366">
+-          <caret line="1218" column="0" selection-start-line="1218" selection-start-column="0" selection-end-line="1231" selection-end-column="21" />
+-          <folding />
++        <state relative-caret-position="-2682">
++          <caret line="9" column="37" selection-start-line="9" selection-start-column="37" selection-end-line="9" selection-end-column="37" />
++          <folding>
++            <element signature="e#1139#1833#0" expanded="true" />
++            <element signature="e#1832#1833#0" expanded="true" />
++            <element signature="e#1882#1883#0" expanded="true" />
++            <element signature="e#1938#1939#0" expanded="true" />
++            <element signature="e#2005#2006#0" expanded="true" />
++            <element signature="e#2056#2057#0" expanded="true" />
++            <element signature="e#3258#3259#0" expanded="true" />
++            <element signature="e#3297#3298#0" expanded="true" />
++            <element signature="e#4264#4265#0" expanded="true" />
++            <element signature="e#4303#4304#0" expanded="true" />
++            <element signature="e#4584#4585#0" expanded="true" />
++            <element signature="e#4629#4630#0" expanded="true" />
++            <element signature="e#4829#4830#0" expanded="true" />
++            <element signature="e#4872#4873#0" expanded="true" />
++          </folding>
+         </state>
+       </provider>
+     </entry>
+-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
++    <entry file="file://$PROJECT_DIR$/src/loli/datepicker/Picker.java">
+       <provider selected="true" editor-type-id="text-editor">
+-        <state relative-caret-position="90">
+-          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
++        <state relative-caret-position="240">
++          <caret line="17" column="24" selection-start-line="17" selection-start-column="24" selection-end-line="17" selection-end-column="24" />
+           <folding />
+         </state>
+       </provider>
+\ No newline at end of file
+Index: src/zeng/siyuan/C1comehere/l.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/C1comehere/l.properties	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/C1comehere/l.properties	(revision )
+@@ -1,9 +1,10 @@
+-#Fri Nov 18 19:27:20 PST 2016
++#Sat Nov 19 09:53:10 PST 2016
+ 9=https\://video.search.yahoo.com/yhs/search;_ylt\=A2KIo.AWKyNYQScAE3QsnIlQ;_ylu\=X3oDMTBncGdyMzQ0BHNlYwNzZWFyY2gEdnRpZAM-;_ylc\=X1MDMTM1MTE5NTY5MgRfcgMyBGJjawNkZzg1Njg5YnQzaWJtJTI2YiUzRDMlMjZzJTNEdGIEZnIDeWhzLW1vemlsbGEtMDAyBGdwcmlkA0FqaTFJM1NiUmJxRnhyODZLOWhrckEEbXRlc3RpZANudWxsBG5fcnNsdAM2MARuX3N1Z2cDNQRvcmlnaW4DdmlkZW8uc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAwRxc3RybAMyMwRxdWVyeQNnZXQgYSBsaXR0bGUgYml0IGNsb3NlcgR0X3N0bXADMTQ3ODY5OTgzMgR2dGVzdGlkA251bGw-?gprid\=Aji1I3SbRbqFxr86K9hkrA&pvid\=0j6p3zYzLjLYIKZCV9HJdgGoNjcuMQAAAACgNmWE&p\=get+a+little+bit+closer&ei\=UTF-8&fr2\=p%3As%2Cv%3Av%2Cm%3Asa&fr\=yhs-mozilla-002&hsimp\=yhs-002&hspart\=mozilla\#id\=2&vid\=0687989c218bd965f2cdc8c432b5e53c&action\=view
+ 8=http\://www.cmt.com/videos/katie-armiger/603382/best-song-ever.jhtml
+ 7=http\://video.disney.com/watch/let-it-go-in-studio-frozen-behind-the-scenes-4f5b5afb99b0c7aa33ea06fc
+ 6=https\://www.vidio.com/watch/506887-we-don-t-have-to-dance-andy-black
+ 5=https\://www.vidio.com/watch/397037-one-direction-what-makes-you-beautiful-official-video
++13=http\://www.vevo.com/watch/playlist/654a0a37-b079-45cc-b064-f5f084795c01?index\=0
+ 4=https\://www.vidio.com/watch/64744-avicii-wake-me-up-tifanny-alvord-cover
+ 12=https\://video.search.yahoo.com/yhs/search;_ylt\=A2KLqIW_wy9YoTcAFi0snIlQ;_ylu\=X3oDMTBncGdyMzQ0BHNlYwNzZWFyY2gEdnRpZAM-;_ylc\=X1MDMTM1MTE5NTY5MgRfcgMyBGJjawNkZzg1Njg5YnQzaWJtJTI2YiUzRDMlMjZzJTNEdGIEZnIDeWhzLW1vemlsbGEtMDAyBGdwcmlkAzJ5dW5OS0RSU0hpWjBMVTdEM08wUkEEbXRlc3RpZANudWxsBG5fcnNsdAM2MARuX3N1Z2cDMTAEb3JpZ2luA3ZpZGVvLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMEcXN0cmwDOQRxdWVyeQN3YWthIHdha2EEdF9zdG1wAzE0Nzk1MjYwMTAEdnRlc3RpZANudWxs?gprid\=2yunNKDRSHiZ0LU7D3O0RA&pvid\=HiMtZTk4LjHYIKZCV9HJdgDKMTYxLgAAAADUojPL&p\=waka+waka&ei\=UTF-8&fr2\=p%3As%2Cv%3Av%2Cm%3Asa&fr\=yhs-mozilla-002&hsimp\=yhs-002&hspart\=mozilla\#id\=1&vid\=822cc91ae2f05bd39a0d928b3891660d&action\=view
+ 3=https\://www.vidio.com/watch/65501-ed-sheeran-photograph-madilyn-bailey-and-peter-hollens-cover
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/How2Forgert.java	(revision )
+@@ -10,7 +10,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -46,7 +46,7 @@
+         }
+     }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/TimePanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/TimePanel.java	(revision )
++++ src/loli/datepicker/TimePanel.java	(revision )
+@@ -0,0 +1,206 @@
++package loli.datepicker;
++
++import javax.swing.*;
++import java.awt.*;
++import java.awt.event.ActionEvent;
++import java.awt.event.ActionListener;
++import java.awt.event.MouseAdapter;
++import java.awt.event.MouseEvent;
++import java.util.Calendar;
++import java.util.Date;
++import java.util.Timer;
++import java.util.TimerTask;
++
++public class TimePanel extends JPanel {
++    private static final long serialVersionUID = 1L;
++
++    private NumPanel hourPanel = new NumPanel(24, null);
++
++    private NumPanel minPanel = new NumPanel(70, hourPanel);
++
++    private NumPanel secondPanel = new NumPanel(70, minPanel);
++
++    private JPanel controlPanel = new JPanel();
++
++    private loli.datepicker.Picker picker;
++
++    public TimePanel(final loli.datepicker.Picker picker) {
++        this.setLayout(new BoxLayout(this, BoxLayout.X_AXIS));
++        this.setVisible(true);
++        this.picker = picker;
++        add(hourPanel);
++
++        if (picker.getFormat().contains("m")) {
++            add(minPanel);
++        }
++        if (picker.getFormat().contains("s")) {
++            add(secondPanel);
++        }
++        JButton nowBtn = new JButton("Now");
++        JButton okBtn = new JButton("Ok");
++        controlPanel.setLayout(new GridLayout(2, 1));
++        controlPanel.add(nowBtn);
++        controlPanel.add(okBtn);
++
++        set(picker.getDate());
++
++        nowBtn.addActionListener(new ActionListener() {
++            public void actionPerformed(ActionEvent e) {
++                setNow();
++            }
++        });
++
++        okBtn.addActionListener(new ActionListener() {
++            public void actionPerformed(ActionEvent e) {
++                picker.set(getDate());
++                picker.close();
++            }
++        });
++
++        add(controlPanel);
++
++    }
++
++    public void setNow() {
++        set(new Date());
++    }
++
++    public void set(int h, int m, int s) {
++        hourPanel.set(h);
++        minPanel.set(m);
++        secondPanel.set(s);
++    }
++
++    public void set(Date date) {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(date);
++        int hour = cal.get(Calendar.HOUR_OF_DAY);
++        int min = cal.get(Calendar.MINUTE);
++        int second = cal.get(Calendar.SECOND);
++        set(hour, min, second);
++    }
++
++    public void set(int h, int m) {
++        hourPanel.set(h);
++        minPanel.set(m);
++    }
++
++    class NumPanel extends JPanel {
++        private static final long serialVersionUID = 1L;
++
++        private int num;
++        private JTextArea numField = new JTextArea();
++
++        private JButton upBtn = new JButton("+");
++        private JButton downBtn = new JButton("-");
++
++        private Timer timer;
++
++        private NumPanel parent;
++
++        public void add() {
++            int result = get() + 1;
++            if (result > num - 1) {
++                result = 0;
++                if (parent != null)
++                    parent.add();
++            }
++            set(result);
++        }
++
++        public void minus() {
++            int result = get() - 1;
++            if (result < 0) {
++                result = num - 1;
++                if (parent != null)
++                    parent.minus();
++            }
++            set(result);
++        }
++
++        public NumPanel(final int num, NumPanel parent) {
++            this.num = num;
++            this.parent = parent;
++            this.setLayout(new GridLayout(3, 1));
++            add(upBtn);
++            add(numField);
++            add(downBtn);
++
++            upBtn.addMouseListener(new MouseAdapter() {
++                @Override
++                public void mousePressed(MouseEvent e) {
++                    if (timer == null) {
++                        timer = new Timer();
++                    }
++                    add();
++                    timer.schedule(new TimerTask() {
++                        @Override
++                        public void run() {
++                            add();
++                        }
++                    }, 300, 50);
++                }
++
++                @Override
++                public void mouseReleased(MouseEvent e) {
++                    if (timer != null) {
++                        timer.cancel();
++                        timer = null;
++                    }
++                }
++            });
++            downBtn.addMouseListener(new MouseAdapter() {
++                public void mousePressed(MouseEvent e) {
++
++                    if (timer == null) {
++                        timer = new Timer();
++                    }
++                    minus();
++
++                    timer.schedule(new TimerTask() {
++                        @Override
++                        public void run() {
++                            minus();
++                        }
++                    }, 300, 50);
++                }
++
++                @Override
++                public void mouseReleased(MouseEvent e) {
++                    if (timer != null) {
++                        timer.cancel();
++                        timer = null;
++                    }
++                }
++            });
++
++        }
++
++        public void set(int i) {
++            numField.setText(String.valueOf(i));
++            picker.set(getDate());
++        }
++
++        public int get() {
++            int nowNum = 0;
++            try {
++                nowNum = Integer.parseInt(numField.getText());
++            } catch (Exception e) {
++            }
++            return nowNum;
++        }
++    }
++
++    public Date getDate() {
++        int hour = hourPanel.get();
++        int min = minPanel.get();
++        int second = secondPanel.get();
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(picker.getDate());
++        cal.set(Calendar.HOUR_OF_DAY, hour);
++        cal.set(Calendar.MINUTE, min);
++        cal.set(Calendar.SECOND, second);
++        return cal.getTime();
++    }
++
++}
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java	(revision )
+@@ -12,7 +12,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -47,7 +47,7 @@
+             }
+         }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/DateFilter.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/DateFilter.java	(revision )
++++ src/loli/datepicker/DateFilter.java	(revision )
+@@ -0,0 +1,14 @@
++package loli.datepicker;
++
++import java.util.Date;
++
++interface DateFilter {
++
++    /**
++     * Make date btn unclickable if returns true
++     * 
++     * @param date date to check
++     * @return false if this date btn is clickable
++     */
++    boolean filter(Date date);
++}
+Index: src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/gooogle.java	(revision )
+@@ -42,9 +42,9 @@
+         inntuitive += "stocks:"; inntuitive += "\n"; inntuitive += "Show American stockmarket information for a given ticker symbol"; inntuitive += "\n\n";
+         textArea.setText(inntuitive);
+     }
+-    public static JTextArea textArea;
++    public static JTextField textArea;
+ 
+-    public gooogle(JTextArea textArea) {
++    public gooogle(JTextField textArea) {
+         this.textArea = textArea;
+     }
+ 
+Index: src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findtheshortcut.java	(revision )
+@@ -61,9 +61,9 @@
+ 
+     public static String predefined = "shortcut keyboard";
+ 
+-    public static JTextArea textArea;
++    public static JTextField textArea;
+ 
+-    public findtheshortcut(JTextArea textArea) {
++    public findtheshortcut(JTextField textArea) {
+         this.textArea = textArea;
+     }
+ 
+Index: src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java	(revision )
+@@ -10,7 +10,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -62,7 +62,7 @@
+     }
+ 
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/AbstractPicker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/AbstractPicker.java	(revision )
++++ src/loli/datepicker/AbstractPicker.java	(revision )
+@@ -0,0 +1,72 @@
++package loli.datepicker;
++
++import javax.swing.*;
++import java.text.SimpleDateFormat;
++import java.util.Date;
++
++public abstract class AbstractPicker implements loli.datepicker.Picker {
++
++    protected String format;
++
++    protected Popup popup;
++
++    protected JTextArea field;
++
++    protected loli.datepicker.DateFilter filter;
++
++    public loli.datepicker.DateFilter getFilter() {
++        return filter;
++    }
++
++    public String getFormat() {
++        return format;
++    }
++
++    public Popup getPopup() {
++        return popup;
++    }
++
++    public void setPopup(Popup popup) {
++        this.popup = popup;
++    }
++
++    public void setFormat(String format) {
++        this.format = format;
++    }
++
++    public JTextArea getField() {
++        return field;
++    }
++
++    public void setField(JTextArea field) {
++        this.field = field;
++    }
++
++    public void setFilter(DateFilter filter) {
++        this.filter = filter;
++    }
++
++    public void close() {
++        if (getPopup() != null) {
++            getPopup().hide();
++            setPopup(null);
++            return;
++        }
++    }
++
++    /**
++     * Convert text of textfield to Date
++     * 
++     * @return Date shown at textfield or new Date if failed to parse
++     */
++    public Date getDate() {
++        Date date = new Date();
++        try {
++            String dateText = field.getText();
++            SimpleDateFormat fmt = new SimpleDateFormat(format);
++            date = fmt.parse(dateText);
++        } catch (Exception e) {
++        }
++        return date;
++    }
++}
+Index: src/zeng/siyuan/howt2forgert/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/howt2forgert/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/howt2forgert/How2Forgert.java	(revision )
+@@ -17,7 +17,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static Set<Ebbinghaus> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -50,7 +50,7 @@
+             }
+         }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/Picker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/Picker.java	(revision )
++++ src/loli/datepicker/Picker.java	(revision )
+@@ -0,0 +1,23 @@
++package loli.datepicker;
++
++import javax.swing.*;
++import java.util.Date;
++
++public interface Picker {
++
++    Date getDate();
++
++    JTextArea getField();
++
++    Popup getPopup();
++
++    void setPopup(Popup popup);
++
++    DateFilter getDateFilter();
++
++    void set(Date date);
++    
++    void close();
++    
++    String getFormat();
++}
+Index: src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/betteresearchennebetterthangoogleandfindweehtehrething/findessentioal/findthebestexample.java	(revision )
+@@ -292,9 +292,9 @@
+         inntuitive += "(optional everywhere)First step 1:c1cometome:this is what yourwelcome want:";
+         textArea.setText(inntuitive);
+     }
+-    public static JTextArea textArea;
++    public static JTextField textArea;
+ 
+-    public findthebestexample(JTextArea textArea) {
++    public findthebestexample(JTextField textArea) {
+         this.textArea = textArea;
+     }
+ 
+Index: target/classes/zeng/siyuan/C1comehere/l.properties
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- target/classes/zeng/siyuan/C1comehere/l.properties	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ target/classes/zeng/siyuan/C1comehere/l.properties	(revision )
+@@ -1,9 +1,10 @@
+-#Fri Nov 18 19:27:20 PST 2016
++#Sat Nov 19 09:53:10 PST 2016
+ 9=https\://video.search.yahoo.com/yhs/search;_ylt\=A2KIo.AWKyNYQScAE3QsnIlQ;_ylu\=X3oDMTBncGdyMzQ0BHNlYwNzZWFyY2gEdnRpZAM-;_ylc\=X1MDMTM1MTE5NTY5MgRfcgMyBGJjawNkZzg1Njg5YnQzaWJtJTI2YiUzRDMlMjZzJTNEdGIEZnIDeWhzLW1vemlsbGEtMDAyBGdwcmlkA0FqaTFJM1NiUmJxRnhyODZLOWhrckEEbXRlc3RpZANudWxsBG5fcnNsdAM2MARuX3N1Z2cDNQRvcmlnaW4DdmlkZW8uc2VhcmNoLnlhaG9vLmNvbQRwb3MDMARwcXN0cgMEcHFzdHJsAwRxc3RybAMyMwRxdWVyeQNnZXQgYSBsaXR0bGUgYml0IGNsb3NlcgR0X3N0bXADMTQ3ODY5OTgzMgR2dGVzdGlkA251bGw-?gprid\=Aji1I3SbRbqFxr86K9hkrA&pvid\=0j6p3zYzLjLYIKZCV9HJdgGoNjcuMQAAAACgNmWE&p\=get+a+little+bit+closer&ei\=UTF-8&fr2\=p%3As%2Cv%3Av%2Cm%3Asa&fr\=yhs-mozilla-002&hsimp\=yhs-002&hspart\=mozilla\#id\=2&vid\=0687989c218bd965f2cdc8c432b5e53c&action\=view
+ 8=http\://www.cmt.com/videos/katie-armiger/603382/best-song-ever.jhtml
+ 7=http\://video.disney.com/watch/let-it-go-in-studio-frozen-behind-the-scenes-4f5b5afb99b0c7aa33ea06fc
+ 6=https\://www.vidio.com/watch/506887-we-don-t-have-to-dance-andy-black
+ 5=https\://www.vidio.com/watch/397037-one-direction-what-makes-you-beautiful-official-video
++13=http\://www.vevo.com/watch/playlist/654a0a37-b079-45cc-b064-f5f084795c01?index\=0
+ 4=https\://www.vidio.com/watch/64744-avicii-wake-me-up-tifanny-alvord-cover
+ 12=https\://video.search.yahoo.com/yhs/search;_ylt\=A2KLqIW_wy9YoTcAFi0snIlQ;_ylu\=X3oDMTBncGdyMzQ0BHNlYwNzZWFyY2gEdnRpZAM-;_ylc\=X1MDMTM1MTE5NTY5MgRfcgMyBGJjawNkZzg1Njg5YnQzaWJtJTI2YiUzRDMlMjZzJTNEdGIEZnIDeWhzLW1vemlsbGEtMDAyBGdwcmlkAzJ5dW5OS0RSU0hpWjBMVTdEM08wUkEEbXRlc3RpZANudWxsBG5fcnNsdAM2MARuX3N1Z2cDMTAEb3JpZ2luA3ZpZGVvLnNlYXJjaC55YWhvby5jb20EcG9zAzAEcHFzdHIDBHBxc3RybAMEcXN0cmwDOQRxdWVyeQN3YWthIHdha2EEdF9zdG1wAzE0Nzk1MjYwMTAEdnRlc3RpZANudWxs?gprid\=2yunNKDRSHiZ0LU7D3O0RA&pvid\=HiMtZTk4LjHYIKZCV9HJdgDKMTYxLgAAAADUojPL&p\=waka+waka&ei\=UTF-8&fr2\=p%3As%2Cv%3Av%2Cm%3Asa&fr\=yhs-mozilla-002&hsimp\=yhs-002&hspart\=mozilla\#id\=1&vid\=822cc91ae2f05bd39a0d928b3891660d&action\=view
+ 3=https\://www.vidio.com/watch/65501-ed-sheeran-photograph-madilyn-bailey-and-peter-hollens-cover
+Index: src/zeng/siyuan/reuseutil/r.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/reuseutil/r.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/reuseutil/r.java	(revision )
+@@ -144,7 +144,7 @@
+         }
+     }
+ 
+-    public void waitUntilNotEmpty(JTextArea textArea) {
++    public void waitUntilNotEmpty(JTextField textArea) {
+         while (!textArea.getText().trim().isEmpty()) {
+             try {
+                 Thread.sleep(10000);
+Index: src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java	(revision )
+@@ -18,7 +18,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -161,6 +161,22 @@
+                     e = new person_question(stringBuffer1.toString(), "j", r.d(textStr[0]));
+                 }
+ 
++                if (textStr[1].equalsIgnoreCase("dd")){
++                    StringBuffer stringBuffer1 = new StringBuffer();
++                    for (int i = 2; i < textStr.length; i++) {
++                        stringBuffer1.append(textStr[i]);
++                    }
++                    e = new person_question(stringBuffer1.toString(), "dd", new Date());
++                }
++
++                if (textStr[1].equalsIgnoreCase("d")){
++                    StringBuffer stringBuffer1 = new StringBuffer();
++                    for (int i = 2; i < textStr.length; i++) {
++                        stringBuffer1.append(textStr[i]);
++                    }
++                    e = new person_question(stringBuffer1.toString(), "d", new Date());
++                }
++
+                 else {
+                     StringBuffer stringBuffer1 = new StringBuffer();
+                     for (int i = 1; i < textStr.length; i++) {
+@@ -186,7 +202,7 @@
+         }
+     }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
+Index: src/loli/datepicker/DateTimePicker.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/DateTimePicker.java	(revision )
++++ src/loli/datepicker/DateTimePicker.java	(revision )
+@@ -0,0 +1,72 @@
++package loli.datepicker;
++
++import loli.datepicker.*;
++import loli.datepicker.DateFilter;
++import loli.datepicker.DateTimePanel;
++
++import java.awt.event.MouseAdapter;
++import java.awt.event.MouseEvent;
++import java.text.SimpleDateFormat;
++import java.util.Calendar;
++import java.util.Date;
++
++import javax.swing.JTextArea;
++import javax.swing.PopupFactory;
++
++public class DateTimePicker extends loli.datepicker.AbstractPicker {
++    {
++        format = "yyyy-MM-dd HH:mm:ss";
++    }
++
++    public DateTimePicker(final JTextArea field, String format,
++            loli.datepicker.DateFilter filter) {
++        this.field = field;
++        if (format != null)
++            this.format = format;
++        if (filter == null) {
++            filter = new BasicDateFilter();
++        }
++        this.filter = filter;
++
++        this.field.addMouseListener(new MouseAdapter() {
++            @Override
++            public void mouseClicked(MouseEvent event) {
++                if (popup != null) {
++                    popup.hide();
++                    popup = null;
++                    return;
++                }
++                loli.datepicker.DateTimePanel timePanel = new DateTimePanel(DateTimePicker.this);
++                PopupFactory factory = PopupFactory.getSharedInstance();
++                popup = factory.getPopup(field, timePanel, (int) field
++                        .getLocationOnScreen().getX(), (int) field
++                        .getLocationOnScreen().getY() + field.getHeight());
++                popup.show();
++            }
++        });
++    }
++
++    public loli.datepicker.DateFilter getDateFilter() {
++        return new BasicDateFilter();
++    }
++
++    public void set(Date date) {
++        Calendar cal = Calendar.getInstance();
++        cal.setTime(this.getDate());
++
++        Calendar cal2 = Calendar.getInstance();
++        cal2.setTime(date);
++
++        cal.set(Calendar.YEAR, cal2.get(Calendar.YEAR));
++        cal.set(Calendar.MONTH, cal2.get(Calendar.MONTH));
++        cal.set(Calendar.DAY_OF_MONTH, cal2.get(Calendar.DAY_OF_MONTH));
++
++        cal.set(Calendar.HOUR_OF_DAY, cal2.get(Calendar.HOUR_OF_DAY));
++        cal.set(Calendar.MINUTE, cal2.get(Calendar.MINUTE));
++        cal.set(Calendar.SECOND, cal2.get(Calendar.SECOND));
++
++        SimpleDateFormat fmt = new SimpleDateFormat(format);
++        String result = fmt.format(cal.getTime());
++        getField().setText(result);
++    }
++}
+Index: src/zeng/siyuan/C1comehere/Search.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/C1comehere/Search.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/C1comehere/Search.java	(revision )
+@@ -12,7 +12,7 @@
+ public class Search {
+     public static final String SPACE = " ";
+     public static final String EMPTY_STRING = "";
+-    private static JTextArea textArea;
++    private static JTextField textArea;
+     public String searchEngine;
+     public String spaceHolder;
+     public String searchName;
+@@ -36,7 +36,7 @@
+         this.spaceHolder = spaceHolder;
+     }
+ 
+-    public Search(JTextArea textArea, String searchName, String key, String searchEngine, String spaceHolder, String textStr) {
++    public Search(JTextField textArea, String searchName, String key, String searchEngine, String spaceHolder, String textStr) {
+         this.searchName = searchName;
+         this.key = key;
+         this.searchEngine = searchEngine;
+Index: src/zeng/siyuan/C1comehere/C1comehere.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/C1comehere/C1comehere.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/C1comehere/C1comehere.java	(revision )
+@@ -1,5 +1,6 @@
+ package zeng.siyuan.C1comehere;
+ 
++import io.loli.datepicker.DatePicker;
+ import zeng.siyuan.autocomplete.JTextAreaExample;
+ import zeng.siyuan.betteresearchennebetterthangoogleandfindweehtehrething.findessentioal.findthebestexample;
+ import zeng.siyuan.betteresearchennebetterthangoogleandfindweehtehrething.findessentioal.findtheshortcut;
+@@ -25,7 +26,7 @@
+ public class C1comehere implements Serializable {
+     public transient JFrame lastFrame = null;
+     public static JPanel controlPanel;
+-    public static transient JTextArea textArea;
++    public static transient JTextField textArea;
+     public static JFrame frame;
+     public How2Forgert how2Forgert;
+     public zeng.siyuan.onceaday.How2Forgert dhow2Forgert;
+@@ -357,8 +358,10 @@
+         lastFrame = frame;
+ 
+ 
+-        textArea = new JTextArea(8, 33);
+-        textArea.setLineWrap(true);
++        textArea = new JTextField();
++        textArea.setColumns(33);
++        DatePicker.datePicker(textArea);
++        DatePicker.timePicker(textArea);
+         textArea.setFont(font);
+ 
+ 
+Index: src/loli/datepicker/DateTimePanel.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/loli/datepicker/DateTimePanel.java	(revision )
++++ src/loli/datepicker/DateTimePanel.java	(revision )
+@@ -0,0 +1,20 @@
++package loli.datepicker;
++
++import javax.swing.*;
++
++public class DateTimePanel extends JPanel {
++    private static final long serialVersionUID = 1L;
++
++    private loli.datepicker.DatePanel datePanel;
++    private loli.datepicker.TimePanel timePanel;
++
++    public DateTimePanel(loli.datepicker.Picker picker) {
++
++        setLayout(new BoxLayout(this, BoxLayout.Y_AXIS));
++        datePanel = new DatePanel(picker);
++        timePanel = new TimePanel(picker);
++        add(datePanel);
++        add(timePanel);
++    }
++
++}
+Index: src/zeng/siyuan/onceaday/How2Forgert.java
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- src/zeng/siyuan/onceaday/How2Forgert.java	(revision 107a01becfcc4996eb53bdc61979ad21ef7b5cdb)
++++ src/zeng/siyuan/onceaday/How2Forgert.java	(revision )
+@@ -12,7 +12,7 @@
+ //Created by Real
+ public class How2Forgert implements Serializable {
+     public transient C1comehere c1comehere;
+-    public transient JTextArea textArea;
++    public transient JTextField textArea;
+     public transient static ArrayList<person_question> ebbinghauses;
+     public transient ArrayList<Task> tasks = new ArrayList<Task>();
+     public transient Task currentTask = new Task();
+@@ -44,7 +44,7 @@
+             }
+         }
+ 
+-    public How2Forgert(C1comehere c1comehere, JTextArea textArea, JFrame frame) {
++    public How2Forgert(C1comehere c1comehere, JTextField textArea, JFrame frame) {
+         this.c1comehere = c1comehere;
+         this.textArea = textArea;
+         this.frame = frame;
