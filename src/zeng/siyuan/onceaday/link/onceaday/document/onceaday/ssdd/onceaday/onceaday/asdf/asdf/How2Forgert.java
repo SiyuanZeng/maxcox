@@ -151,7 +151,7 @@ public class How2Forgert implements Serializable {
                 for (int i = 1; i < textStr.length; i++) {
                     stringBuffer1.append(textStr[i]);
                 }
-                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.d(textStr[0]));
+                e = new person_question(stringBuffer1.toString(), "p", r.d(textStr[0]));
 
 
 
@@ -160,7 +160,7 @@ public class How2Forgert implements Serializable {
                 for (int i = 1; i < textStr.length; i++) {
                     stringBuffer1.append(textStr[i]);
                 }
-                e = new person_question(stringBuffer1.toString(), "Person_Quesiton", r.strifasld(textStr[0]));
+                e = new person_question(stringBuffer1.toString(), "p", r.strifasld(textStr[0]));
             }
 
 

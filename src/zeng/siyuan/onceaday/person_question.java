@@ -12,7 +12,7 @@ import java.util.*;
  */
 
 
-@Table(keyspace = "keyspace1", name = "person_question_produ",
+@Table(keyspace = "keyspace1", name = "p",
         readConsistency = "QUORUM",
         writeConsistency = "QUORUM",
         caseSensitiveKeyspace = false,
@@ -105,12 +105,16 @@ public class person_question implements Serializable{
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
 
         if (timeOfDay >= 0 && timeOfDay < 12) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Morning C1 world, ");
         } else if (timeOfDay >= 12 && timeOfDay < 16) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Afternoon C1 world, ");
         } else if (timeOfDay >= 16 && timeOfDay < 21) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Evening C1 world, ");
         } else if (timeOfDay >= 21 && timeOfDay < 24) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Night C1 world, ");
         }
 
@@ -120,34 +124,18 @@ public class person_question implements Serializable{
             stringBuilder.append(" am");
             stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append(text);
+            stringBuilder.append(System.getProperty("line.separator"));
         } else if (timeOfDay >= 12 && timeOfDay < 24) {
             stringBuilder.append(" pm");
             stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append(text);
+            stringBuilder.append(System.getProperty("line.separator"));
         }
 
         this.text = stringBuilder.toString();
 
-        final long ONE_MINUTE_IN_MILLIS = 60000;//millisecs
-
-        long curTimeInMs = new Date().getTime();
-        first = new Task(new Date(curTimeInMs + (20 * ONE_MINUTE_IN_MILLIS)), javauid);
-        second = new Task(new Date(curTimeInMs + (60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        third = new Task(new Date(curTimeInMs + (540 * ONE_MINUTE_IN_MILLIS)), javauid);
-        fourth = new Task(new Date(curTimeInMs + (24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        fifth = new Task(new Date(curTimeInMs + (2 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        sixth = new Task(new Date(curTimeInMs + (6 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-        seventh = new Task(new Date(curTimeInMs + (31 * 24 * 60 * ONE_MINUTE_IN_MILLIS)), javauid);
-
-
+        first = new Task(date, javauid);
         tasks.add(first);
-        tasks.add(second);
-        tasks.add(third);
-        tasks.add(fourth);
-        tasks.add(fifth);
-        tasks.add(sixth);
-        tasks.add(seventh);
-
 
     }
 

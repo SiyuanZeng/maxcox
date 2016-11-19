@@ -38,7 +38,7 @@ public class How2Forgert implements Serializable {
                     stringBuffer.append("\n");
                     stringBuffer.append(line);
                     if (line.trim().equals("")) {
-                        person_question e = new person_question(stringBuffer.toString(),"Person_Quesiton", getdatelastday());
+                        person_question e = new person_question(stringBuffer.toString(),"p", getdatelastday());
                         m.store(e);
                         stringBuffer=new StringBuffer();
                     } else {

@@ -13,7 +13,7 @@ import java.util.*;
  * Created by SiyuanZeng's on 9/1/2016.
  */
 public class peoplequesiton {
-    public static final String PERSON_QUESTION1 = "person_question_produ";
+    public static final String PERSON_QUESTION1 = "p";
     public static final String LINK= "link";
     Cluster cluster;
     static Session session;
