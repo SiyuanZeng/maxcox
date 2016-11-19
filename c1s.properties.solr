@@ -88,8 +88,8 @@
 64,sc2 validation NGSP impacts to LIMO,https://confluence.walmart.com/display/~vn0xrjh/Copy+of+NGSP+impacts+to+LIMO
 65,git version command,git --version
 66,solr start folder,C:\Developer\solr-6.2.0\bin
-67,social ossn,https://www.opensource-socialnetwork.org/download
-68,Cassandra Solr Spark Love Triangle Using DataStax Enterprise,http://www.slideshare.net/patrickmcfadin/a-cassandra-solr-spark-love-triangle-using-datastax-enterprise-50051760
+67,Cassandra Solr Spark Love Triangle Using DataStax Enterprise,http://www.slideshare.net/patrickmcfadin/a-cassandra-solr-spark-love-triangle-using-datastax-enterprise-50051760
+68,social ossn,https://www.opensource-socialnetwork.org/download
 69,export import data in cassandra table,http://techie-matter.blogspot.com/2014/02/exportimport-data-in-cassandra-table.html
 70,gitbash,c:/developer/git/bin/sh.exe
 71,youtube,https://www.youtube.com/
@@ -139,69 +139,68 @@
 111,multi tabs,c:/developer/conemu/conemu64.exe
 112,sy,c:/users/siyuanzeng's/desktop/sy
 113,whistle,https://www.youtube.com/watch?v=NwL98zzdEXo
-114,social pep,https://www.peepso.com/addons/
-115,dont listen,https://www.facebook.com/autismclassroomnews/videos/622499521241099/
-116,friends season 5 episode 1 transcript,http://www.livesinabox.com/friends/season5/501arsr.htm
-117,Kafka demo beginner,https://www.youtube.com/watch?v=ArUHr3Czx-8
-118,dbpassword,password
-119,ABC,ABC
-120,Google search techniques,http://www.johntedesco.net/blog/2012/06/21/how-to-solve-impossible-problems-daniel-russells-awesome-google-search-techniques/
-121,sc1 bug 10     CDSCENT-2106
+114,dont listen,https://www.facebook.com/autismclassroomnews/videos/622499521241099/
+115,friends season 5 episode 1 transcript,http://www.livesinabox.com/friends/season5/501arsr.htm
+116,Kafka demo beginner,https://www.youtube.com/watch?v=ArUHr3Czx-8
+117,dbpassword,password
+118,ABC,ABC
+119,Google search techniques,http://www.johntedesco.net/blog/2012/06/21/how-to-solve-impossible-problems-daniel-russells-awesome-google-search-techniques/
+120,sc1 bug 10     CDSCENT-2106
 
 [Bug] I CAN NOT resubmit manage item(Baby Clothing),https://jira.walmart.com/browse/CDSCENT-2106
-122,sc1 bug 14     CDSCENT-2110
+121,sc1 bug 14     CDSCENT-2110
 
 [Bug] Non-existing value fields,https://jira.walmart.com/browse/CDSCENT-2110
-123,github,https://github.com/SiyuanZeng
-124,i love you my dear jinglin baby bunny queeen,1 2 3
-125,Google task,https://mail.google.com/tasks/canvas
-126,45+ Most Useful Java Libraries Java developer have to know must know,http://www.fromdev.com/2014/10/most-widely-used-java-libraries.html#comment-form
-127,idea,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
-128,kungfu,https://www.youtube.com/watch?v=9_oON2x8R3I&t=681s
-129,au1 bug 1     PGSISO-4084
+122,github,https://github.com/SiyuanZeng
+123,i love you my dear jinglin baby bunny queeen,1 2 3
+124,Google task,https://mail.google.com/tasks/canvas
+125,45+ Most Useful Java Libraries Java developer have to know must know,http://www.fromdev.com/2014/10/most-widely-used-java-libraries.html#comment-form
+126,idea,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
+127,kungfu,https://www.youtube.com/watch?v=9_oON2x8R3I&t=681s
+128,au1 bug 1     PGSISO-4084
 
 [Bug] TradeItemCreateService:Product not found for 04785539870398,https://jira.walmart.com/browse/PGSISO-4084
-130,mind source,http://mindsource.force.com/timesheet
-131,solr documents,C:\Developer\solr-6.2.0\example\exampledocs
-132,what path , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=8848972049964198283;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=2;src=postname
-133,sd,c:/windows/system32/shutdown.exe
-134,How do I replace text in Microsoft Word document using Apache POI?,https://kodejava.org/how-do-i-replace-text-in-microsoft-word-document-using-apache-poi/
-135,naruto,https://www.youtube.com/results?search_query=naruto+shippuden+episode+english+sub
-136,sc GeMC / SC Automation framework,https://confluence.walmart.com/pages/viewpage.action?pageId=74462451&focusedCommentId=76530854#comment-76530854
-137,sc1 item list,https://supplier.stg.walmart.com/items/setup/info
-138,tool and technologies what and why,https://confluence.walmart.com/display/PGMPMNMW/Tools+and+technologies+what+and+why
-139,dbuser,mkyong
-140,newboy,c:/users/siyuanzeng's/music/music/selection/newboy.wma
-141,cal,https://calendar.google.com/calendar/render?tab=mc&pli=1#main_7
-142,Mac OS X Unix Linux bash commands shorcuts makeuseof,https://cheat-sheets.s3.amazonaws.com/linux-commands-cheat-sheet-new.pdf
-143,friends51 video,https://www.vidio.com/watch/149925-friends-season-5-episode-1
-144,sc2 val Co Internal ,https://confluence.walmart.com/display/~vn0xrjh/Copy+of+Internal+Spec+LIMO
-145,sc1 bug 13     CDSCENT-2109
+129,mind source,http://mindsource.force.com/timesheet
+130,solr documents,C:\Developer\solr-6.2.0\example\exampledocs
+131,what path , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=8848972049964198283;onPublishedMenu=allposts;onClosedMenu=allposts;postNum=2;src=postname
+132,sd,c:/windows/system32/shutdown.exe
+133,How do I replace text in Microsoft Word document using Apache POI?,https://kodejava.org/how-do-i-replace-text-in-microsoft-word-document-using-apache-poi/
+134,naruto,https://www.youtube.com/results?search_query=naruto+shippuden+episode+english+sub
+135,sc GeMC / SC Automation framework,https://confluence.walmart.com/pages/viewpage.action?pageId=74462451&focusedCommentId=76530854#comment-76530854
+136,sc1 item list,https://supplier.stg.walmart.com/items/setup/info
+137,tool and technologies what and why,https://confluence.walmart.com/display/PGMPMNMW/Tools+and+technologies+what+and+why
+138,dbuser,mkyong
+139,newboy,c:/users/siyuanzeng's/music/music/selection/newboy.wma
+140,cal,https://calendar.google.com/calendar/render?tab=mc&pli=1#main_7
+141,Mac OS X Unix Linux bash commands shorcuts makeuseof,https://cheat-sheets.s3.amazonaws.com/linux-commands-cheat-sheet-new.pdf
+142,friends51 video,https://www.vidio.com/watch/149925-friends-season-5-episode-1
+143,sc2 val Co Internal ,https://confluence.walmart.com/display/~vn0xrjh/Copy+of+Internal+Spec+LIMO
+144,sc1 bug 13     CDSCENT-2109
 
 [Bug] Contains batteries or not?,https://jira.walmart.com/browse/CDSCENT-2109
-146,sc1 bug6     CDSCENT-2103
+145,sc1 bug6     CDSCENT-2103
 
 [Bug] I can put values other than in the dropdown,https://jira.walmart.com/browse/CDSCENT-2103
-147,sc1 profile,https://jira.walmart.com/secure/ViewProfile.jspa
-148,sc2 val to,https://confluence.walmart.com/display/CDCD/Validation+rules+to+implement
-149,listenonrepreat,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
-150,res,c:/users/siyuanzeng's/desktop/application/job hunting/resume/20160808/20160824/daniel zeng - resume .doc
-151,quora,https://www.quora.com/What-exactly-is-Apache-Spark-and-how-does-it-work
-152,Mac OS X Word Keyboard shortcuts in Word 2016 for Mac,https://support.office.com/en-us/article/Keyboard-shortcuts-in-Word-2016-for-Mac-3256d48a-7967-475d-be81-a6e3e1284b25
-153,45+ Most Useful Java Libraries java developers have to know must know,http://www.fromdev.com/2014/10/most-widely-used-java-libraries.html
-154,ted,http://www.ted.com/
-155,Intellij tooltips popup windows tool window,C:\Users\SiyuanZeng's\Documents\Note_Backup_June_4th\Intellij_May_28\Intellij\Tool Window.one
-156,gui unix pah,C:/Development_Base/17_GUI
-157,javaworld,http://www.javaworld.com/
-158,Intellij navigate Navigating Through the Source Code,C:\Users\SiyuanZeng's\Documents\Note_Backup_June_4th\Intellij_May_28\Intellij\Navigating Through the Source Code.one
-159,rec,c:/users/siyuanzeng's/desktop/application/thoughtrecorder.v2.jar
-160,sc1 bug5    CDSCENT-2100
+146,sc1 profile,https://jira.walmart.com/secure/ViewProfile.jspa
+147,sc2 val to,https://confluence.walmart.com/display/CDCD/Validation+rules+to+implement
+148,listenonrepreat,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
+149,res,c:/users/siyuanzeng's/desktop/application/job hunting/resume/20160808/20160824/daniel zeng - resume .doc
+150,quora,https://www.quora.com/What-exactly-is-Apache-Spark-and-how-does-it-work
+151,Mac OS X Word Keyboard shortcuts in Word 2016 for Mac,https://support.office.com/en-us/article/Keyboard-shortcuts-in-Word-2016-for-Mac-3256d48a-7967-475d-be81-a6e3e1284b25
+152,45+ Most Useful Java Libraries java developers have to know must know,http://www.fromdev.com/2014/10/most-widely-used-java-libraries.html
+153,ted,http://www.ted.com/
+154,Intellij tooltips popup windows tool window,C:\Users\SiyuanZeng's\Documents\Note_Backup_June_4th\Intellij_May_28\Intellij\Tool Window.one
+155,gui unix pah,C:/Development_Base/17_GUI
+156,javaworld,http://www.javaworld.com/
+157,Intellij navigate Navigating Through the Source Code,C:\Users\SiyuanZeng's\Documents\Note_Backup_June_4th\Intellij_May_28\Intellij\Navigating Through the Source Code.one
+158,rec,c:/users/siyuanzeng's/desktop/application/thoughtrecorder.v2.jar
+159,sc1 bug5    CDSCENT-2100
 
 [Bug] Expect warning like red background in validation error,https://jira.walmart.com/browse/CDSCENT-2100
-161,baidu,http://www.baidu.com/
-162,windows10,http://www.digitalcare.org/wp-content/uploads/2016/01/Windows-10-Shortcut-infographic.pdf
-163,gangnam style,https://listenonrepeat.com/?v=9bZkp7q19f0#PSY_-_GANGNAM_STYLE(%EA%B0%95%EB%82%A8%EC%8A%A4%ED%83%80%EC%9D%BC)_M%2FV
-164,solr start,C:\Developer\solr-6.2.0\bin
+160,baidu,http://www.baidu.com/
+161,windows10,http://www.digitalcare.org/wp-content/uploads/2016/01/Windows-10-Shortcut-infographic.pdf
+162,gangnam style,https://listenonrepeat.com/?v=9bZkp7q19f0#PSY_-_GANGNAM_STYLE(%EA%B0%95%EB%82%A8%EC%8A%A4%ED%83%80%EC%9D%BC)_M%2FV
+163,solr start,C:\Developer\solr-6.2.0\bin
 
 
 
@@ -233,121 +232,122 @@ http://localhost:8080/solrautocomplete/search.html
 
 csv
 C:\Developer\solr-6.2.0\example\exampledocs
-165,sc1 blocker     CDSCENT-2104
+164,sc1 blocker     CDSCENT-2104
 
 [Bug] [Blocker] I CAN NOT resubmit manage item,https://jira.walmart.com/browse/CDSCENT-2104
-166,zhen de ai ni,https://listenonrepeat.com/?v=tjCHafQIhFk#Beyond_%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0
-167,google voice,https://www.google.com/voice#inbox
-168,clover,C:\Program Files (x86)\Clover\3.1\clover.exe
-169,outlook,c:/program files (x86)/microsoft office/root/office16/outlook.exe
-170,textpad,c:/windows/system32/notepad.exe
-171,rest advanced,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTY40IcG584ynNqibMc1heIa
-172,Integration test for health and beauty category,https://gecgithub01.walmart.com/GeMC/sc_automation/pull/4
-173,sc1 bug8     CDSCENT-2104
+165,zhen de ai ni,https://listenonrepeat.com/?v=tjCHafQIhFk#Beyond_%E7%9C%9F%E7%9A%84%E7%88%B1%E4%BD%A0
+166,google voice,https://www.google.com/voice#inbox
+167,clover,C:\Program Files (x86)\Clover\3.1\clover.exe
+168,outlook,c:/program files (x86)/microsoft office/root/office16/outlook.exe
+169,textpad,c:/windows/system32/notepad.exe
+170,rest advanced,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTY40IcG584ynNqibMc1heIa
+171,Integration test for health and beauty category,https://gecgithub01.walmart.com/GeMC/sc_automation/pull/4
+172,sc1 bug8     CDSCENT-2104
 
 [Bug] I CAN NOT resubmit winner item,https://jira.walmart.com/browse/CDSCENT-2104
-174,sc1 manage items,https://supplier.stg.walmart.com/item_maintenance
-175,tde,http://www.ted.com/
-176,friends season 5 episode 1,https://www.vidio.com/watch/149925-friends-season-5-episode-1
-177,Apache Kafka interview questions,http://www.tuicool.com/articles/Ab2YBze
-178,software,c:/software
-179,ppt,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
-180,jira board,https://jira.walmart.com/secure/RapidBoard.jspa?rapidView=4706
-181,solr docs,C:\Developer\solr-6.2.0\example\exampledocs
-182,idea.exe,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
-183,Google advanced search operators,https://supple.com.au/tools/google-advanced-search-operators/
-184,sc2 nwe story,https://jira.walmart.com/browse/CDSCENT-1821
-185,sc1 bug 17     CDSCENT-2081
+173,sc1 manage items,https://supplier.stg.walmart.com/item_maintenance
+174,tde,http://www.ted.com/
+175,friends season 5 episode 1,https://www.vidio.com/watch/149925-friends-season-5-episode-1
+176,Apache Kafka interview questions,http://www.tuicool.com/articles/Ab2YBze
+177,software,c:/software
+178,ppt,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
+179,jira board,https://jira.walmart.com/secure/RapidBoard.jspa?rapidView=4706
+180,solr docs,C:\Developer\solr-6.2.0\example\exampledocs
+181,idea.exe,c:/developer/jetbrains/intellij idea 14.1.6/bin/idea.exe
+182,Google advanced search operators,https://supple.com.au/tools/google-advanced-search-operators/
+183,sc2 nwe story,https://jira.walmart.com/browse/CDSCENT-1821
+184,sc1 bug 17     CDSCENT-2081
 
 [Bug] It should not require state when there is no State Restrictions (Need to be verified),https://jira.walmart.com/browse/CDSCENT-2081
-186,sc2 list,https://confluence.walmart.com/display/CDCD/Validation+rules+to+implement
-187,why kafka,https://prezi.com/jqsmaukaya0c/why-kafka/
-188,sc3 ji,https://jira.walmart.com/browse/CDSCENT-1363
-189,playbook,https://confluence.walmart.com/display/PGMPMNMW/Playbook
-190,hello word,good
-191,Java 8 stream cheat sheet,http://zeroturnaround.com/wp-content/uploads/2016/05/Java-8-Streams-cheat-sheet-by-RebelLabs.png
-192,gui hui sui yue,https://listenonrepeat.com/?v
-193,Google Search Hacks,https://www.themuse.com/advice/these-google-search-hacks-are-going-to-change-your-life-or-at-the-very-least-make-it-easier
-194,walmart apis,https://confluence.walmart.com/display/PGMPMNMW/Walmart+APIs
-195,excel,c:/program files (x86)/microsoft office/root/office16/excel.exe
-196,mac os x shortcuts simple version,c:\shortxuts\mackbookshortcust.jpg
-197,ZooKeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
-198,devcenter,c:\developer\devcenter\devcenter.exe
-199,urban,c:/users/siyuanzeng's/desktop/application/urbandicti.jar
-200,The Zing Song Extended,https://listenonrepeat.com/?v=z_hXbiAB1lc#The_Zing_Song_Extended
-201,stickynote,c:/windows/system32/stikynot.exe
-202,sc2 p,https://gecgithub01.walmart.com/GeMC/gesc-rules/pull/24
-203,top 100 java libraries java developers should know must know,http://blog.takipi.com/the-top-100-java-libraries-in-2016-after-analyzing-47251-dependencies/
-204,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf
-205,herokuapp,http://gtin-ui.herokuapp.com
-206,sc4 c,https://confluence.walmart.com/display/~rbalaga/V3+Validations+in+Supplier+Center
-207,sc2 j,https://jira.walmart.com/secure/RapidBoard.jspa?rapidView=4706&view=detail&selectedIssue=CDSCENT-1363&quickFilter=24838
-208,Zookeeper,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
-209,ideashortcut,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf
-210,m,https://mail.google.com/mail/u/0/#inbox
-211,restful basic tutorial,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
-212,Google Yahhoo Yahoo Microsoft search commands,http://www.searchcommands.com/
-213,sc1 bug 12     CDSCENT-2108
+185,sc2 list,https://confluence.walmart.com/display/CDCD/Validation+rules+to+implement
+186,why kafka,https://prezi.com/jqsmaukaya0c/why-kafka/
+187,sc3 ji,https://jira.walmart.com/browse/CDSCENT-1363
+188,playbook,https://confluence.walmart.com/display/PGMPMNMW/Playbook
+189,hello word,good
+190,Java 8 stream cheat sheet,http://zeroturnaround.com/wp-content/uploads/2016/05/Java-8-Streams-cheat-sheet-by-RebelLabs.png
+191,gui hui sui yue,https://listenonrepeat.com/?v
+192,Google Search Hacks,https://www.themuse.com/advice/these-google-search-hacks-are-going-to-change-your-life-or-at-the-very-least-make-it-easier
+193,walmart apis,https://confluence.walmart.com/display/PGMPMNMW/Walmart+APIs
+194,excel,c:/program files (x86)/microsoft office/root/office16/excel.exe
+195,mac os x shortcuts simple version,c:\shortxuts\mackbookshortcust.jpg
+196,ZooKeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
+197,devcenter,c:\developer\devcenter\devcenter.exe
+198,urban,c:/users/siyuanzeng's/desktop/application/urbandicti.jar
+199,The Zing Song Extended,https://listenonrepeat.com/?v=z_hXbiAB1lc#The_Zing_Song_Extended
+200,stickynote,c:/windows/system32/stikynot.exe
+201,sc2 p,https://gecgithub01.walmart.com/GeMC/gesc-rules/pull/24
+202,top 100 java libraries java developers should know must know,http://blog.takipi.com/the-top-100-java-libraries-in-2016-after-analyzing-47251-dependencies/
+203,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf
+204,herokuapp,http://gtin-ui.herokuapp.com
+205,sc4 c,https://confluence.walmart.com/display/~rbalaga/V3+Validations+in+Supplier+Center
+206,sc2 j,https://jira.walmart.com/secure/RapidBoard.jspa?rapidView=4706&view=detail&selectedIssue=CDSCENT-1363&quickFilter=24838
+207,Zookeeper,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
+208,ideashortcut,c:/users/siyuanzeng's/desktop/application/intellijidea_referencecard.pdf
+209,m,https://mail.google.com/mail/u/0/#inbox
+210,restful basic tutorial,https://www.youtube.com/playlist?list=PLqq-6Pq4lTTZh5U8RbdXq0WaYvZBz2rbn
+211,Google Yahhoo Yahoo Microsoft search commands,http://www.searchcommands.com/
+212,sc1 bug 12     CDSCENT-2108
 
 [Bug] No url/file validation in image field validation,https://jira.walmart.com/browse/CDSCENT-2108
-214,Mac OS X Keyboard Shortcuts,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
-215,lor,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
-216,f,c:/program files (x86)/mozilla firefox/firefox.exe
-217,glossary,/Users/vn0xrjh/Downloads/01-Arhitectural/Supplier Center Glossary.doc
-218,c,c:/
-219,Mac OS X Excel Keyboard shortcuts,http://www.exceltip.com/tips/150-mac-excel-keyboard-shortcuts.html
-220,database,localhost
-221,critical thinking standards,http://www.criticalthinking.org/image/pimage/Standards-Elems-Traits.jpg
-222,Apache Kafka JAVA tutorial #1 with source code,http://khangaonkar.blogspot.com/2014/05/apache-kafka-java-tutorial.html
-223,calendar,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
-224,git,C:\programdata\microsoft\Windows\start menu\Programs\Git
-225,videos,c:/users/siyuanzeng's/videos/video
-226,word,c:/program files (x86)/microsoft office/root/office16/winword.exe
-227,solr admin,http://localhost:8983/solr/#/jcp/query
-228,My Cheatsheet,https://confluence.walmart.com/display/PGMPMNMW/My+Cheatsheet
-229,itune,c:/program files/itunes/itunes.exe
-230,Microsoft Word Macro for highlighting multiple words,http://stackoverflow.com/questions/9399655/microsoft-word-macro-for-highlighting-multiple-words
-231,snag,c:/softwareinstallation/media/techsmith/snagit/snagit32.exe
-232,googlevoice,https://www.google.com/voice#inbox
-233,multiptabexploerer,C:\Program Files\QTTabBar\Tools\ExplorerSafeMode.exe
-234,gui,C:\Development_Base\17_GUI
-235,skype,c:/program files (x86)/skype/phone/skype.exe
-236,f_interviewquestions,c:/users/siyuanzeng's/desktop/application/job hunting/interview/interviewquestions
-237,Mac OS X keyboard shorcuts makeuseof,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
-238,what time , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=5171939270459279775;onPublishedMenu=editor;onClosedMenu=editor;postNum=1;src=postname
-239,gho,https://hangouts.google.com/
-240,sticky note,c:/windows/system32/stikynot.exe
-241,all my stuffs,https://github.com/SiyuanZeng/allmystuffs
-242,c1,c:/c1
-243,friends51,c:/users/siyuanzeng's/videos/movie/friends/friends  season05/friends - s05ep01 - after ross says rachel.mkv
-244,social top 5,http://www.makeuseof.com/tag/the-5-best-open-source-social-networking-software/
-245,sc1 stg gupplier center ,https://supplier.stg.walmart.com/feed_setup
-246,best song ever megan,https://listenonrepeat.com/?v=Uhj0ymhgK9E#Best_Song_Ever_-_Megan_Nicole_(cover)_One_Direction
-247,s1todo categories,https://onedrive.live.com/edit.aspx?resid=CC94B6CD56CC1E9F!128&app=Word&wdnd=1&wdPreviousSession=b62a6cd3%2D50c5%2D44e7%2D8cce%2Df51bebba4c67
-248,whistle6,https://www.youtube.com/watch?v=nwl98zzdexo
-249,ms,http://mindsource.force.com/timesheet
-250,Zookeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
-251,programs,c:/programdata/microsoft/windows/start menu/programs
-252,whistle5,https://www.youtube.com/watch?v=nwl98zzdexo
-253,sc3 ge,https://gecgithub01.walmart.com/GeMC/platform
-254,gitgui,c:/developer/git/bin/wish.exe
-255,whistle3,https://www.youtube.com/watch?v=nwl98zzdexo
-256,best song ever,ac
-257,whistle2,https://www.youtube.com/watch?v=nwl98zzdexo
-258,sc1 bug2     CDSCENT-2097 [Bug] Country of Origin - Assembly / Manufacture has different style from Country of Origin - Components / Ingredients,https://jira.walmart.com/browse/CDSCENT-2097
-259,googlehangouts,https://hangouts.google.com/
-260,guanghuisuiyue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
-261,eclipse,c:/developer/ide/eclipse-jee-luna-sr1-win32-x86_64/eclipse/eclipse.exe
-262,what ever , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=222006497760476885;onPublishedMenu=editor;onClosedMenu=editor;postNum=0;src=postname
-263,Big data messaging with Kafka, Part 1,http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html
-264,txt,c:/windows/system32/notepad.exe
-265,git remote,https://help.github.com/articles/changing-a-remote-s-url/
-266,tcpview,C:\Developer\TCPView\Tcpview.exe
-267,Hadoop in 5 minutes,https://www.youtube.com/watch?v=xLUhZ3MO2oE
-268,walmart timesheet,https://www.fieldglass.net/time_sheet_list.do
-269,dropbox,c:\users\siyuanzeng's\appdata\roaming\dropbox\bin\dropbox.exe
-270,javabrains,https://www.youtube.com/user/koushks/playlists
-271,git credential account password store  cache, git config --global credential.helper store
+213,Mac OS X Keyboard Shortcuts,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
+214,lor,https://listenonrepeat.com/?v=geCQ53zHbVQ#%E5%B0%8F%E8%99%8E%E9%9A%8A_%E9%9D%92%E8%98%8B%E6%9E%9C%E6%A8%82%E5%9C%92
+215,f,c:/program files (x86)/mozilla firefox/firefox.exe
+216,glossary,/Users/vn0xrjh/Downloads/01-Arhitectural/Supplier Center Glossary.doc
+217,c,c:/
+218,Mac OS X Excel Keyboard shortcuts,http://www.exceltip.com/tips/150-mac-excel-keyboard-shortcuts.html
+219,database,localhost
+220,critical thinking standards,http://www.criticalthinking.org/image/pimage/Standards-Elems-Traits.jpg
+221,Apache Kafka JAVA tutorial #1 with source code,http://khangaonkar.blogspot.com/2014/05/apache-kafka-java-tutorial.html
+222,calendar,https://pod51077.outlook.com/owa/?realm=homeoffice.wal-mart.com&exsvurl=1&ll-cc=1033&modurl=1&path=/calendar/view/WorkWeek
+223,git,C:\programdata\microsoft\Windows\start menu\Programs\Git
+224,videos,c:/users/siyuanzeng's/videos/video
+225,word,c:/program files (x86)/microsoft office/root/office16/winword.exe
+226,solr admin,http://localhost:8983/solr/#/jcp/query
+227,My Cheatsheet,https://confluence.walmart.com/display/PGMPMNMW/My+Cheatsheet
+228,itune,c:/program files/itunes/itunes.exe
+229,Microsoft Word Macro for highlighting multiple words,http://stackoverflow.com/questions/9399655/microsoft-word-macro-for-highlighting-multiple-words
+230,snag,c:/softwareinstallation/media/techsmith/snagit/snagit32.exe
+231,googlevoice,https://www.google.com/voice#inbox
+232,multiptabexploerer,C:\Program Files\QTTabBar\Tools\ExplorerSafeMode.exe
+233,gui,C:\Development_Base\17_GUI
+234,skype,c:/program files (x86)/skype/phone/skype.exe
+235,f_interviewquestions,c:/users/siyuanzeng's/desktop/application/job hunting/interview/interviewquestions
+236,Mac OS X keyboard shorcuts makeuseof,http://cheat-sheets.s3.amazonaws.com/for-mobile/osx-shortcuts-new.pdf
+237,what time , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=5171939270459279775;onPublishedMenu=editor;onClosedMenu=editor;postNum=1;src=postname
+238,gho,https://hangouts.google.com/
+239,sticky note,c:/windows/system32/stikynot.exe
+240,all my stuffs,https://github.com/SiyuanZeng/allmystuffs
+241,c1,https://github.com/chocotan/datepicker4j
+242,friends51,c:/users/siyuanzeng's/videos/movie/friends/friends  season05/friends - s05ep01 - after ross says rachel.mkv
+243,social top 5,http://www.makeuseof.com/tag/the-5-best-open-source-social-networking-software/
+244,sc1 stg gupplier center ,https://supplier.stg.walmart.com/feed_setup
+245,best song ever megan,https://listenonrepeat.com/?v=Uhj0ymhgK9E#Best_Song_Ever_-_Megan_Nicole_(cover)_One_Direction
+246,s1todo categories,https://onedrive.live.com/edit.aspx?resid=CC94B6CD56CC1E9F!128&app=Word&wdnd=1&wdPreviousSession=b62a6cd3%2D50c5%2D44e7%2D8cce%2Df51bebba4c67
+247,whistle6,https://www.youtube.com/watch?v=nwl98zzdexo
+248,ms,http://mindsource.force.com/timesheet
+249,Zookeeper Documentation,http://zookeeper.apache.org/doc/trunk/zookeeperOver.html
+250,programs,c:/programdata/microsoft/windows/start menu/programs
+251,whistle5,https://www.youtube.com/watch?v=nwl98zzdexo
+252,sc3 ge,https://gecgithub01.walmart.com/GeMC/platform
+253,gitgui,c:/developer/git/bin/wish.exe
+254,whistle3,https://www.youtube.com/watch?v=nwl98zzdexo
+255,best song ever,ac
+256,whistle2,https://www.youtube.com/watch?v=nwl98zzdexo
+257,sc1 bug2     CDSCENT-2097 [Bug] Country of Origin - Assembly / Manufacture has different style from Country of Origin - Components / Ingredients,https://jira.walmart.com/browse/CDSCENT-2097
+258,googlehangouts,https://hangouts.google.com/
+259,guanghuisuiyue,https://listenonrepeat.com/?v=PwSQQoWqeBs#Beyond_05%3A_%E5%85%89%E8%BC%9D%E6%AD%B2%E6%9C%88
+260,eclipse,c:/developer/ide/eclipse-jee-luna-sr1-win32-x86_64/eclipse/eclipse.exe
+261,what ever , https://www.blogger.com/blogger.g?blogID=5889245863220470098&pli=1#editor/target=post;postID=222006497760476885;onPublishedMenu=editor;onClosedMenu=editor;postNum=0;src=postname
+262,Big data messaging with Kafka, Part 1,http://www.javaworld.com/article/3060078/big-data/big-data-messaging-with-kafka-part-1.html
+263,txt,c:/windows/system32/notepad.exe
+264,git remote,https://help.github.com/articles/changing-a-remote-s-url/
+265,tcpview,C:\Developer\TCPView\Tcpview.exe
+266,Hadoop in 5 minutes,https://www.youtube.com/watch?v=xLUhZ3MO2oE
+267,walmart timesheet,https://www.fieldglass.net/time_sheet_list.do
+268,dropbox,c:\users\siyuanzeng's\appdata\roaming\dropbox\bin\dropbox.exe
+269,javabrains,https://www.youtube.com/user/koushks/playlists
+270,git credential account password store  cache, git config --global credential.helper store
+271,social pep,https://www.peepso.com/addons/
 272,sc ccm,https://admin.ccm.stg.walmart.com
 273,powerpoint,c:/program files (x86)/microsoft office/root/office16/powerpnt.exe
 274,shutdown,c:/windows/system32/shutdown.exe
