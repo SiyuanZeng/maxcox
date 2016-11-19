@@ -5,10 +5,15 @@ import zeng.siyuan.onceaday.link.onceaday.DecendingTask;
 import zeng.siyuan.reuseutil.r;
 
 import javax.swing.*;
+import java.awt.*;
+import java.io.File;
 import java.io.IOException;
 import java.io.Serializable;
 import java.text.SimpleDateFormat;
 import java.util.*;
+
+import static java.awt.SystemColor.text;
+import static zeng.siyuan.reuseutil.r.openUrlInBrowser;
 
 //Created by Real
 public class How2Forgert implements Serializable {
@@ -147,12 +152,23 @@ public class How2Forgert implements Serializable {
 
 
             if (null != r.d(textStr[0])){
-                StringBuffer stringBuffer1 = new StringBuffer();
-                for (int i = 1; i < textStr.length; i++) {
-                    stringBuffer1.append(textStr[i]);
-                }
-                e = new person_question(stringBuffer1.toString(), "p", r.d(textStr[0]));
 
+                if (textStr[1].equalsIgnoreCase("j")){
+                    StringBuffer stringBuffer1 = new StringBuffer();
+                    for (int i = 2; i < textStr.length; i++) {
+                        stringBuffer1.append(textStr[i]);
+                    }
+                    e = new person_question(stringBuffer1.toString(), "j", r.d(textStr[0]));
+                }
+
+                else {
+                    StringBuffer stringBuffer1 = new StringBuffer();
+                    for (int i = 1; i < textStr.length; i++) {
+                        stringBuffer1.append(textStr[i]);
+                    }
+
+                    e = new person_question(stringBuffer1.toString(), "p", r.d(textStr[0]));
+                }
 
 
             } else {
@@ -298,6 +314,19 @@ public class How2Forgert implements Serializable {
                                             }
 
                                             m.store(e);
+                                        if ((null != e.text && !e.text.isEmpty()) && (e.text.contains("http://") || e.text.contains("https://"))) {
+                                            try {
+                                                openUrlInBrowser(e.text);
+                                            } catch (Exception f) {
+                                                f.printStackTrace();
+                                            }
+                                        } else if ((e.text.contains("sd") && text.equals("sd")) || (e.text.contains("shutdown") && e.text.equals("shutdown"))) {
+                                            Runtime.getRuntime().exec("shutdown.exe -s -t 0");
+                                            // what the fuck si the else mean?
+                                        } else if (null != e.text || !e.text.trim().isEmpty()) {
+                                            Desktop.getDesktop().open(new File(e.text.trim()));
+                                        } else {
+                                        }
                                             inntuitive += e.text;
                                         }
                                         if(asdf)break;
@@ -343,8 +372,22 @@ public class How2Forgert implements Serializable {
                                             ct.setIsDone(true);
                                         }
 
-                                        inntuitive += e.text;
                                         m.store(e);
+                                        if ((null != e.text && !e.text.isEmpty()) && (e.text.contains("http://") || e.text.contains("https://"))) {
+                                            try {
+                                                openUrlInBrowser(e.text);
+                                            } catch (Exception f) {
+                                                f.printStackTrace();
+                                            }
+                                        } else if ((e.text.contains("sd") && text.equals("sd")) || (e.text.contains("shutdown") && e.text.equals("shutdown"))) {
+                                            Runtime.getRuntime().exec("shutdown.exe -s -t 0");
+                                            // what the fuck si the else mean?
+                                        } else if (null != e.text || !e.text.trim().isEmpty()) {
+                                            Desktop.getDesktop().open(new File(e.text.trim()));
+                                        } else {
+                                        }
+                                        inntuitive += e.text;
+
                                         textArea.setText(inntuitive);
                                         found = true;
                                     }

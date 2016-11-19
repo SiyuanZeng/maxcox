@@ -10,17 +10,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a421b49-605d-4e6f-8d52-2915556c64cd" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/a" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/t.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/How2Forgert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/peoplequesiton.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/peoplequesiton.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/person_question.class" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/onceaday/person_question.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/C:\c1\c1comehere\ebbinghauses.txt" afterPath="$PROJECT_DIR$/C:\c1\c1comehere\ebbinghauses.txt" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c1s.properties" afterPath="$PROJECT_DIR$/c1s.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/c1s.properties.solr" afterPath="$PROJECT_DIR$/c1s.properties.solr" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" afterPath="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java" afterPath="$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/l.properties" afterPath="$PROJECT_DIR$/target/classes/zeng/siyuan/C1comehere/l.properties" />
     </list>
     <ignored path="c1comehere.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -41,77 +43,85 @@
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
   </component>
+  <component name="DatabaseView">
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_TABLE_DETAILS" value="true" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="c1comehere" />
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="t.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="135">
+              <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BeepingButton.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="deletediary.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/deletediary.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="75">
+              <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="peoplequesiton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="person_question.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="150">
-              <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cassandra.cql" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/cassandra.cql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="24">
-              <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+            <state relative-caret-position="521">
+              <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
+            <state relative-caret-position="-1680">
+              <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="peoplequesiton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/peoplequesiton.java">
+      <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="66" column="157" selection-start-line="66" selection-start-column="157" selection-end-line="66" selection-end-column="157" />
+            <state relative-caret-position="90">
+              <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="peoplequesiton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/peoplequesiton.java">
+      <file leaf-file-name="How2Forgert.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="peoplequesiton.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/peoplequesiton.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="363">
-              <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
+            <state relative-caret-position="375">
+              <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -120,36 +130,29 @@
       <file leaf-file-name="C1comehere.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="186">
-              <caret line="493" column="32" selection-start-line="493" selection-start-column="32" selection-end-line="493" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="p" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/p">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+            <state relative-caret-position="366">
+              <caret line="1218" column="0" selection-start-line="1218" selection-start-column="0" selection-end-line="1231" selection-end-column="21" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
       <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/Display.java">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/Display.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-              <folding>
-                <element signature="e#382#383#0" expanded="true" />
-                <element signature="e#406#407#0" expanded="true" />
-                <element signature="e#445#446#0" expanded="true" />
-                <element signature="e#471#472#0" expanded="true" />
-                <element signature="e#507#508#0" expanded="true" />
-                <element signature="e#533#534#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="585">
+              <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="r.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="230">
+              <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -180,14 +183,12 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/zeng/siyuan/learning thought" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/autohotkey/ahotkeytest.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/person_question.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/peoplequesiton.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/cassandra log" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/button/buttons.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/solr/test/param/dao/SolrBaseDAO.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/howt2forgert/Ebbinghaus.java" />
         <option value="$PROJECT_DIR$/maxcassandra" />
         <option value="$PROJECT_DIR$/solr" />
@@ -216,7 +217,6 @@
         <option value="$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/playsongforme.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java" />
-        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/How2Forgert.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/Display.java" />
@@ -228,9 +228,12 @@
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/t.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/How2Forgert.java" />
-        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java" />
         <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java" />
+        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java" />
+        <option value="$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java" />
       </list>
     </option>
   </component>
@@ -254,6 +257,20 @@
   </component>
   <component name="MavenProjectNavigator">
     <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="c1comehere" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
       <PATH>
         <PATH_ELEMENT>
           <option name="myItemId" value="" />
@@ -369,11 +386,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
-      <pane id="Scratches">
-        <subPane />
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -421,94 +433,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="youknowwhat" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="solr" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="routine" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -790,194 +714,17 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="onceaday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onceaday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onceaday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onceaday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="onceaday" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="asdf" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="mappingmanager" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="howt2forgert" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="C1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="button" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="betteresearchennebetterthangoogleandfindweehtehrething" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autohotkey" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="c1comehere" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="siyuan" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="autocomplete" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches">
+        <subPane />
+      </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -988,7 +735,7 @@
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$USER_HOME$/projects/platform" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/related jar/commons-httpclient-3.1.jar!/" />
     <property name="settings.editor.selected.configurable" value="reference.projectsettings.compiler.javacompiler" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
     <property name="FileHistory.git4idea.history.GitHistoryProvider_flatWidth0" value="282" />
@@ -1055,26 +802,6 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="peoplequesiton" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="zeng.siyuan.mappingmanager.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="MAIN_CLASS_NAME" value="zeng.siyuan.onceaday.peoplequesiton" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="c1comehere" />
-      <envs />
-      <method />
-    </configuration>
     <configuration default="false" name="TestSolrData" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -1123,6 +850,26 @@
         </pattern>
       </extension>
       <option name="MAIN_CLASS_NAME" value="zeng.siyuan.autohotkey.AutoHotkeyTest" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="c1comehere" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="t" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="zeng.siyuan.C1comehere.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="zeng.siyuan.C1comehere.t" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
@@ -1573,18 +1320,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="Application.C1comehere" />
-      <item index="1" class="java.lang.String" itemvalue="Application.peoplequesiton" />
-      <item index="2" class="java.lang.String" itemvalue="Application.TestSolrData" />
-      <item index="3" class="java.lang.String" itemvalue="Application.SolrDataDAO" />
-      <item index="4" class="java.lang.String" itemvalue="Application.AutoHotkeyTest" />
+      <item index="1" class="java.lang.String" itemvalue="Application.TestSolrData" />
+      <item index="2" class="java.lang.String" itemvalue="Application.SolrDataDAO" />
+      <item index="3" class="java.lang.String" itemvalue="Application.AutoHotkeyTest" />
+      <item index="4" class="java.lang.String" itemvalue="Application.t" />
     </list>
     <recent_temporary>
       <list size="5">
         <item index="0" class="java.lang.String" itemvalue="Application.C1comehere" />
-        <item index="1" class="java.lang.String" itemvalue="Application.AutoHotkeyTest" />
-        <item index="2" class="java.lang.String" itemvalue="Application.SolrDataDAO" />
-        <item index="3" class="java.lang.String" itemvalue="Application.TestSolrData" />
-        <item index="4" class="java.lang.String" itemvalue="Application.peoplequesiton" />
+        <item index="1" class="java.lang.String" itemvalue="Application.t" />
+        <item index="2" class="java.lang.String" itemvalue="Application.AutoHotkeyTest" />
+        <item index="3" class="java.lang.String" itemvalue="Application.SolrDataDAO" />
+        <item index="4" class="java.lang.String" itemvalue="Application.TestSolrData" />
       </list>
     </recent_temporary>
   </component>
@@ -2226,7 +1973,14 @@
       <workItem from="1479514156297" duration="1042000" />
       <workItem from="1479517309791" duration="578000" />
       <workItem from="1479519587659" duration="828000" />
-      <workItem from="1479521629596" duration="1084000" />
+      <workItem from="1479521629596" duration="1374000" />
+      <workItem from="1479523506154" duration="836000" />
+      <workItem from="1479526130312" duration="936000" />
+      <workItem from="1479528273729" duration="1427000" />
+      <workItem from="1479530243804" duration="487000" />
+      <workItem from="1479534006498" duration="479000" />
+      <workItem from="1479553804101" duration="558000" />
+      <workItem from="1479556607020" duration="1278000" />
     </task>
     <task id="LOCAL-00001" summary="refactor search engine">
       <created>1472094513325</created>
@@ -2344,7 +2098,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="928911000" />
+    <option name="totallyTimeSpent" value="935202000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -2364,18 +2118,18 @@
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766762" sideWeight="0.4851592" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17161717" sideWeight="0.70563036" order="11" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.12088505" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17161717" sideWeight="0.29436964" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1650165" sideWeight="0.7160343" order="11" side_tool="true" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.125459" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1650165" sideWeight="0.28396574" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32766762" sideWeight="0.45925525" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3371105" sideWeight="0.49379385" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30966952" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.41982865" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32986537" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31353134" sideWeight="0.49082008" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24986508" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.249694" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27726433" sideWeight="0.68591475" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32973558" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2725,13 +2479,13 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java</url>
-          <line>40</line>
+          <line>45</line>
           <properties />
           <option name="timeStamp" value="325" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java</url>
-          <line>60</line>
+          <line>65</line>
           <properties />
           <option name="timeStamp" value="326" />
         </line-breakpoint>
@@ -2807,57 +2561,10 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/usruprise/thereisalsothatkind.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/rightclick/rightclicksearch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/iamhere/what/betternexttimerealquick.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/mappingmanager/mappingmanager.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/routine/a.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/youknowwhat/YouKnowWhat.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="11" column="13" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/autohotkey/AutoHotkeyTest.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="90">
           <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2865,7 +2572,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2873,7 +2579,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
           <caret line="21" column="13" selection-start-line="21" selection-start-column="13" selection-end-line="21" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2881,7 +2586,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
           <caret line="12" column="13" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2889,7 +2593,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2904,15 +2607,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2920,7 +2614,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="17" column="13" selection-start-line="17" selection-start-column="13" selection-end-line="17" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2928,7 +2621,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2936,7 +2628,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2944,7 +2635,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2968,7 +2658,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -2976,7 +2665,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3008,7 +2696,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
           <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3016,15 +2703,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="681">
-          <caret line="83" column="19" selection-start-line="83" selection-start-column="19" selection-end-line="83" selection-end-column="19" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3032,7 +2710,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="315">
           <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3040,7 +2717,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="270">
           <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3048,23 +2724,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" column="0" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3072,7 +2731,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3080,15 +2738,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
           <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="387">
-          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3100,19 +2749,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="153" column="66" selection-start-line="153" selection-start-column="66" selection-end-line="153" selection-end-column="66" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/peoplequesiton.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3128,63 +2768,13 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="363">
           <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/peoplequesiton.java">
+    <entry file="file://$PROJECT_DIR$/src/p">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/peoplequesiton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/peoplequesiton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="363">
-          <caret line="66" column="157" selection-start-line="66" selection-start-column="157" selection-end-line="66" selection-end-column="157" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
-          <caret line="21" column="0" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/cassandra.cql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="24">
-          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="12" column="19" selection-start-line="12" selection-start-column="19" selection-end-line="12" selection-end-column="19" />
-          <folding />
+        <state relative-caret-position="435">
+          <caret line="29" column="34" selection-start-line="29" selection-start-column="34" selection-end-line="29" selection-end-column="34" />
         </state>
       </provider>
     </entry>
@@ -3192,29 +2782,160 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="190">
           <caret line="19" column="11" selection-start-line="19" selection-start-column="11" selection-end-line="19" selection-end-column="11" />
-          <folding>
-            <element signature="e#382#383#0" expanded="true" />
-            <element signature="e#406#407#0" expanded="true" />
-            <element signature="e#445#446#0" expanded="true" />
-            <element signature="e#471#472#0" expanded="true" />
-            <element signature="e#507#508#0" expanded="true" />
-            <element signature="e#533#534#0" expanded="true" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/peoplequesiton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="675">
+          <caret line="55" column="5" selection-start-line="55" selection-start-column="5" selection-end-line="55" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/peoplequesiton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="59" column="158" selection-start-line="59" selection-start-column="158" selection-end-line="59" selection-end-column="158" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/peoplequesiton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="492">
+          <caret line="66" column="157" selection-start-line="66" selection-start-column="157" selection-end-line="66" selection-end-column="157" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/person_question.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="14" column="40" selection-start-line="14" selection-start-column="40" selection-end-line="14" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/cassandra.cql">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="105" column="0" selection-start-line="105" selection-start-column="0" selection-end-line="105" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/How2Forgert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4384">
+          <caret line="27" column="28" selection-start-line="27" selection-start-column="28" selection-end-line="27" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/peoplequesiton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/l.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_102.jdk/Contents/Home/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="10305">
+          <caret line="744" column="0" selection-start-line="744" selection-start-column="0" selection-end-line="744" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="615">
+          <caret line="41" column="0" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/t.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="0" selection-start-line="9" selection-start-column="0" selection-end-line="9" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/BeepingButton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="8" column="13" selection-start-line="8" selection-start-column="13" selection-end-line="8" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/deletediary.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="13" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/peoplequesiton.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="521">
+          <caret line="60" column="157" selection-start-line="60" selection-start-column="157" selection-end-line="60" selection-end-column="157" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/asdf/How2Forgert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1680">
+          <caret line="63" column="27" selection-start-line="63" selection-start-column="27" selection-end-line="63" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/reuseutil/r.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="230">
+          <caret line="51" column="23" selection-start-line="51" selection-start-column="23" selection-end-line="51" selection-end-column="23" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/Display.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="585">
+          <caret line="51" column="0" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/How2Forgert.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="126" column="36" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/C1comehere/C1comehere.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="186">
-          <caret line="493" column="32" selection-start-line="493" selection-start-column="32" selection-end-line="493" selection-end-column="32" />
+        <state relative-caret-position="366">
+          <caret line="1218" column="0" selection-start-line="1218" selection-start-column="0" selection-end-line="1231" selection-end-column="21" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/p">
+    <entry file="file://$PROJECT_DIR$/src/zeng/siyuan/onceaday/link/onceaday/document/onceaday/ssdd/onceaday/onceaday/asdf/asdf/How2Forgert.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="68" selection-start-line="21" selection-start-column="68" selection-end-line="21" selection-end-column="68" />
+        <state relative-caret-position="90">
+          <caret line="6" column="21" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
           <folding />
         </state>
       </provider>
