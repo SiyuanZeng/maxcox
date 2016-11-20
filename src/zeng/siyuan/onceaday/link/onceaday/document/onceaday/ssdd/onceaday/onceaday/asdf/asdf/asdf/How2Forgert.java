@@ -99,13 +99,16 @@ public class How2Forgert implements Serializable {
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
 
         if (timeOfDay >= 0 && timeOfDay < 12) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Morning C1 world, ");
         } else if (timeOfDay >= 12 && timeOfDay < 16) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Afternoon C1 world, ");
         } else if (timeOfDay >= 16 && timeOfDay < 21) {
+            stringBuilder.append(System.getProperty("line.separator"));
             stringBuilder.append("Good Evening C1 world, ");
         } else if (timeOfDay >= 21 && timeOfDay < 24) {
-            stringBuilder.append("Good Night C1 world, ");
+            stringBuilder.append(System.getProperty("line.separator"));stringBuilder.append("Good Night C1 world, ");
         }
 
         stringBuilder.append(format.format(c.getTime()));
@@ -113,9 +116,9 @@ public class How2Forgert implements Serializable {
         for (person_question e : ebbinghauses) {
             if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
                 if (timeOfDay >= 0 && timeOfDay < 12) {
-                    stringBuilder.append(" am");
+                    stringBuilder.append(" am");                stringBuilder.append(System.getProperty("line.separator"));
                 } else if (timeOfDay >= 12 && timeOfDay < 24) {
-                    stringBuilder.append(" pm");
+                    stringBuilder.append(" pm");                stringBuilder.append(System.getProperty("line.separator"));
                 }
                 stringBuilder.append(System.getProperty("line.separator"));
                 stringBuilder.append(textinput);
@@ -132,8 +135,8 @@ public class How2Forgert implements Serializable {
     }
 
     public void displayTask() {
-        Date t=r.j("00:01");
-        Date k=r.j("03:01");
+        Date t=r.jk("00:01");
+        Date k=r.jk("03:01");
         Date kl=new Date(r.randInt(t.getTime(), k.getTime()));
 
 

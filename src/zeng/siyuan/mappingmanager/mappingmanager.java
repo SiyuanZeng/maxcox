@@ -23,7 +23,9 @@ public class mappingmanager {
 
 
     //todo bakup data
+/*
 
+ */
 
     public mappingmanager() {
         cluster = Cluster.builder().addContactPoint("127.0.0.1").withPort(9042).build();

@@ -49,6 +49,22 @@ public class r {
         return null;
     }
 
+    public static Date jk(String dsf) {
+//        String s = "03/24/2013 21:54";
+        SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm");
+        SimpleDateFormat i = new SimpleDateFormat("MM/dd/yyyy");
+        try {
+            String h=i.format(new Date());
+            h +=" "+dsf;
+            Date date = simpleDateFormat.parse(h);
+            System.out.println("date : " + simpleDateFormat.format(date));
+            return date;
+        } catch (ParseException ex) {
+            System.out.println("Exception " + ex);
+        }
+        return null;
+    }
+
     public static Date d(String dsf) {
 //        String s = "03/24/2013 21:54";
         SimpleDateFormat simpleDateFormat = new SimpleDateFormat("MM/dd/yyyy HH:mm:ss");
@@ -95,6 +111,15 @@ public class r {
         calendar.setTime(d);
 
         calendar.add(Calendar.DATE,1);
+        return calendar.getTime();
+    }
+
+    public static Date ls(Date d){
+
+        Calendar calendar = Calendar.getInstance();
+        calendar.setTime(d);
+
+        calendar.add(Calendar.MONTH,1);
         return calendar.getTime();
     }
 

@@ -196,6 +196,9 @@ create table keyspace1.link_test (
 select * from keyspace1.person_question_produ ;
 
 
+select * from keyspace1.p ;
+
+
 select * from keyspace1.j ;
 
 truncate keyspace1.j ;
@@ -229,6 +232,17 @@ create table keyspace1.k(
 
 
 create table keyspace1.person_question_produ (
+	id uuid,
+	target_date timestamp,
+	txt text,
+	type text,
+	tasks list<frozen<type4>>,
+	PRIMARY KEY (id)
+
+	);
+
+
+create table keyspace1.p (
 	id uuid,
 	target_date timestamp,
 	txt text,

@@ -6,6 +6,9 @@ import java.awt.event.MouseEvent;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Enumeration;
+
+import static zeng.siyuan.C1comehere.C1comehere.c1comehere;
 
 public class DateTimePicker extends loli.datepicker.AbstractPicker {
     {
@@ -25,17 +28,47 @@ public class DateTimePicker extends loli.datepicker.AbstractPicker {
         this.field.addMouseListener(new MouseAdapter() {
             @Override
             public void mouseClicked(MouseEvent event) {
-                if (popup != null) {
-                    popup.hide();
-                    popup = null;
-                    return;
+
+                String buttonSelected = "";
+                for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
+                    AbstractButton button = buttons.nextElement();
+
+                    if (button.isSelected()) {
+                        buttonSelected = button.getText();
+                    }
                 }
-                loli.datepicker.DateTimePanel timePanel = new DateTimePanel(DateTimePicker.this);
-                PopupFactory factory = PopupFactory.getSharedInstance();
-                popup = factory.getPopup(field, timePanel, (int) field
-                        .getLocationOnScreen().getX(), (int) field
-                        .getLocationOnScreen().getY() + field.getHeight());
-                popup.show();
+                boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
+
+
+                while (!field.getText().trim().isEmpty() || isHow2ForegertCommand) {
+                    try {
+                        Thread.sleep(10000);
+                    } catch (Exception f) {
+                        f.printStackTrace();
+                    }
+                    for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
+                        AbstractButton button = buttons.nextElement();
+
+                        if (button.isSelected()) {
+                            buttonSelected = button.getText();
+                        }
+                    }
+                    isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
+                }
+                if (!isHow2ForegertCommand ) {
+
+                    if (popup != null) {
+                        popup.hide();
+                        popup = null;
+                        return;
+                    }
+                    loli.datepicker.DateTimePanel timePanel = new DateTimePanel(DateTimePicker.this);
+                    PopupFactory factory = PopupFactory.getSharedInstance();
+                    popup = factory.getPopup(field, timePanel, (int) field
+                            .getLocationOnScreen().getX(), (int) field
+                            .getLocationOnScreen().getY() + field.getHeight());
+                    popup.show();
+                }
             }
         });
     }

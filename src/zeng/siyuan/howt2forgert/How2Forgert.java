@@ -5,6 +5,7 @@ import com.google.gson.FieldAttributes;
 import com.google.gson.Gson;
 import zeng.siyuan.C1comehere.C1comehere;
 import zeng.siyuan.mappingmanager.mappingmanager;
+import zeng.siyuan.reuseutil.r;
 import zeng.siyuan.solr.solr;
 
 import javax.swing.*;
@@ -66,7 +67,9 @@ public class How2Forgert implements Serializable {
         c.add(Calendar.HOUR_OF_DAY, 1);
 
         // found!
-        String textinput = textArea.getText().replace(" ufgt ", "");
+        String textinput = System.getProperty("line.separator");
+        textinput +=         textArea.getText().replace(" ufgt ", System.getProperty("line.separator"));
+        textinput += System.getProperty("line.separator");
         Scanner in = null;
 
         if (!textinput.isEmpty()) {
@@ -86,13 +89,13 @@ public class How2Forgert implements Serializable {
         int timeOfDay = c.get(Calendar.HOUR_OF_DAY);
 
         if (timeOfDay >= 0 && timeOfDay < 12) {
-            stringBuilder.append("Good Morning C1 world, ");
+            stringBuilder.append(System.getProperty("line.separator"));                stringBuilder.append(System.getProperty("line.separator"));stringBuilder.append("Good Morning C1 world, ");
         } else if (timeOfDay >= 12 && timeOfDay < 16) {
-            stringBuilder.append("Good Afternoon C1 world, ");
+            stringBuilder.append(System.getProperty("line.separator"));                stringBuilder.append(System.getProperty("line.separator"));stringBuilder.append("Good Afternoon C1 world, ");
         } else if (timeOfDay >= 16 && timeOfDay < 21) {
-            stringBuilder.append("Good Evening C1 world, ");
+            stringBuilder.append(System.getProperty("line.separator"));                stringBuilder.append(System.getProperty("line.separator"));stringBuilder.append("Good Evening C1 world, ");
         } else if (timeOfDay >= 21 && timeOfDay < 24) {
-            stringBuilder.append("Good Night C1 world, ");
+            stringBuilder.append(System.getProperty("line.separator"));                stringBuilder.append(System.getProperty("line.separator"));stringBuilder.append("Good Night C1 world, ");
         }
 
         stringBuilder.append(format.format(c.getTime()));
@@ -100,12 +103,14 @@ public class How2Forgert implements Serializable {
         for (Ebbinghaus e : ebbinghauses) {
             if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
                 if (timeOfDay >= 0 && timeOfDay < 12) {
-                    stringBuilder.append(" am");
+                    stringBuilder.append(" am");                stringBuilder.append(System.getProperty("line.separator"));
                 } else if (timeOfDay >= 12 && timeOfDay < 24) {
-                    stringBuilder.append(" pm");
+                    stringBuilder.append(" pm");                stringBuilder.append(System.getProperty("line.separator"));
                 }
                 stringBuilder.append(System.getProperty("line.separator"));
+                stringBuilder.append(System.getProperty("line.separator"));
                 stringBuilder.append(textinput);
+                stringBuilder.append(System.getProperty("line.separator"));
                 stringBuilder.append(System.getProperty("line.separator"));
                 e.question = stringBuilder.toString();
                 Ebbinghaus e1 = new Ebbinghaus(e.question, "");
@@ -114,6 +119,7 @@ public class How2Forgert implements Serializable {
                 System.out.println("updates");
                 isSearch=false;
                 isSearchCombine=false;
+                reloadandDiskplaypopup();
                 break;
             }
         }
@@ -157,10 +163,10 @@ public class How2Forgert implements Serializable {
                             frame.repaint();
                             frame.toFront();
                             currentTask = t;
-                            String inntuitive = System.getProperty("line.separator");
+                            String inntuitive = System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");
 
                             inntuitive += (" ufgt ");
-                            inntuitive += System.getProperty("line.separator");
+                            inntuitive += System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");
                             for (Ebbinghaus e : ebbinghauses) {
                                 if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
                                     for (Task ct : e.getTasks()) {
@@ -198,8 +204,8 @@ public class How2Forgert implements Serializable {
                             frame.repaint();
                             frame.toFront();
                             currentTask = t;
-                            String inntuitive = System.getProperty("line.separator");
-                            inntuitive += (" ufgt ");
+                            String inntuitive = System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");
+                            inntuitive += (" ufgt ");                                        inntuitive += System.getProperty("line.separator");
                             inntuitive += System.getProperty("line.separator");
                             for (Ebbinghaus e : ebbinghauses) {
                                 if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
@@ -212,7 +218,7 @@ public class How2Forgert implements Serializable {
                                         }
                                     }
                                 }
-                            }
+                            }                                        inntuitive += System.getProperty("line.separator");
                             inntuitive += System.getProperty("line.separator");
                             textArea.setText(inntuitive);
                             Thread.sleep(10000);
@@ -223,42 +229,63 @@ public class How2Forgert implements Serializable {
                         boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
 
 
-                        while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
-                            try {
-                                Thread.sleep(10000);
-                            } catch (Exception e) {
-                                e.printStackTrace();
-                            }
-                            for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
-                                AbstractButton button = buttons.nextElement();
-
-                                if (button.isSelected()) {
-                                    buttonSelected = button.getText();
-                                }
-                            }
-                            isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
-
-                        }
                         frame.repaint();
                         frame.toFront();
                         currentTask = t;
-                        String inntuitive = System.getProperty("line.separator");
-                        inntuitive += (" ufgt ");
-                        inntuitive += System.getProperty("line.separator");
+
                         for (Ebbinghaus e : ebbinghauses) {
                             if (e.getJavauid().toString().equalsIgnoreCase(currentTask.getJavauuid().toString())) {
                                 for (Task ct : e.getTasks()) {
                                     if (ct.getDate().getTime() == currentTask.getDate().getTime()) {
-                                        ct.setIsDone(true);
-                                        inntuitive += e.question;
+                                        ct.setIsDone(false);
+                                        ct.setDate(r.ls(ct.getDate()));
+                                        String inntuitive = System.getProperty("line.separator");
+                                        inntuitive += (" ufgt ");
+                                        inntuitive += System.getProperty("line.separator");
+                                        inntuitive += System.getProperty("line.separator");
+                                        inntuitive += e.question;                                        inntuitive += System.getProperty("line.separator");                                        inntuitive += System.getProperty("line.separator");
                                         m.deleteTask(e.getJavauid());
                                         m.store(e);
+
+                                        while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
+                                            try {
+                                                Thread.sleep(10000);
+                                            } catch (Exception f) {
+                                                f.printStackTrace();
+                                            }
+                                            for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
+                                                AbstractButton button = buttons.nextElement();
+
+                                                if (button.isSelected()) {
+                                                    buttonSelected = button.getText();
+                                                }
+                                            }
+                                            isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
+                                        }
+                                        inntuitive += System.getProperty("line.separator");
+                                        textArea.setText(inntuitive);
+                                        inntuitive += System.getProperty("line.separator");
+                                        while (!textArea.getText().trim().isEmpty() || !isHow2ForegertCommand) {
+                                            try {
+                                                Thread.sleep(10000);
+                                            } catch (Exception f) {
+                                                f.printStackTrace();
+                                            }
+                                            for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
+                                                AbstractButton button = buttons.nextElement();
+
+                                                if (button.isSelected()) {
+                                                    buttonSelected = button.getText();
+                                                }
+                                            }
+                                            isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
+                                        }
+                                        reloadTAskandrestartPopThread();
                                     }
                                 }
                             }
                         }
-                        inntuitive += System.getProperty("line.separator");
-                        textArea.setText(inntuitive);
+
                     }
                 }
             }
