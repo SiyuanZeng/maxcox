@@ -37,25 +37,9 @@ public class DateTimePicker extends loli.datepicker.AbstractPicker {
                         buttonSelected = button.getText();
                     }
                 }
-                boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
+                boolean isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("DcodeLSDjaf");
 
-
-                while (!field.getText().trim().isEmpty() || isHow2ForegertCommand) {
-                    try {
-                        Thread.sleep(10000);
-                    } catch (Exception f) {
-                        f.printStackTrace();
-                    }
-                    for (Enumeration<AbstractButton> buttons = c1comehere.untoggle.bg.getElements(); buttons.hasMoreElements(); ) {
-                        AbstractButton button = buttons.nextElement();
-
-                        if (button.isSelected()) {
-                            buttonSelected = button.getText();
-                        }
-                    }
-                    isHow2ForegertCommand = buttonSelected.equalsIgnoreCase("ufgt") || buttonSelected.equalsIgnoreCase("deldiary");
-                }
-                if (!isHow2ForegertCommand ) {
+                if (isHow2ForegertCommand ) {
 
                     if (popup != null) {
                         popup.hide();
