@@ -119,7 +119,7 @@ public class How2Forgert implements Serializable {
                 System.out.println("updates");
                 isSearch=false;
                 isSearchCombine=false;
-                reloadandDiskplaypopup();
+                reloadTAskandrestartPopThread();
                 break;
             }
         }
@@ -427,6 +427,7 @@ public class How2Forgert implements Serializable {
     public void loadTask() {
 
         solr solr = new solr();
+        ebbinghauses = new HashSet<>();
 
         try {
 // i lie to myself
@@ -603,6 +604,7 @@ public class How2Forgert implements Serializable {
     }
 
     private void reloadTAskandrestartPopThread() {
+        loadTask();
         textArea.setText("");
         if (null != reloadandDisplayThread || reloadandDisplayThread.isAlive()) {
             reloadandDisplayThread.interrupt();
