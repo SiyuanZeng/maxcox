@@ -17,6 +17,18 @@ import java.util.Random;
  */
 public class r {
 
+    public static void o(String url) {
+        Runtime runtime = Runtime.getRuntime();
+        System.out.println(url);
+        String[] args = { "osascript", "-e", "open location \"" + url + "\"" };
+        try {
+            Process process = runtime.exec(args);
+        }
+        catch (IOException e) {
+            // do what you want with this
+        }
+    }
+
     public static long randInt(long min, long max) {
 
         // NOTE: This will (intentionally) not run as written so that folks
