@@ -629,7 +629,21 @@ public class C1comehere implements Serializable {
                          */
 
 
-                        if (deleteCommand) {
+                        if (textArea.getText().equalsIgnoreCase("TodoApp")) {
+                            try {
+                                TodoApp.todo();
+                            } catch (ClassNotFoundException e1) {
+                                e1.printStackTrace();
+                            } catch (InstantiationException e1) {
+                                e1.printStackTrace();
+                            } catch (IllegalAccessException e1) {
+                                e1.printStackTrace();
+                            } catch (UnsupportedLookAndFeelException e1) {
+                                e1.printStackTrace();
+                            }
+                        }
+
+                        else if (deleteCommand) {
                             System.out.println("delete command");
                             prop.remove(textArea.getText());
                             textArea.setText("");
@@ -1120,7 +1134,9 @@ public class C1comehere implements Serializable {
                 } catch (Exception e1) {
                     e1.printStackTrace();
                 }
-        } else if (isExeShortcut&&text.contains("=")) {
+        }
+
+        else if (isExeShortcut&&text.contains("=")) {
             key = text.substring(text.lastIndexOf("\\") + 1, text.lastIndexOf("."));
             c1come2melater(text.split("=")[0], text.split("=")[1]);
 
@@ -1139,7 +1155,9 @@ public class C1comehere implements Serializable {
                     e1.printStackTrace();
                 }
 
-        } else {
+        }
+
+        else {
             if (text.contains(".exe") && !text.contains("=")) {
                 key = text.substring(text.lastIndexOf("\\") + 1, text.indexOf("."));
                 c1come2melater(key, text);

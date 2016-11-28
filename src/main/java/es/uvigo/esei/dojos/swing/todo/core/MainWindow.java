@@ -218,16 +218,17 @@ public class MainWindow extends JFrame{
 			this.addTaskButton.addMouseListener(new MouseAdapter(){
 				@Override
 				public void mouseClicked(MouseEvent e) {
+					System.out.println(getNewTaskField().getText());
 					if (getNewTaskField().getText().length() > 0) {
 
 						todoListModel.add(getNewTaskField().getText().trim().split("=")[0]);
 
-						getNewTaskField().setText("");
 
 						getTaskList().setSelectedIndex(getTaskList().getModel().getSize()-1);
 
 						if (getNewTaskField().getText().trim().contains("=")&& getNewTaskField().getText().trim().indexOf("http") > getNewTaskField().getText().trim().indexOf("=")) {
 							c1come2melater(getNewTaskField().getText().trim().split("=")[0], getNewTaskField().getText().trim().substring(getNewTaskField().getText().trim().indexOf("=") + 1));
+							getNewTaskField().setText("");
 
 
 //							SolrDataDAO solrBaseDAO = null;
@@ -267,8 +268,9 @@ public class MainWindow extends JFrame{
 		OutputStream output_solr = null;
 		try {
 
-			output = new FileOutputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/c1s.properties");
+			output = new FileOutputStream("/Users/vn0xrjh/daniel/14_GUIcopymacosx/c1comehere/src/main/resources/c1s.properties");
 			c1 = c1.replace(" ", "%20");
+			System.out.println("c1come2melater();");
 			// set the properties value
 			prop.setProperty(c1, c1Path);
 
